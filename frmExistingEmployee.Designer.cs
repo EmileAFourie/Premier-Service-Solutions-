@@ -28,59 +28,81 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblEmployeeID = new System.Windows.Forms.Label();
-            this.txtbxEmployeeID = new System.Windows.Forms.TextBox();
-            this.btnClear = new System.Windows.Forms.Button();
-            this.btnSearch = new System.Windows.Forms.Button();
-            this.lblExistingEmployee = new System.Windows.Forms.Label();
-            this.SuspendLayout();
+            lblEmployeeID = new Label();
+            txtbxEmployeeID = new TextBox();
+            btnClear = new Button();
+            btnSearch = new Button();
+            lblExistingEmployee = new Label();
+
+            button1 = new Button();
+
+            SuspendLayout();
             // 
             // lblEmployeeID
             // 
-            this.lblEmployeeID.AutoSize = true;
-            this.lblEmployeeID.Location = new System.Drawing.Point(189, 139);
-            this.lblEmployeeID.Name = "lblEmployeeID";
-            this.lblEmployeeID.Size = new System.Drawing.Size(73, 15);
-            this.lblEmployeeID.TabIndex = 3;
-            this.lblEmployeeID.Text = "EmployeeID:";
+            lblEmployeeID.AutoSize = true;
+            lblEmployeeID.Location = new Point(216, 185);
+            lblEmployeeID.Name = "lblEmployeeID";
+            lblEmployeeID.Size = new Size(93, 20);
+            lblEmployeeID.TabIndex = 3;
+            lblEmployeeID.Text = "EmployeeID:";
             // 
             // txtbxEmployeeID
             // 
-            this.txtbxEmployeeID.Location = new System.Drawing.Point(285, 136);
-            this.txtbxEmployeeID.Name = "txtbxEmployeeID";
-            this.txtbxEmployeeID.Size = new System.Drawing.Size(296, 23);
-            this.txtbxEmployeeID.TabIndex = 2;
+            txtbxEmployeeID.Location = new Point(326, 181);
+            txtbxEmployeeID.Margin = new Padding(3, 4, 3, 4);
+            txtbxEmployeeID.Name = "txtbxEmployeeID";
+            txtbxEmployeeID.Size = new Size(338, 27);
+            txtbxEmployeeID.TabIndex = 2;
             // 
             // btnClear
             // 
-            this.btnClear.Location = new System.Drawing.Point(285, 208);
-            this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(88, 35);
-            this.btnClear.TabIndex = 4;
-            this.btnClear.Text = "Clear";
-            this.btnClear.UseVisualStyleBackColor = true;
+            btnClear.Location = new Point(326, 277);
+            btnClear.Margin = new Padding(3, 4, 3, 4);
+            btnClear.Name = "btnClear";
+            btnClear.Size = new Size(101, 47);
+            btnClear.TabIndex = 4;
+            btnClear.Text = "Clear";
+            btnClear.UseVisualStyleBackColor = true;
             // 
             // btnSearch
             // 
-            this.btnSearch.Location = new System.Drawing.Point(481, 210);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(100, 33);
-            this.btnSearch.TabIndex = 5;
-            this.btnSearch.Text = "Search";
-            this.btnSearch.UseVisualStyleBackColor = true;
+            btnSearch.Location = new Point(550, 280);
+            btnSearch.Margin = new Padding(3, 4, 3, 4);
+            btnSearch.Name = "btnSearch";
+            btnSearch.Size = new Size(114, 44);
+            btnSearch.TabIndex = 5;
+            btnSearch.Text = "Search";
+            btnSearch.UseVisualStyleBackColor = true;
+
+            btnSearch.Click += btnSearch_Click;
+
             // 
             // lblExistingEmployee
             // 
-            this.lblExistingEmployee.AutoSize = true;
-            this.lblExistingEmployee.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblExistingEmployee.Location = new System.Drawing.Point(296, 23);
-            this.lblExistingEmployee.Name = "lblExistingEmployee";
-            this.lblExistingEmployee.Size = new System.Drawing.Size(251, 37);
-            this.lblExistingEmployee.TabIndex = 6;
-            this.lblExistingEmployee.Text = "Existing Employee";
+            lblExistingEmployee.AutoSize = true;
+            lblExistingEmployee.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
+            lblExistingEmployee.Location = new Point(338, 31);
+            lblExistingEmployee.Name = "lblExistingEmployee";
+            lblExistingEmployee.Size = new Size(311, 46);
+            lblExistingEmployee.TabIndex = 6;
+            lblExistingEmployee.Text = "Existing Employee";
+
+            // 
+            // button1
+            // 
+            button1.Location = new Point(12, 540);
+            button1.Margin = new Padding(3, 4, 3, 4);
+            button1.Name = "button1";
+            button1.Size = new Size(101, 47);
+            button1.TabIndex = 7;
+            button1.Text = "Back";
+            button1.UseVisualStyleBackColor = true;
+
             // 
             // frmExistingEmployee
             // 
+
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
@@ -94,6 +116,17 @@
             this.ResumeLayout(false);
             this.PerformLayout();
 
+
+            Controls.Add(lblExistingEmployee);
+            Controls.Add(btnSearch);
+            Controls.Add(btnClear);
+            Controls.Add(lblEmployeeID);
+            Controls.Add(txtbxEmployeeID);
+            Margin = new Padding(3, 4, 3, 4);
+            Name = "frmExistingEmployee";
+            Text = "frmExistingEmployee";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -103,5 +136,6 @@
         private Button btnClear;
         private Button btnSearch;
         private Label lblExistingEmployee;
+        private Button button1;
     }
 }

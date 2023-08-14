@@ -28,42 +28,60 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblEmployeeCenter = new System.Windows.Forms.Label();
-            this.btnNewEmployee = new System.Windows.Forms.Button();
-            this.btnExistingEmployee = new System.Windows.Forms.Button();
-            this.SuspendLayout();
+            lblEmployeeCenter = new Label();
+            btnNewEmployee = new Button();
+            btnExistingEmployee = new Button();
+            btnClear = new Button();
+
+            SuspendLayout();
             // 
             // lblEmployeeCenter
             // 
-            this.lblEmployeeCenter.AutoSize = true;
-            this.lblEmployeeCenter.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblEmployeeCenter.Location = new System.Drawing.Point(312, 25);
-            this.lblEmployeeCenter.Name = "lblEmployeeCenter";
-            this.lblEmployeeCenter.Size = new System.Drawing.Size(235, 37);
-            this.lblEmployeeCenter.TabIndex = 0;
-            this.lblEmployeeCenter.Text = "Employee Centre";
+            lblEmployeeCenter.AutoSize = true;
+            lblEmployeeCenter.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
+            lblEmployeeCenter.Location = new Point(357, 33);
+            lblEmployeeCenter.Name = "lblEmployeeCenter";
+            lblEmployeeCenter.Size = new Size(289, 46);
+            lblEmployeeCenter.TabIndex = 0;
+            lblEmployeeCenter.Text = "Employee Centre";
             // 
             // btnNewEmployee
             // 
-            this.btnNewEmployee.Location = new System.Drawing.Point(249, 174);
-            this.btnNewEmployee.Name = "btnNewEmployee";
-            this.btnNewEmployee.Size = new System.Drawing.Size(138, 67);
-            this.btnNewEmployee.TabIndex = 1;
-            this.btnNewEmployee.Text = "New Employee";
-            this.btnNewEmployee.UseVisualStyleBackColor = true;
-            this.btnNewEmployee.Click += new System.EventHandler(this.btnNewEmployee_Click);
+            btnNewEmployee.Location = new Point(285, 232);
+            btnNewEmployee.Margin = new Padding(3, 4, 3, 4);
+            btnNewEmployee.Name = "btnNewEmployee";
+            btnNewEmployee.Size = new Size(158, 89);
+            btnNewEmployee.TabIndex = 1;
+            btnNewEmployee.Text = "New Employee";
+            btnNewEmployee.UseVisualStyleBackColor = true;
+            btnNewEmployee.Click += btnNewEmployee_Click;
             // 
             // btnExistingEmployee
             // 
-            this.btnExistingEmployee.Location = new System.Drawing.Point(437, 174);
-            this.btnExistingEmployee.Name = "btnExistingEmployee";
-            this.btnExistingEmployee.Size = new System.Drawing.Size(138, 67);
-            this.btnExistingEmployee.TabIndex = 2;
-            this.btnExistingEmployee.Text = "Existing Employee";
-            this.btnExistingEmployee.UseVisualStyleBackColor = true;
+            btnExistingEmployee.Location = new Point(499, 232);
+            btnExistingEmployee.Margin = new Padding(3, 4, 3, 4);
+            btnExistingEmployee.Name = "btnExistingEmployee";
+            btnExistingEmployee.Size = new Size(158, 89);
+            btnExistingEmployee.TabIndex = 2;
+            btnExistingEmployee.Text = "Existing Employee";
+            btnExistingEmployee.UseVisualStyleBackColor = true;
+
+            // 
+            // btnClear
+            // 
+            btnClear.Location = new Point(12, 550);
+            btnClear.Margin = new Padding(3, 4, 3, 4);
+            btnClear.Name = "btnClear";
+            btnClear.Size = new Size(119, 37);
+            btnClear.TabIndex = 5;
+            btnClear.Text = "Back";
+            btnClear.UseVisualStyleBackColor = true;
+
+            btnExistingEmployee.Click += btnExistingEmployee_Click;
             // 
             // frmEmployeeCenter
             // 
+
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
@@ -75,6 +93,15 @@
             this.ResumeLayout(false);
             this.PerformLayout();
 
+
+            Controls.Add(btnExistingEmployee);
+            Controls.Add(btnNewEmployee);
+            Controls.Add(lblEmployeeCenter);
+            Margin = new Padding(3, 4, 3, 4);
+            Name = "frmEmployeeCenter";
+            Text = "frmEmployeeCenter";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -82,5 +109,6 @@
         private Label lblEmployeeCenter;
         private Button btnNewEmployee;
         private Button btnExistingEmployee;
+        private Button btnClear;
     }
 }

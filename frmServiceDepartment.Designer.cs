@@ -28,123 +28,145 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblServiceDepartment = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.lblUnassignedTickets = new System.Windows.Forms.Label();
-            this.lblAssignedTickets = new System.Windows.Forms.Label();
-            this.btnAssignTicket = new System.Windows.Forms.Button();
-            this.btnEscalateTicket = new System.Windows.Forms.Button();
-            this.btnUnassign = new System.Windows.Forms.Button();
-            this.btnResolveJob = new System.Windows.Forms.Button();
-            this.btnSearchTicket = new System.Windows.Forms.Button();
-            this.txtbxSearchTicket = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
-            this.SuspendLayout();
+            lblServiceDepartment = new Label();
+            dataGridView1 = new DataGridView();
+            dataGridView2 = new DataGridView();
+            lblUnassignedTickets = new Label();
+            lblAssignedTickets = new Label();
+            btnAssignTicket = new Button();
+            btnEscalateTicket = new Button();
+            btnUnassign = new Button();
+            btnResolveJob = new Button();
+            btnSearchTicket = new Button();
+            txtbxSearchTicket = new TextBox();
+            button1 = new Button();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridView2).BeginInit();
+            SuspendLayout();
             // 
             // lblServiceDepartment
             // 
-            this.lblServiceDepartment.AutoSize = true;
-            this.lblServiceDepartment.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblServiceDepartment.Location = new System.Drawing.Point(259, 20);
-            this.lblServiceDepartment.Name = "lblServiceDepartment";
-            this.lblServiceDepartment.Size = new System.Drawing.Size(274, 37);
-            this.lblServiceDepartment.TabIndex = 0;
-            this.lblServiceDepartment.Text = "Service Department";
+            lblServiceDepartment.AutoSize = true;
+            lblServiceDepartment.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
+            lblServiceDepartment.Location = new Point(296, 27);
+            lblServiceDepartment.Name = "lblServiceDepartment";
+            lblServiceDepartment.Size = new Size(336, 46);
+            lblServiceDepartment.TabIndex = 0;
+            lblServiceDepartment.Text = "Service Department";
             // 
             // dataGridView1
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(27, 83);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(280, 263);
-            this.dataGridView1.TabIndex = 1;
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Location = new Point(31, 111);
+            dataGridView1.Margin = new Padding(3, 4, 3, 4);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.RowHeadersWidth = 51;
+            dataGridView1.RowTemplate.Height = 25;
+            dataGridView1.Size = new Size(320, 351);
+            dataGridView1.TabIndex = 1;
             // 
             // dataGridView2
             // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(467, 83);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.RowTemplate.Height = 25;
-            this.dataGridView2.Size = new System.Drawing.Size(280, 263);
-            this.dataGridView2.TabIndex = 2;
+            dataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView2.Location = new Point(534, 111);
+            dataGridView2.Margin = new Padding(3, 4, 3, 4);
+            dataGridView2.Name = "dataGridView2";
+            dataGridView2.RowHeadersWidth = 51;
+            dataGridView2.RowTemplate.Height = 25;
+            dataGridView2.Size = new Size(320, 351);
+            dataGridView2.TabIndex = 2;
             // 
             // lblUnassignedTickets
             // 
-            this.lblUnassignedTickets.AutoSize = true;
-            this.lblUnassignedTickets.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblUnassignedTickets.Location = new System.Drawing.Point(100, 65);
-            this.lblUnassignedTickets.Name = "lblUnassignedTickets";
-            this.lblUnassignedTickets.Size = new System.Drawing.Size(113, 15);
-            this.lblUnassignedTickets.TabIndex = 3;
-            this.lblUnassignedTickets.Text = "Unassigned Tickets";
+            lblUnassignedTickets.AutoSize = true;
+            lblUnassignedTickets.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            lblUnassignedTickets.Location = new Point(114, 87);
+            lblUnassignedTickets.Name = "lblUnassignedTickets";
+            lblUnassignedTickets.Size = new Size(143, 20);
+            lblUnassignedTickets.TabIndex = 3;
+            lblUnassignedTickets.Text = "Unassigned Tickets";
             // 
             // lblAssignedTickets
             // 
-            this.lblAssignedTickets.AutoSize = true;
-            this.lblAssignedTickets.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblAssignedTickets.Location = new System.Drawing.Point(565, 65);
-            this.lblAssignedTickets.Name = "lblAssignedTickets";
-            this.lblAssignedTickets.Size = new System.Drawing.Size(99, 15);
-            this.lblAssignedTickets.TabIndex = 4;
-            this.lblAssignedTickets.Text = "Assigned Tickets";
+            lblAssignedTickets.AutoSize = true;
+            lblAssignedTickets.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            lblAssignedTickets.Location = new Point(646, 87);
+            lblAssignedTickets.Name = "lblAssignedTickets";
+            lblAssignedTickets.Size = new Size(126, 20);
+            lblAssignedTickets.TabIndex = 4;
+            lblAssignedTickets.Text = "Assigned Tickets";
             // 
             // btnAssignTicket
             // 
-            this.btnAssignTicket.Location = new System.Drawing.Point(344, 146);
-            this.btnAssignTicket.Name = "btnAssignTicket";
-            this.btnAssignTicket.Size = new System.Drawing.Size(91, 36);
-            this.btnAssignTicket.TabIndex = 5;
-            this.btnAssignTicket.Text = "Assign Ticket";
-            this.btnAssignTicket.UseVisualStyleBackColor = true;
+            btnAssignTicket.Location = new Point(393, 195);
+            btnAssignTicket.Margin = new Padding(3, 4, 3, 4);
+            btnAssignTicket.Name = "btnAssignTicket";
+            btnAssignTicket.Size = new Size(104, 48);
+            btnAssignTicket.TabIndex = 5;
+            btnAssignTicket.Text = "Assign Ticket";
+            btnAssignTicket.UseVisualStyleBackColor = true;
             // 
             // btnEscalateTicket
             // 
-            this.btnEscalateTicket.Location = new System.Drawing.Point(344, 238);
-            this.btnEscalateTicket.Name = "btnEscalateTicket";
-            this.btnEscalateTicket.Size = new System.Drawing.Size(91, 34);
-            this.btnEscalateTicket.TabIndex = 6;
-            this.btnEscalateTicket.Text = "Escalate Ticket";
-            this.btnEscalateTicket.UseVisualStyleBackColor = true;
+            btnEscalateTicket.Location = new Point(393, 317);
+            btnEscalateTicket.Margin = new Padding(3, 4, 3, 4);
+            btnEscalateTicket.Name = "btnEscalateTicket";
+            btnEscalateTicket.Size = new Size(104, 45);
+            btnEscalateTicket.TabIndex = 6;
+            btnEscalateTicket.Text = "Escalate Ticket";
+            btnEscalateTicket.UseVisualStyleBackColor = true;
             // 
             // btnUnassign
             // 
-            this.btnUnassign.Location = new System.Drawing.Point(520, 377);
-            this.btnUnassign.Name = "btnUnassign";
-            this.btnUnassign.Size = new System.Drawing.Size(75, 23);
-            this.btnUnassign.TabIndex = 7;
-            this.btnUnassign.Text = "Unassign";
-            this.btnUnassign.UseVisualStyleBackColor = true;
+            btnUnassign.Location = new Point(594, 503);
+            btnUnassign.Margin = new Padding(3, 4, 3, 4);
+            btnUnassign.Name = "btnUnassign";
+            btnUnassign.Size = new Size(86, 31);
+            btnUnassign.TabIndex = 7;
+            btnUnassign.Text = "Unassign";
+            btnUnassign.UseVisualStyleBackColor = true;
             // 
             // btnResolveJob
             // 
-            this.btnResolveJob.Location = new System.Drawing.Point(616, 377);
-            this.btnResolveJob.Name = "btnResolveJob";
-            this.btnResolveJob.Size = new System.Drawing.Size(78, 24);
-            this.btnResolveJob.TabIndex = 8;
-            this.btnResolveJob.Text = "Resolve Job";
-            this.btnResolveJob.UseVisualStyleBackColor = true;
+            btnResolveJob.Location = new Point(704, 503);
+            btnResolveJob.Margin = new Padding(3, 4, 3, 4);
+            btnResolveJob.Name = "btnResolveJob";
+            btnResolveJob.Size = new Size(89, 32);
+            btnResolveJob.TabIndex = 8;
+            btnResolveJob.Text = "Resolve Job";
+            btnResolveJob.UseVisualStyleBackColor = true;
             // 
             // btnSearchTicket
             // 
-            this.btnSearchTicket.Location = new System.Drawing.Point(217, 378);
-            this.btnSearchTicket.Name = "btnSearchTicket";
-            this.btnSearchTicket.Size = new System.Drawing.Size(90, 23);
-            this.btnSearchTicket.TabIndex = 9;
-            this.btnSearchTicket.Text = "Search Ticket";
-            this.btnSearchTicket.UseVisualStyleBackColor = true;
+            btnSearchTicket.Location = new Point(248, 504);
+            btnSearchTicket.Margin = new Padding(3, 4, 3, 4);
+            btnSearchTicket.Name = "btnSearchTicket";
+            btnSearchTicket.Size = new Size(103, 31);
+            btnSearchTicket.TabIndex = 9;
+            btnSearchTicket.Text = "Search Ticket";
+            btnSearchTicket.UseVisualStyleBackColor = true;
             // 
             // txtbxSearchTicket
             // 
-            this.txtbxSearchTicket.Location = new System.Drawing.Point(27, 378);
-            this.txtbxSearchTicket.Name = "txtbxSearchTicket";
-            this.txtbxSearchTicket.Size = new System.Drawing.Size(166, 23);
-            this.txtbxSearchTicket.TabIndex = 10;
+            txtbxSearchTicket.Location = new Point(31, 504);
+            txtbxSearchTicket.Margin = new Padding(3, 4, 3, 4);
+            txtbxSearchTicket.Name = "txtbxSearchTicket";
+            txtbxSearchTicket.Size = new Size(189, 27);
+            txtbxSearchTicket.TabIndex = 10;
+            // 
+            // button1
+            // 
+            button1.Location = new Point(31, 556);
+            button1.Margin = new Padding(3, 4, 3, 4);
+            button1.Name = "button1";
+            button1.Size = new Size(103, 31);
+            button1.TabIndex = 11;
+            button1.Text = "Back";
+            button1.UseVisualStyleBackColor = true;
             // 
             // frmServiceDepartment
             // 
+
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
@@ -166,6 +188,7 @@
             this.ResumeLayout(false);
             this.PerformLayout();
 
+
         }
 
         #endregion
@@ -181,5 +204,6 @@
         private Button btnResolveJob;
         private Button btnSearchTicket;
         private TextBox txtbxSearchTicket;
+        private Button button1;
     }
 }

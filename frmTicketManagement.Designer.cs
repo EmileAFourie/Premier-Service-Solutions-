@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.lblClient = new System.Windows.Forms.Label();
@@ -59,84 +60,95 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.grpbxNewTicket.SuspendLayout();
             this.SuspendLayout();
+
             // 
             // dataGridView1
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(486, 78);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(283, 133);
-            this.dataGridView1.TabIndex = 0;
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Location = new Point(555, 104);
+            dataGridView1.Margin = new Padding(3, 4, 3, 4);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.RowHeadersWidth = 51;
+            dataGridView1.RowTemplate.Height = 25;
+            dataGridView1.Size = new Size(323, 177);
+            dataGridView1.TabIndex = 0;
             // 
             // dataGridView2
             // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(486, 250);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.RowTemplate.Height = 25;
-            this.dataGridView2.Size = new System.Drawing.Size(283, 135);
-            this.dataGridView2.TabIndex = 1;
+            dataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView2.Location = new Point(555, 333);
+            dataGridView2.Margin = new Padding(3, 4, 3, 4);
+            dataGridView2.Name = "dataGridView2";
+            dataGridView2.RowHeadersWidth = 51;
+            dataGridView2.RowTemplate.Height = 25;
+            dataGridView2.Size = new Size(323, 180);
+            dataGridView2.TabIndex = 1;
             // 
             // lblClient
             // 
-            this.lblClient.AutoSize = true;
-            this.lblClient.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblClient.Location = new System.Drawing.Point(84, 72);
-            this.lblClient.Name = "lblClient";
-            this.lblClient.Size = new System.Drawing.Size(42, 15);
-            this.lblClient.TabIndex = 2;
-            this.lblClient.Text = "Client:";
+            lblClient.AutoSize = true;
+            lblClient.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            lblClient.Location = new Point(96, 96);
+            lblClient.Name = "lblClient";
+            lblClient.Size = new Size(53, 20);
+            lblClient.TabIndex = 2;
+            lblClient.Text = "Client:";
             // 
             // txtbxClient
             // 
-            this.txtbxClient.Location = new System.Drawing.Point(145, 69);
-            this.txtbxClient.Name = "txtbxClient";
-            this.txtbxClient.Size = new System.Drawing.Size(291, 23);
-            this.txtbxClient.TabIndex = 3;
+            txtbxClient.Location = new Point(166, 92);
+            txtbxClient.Margin = new Padding(3, 4, 3, 4);
+            txtbxClient.Name = "txtbxClient";
+            txtbxClient.Size = new Size(332, 27);
+            txtbxClient.TabIndex = 3;
             // 
             // txtbxContract
             // 
-            this.txtbxContract.Location = new System.Drawing.Point(145, 114);
-            this.txtbxContract.Name = "txtbxContract";
-            this.txtbxContract.Size = new System.Drawing.Size(291, 23);
-            this.txtbxContract.TabIndex = 5;
+            txtbxContract.Location = new Point(166, 152);
+            txtbxContract.Margin = new Padding(3, 4, 3, 4);
+            txtbxContract.Name = "txtbxContract";
+            txtbxContract.Size = new Size(332, 27);
+            txtbxContract.TabIndex = 5;
             // 
             // lblContract
             // 
-            this.lblContract.AutoSize = true;
-            this.lblContract.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblContract.Location = new System.Drawing.Point(84, 117);
-            this.lblContract.Name = "lblContract";
-            this.lblContract.Size = new System.Drawing.Size(58, 15);
-            this.lblContract.TabIndex = 4;
-            this.lblContract.Text = "Contract:";
+            lblContract.AutoSize = true;
+            lblContract.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            lblContract.Location = new Point(96, 156);
+            lblContract.Name = "lblContract";
+            lblContract.Size = new Size(73, 20);
+            lblContract.TabIndex = 4;
+            lblContract.Text = "Contract:";
             // 
             // grpbxNewTicket
             // 
-            this.grpbxNewTicket.Controls.Add(this.btnClear);
-            this.grpbxNewTicket.Controls.Add(this.btnSubmit);
-            this.grpbxNewTicket.Controls.Add(this.txtbxAssignedTo);
-            this.grpbxNewTicket.Controls.Add(this.txtbxPriority);
-            this.grpbxNewTicket.Controls.Add(this.lblAssignedTo);
-            this.grpbxNewTicket.Controls.Add(this.lblPriority);
-            this.grpbxNewTicket.Controls.Add(this.txtbxDescription);
-            this.grpbxNewTicket.Controls.Add(this.txtbxTypeOfError);
-            this.grpbxNewTicket.Controls.Add(this.lblDescription);
-            this.grpbxNewTicket.Controls.Add(this.lblTypeOfError);
-            this.grpbxNewTicket.Controls.Add(this.txtbxClientID);
-            this.grpbxNewTicket.Controls.Add(this.txtbxTicketID);
-            this.grpbxNewTicket.Controls.Add(this.lblClientIDNewTicket);
-            this.grpbxNewTicket.Controls.Add(this.lblTicketID);
-            this.grpbxNewTicket.Location = new System.Drawing.Point(12, 154);
-            this.grpbxNewTicket.Name = "grpbxNewTicket";
-            this.grpbxNewTicket.Size = new System.Drawing.Size(440, 284);
-            this.grpbxNewTicket.TabIndex = 6;
-            this.grpbxNewTicket.TabStop = false;
-            this.grpbxNewTicket.Text = "New Ticket";
+            grpbxNewTicket.Controls.Add(button1);
+            grpbxNewTicket.Controls.Add(btnClear);
+            grpbxNewTicket.Controls.Add(btnSubmit);
+            grpbxNewTicket.Controls.Add(txtbxAssignedTo);
+            grpbxNewTicket.Controls.Add(txtbxPriority);
+            grpbxNewTicket.Controls.Add(lblAssignedTo);
+            grpbxNewTicket.Controls.Add(lblPriority);
+            grpbxNewTicket.Controls.Add(txtbxDescription);
+            grpbxNewTicket.Controls.Add(txtbxTypeOfError);
+            grpbxNewTicket.Controls.Add(lblDescription);
+            grpbxNewTicket.Controls.Add(lblTypeOfError);
+            grpbxNewTicket.Controls.Add(txtbxClientID);
+            grpbxNewTicket.Controls.Add(txtbxTicketID);
+            grpbxNewTicket.Controls.Add(lblClientIDNewTicket);
+            grpbxNewTicket.Controls.Add(lblTicketID);
+            grpbxNewTicket.Location = new Point(14, 205);
+            grpbxNewTicket.Margin = new Padding(3, 4, 3, 4);
+            grpbxNewTicket.Name = "grpbxNewTicket";
+            grpbxNewTicket.Padding = new Padding(3, 4, 3, 4);
+            grpbxNewTicket.Size = new Size(503, 379);
+            grpbxNewTicket.TabIndex = 6;
+            grpbxNewTicket.TabStop = false;
+            grpbxNewTicket.Text = "New Ticket";
             // 
             // btnClear
             // 
+
             this.btnClear.Location = new System.Drawing.Point(133, 224);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(104, 32);
@@ -185,32 +197,36 @@
             this.lblPriority.Size = new System.Drawing.Size(48, 15);
             this.lblPriority.TabIndex = 16;
             this.lblPriority.Text = "Priority:";
+
             // 
             // txtbxDescription
             // 
-            this.txtbxDescription.Location = new System.Drawing.Point(88, 124);
-            this.txtbxDescription.Name = "txtbxDescription";
-            this.txtbxDescription.Size = new System.Drawing.Size(336, 23);
-            this.txtbxDescription.TabIndex = 15;
+            txtbxDescription.Location = new Point(101, 165);
+            txtbxDescription.Margin = new Padding(3, 4, 3, 4);
+            txtbxDescription.Name = "txtbxDescription";
+            txtbxDescription.Size = new Size(383, 27);
+            txtbxDescription.TabIndex = 15;
             // 
             // txtbxTypeOfError
             // 
-            this.txtbxTypeOfError.Location = new System.Drawing.Point(88, 95);
-            this.txtbxTypeOfError.Name = "txtbxTypeOfError";
-            this.txtbxTypeOfError.Size = new System.Drawing.Size(336, 23);
-            this.txtbxTypeOfError.TabIndex = 13;
+            txtbxTypeOfError.Location = new Point(101, 127);
+            txtbxTypeOfError.Margin = new Padding(3, 4, 3, 4);
+            txtbxTypeOfError.Name = "txtbxTypeOfError";
+            txtbxTypeOfError.Size = new Size(383, 27);
+            txtbxTypeOfError.TabIndex = 13;
             // 
             // lblDescription
             // 
-            this.lblDescription.AutoSize = true;
-            this.lblDescription.Location = new System.Drawing.Point(11, 127);
-            this.lblDescription.Name = "lblDescription";
-            this.lblDescription.Size = new System.Drawing.Size(70, 15);
-            this.lblDescription.TabIndex = 14;
-            this.lblDescription.Text = "Description:";
+            lblDescription.AutoSize = true;
+            lblDescription.Location = new Point(13, 169);
+            lblDescription.Name = "lblDescription";
+            lblDescription.Size = new Size(88, 20);
+            lblDescription.TabIndex = 14;
+            lblDescription.Text = "Description:";
             // 
             // lblTypeOfError
             // 
+
             this.lblTypeOfError.AutoSize = true;
             this.lblTypeOfError.Location = new System.Drawing.Point(11, 98);
             this.lblTypeOfError.Name = "lblTypeOfError";
@@ -259,55 +275,69 @@
             this.lblTicketManagement.Size = new System.Drawing.Size(251, 37);
             this.lblTicketManagement.TabIndex = 7;
             this.lblTicketManagement.Text = "Ticket Management";
+
             // 
             // btnEndCall
             // 
-            this.btnEndCall.Location = new System.Drawing.Point(665, 406);
-            this.btnEndCall.Name = "btnEndCall";
-            this.btnEndCall.Size = new System.Drawing.Size(104, 32);
-            this.btnEndCall.TabIndex = 23;
-            this.btnEndCall.Text = "End Call";
-            this.btnEndCall.UseVisualStyleBackColor = true;
+            btnEndCall.Location = new Point(760, 541);
+            btnEndCall.Margin = new Padding(3, 4, 3, 4);
+            btnEndCall.Name = "btnEndCall";
+            btnEndCall.Size = new Size(119, 43);
+            btnEndCall.TabIndex = 23;
+            btnEndCall.Text = "End Call";
+            btnEndCall.UseVisualStyleBackColor = true;
             // 
             // txtbxCallDuration
             // 
-            this.txtbxCallDuration.Location = new System.Drawing.Point(572, 412);
-            this.txtbxCallDuration.Name = "txtbxCallDuration";
-            this.txtbxCallDuration.Size = new System.Drawing.Size(83, 23);
-            this.txtbxCallDuration.TabIndex = 25;
+            txtbxCallDuration.Location = new Point(654, 549);
+            txtbxCallDuration.Margin = new Padding(3, 4, 3, 4);
+            txtbxCallDuration.Name = "txtbxCallDuration";
+            txtbxCallDuration.Size = new Size(94, 27);
+            txtbxCallDuration.TabIndex = 25;
             // 
             // lblCallDuration
             // 
-            this.lblCallDuration.AutoSize = true;
-            this.lblCallDuration.Location = new System.Drawing.Point(487, 415);
-            this.lblCallDuration.Name = "lblCallDuration";
-            this.lblCallDuration.Size = new System.Drawing.Size(79, 15);
-            this.lblCallDuration.TabIndex = 24;
-            this.lblCallDuration.Text = "Call Duration:";
-            this.lblCallDuration.Click += new System.EventHandler(this.label1_Click);
+            lblCallDuration.AutoSize = true;
+            lblCallDuration.Location = new Point(557, 553);
+            lblCallDuration.Name = "lblCallDuration";
+            lblCallDuration.Size = new Size(99, 20);
+            lblCallDuration.TabIndex = 24;
+            lblCallDuration.Text = "Call Duration:";
+            lblCallDuration.Click += label1_Click;
             // 
             // lblPreviousTickets
             // 
-            this.lblPreviousTickets.AutoSize = true;
-            this.lblPreviousTickets.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblPreviousTickets.Location = new System.Drawing.Point(581, 60);
-            this.lblPreviousTickets.Name = "lblPreviousTickets";
-            this.lblPreviousTickets.Size = new System.Drawing.Size(101, 15);
-            this.lblPreviousTickets.TabIndex = 26;
-            this.lblPreviousTickets.Text = "Previous Tickets:";
+            lblPreviousTickets.AutoSize = true;
+            lblPreviousTickets.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            lblPreviousTickets.Location = new Point(664, 80);
+            lblPreviousTickets.Name = "lblPreviousTickets";
+            lblPreviousTickets.Size = new Size(126, 20);
+            lblPreviousTickets.TabIndex = 26;
+            lblPreviousTickets.Text = "Previous Tickets:";
             // 
             // lblPreviousCalls
             // 
-            this.lblPreviousCalls.AutoSize = true;
-            this.lblPreviousCalls.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblPreviousCalls.Location = new System.Drawing.Point(581, 232);
-            this.lblPreviousCalls.Name = "lblPreviousCalls";
-            this.lblPreviousCalls.Size = new System.Drawing.Size(85, 15);
-            this.lblPreviousCalls.TabIndex = 27;
-            this.lblPreviousCalls.Text = "Previous Calls:";
+            lblPreviousCalls.AutoSize = true;
+            lblPreviousCalls.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            lblPreviousCalls.Location = new Point(664, 309);
+            lblPreviousCalls.Name = "lblPreviousCalls";
+            lblPreviousCalls.Size = new Size(109, 20);
+            lblPreviousCalls.TabIndex = 27;
+            lblPreviousCalls.Text = "Previous Calls:";
+            // 
+            // button1
+            // 
+            button1.Location = new Point(13, 299);
+            button1.Margin = new Padding(3, 4, 3, 4);
+            button1.Name = "button1";
+            button1.Size = new Size(119, 43);
+            button1.TabIndex = 23;
+            button1.Text = "Back";
+            button1.UseVisualStyleBackColor = true;
             // 
             // frmTicketManagement
             // 
+
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
@@ -332,6 +362,7 @@
             this.grpbxNewTicket.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
+
 
         }
 
@@ -364,5 +395,6 @@
         private Label lblCallDuration;
         private Label lblPreviousTickets;
         private Label lblPreviousCalls;
+        private Button button1;
     }
 }
