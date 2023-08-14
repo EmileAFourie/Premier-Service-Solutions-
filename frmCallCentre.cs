@@ -21,5 +21,18 @@ namespace Premier_Service_Solutions
         {
 
         }
+
+        private void btnDecline_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("The call has been declined. It will be redirected to another employee.", "Call Handling", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void btnAnswerCall_Click(object sender, EventArgs e)
+        {
+            frmCustomerType CustomerTypeForm = new frmCustomerType();
+            CustomerTypeForm.Show();
+
+            this.Hide();
+        }
     }
 }

@@ -166,28 +166,29 @@
             // 
             // frmServiceDepartment
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(914, 600);
-            Controls.Add(button1);
-            Controls.Add(txtbxSearchTicket);
-            Controls.Add(btnSearchTicket);
-            Controls.Add(btnResolveJob);
-            Controls.Add(btnUnassign);
-            Controls.Add(btnEscalateTicket);
-            Controls.Add(btnAssignTicket);
-            Controls.Add(lblAssignedTickets);
-            Controls.Add(lblUnassignedTickets);
-            Controls.Add(dataGridView2);
-            Controls.Add(dataGridView1);
-            Controls.Add(lblServiceDepartment);
-            Margin = new Padding(3, 4, 3, 4);
-            Name = "frmServiceDepartment";
-            Text = "ServiceDepartment";
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)dataGridView2).EndInit();
-            ResumeLayout(false);
-            PerformLayout();
+
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.txtbxSearchTicket);
+            this.Controls.Add(this.btnSearchTicket);
+            this.Controls.Add(this.btnResolveJob);
+            this.Controls.Add(this.btnUnassign);
+            this.Controls.Add(this.btnEscalateTicket);
+            this.Controls.Add(this.btnAssignTicket);
+            this.Controls.Add(this.lblAssignedTickets);
+            this.Controls.Add(this.lblUnassignedTickets);
+            this.Controls.Add(this.dataGridView2);
+            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.lblServiceDepartment);
+            this.Name = "frmServiceDepartment";
+            this.Text = "Service Department";
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+
         }
 
         #endregion

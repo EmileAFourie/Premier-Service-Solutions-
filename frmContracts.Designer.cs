@@ -80,18 +80,19 @@
             // 
             // frmContracts
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(914, 600);
-            Controls.Add(btnClear);
-            Controls.Add(btnEditContracts);
-            Controls.Add(btnViewContractPerformance);
-            Controls.Add(lblContracts);
-            Margin = new Padding(3, 4, 3, 4);
-            Name = "frmContracts";
-            Text = "frmContracts";
-            ResumeLayout(false);
-            PerformLayout();
+
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnEditContracts);
+            this.Controls.Add(this.btnViewContractPerformance);
+            this.Controls.Add(this.lblContracts);
+            this.Name = "frmContracts";
+            this.Text = "Contracts";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+
         }
 
         #endregion

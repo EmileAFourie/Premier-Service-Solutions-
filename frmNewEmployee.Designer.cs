@@ -178,11 +178,28 @@
             // 
             // frmNewEmployee
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(914, 600);
 
-            Controls.Add(button1);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnSubmit);
+            this.Controls.Add(this.btnClear);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.txtbxAge);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.txtbxPosition);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.txtbxEmail);
+            this.Controls.Add(this.lblName);
+            this.Controls.Add(this.txtbxName);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.lblEmployeeID);
+            this.Controls.Add(this.txtbxEmployeeID);
+            this.Name = "frmNewEmployee";
+            this.Text = "New Employee";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
 
             Controls.Add(btnSubmit);
             Controls.Add(btnClear);

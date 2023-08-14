@@ -235,34 +235,35 @@
             // 
             // frmExistingEmployeeDetails
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(914, 600);
-            Controls.Add(button1);
-            Controls.Add(dataGridView1);
-            Controls.Add(lblAssignedTickets);
-            Controls.Add(btnUpdate);
-            Controls.Add(lblPerformance);
-            Controls.Add(textBox1);
-            Controls.Add(btnGenerateReport);
-            Controls.Add(btnDelete);
-            Controls.Add(label6);
-            Controls.Add(txtbxAge);
-            Controls.Add(label5);
-            Controls.Add(txtbxPosition);
-            Controls.Add(label4);
-            Controls.Add(txtbxEmail);
-            Controls.Add(lblName);
-            Controls.Add(txtbxName);
-            Controls.Add(lblExistingEmployee);
-            Controls.Add(lblEmployeeID);
-            Controls.Add(txtbxEmployeeID);
-            Margin = new Padding(3, 4, 3, 4);
-            Name = "frmExistingEmployeeDetails";
-            Text = "frmExistingEmployeeDetails";
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
-            ResumeLayout(false);
-            PerformLayout();
+
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.lblAssignedTickets);
+            this.Controls.Add(this.btnUpdate);
+            this.Controls.Add(this.lblPerformance);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.btnGenerateReport);
+            this.Controls.Add(this.btnDelete);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.txtbxAge);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.txtbxPosition);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.txtbxEmail);
+            this.Controls.Add(this.lblName);
+            this.Controls.Add(this.txtbxName);
+            this.Controls.Add(this.lblExistingEmployee);
+            this.Controls.Add(this.lblEmployeeID);
+            this.Controls.Add(this.txtbxEmployeeID);
+            this.Name = "frmExistingEmployeeDetails";
+            this.Text = "Existing Employee Details";
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+
         }
 
         #endregion

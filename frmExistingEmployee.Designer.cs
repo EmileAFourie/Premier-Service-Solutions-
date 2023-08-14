@@ -102,11 +102,20 @@
             // 
             // frmExistingEmployee
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(914, 600);
 
-            Controls.Add(button1);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblExistingEmployee);
+            this.Controls.Add(this.btnSearch);
+            this.Controls.Add(this.btnClear);
+            this.Controls.Add(this.lblEmployeeID);
+            this.Controls.Add(this.txtbxEmployeeID);
+            this.Name = "frmExistingEmployee";
+            this.Text = "Existing Employee";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
 
             Controls.Add(lblExistingEmployee);
             Controls.Add(btnSearch);

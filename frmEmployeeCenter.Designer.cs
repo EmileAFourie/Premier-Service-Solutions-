@@ -81,11 +81,18 @@
             // 
             // frmEmployeeCenter
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(914, 600);
 
-            Controls.Add(btnClear);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnExistingEmployee);
+            this.Controls.Add(this.btnNewEmployee);
+            this.Controls.Add(this.lblEmployeeCenter);
+            this.Name = "frmEmployeeCenter";
+            this.Text = "Employee Center";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
 
             Controls.Add(btnExistingEmployee);
             Controls.Add(btnNewEmployee);

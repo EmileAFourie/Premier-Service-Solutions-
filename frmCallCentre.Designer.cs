@@ -40,23 +40,26 @@
             // 
             // btnDecline
             // 
-            btnDecline.Location = new Point(304, 384);
-            btnDecline.Margin = new Padding(3, 4, 3, 4);
-            btnDecline.Name = "btnDecline";
-            btnDecline.Size = new Size(216, 44);
-            btnDecline.TabIndex = 11;
-            btnDecline.Text = "Decline";
-            btnDecline.UseVisualStyleBackColor = true;
+
+            this.btnDecline.Location = new System.Drawing.Point(266, 288);
+            this.btnDecline.Name = "btnDecline";
+            this.btnDecline.Size = new System.Drawing.Size(189, 33);
+            this.btnDecline.TabIndex = 11;
+            this.btnDecline.Text = "Decline";
+            this.btnDecline.UseVisualStyleBackColor = true;
+            this.btnDecline.Click += new System.EventHandler(this.btnDecline_Click);
             // 
             // btnAnswerCall
             // 
-            btnAnswerCall.Location = new Point(546, 384);
-            btnAnswerCall.Margin = new Padding(3, 4, 3, 4);
-            btnAnswerCall.Name = "btnAnswerCall";
-            btnAnswerCall.Size = new Size(216, 44);
-            btnAnswerCall.TabIndex = 10;
-            btnAnswerCall.Text = "Answer Call";
-            btnAnswerCall.UseVisualStyleBackColor = true;
+            this.btnAnswerCall.Location = new System.Drawing.Point(478, 288);
+            this.btnAnswerCall.Name = "btnAnswerCall";
+            this.btnAnswerCall.Size = new System.Drawing.Size(189, 33);
+            this.btnAnswerCall.TabIndex = 10;
+            this.btnAnswerCall.Text = "Answer Call";
+            this.btnAnswerCall.UseVisualStyleBackColor = true;
+            this.btnAnswerCall.Click += new System.EventHandler(this.btnAnswerCall_Click);
+
+
             // 
             // lblIncomingCall
             // 
@@ -117,22 +120,23 @@
             // 
             // frmCallCentre
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(914, 600);
-            Controls.Add(btnClear);
-            Controls.Add(txtbxCallerID);
-            Controls.Add(lblCallerID);
-            Controls.Add(txtbxIncomingCall);
-            Controls.Add(btnDecline);
-            Controls.Add(btnAnswerCall);
-            Controls.Add(lblIncomingCall);
-            Controls.Add(lblCallCentre);
-            Margin = new Padding(3, 4, 3, 4);
-            Name = "frmCallCentre";
-            Text = "CallCentre";
-            ResumeLayout(false);
-            PerformLayout();
+
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.txtbxCallerID);
+            this.Controls.Add(this.lblCallerID);
+            this.Controls.Add(this.txtbxIncomingCall);
+            this.Controls.Add(this.btnDecline);
+            this.Controls.Add(this.btnAnswerCall);
+            this.Controls.Add(this.lblIncomingCall);
+            this.Controls.Add(this.lblCallCentre);
+            this.Name = "frmCallCentre";
+            this.Text = "Call Centre";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+
         }
 
         #endregion

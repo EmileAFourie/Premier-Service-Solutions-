@@ -51,23 +51,25 @@
             // 
             // btnNewCustomer
             // 
-            btnNewCustomer.Location = new Point(289, 395);
-            btnNewCustomer.Margin = new Padding(3, 4, 3, 4);
-            btnNewCustomer.Name = "btnNewCustomer";
-            btnNewCustomer.Size = new Size(216, 44);
-            btnNewCustomer.TabIndex = 18;
-            btnNewCustomer.Text = "New Customer";
-            btnNewCustomer.UseVisualStyleBackColor = true;
+
+            this.btnNewCustomer.Location = new System.Drawing.Point(253, 296);
+            this.btnNewCustomer.Name = "btnNewCustomer";
+            this.btnNewCustomer.Size = new System.Drawing.Size(189, 33);
+            this.btnNewCustomer.TabIndex = 18;
+            this.btnNewCustomer.Text = "New Customer";
+            this.btnNewCustomer.UseVisualStyleBackColor = true;
+            this.btnNewCustomer.Click += new System.EventHandler(this.btnNewCustomer_Click);
             // 
             // btnOldCustomer
             // 
-            btnOldCustomer.Location = new Point(531, 395);
-            btnOldCustomer.Margin = new Padding(3, 4, 3, 4);
-            btnOldCustomer.Name = "btnOldCustomer";
-            btnOldCustomer.Size = new Size(216, 44);
-            btnOldCustomer.TabIndex = 17;
-            btnOldCustomer.Text = "Old Customer";
-            btnOldCustomer.UseVisualStyleBackColor = true;
+            this.btnOldCustomer.Location = new System.Drawing.Point(465, 296);
+            this.btnOldCustomer.Name = "btnOldCustomer";
+            this.btnOldCustomer.Size = new System.Drawing.Size(189, 33);
+            this.btnOldCustomer.TabIndex = 17;
+            this.btnOldCustomer.Text = "Old Customer";
+            this.btnOldCustomer.UseVisualStyleBackColor = true;
+            this.btnOldCustomer.Click += new System.EventHandler(this.btnOldCustomer_Click);
+
             // 
             // lblTimestamp
             // 
@@ -151,25 +153,26 @@
             // 
             // frmCustomerType
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(914, 600);
-            Controls.Add(btnClear);
-            Controls.Add(textBox1);
-            Controls.Add(lblCallerNumber);
-            Controls.Add(txtbxCallDuration);
-            Controls.Add(lblCallDuration);
-            Controls.Add(btn);
-            Controls.Add(txtbxTimestamp);
-            Controls.Add(btnNewCustomer);
-            Controls.Add(btnOldCustomer);
-            Controls.Add(lblTimestamp);
-            Controls.Add(lblCallCentre);
-            Margin = new Padding(3, 4, 3, 4);
-            Name = "frmCustomerType";
-            Text = "frmCustomerType";
-            ResumeLayout(false);
-            PerformLayout();
+
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.lblCallerNumber);
+            this.Controls.Add(this.txtbxCallDuration);
+            this.Controls.Add(this.lblCallDuration);
+            this.Controls.Add(this.btn);
+            this.Controls.Add(this.txtbxTimestamp);
+            this.Controls.Add(this.btnNewCustomer);
+            this.Controls.Add(this.btnOldCustomer);
+            this.Controls.Add(this.lblTimestamp);
+            this.Controls.Add(this.lblCallCentre);
+            this.Name = "frmCustomerType";
+            this.Text = "Customer Type";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+
         }
 
         #endregion
