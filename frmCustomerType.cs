@@ -46,7 +46,9 @@ namespace Premier_Service_Solutions
 
         private void btnOldCustomer_Click(object sender, EventArgs e)
         {
-
+            frmExistingClientSearch Search = new frmExistingClientSearch();
+            Search.Show();
+            this.Hide();
         }
     }
 }

@@ -323,7 +323,7 @@
             this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.dataGridView1);
             this.Name = "frmExistingClientDetails";
-            this.Text = "frmExistingClientDetails";
+            this.Text = "Existing Client Details";
             this.grpbxNewTicket.ResumeLayout(false);
             this.grpbxNewTicket.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();

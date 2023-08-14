@@ -234,7 +234,7 @@
             this.Controls.Add(this.lblEmployeeID);
             this.Controls.Add(this.txtbxEmployeeID);
             this.Name = "frmExistingEmployeeDetails";
-            this.Text = "frmExistingEmployeeDetails";
+            this.Text = "Existing Employee Details";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

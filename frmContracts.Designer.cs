@@ -74,7 +74,7 @@
             this.Controls.Add(this.btnViewContractPerformance);
             this.Controls.Add(this.lblContracts);
             this.Name = "frmContracts";
-            this.Text = "frmContracts";
+            this.Text = "Contracts";
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -30,19 +30,19 @@
         {
             this.btnNewClientDetails = new System.Windows.Forms.Label();
             this.lblName = new System.Windows.Forms.Label();
-            this.txtbxClientID = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtbxNameNewClient = new System.Windows.Forms.TextBox();
+            this.txtbxAddressNewClient = new System.Windows.Forms.TextBox();
             this.lblAddress = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtbxCellNumberNewClient = new System.Windows.Forms.TextBox();
             this.lblCellNumber = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtbxEmailNewClient = new System.Windows.Forms.TextBox();
             this.lblEmail = new System.Windows.Forms.Label();
             this.lblContract = new System.Windows.Forms.Label();
             this.lblClientType = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.txtbxClientIDNewClient = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.cmbxClientType = new System.Windows.Forms.ComboBox();
-            this.cmbxContract = new System.Windows.Forms.ComboBox();
+            this.cmbxClientTypeNewClient = new System.Windows.Forms.ComboBox();
+            this.cmbxContractNewClient = new System.Windows.Forms.ComboBox();
             this.btnClear = new System.Windows.Forms.Button();
             this.btnRegister = new System.Windows.Forms.Button();
             this.txtbxCallDurationNewClient = new System.Windows.Forms.TextBox();
@@ -68,19 +68,19 @@
             this.lblName.TabIndex = 1;
             this.lblName.Text = "Name";
             // 
-            // txtbxClientID
+            // txtbxNameNewClient
             // 
-            this.txtbxClientID.Location = new System.Drawing.Point(365, 139);
-            this.txtbxClientID.Name = "txtbxClientID";
-            this.txtbxClientID.Size = new System.Drawing.Size(121, 23);
-            this.txtbxClientID.TabIndex = 2;
+            this.txtbxNameNewClient.Location = new System.Drawing.Point(365, 139);
+            this.txtbxNameNewClient.Name = "txtbxNameNewClient";
+            this.txtbxNameNewClient.Size = new System.Drawing.Size(121, 23);
+            this.txtbxNameNewClient.TabIndex = 2;
             // 
-            // textBox1
+            // txtbxAddressNewClient
             // 
-            this.textBox1.Location = new System.Drawing.Point(365, 177);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(121, 23);
-            this.textBox1.TabIndex = 4;
+            this.txtbxAddressNewClient.Location = new System.Drawing.Point(365, 177);
+            this.txtbxAddressNewClient.Name = "txtbxAddressNewClient";
+            this.txtbxAddressNewClient.Size = new System.Drawing.Size(121, 23);
+            this.txtbxAddressNewClient.TabIndex = 4;
             // 
             // lblAddress
             // 
@@ -91,12 +91,12 @@
             this.lblAddress.TabIndex = 3;
             this.lblAddress.Text = "Address";
             // 
-            // textBox2
+            // txtbxCellNumberNewClient
             // 
-            this.textBox2.Location = new System.Drawing.Point(365, 220);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(121, 23);
-            this.textBox2.TabIndex = 6;
+            this.txtbxCellNumberNewClient.Location = new System.Drawing.Point(365, 220);
+            this.txtbxCellNumberNewClient.Name = "txtbxCellNumberNewClient";
+            this.txtbxCellNumberNewClient.Size = new System.Drawing.Size(121, 23);
+            this.txtbxCellNumberNewClient.TabIndex = 6;
             // 
             // lblCellNumber
             // 
@@ -107,12 +107,12 @@
             this.lblCellNumber.TabIndex = 5;
             this.lblCellNumber.Text = "CellNumber";
             // 
-            // textBox3
+            // txtbxEmailNewClient
             // 
-            this.textBox3.Location = new System.Drawing.Point(365, 264);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(121, 23);
-            this.textBox3.TabIndex = 8;
+            this.txtbxEmailNewClient.Location = new System.Drawing.Point(365, 264);
+            this.txtbxEmailNewClient.Name = "txtbxEmailNewClient";
+            this.txtbxEmailNewClient.Size = new System.Drawing.Size(121, 23);
+            this.txtbxEmailNewClient.TabIndex = 8;
             // 
             // lblEmail
             // 
@@ -141,12 +141,12 @@
             this.lblClientType.TabIndex = 11;
             this.lblClientType.Text = "Client Type";
             // 
-            // textBox7
+            // txtbxClientIDNewClient
             // 
-            this.textBox7.Location = new System.Drawing.Point(365, 101);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(121, 23);
-            this.textBox7.TabIndex = 16;
+            this.txtbxClientIDNewClient.Location = new System.Drawing.Point(365, 101);
+            this.txtbxClientIDNewClient.Name = "txtbxClientIDNewClient";
+            this.txtbxClientIDNewClient.Size = new System.Drawing.Size(121, 23);
+            this.txtbxClientIDNewClient.TabIndex = 16;
             // 
             // label7
             // 
@@ -157,21 +157,21 @@
             this.label7.TabIndex = 15;
             this.label7.Text = "ClientID";
             // 
-            // cmbxClientType
+            // cmbxClientTypeNewClient
             // 
-            this.cmbxClientType.FormattingEnabled = true;
-            this.cmbxClientType.Location = new System.Drawing.Point(365, 67);
-            this.cmbxClientType.Name = "cmbxClientType";
-            this.cmbxClientType.Size = new System.Drawing.Size(121, 23);
-            this.cmbxClientType.TabIndex = 17;
+            this.cmbxClientTypeNewClient.FormattingEnabled = true;
+            this.cmbxClientTypeNewClient.Location = new System.Drawing.Point(365, 67);
+            this.cmbxClientTypeNewClient.Name = "cmbxClientTypeNewClient";
+            this.cmbxClientTypeNewClient.Size = new System.Drawing.Size(121, 23);
+            this.cmbxClientTypeNewClient.TabIndex = 17;
             // 
-            // cmbxContract
+            // cmbxContractNewClient
             // 
-            this.cmbxContract.FormattingEnabled = true;
-            this.cmbxContract.Location = new System.Drawing.Point(365, 305);
-            this.cmbxContract.Name = "cmbxContract";
-            this.cmbxContract.Size = new System.Drawing.Size(121, 23);
-            this.cmbxContract.TabIndex = 18;
+            this.cmbxContractNewClient.FormattingEnabled = true;
+            this.cmbxContractNewClient.Location = new System.Drawing.Point(365, 305);
+            this.cmbxContractNewClient.Name = "cmbxContractNewClient";
+            this.cmbxContractNewClient.Size = new System.Drawing.Size(121, 23);
+            this.cmbxContractNewClient.TabIndex = 18;
             // 
             // btnClear
             // 
@@ -181,6 +181,7 @@
             this.btnClear.TabIndex = 19;
             this.btnClear.Text = "Clear";
             this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // btnRegister
             // 
@@ -190,6 +191,7 @@
             this.btnRegister.TabIndex = 20;
             this.btnRegister.Text = "Register";
             this.btnRegister.UseVisualStyleBackColor = true;
+            this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
             // 
             // txtbxCallDurationNewClient
             // 
@@ -216,19 +218,19 @@
             this.Controls.Add(this.lblCallDurationClientDetails);
             this.Controls.Add(this.btnRegister);
             this.Controls.Add(this.btnClear);
-            this.Controls.Add(this.cmbxContract);
-            this.Controls.Add(this.cmbxClientType);
-            this.Controls.Add(this.textBox7);
+            this.Controls.Add(this.cmbxContractNewClient);
+            this.Controls.Add(this.cmbxClientTypeNewClient);
+            this.Controls.Add(this.txtbxClientIDNewClient);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.lblClientType);
             this.Controls.Add(this.lblContract);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txtbxEmailNewClient);
             this.Controls.Add(this.lblEmail);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtbxCellNumberNewClient);
             this.Controls.Add(this.lblCellNumber);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtbxAddressNewClient);
             this.Controls.Add(this.lblAddress);
-            this.Controls.Add(this.txtbxClientID);
+            this.Controls.Add(this.txtbxNameNewClient);
             this.Controls.Add(this.lblName);
             this.Controls.Add(this.btnNewClientDetails);
             this.Name = "frmClientDetails";
@@ -242,19 +244,19 @@
 
         private Label btnNewClientDetails;
         private Label lblName;
-        private TextBox txtbxClientID;
-        private TextBox textBox1;
+        private TextBox txtbxNameNewClient;
+        private TextBox txtbxAddressNewClient;
         private Label lblAddress;
-        private TextBox textBox2;
+        private TextBox txtbxCellNumberNewClient;
         private Label lblCellNumber;
-        private TextBox textBox3;
+        private TextBox txtbxEmailNewClient;
         private Label lblEmail;
         private Label lblContract;
         private Label lblClientType;
-        private TextBox textBox7;
+        private TextBox txtbxClientIDNewClient;
         private Label label7;
-        private ComboBox cmbxClientType;
-        private ComboBox cmbxContract;
+        private ComboBox cmbxClientTypeNewClient;
+        private ComboBox cmbxContractNewClient;
         private Button btnClear;
         private Button btnRegister;
         private TextBox txtbxCallDurationNewClient;

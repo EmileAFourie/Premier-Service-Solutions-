@@ -71,7 +71,7 @@
             this.Controls.Add(this.btnNewEmployee);
             this.Controls.Add(this.lblEmployeeCenter);
             this.Name = "frmEmployeeCenter";
-            this.Text = "frmEmployeeCenter";
+            this.Text = "Employee Center";
             this.ResumeLayout(false);
             this.PerformLayout();
 

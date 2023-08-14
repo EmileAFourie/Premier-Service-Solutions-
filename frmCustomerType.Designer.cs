@@ -150,7 +150,7 @@
             this.Controls.Add(this.lblTimestamp);
             this.Controls.Add(this.lblCallCentre);
             this.Name = "frmCustomerType";
-            this.Text = "frmCustomerType";
+            this.Text = "Customer Type";
             this.ResumeLayout(false);
             this.PerformLayout();
 

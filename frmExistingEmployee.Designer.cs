@@ -90,7 +90,7 @@
             this.Controls.Add(this.lblEmployeeID);
             this.Controls.Add(this.txtbxEmployeeID);
             this.Name = "frmExistingEmployee";
-            this.Text = "frmExistingEmployee";
+            this.Text = "Existing Employee";
             this.ResumeLayout(false);
             this.PerformLayout();
 

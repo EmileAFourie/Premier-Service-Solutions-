@@ -92,7 +92,7 @@
             this.Controls.Add(this.lblCellNumber);
             this.Controls.Add(this.lblExistingClientDetails);
             this.Name = "frmExistingClientSearch";
-            this.Text = "frmExistingClientSearch";
+            this.Text = "Existing Client Search";
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -31,6 +31,7 @@ namespace Premier_Service_Solutions
         {
             frmCustomerType CustomerTypeForm = new frmCustomerType();
             CustomerTypeForm.Show();
+
             this.Hide();
         }
     }
