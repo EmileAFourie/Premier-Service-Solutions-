@@ -41,6 +41,8 @@
             txtbxAge = new TextBox();
             btnClear = new Button();
             btnSubmit = new Button();
+            button1 = new Button();
+
             SuspendLayout();
             // 
             // txtbxEmployeeID
@@ -140,7 +142,9 @@
             // 
             // btnClear
             // 
-            btnClear.Location = new Point(326, 481);
+
+            btnClear.Location = new Point(448, 481);
+
             btnClear.Margin = new Padding(3, 4, 3, 4);
             btnClear.Name = "btnClear";
             btnClear.Size = new Size(86, 31);
@@ -157,13 +161,29 @@
             btnSubmit.TabIndex = 12;
             btnSubmit.Text = "Submit";
             btnSubmit.UseVisualStyleBackColor = true;
+
+            // 
+            // button1
+            // 
+            button1.Location = new Point(326, 481);
+            button1.Margin = new Padding(3, 4, 3, 4);
+            button1.Name = "button1";
+            button1.Size = new Size(86, 31);
+            button1.TabIndex = 13;
+            button1.Text = "Back";
+            button1.UseVisualStyleBackColor = true;
+
             btnSubmit.Click += btnSubmit_Click;
+
             // 
             // frmNewEmployee
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(914, 600);
+
+            Controls.Add(button1);
+
             Controls.Add(btnSubmit);
             Controls.Add(btnClear);
             Controls.Add(label6);
@@ -199,5 +219,6 @@
         private TextBox txtbxAge;
         private Button btnClear;
         private Button btnSubmit;
+        private Button button1;
     }
 }

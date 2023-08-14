@@ -31,6 +31,8 @@
             lblEmployeeCenter = new Label();
             btnNewEmployee = new Button();
             btnExistingEmployee = new Button();
+            btnClear = new Button();
+
             SuspendLayout();
             // 
             // lblEmployeeCenter
@@ -63,6 +65,18 @@
             btnExistingEmployee.TabIndex = 2;
             btnExistingEmployee.Text = "Existing Employee";
             btnExistingEmployee.UseVisualStyleBackColor = true;
+
+            // 
+            // btnClear
+            // 
+            btnClear.Location = new Point(12, 550);
+            btnClear.Margin = new Padding(3, 4, 3, 4);
+            btnClear.Name = "btnClear";
+            btnClear.Size = new Size(119, 37);
+            btnClear.TabIndex = 5;
+            btnClear.Text = "Back";
+            btnClear.UseVisualStyleBackColor = true;
+
             btnExistingEmployee.Click += btnExistingEmployee_Click;
             // 
             // frmEmployeeCenter
@@ -70,6 +84,9 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(914, 600);
+
+            Controls.Add(btnClear);
+
             Controls.Add(btnExistingEmployee);
             Controls.Add(btnNewEmployee);
             Controls.Add(lblEmployeeCenter);
@@ -85,5 +102,6 @@
         private Label lblEmployeeCenter;
         private Button btnNewEmployee;
         private Button btnExistingEmployee;
+        private Button btnClear;
     }
 }
