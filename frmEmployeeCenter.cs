@@ -19,9 +19,17 @@ namespace Premier_Service_Solutions
 
         private void btnNewEmployee_Click(object sender, EventArgs e)
         {
-            frmExistingEmployee existingEmployeeForm = new frmExistingEmployee();
+            frmNewEmployee newEmployeeForm = new frmNewEmployee();
             this.Close();
-            existingEmployeeForm.Show();
+            newEmployeeForm.Show();
+        }
+
+        private void btnExistingEmployee_Click(object sender, EventArgs e)
+        {
+            frmExistingEmployee frmExisting = new frmExistingEmployee();
+
+            this.Close();
+            frmExisting.ShowDialog();
         }
     }
 }

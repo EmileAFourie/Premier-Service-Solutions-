@@ -16,5 +16,21 @@ namespace Premier_Service_Solutions
         {
             InitializeComponent();
         }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            bool found = true;
+            string employeeeID = txtbxEmployeeID.Text;
+
+            if (!found)
+            {
+                MessageBox.Show("Employee could not be found.");
+            }
+            else
+            {
+                frmExistingEmployeeDetails frmDetails = new frmExistingEmployeeDetails();
+                frmDetails.ShowDialog();
+            }
+        }
     }
 }
