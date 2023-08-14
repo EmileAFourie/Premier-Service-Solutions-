@@ -23,5 +23,13 @@ namespace Premier_Service_Solutions
             this.Close();
             newEmployeeForm.Show();
         }
+
+        private void btnExistingEmployee_Click(object sender, EventArgs e)
+        {
+            frmExistingEmployee frmExisting = new frmExistingEmployee();
+
+            this.Close();
+            frmExisting.ShowDialog();
+        }
     }
 }
