@@ -21,7 +21,8 @@ namespace Premier_Service_Solutions
         {
             frmNewEmployee newEmployeeForm = new frmNewEmployee();
             this.Close();
-            newEmployeeForm.Show();
+            newEmployeeForm.ShowDialog();
+            DialogResult = DialogResult.OK;
         }
 
         private void btnExistingEmployee_Click(object sender, EventArgs e)
@@ -30,6 +31,7 @@ namespace Premier_Service_Solutions
 
             this.Close();
             frmExisting.ShowDialog();
+            DialogResult = DialogResult.OK;
         }
     }
 }
