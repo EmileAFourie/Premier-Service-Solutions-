@@ -30,6 +30,7 @@ namespace Premier_Service_Solutions
             {
                 frmExistingEmployeeDetails frmDetails = new frmExistingEmployeeDetails();
                 frmDetails.ShowDialog();
+                DialogResult = DialogResult.OK;
             }
         }
     }
