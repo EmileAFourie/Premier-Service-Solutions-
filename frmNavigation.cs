@@ -34,8 +34,9 @@ namespace Premier_Service_Solutions
         private void btnEmployees_Click(object sender, EventArgs e)
         {
             frmEmployeeCenter employeesForm = new frmEmployeeCenter();
-            this.Close();
-            employeesForm.Show();
+            this.Hide();
+            employeesForm.ShowDialog();
+            this.Show();
         }
 
         private void btnContracts_Click(object sender, EventArgs e)

@@ -33,7 +33,9 @@
             btnClear = new Button();
             btnSearch = new Button();
             lblExistingEmployee = new Label();
+
             button1 = new Button();
+
             SuspendLayout();
             // 
             // lblEmployeeID
@@ -72,6 +74,9 @@
             btnSearch.TabIndex = 5;
             btnSearch.Text = "Search";
             btnSearch.UseVisualStyleBackColor = true;
+
+            btnSearch.Click += btnSearch_Click;
+
             // 
             // lblExistingEmployee
             // 
@@ -82,6 +87,7 @@
             lblExistingEmployee.Size = new Size(311, 46);
             lblExistingEmployee.TabIndex = 6;
             lblExistingEmployee.Text = "Existing Employee";
+
             // 
             // button1
             // 
@@ -92,13 +98,16 @@
             button1.TabIndex = 7;
             button1.Text = "Back";
             button1.UseVisualStyleBackColor = true;
+
             // 
             // frmExistingEmployee
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(914, 600);
+
             Controls.Add(button1);
+
             Controls.Add(lblExistingEmployee);
             Controls.Add(btnSearch);
             Controls.Add(btnClear);
