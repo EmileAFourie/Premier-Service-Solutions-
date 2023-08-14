@@ -45,6 +45,7 @@
             this.btnDecline.TabIndex = 11;
             this.btnDecline.Text = "Decline";
             this.btnDecline.UseVisualStyleBackColor = true;
+            this.btnDecline.Click += new System.EventHandler(this.btnDecline_Click);
             // 
             // btnAnswerCall
             // 
@@ -54,6 +55,7 @@
             this.btnAnswerCall.TabIndex = 10;
             this.btnAnswerCall.Text = "Answer Call";
             this.btnAnswerCall.UseVisualStyleBackColor = true;
+            this.btnAnswerCall.Click += new System.EventHandler(this.btnAnswerCall_Click);
             // 
             // lblIncomingCall
             // 

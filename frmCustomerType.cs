@@ -36,5 +36,17 @@ namespace Premier_Service_Solutions
         {
 
         }
+
+        private void btnNewCustomer_Click(object sender, EventArgs e)
+        {
+            frmClientDetails NewClientDetails = new frmClientDetails();
+            NewClientDetails.Show();
+            this.Hide();
+        }
+
+        private void btnOldCustomer_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

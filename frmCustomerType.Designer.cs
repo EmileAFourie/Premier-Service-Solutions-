@@ -55,6 +55,7 @@
             this.btnNewCustomer.TabIndex = 18;
             this.btnNewCustomer.Text = "New Customer";
             this.btnNewCustomer.UseVisualStyleBackColor = true;
+            this.btnNewCustomer.Click += new System.EventHandler(this.btnNewCustomer_Click);
             // 
             // btnOldCustomer
             // 
@@ -64,6 +65,7 @@
             this.btnOldCustomer.TabIndex = 17;
             this.btnOldCustomer.Text = "Old Customer";
             this.btnOldCustomer.UseVisualStyleBackColor = true;
+            this.btnOldCustomer.Click += new System.EventHandler(this.btnOldCustomer_Click);
             // 
             // lblTimestamp
             // 
