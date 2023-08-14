@@ -16,5 +16,22 @@ namespace Premier_Service_Solutions
         {
             InitializeComponent();
         }
+
+        private void btnEditSaver_Click(object sender, EventArgs e)
+        {
+            frmEditSaver EditSaver = new frmEditSaver();
+            this.Close();
+            EditSaver.Show();
+        }
+
+        private void btnEditBasic_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnEditExtra_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
