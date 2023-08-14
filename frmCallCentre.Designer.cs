@@ -115,7 +115,7 @@
             this.Controls.Add(this.lblIncomingCall);
             this.Controls.Add(this.lblCallCentre);
             this.Name = "frmCallCentre";
-            this.Text = "CallCentre";
+            this.Text = "Call Centre";
             this.ResumeLayout(false);
             this.PerformLayout();
 

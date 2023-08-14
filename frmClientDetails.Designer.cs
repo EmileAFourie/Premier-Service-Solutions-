@@ -234,7 +234,7 @@
             this.Controls.Add(this.lblName);
             this.Controls.Add(this.btnNewClientDetails);
             this.Name = "frmClientDetails";
-            this.Text = "frmClientDetails";
+            this.Text = "Client Details";
             this.ResumeLayout(false);
             this.PerformLayout();
 
