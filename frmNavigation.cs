@@ -20,7 +20,7 @@ namespace Premier_Service_Solutions
         private void btnCallCentre_Click(object sender, EventArgs e)
         {
             frmCallCentre callCenterForm = new frmCallCentre();
-            this.Close();            
+            this.Close();
             callCenterForm.Show();
         }
 

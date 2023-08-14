@@ -28,95 +28,111 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnDecline = new System.Windows.Forms.Button();
-            this.btnAnswerCall = new System.Windows.Forms.Button();
-            this.lblIncomingCall = new System.Windows.Forms.Label();
-            this.lblCallCentre = new System.Windows.Forms.Label();
-            this.txtbxIncomingCall = new System.Windows.Forms.TextBox();
-            this.txtbxCallerID = new System.Windows.Forms.TextBox();
-            this.lblCallerID = new System.Windows.Forms.Label();
-            this.SuspendLayout();
+            btnDecline = new Button();
+            btnAnswerCall = new Button();
+            lblIncomingCall = new Label();
+            lblCallCentre = new Label();
+            txtbxIncomingCall = new TextBox();
+            txtbxCallerID = new TextBox();
+            lblCallerID = new Label();
+            btnClear = new Button();
+            SuspendLayout();
             // 
             // btnDecline
             // 
-            this.btnDecline.Location = new System.Drawing.Point(266, 288);
-            this.btnDecline.Name = "btnDecline";
-            this.btnDecline.Size = new System.Drawing.Size(189, 33);
-            this.btnDecline.TabIndex = 11;
-            this.btnDecline.Text = "Decline";
-            this.btnDecline.UseVisualStyleBackColor = true;
+            btnDecline.Location = new Point(304, 384);
+            btnDecline.Margin = new Padding(3, 4, 3, 4);
+            btnDecline.Name = "btnDecline";
+            btnDecline.Size = new Size(216, 44);
+            btnDecline.TabIndex = 11;
+            btnDecline.Text = "Decline";
+            btnDecline.UseVisualStyleBackColor = true;
             // 
             // btnAnswerCall
             // 
-            this.btnAnswerCall.Location = new System.Drawing.Point(478, 288);
-            this.btnAnswerCall.Name = "btnAnswerCall";
-            this.btnAnswerCall.Size = new System.Drawing.Size(189, 33);
-            this.btnAnswerCall.TabIndex = 10;
-            this.btnAnswerCall.Text = "Answer Call";
-            this.btnAnswerCall.UseVisualStyleBackColor = true;
+            btnAnswerCall.Location = new Point(546, 384);
+            btnAnswerCall.Margin = new Padding(3, 4, 3, 4);
+            btnAnswerCall.Name = "btnAnswerCall";
+            btnAnswerCall.Size = new Size(216, 44);
+            btnAnswerCall.TabIndex = 10;
+            btnAnswerCall.Text = "Answer Call";
+            btnAnswerCall.UseVisualStyleBackColor = true;
             // 
             // lblIncomingCall
             // 
-            this.lblIncomingCall.AutoSize = true;
-            this.lblIncomingCall.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblIncomingCall.Location = new System.Drawing.Point(114, 154);
-            this.lblIncomingCall.Name = "lblIncomingCall";
-            this.lblIncomingCall.Size = new System.Drawing.Size(131, 28);
-            this.lblIncomingCall.TabIndex = 7;
-            this.lblIncomingCall.Text = "Incoming Call";
+            lblIncomingCall.AutoSize = true;
+            lblIncomingCall.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            lblIncomingCall.Location = new Point(130, 205);
+            lblIncomingCall.Name = "lblIncomingCall";
+            lblIncomingCall.Size = new Size(167, 35);
+            lblIncomingCall.TabIndex = 7;
+            lblIncomingCall.Text = "Incoming Call";
             // 
             // lblCallCentre
             // 
-            this.lblCallCentre.AutoSize = true;
-            this.lblCallCentre.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblCallCentre.Location = new System.Drawing.Point(319, 20);
-            this.lblCallCentre.Name = "lblCallCentre";
-            this.lblCallCentre.Size = new System.Drawing.Size(157, 37);
-            this.lblCallCentre.TabIndex = 6;
-            this.lblCallCentre.Text = "Call Center";
+            lblCallCentre.AutoSize = true;
+            lblCallCentre.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
+            lblCallCentre.Location = new Point(365, 27);
+            lblCallCentre.Name = "lblCallCentre";
+            lblCallCentre.Size = new Size(193, 46);
+            lblCallCentre.TabIndex = 6;
+            lblCallCentre.Text = "Call Center";
             // 
             // txtbxIncomingCall
             // 
-            this.txtbxIncomingCall.Location = new System.Drawing.Point(266, 159);
-            this.txtbxIncomingCall.Name = "txtbxIncomingCall";
-            this.txtbxIncomingCall.Size = new System.Drawing.Size(401, 23);
-            this.txtbxIncomingCall.TabIndex = 12;
+            txtbxIncomingCall.Location = new Point(304, 212);
+            txtbxIncomingCall.Margin = new Padding(3, 4, 3, 4);
+            txtbxIncomingCall.Name = "txtbxIncomingCall";
+            txtbxIncomingCall.Size = new Size(458, 27);
+            txtbxIncomingCall.TabIndex = 12;
             // 
             // txtbxCallerID
             // 
-            this.txtbxCallerID.Location = new System.Drawing.Point(266, 203);
-            this.txtbxCallerID.Name = "txtbxCallerID";
-            this.txtbxCallerID.Size = new System.Drawing.Size(401, 23);
-            this.txtbxCallerID.TabIndex = 14;
+            txtbxCallerID.Location = new Point(304, 271);
+            txtbxCallerID.Margin = new Padding(3, 4, 3, 4);
+            txtbxCallerID.Name = "txtbxCallerID";
+            txtbxCallerID.Size = new Size(458, 27);
+            txtbxCallerID.TabIndex = 14;
             // 
             // lblCallerID
             // 
-            this.lblCallerID.AutoSize = true;
-            this.lblCallerID.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblCallerID.Location = new System.Drawing.Point(114, 198);
-            this.lblCallerID.Name = "lblCallerID";
-            this.lblCallerID.Size = new System.Drawing.Size(85, 28);
-            this.lblCallerID.TabIndex = 13;
-            this.lblCallerID.Text = "Caller ID";
-            this.lblCallerID.Click += new System.EventHandler(this.label1_Click);
+            lblCallerID.AutoSize = true;
+            lblCallerID.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            lblCallerID.Location = new Point(130, 264);
+            lblCallerID.Name = "lblCallerID";
+            lblCallerID.Size = new Size(109, 35);
+            lblCallerID.TabIndex = 13;
+            lblCallerID.Text = "Caller ID";
+            lblCallerID.Click += label1_Click;
+            // 
+            // btnClear
+            // 
+            btnClear.Location = new Point(12, 556);
+            btnClear.Margin = new Padding(3, 4, 3, 4);
+            btnClear.Name = "btnClear";
+            btnClear.Size = new Size(86, 31);
+            btnClear.TabIndex = 20;
+            btnClear.Text = "Back";
+            btnClear.UseVisualStyleBackColor = true;
             // 
             // frmCallCentre
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.txtbxCallerID);
-            this.Controls.Add(this.lblCallerID);
-            this.Controls.Add(this.txtbxIncomingCall);
-            this.Controls.Add(this.btnDecline);
-            this.Controls.Add(this.btnAnswerCall);
-            this.Controls.Add(this.lblIncomingCall);
-            this.Controls.Add(this.lblCallCentre);
-            this.Name = "frmCallCentre";
-            this.Text = "CallCentre";
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(914, 600);
+            Controls.Add(btnClear);
+            Controls.Add(txtbxCallerID);
+            Controls.Add(lblCallerID);
+            Controls.Add(txtbxIncomingCall);
+            Controls.Add(btnDecline);
+            Controls.Add(btnAnswerCall);
+            Controls.Add(lblIncomingCall);
+            Controls.Add(lblCallCentre);
+            Margin = new Padding(3, 4, 3, 4);
+            Name = "frmCallCentre";
+            Text = "CallCentre";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -128,5 +144,6 @@
         private TextBox txtbxIncomingCall;
         private TextBox txtbxCallerID;
         private Label lblCallerID;
+        private Button btnClear;
     }
 }
