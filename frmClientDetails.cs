@@ -17,11 +17,23 @@ namespace Premier_Service_Solutions
             InitializeComponent();
         }
 
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            cmbxClientTypeNewClient.SelectedIndex = -1;
+            txtbxClientIDNewClient.Clear();
+            txtbxNameNewClient.Clear();
+            txtbxAddressNewClient.Clear();
+            txtbxCellNumberNewClient.Clear();
+            txtbxEmailNewClient.Clear();
+            cmbxContractNewClient.SelectedIndex = -1;
+
+        }
 
         private void btnRegister_Click(object sender, EventArgs e)
         {
-
-
+            frmTicketManagement NewTicket = new frmTicketManagement();
+            NewTicket.Show();
+            this.Hide();
         }
     }
 }
