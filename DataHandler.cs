@@ -10,9 +10,9 @@ namespace Premier_Service_Solutions
         private SqlConnection conn;
         private SqlCommand cmd;
 
-        public void ClientIWriteToDB(int ClientID, string Firstname, string LastName, string Address, string CellNo, string Email, int ContractID, int CompanyID)
+        public void ClientIWriteToDB(string Firstname, string Surname, string Address, string CellNo, string Email, int ContractID)
         {
-            string insertI = @"INSERT INTO [dbo].[IndividualClient] VALUES (@ClientID, @Firstname, @LastName, @Address, @CellNo, @Email, @ContractID, @CompanyID)";
+            string insertI = @"INSERT INTO IndividualClient (Firstname,Surname,Address,CellNo,Email,ContractID) VALUES ( @Firstname, @Surname, @Address, @CellNo, @Email, @ContractID)";
 
             using (conn = new SqlConnection(connect))
             {
@@ -20,14 +20,14 @@ namespace Premier_Service_Solutions
 
                 using (cmd = new SqlCommand(insertI, conn))
                 {
-                    cmd.Parameters.AddWithValue("@ClientID", ClientID);
+                   
                     cmd.Parameters.AddWithValue("@Firstname", Firstname);
-                    cmd.Parameters.AddWithValue("@Lastname", LastName);
+                    cmd.Parameters.AddWithValue("@Surname", Surname);
                     cmd.Parameters.AddWithValue("@Address", Address);
                     cmd.Parameters.AddWithValue("@CellNo", CellNo);
                     cmd.Parameters.AddWithValue("@Email", Email);
                     cmd.Parameters.AddWithValue("@ContractID", ContractID);
-                    cmd.Parameters.AddWithValue("@CompanyID", CompanyID);
+                    
 
                     try
                     {
@@ -44,7 +44,7 @@ namespace Premier_Service_Solutions
 
         public void ClientBWriteToDB(int CompanyID, string CompanyName, string CompanyAddress, string CompanyPhone)
         {
-            string insertB = @"INSERT INTO [dbo].[BusinessClient] VALUES (@CompanyID, @CompanyName, @CompanyAddress, @CompanyPhone)";
+            string insertB = @"INSERT INTO BusinessClient VALUES (@CompanyID, @CompanyName, @CompanyAddress, @CompanyPhone)";
 
             using (conn = new SqlConnection(connect))
             {
