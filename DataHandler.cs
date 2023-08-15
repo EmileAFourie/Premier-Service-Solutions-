@@ -69,5 +69,37 @@ namespace Premier_Service_Solutions
                 }
             }
         }
+
+        public void LogTicket(string TypeOfErr, string Description, DateTime Dateopened, string Priority, string Status, int ClientID)
+        {
+            string insert = @"INSERT INTO [dbo].[Ticket] (TypeOfError, Description, DateOpened, Priority, Status, ClientID) 
+                    VALUES (@TypeOfError, @Description, @DateOpened, @Priority, @Status, @ClientID)";
+
+            using (SqlConnection conn = new SqlConnection(connect))
+            {
+                conn.Open();
+
+                using (SqlCommand cmd = new SqlCommand(insert, conn))
+                {
+                    cmd.Parameters.AddWithValue("@TypeOfError", TypeOfErr);
+                    cmd.Parameters.AddWithValue("@Description", Description);
+                    cmd.Parameters.AddWithValue("@DateOpened", Dateopened);
+                    cmd.Parameters.AddWithValue("@Priority", Priority);
+                    cmd.Parameters.AddWithValue("@Status", Status);
+                    cmd.Parameters.AddWithValue("@ClientID", ClientID);
+
+                    try
+                    {
+                        cmd.ExecuteNonQuery();
+                        MessageBox.Show("Ticket has been logged");
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Ticket not logged: " + ex.Message);
+                    }
+                }
+            }
+        }
+
     }
 }

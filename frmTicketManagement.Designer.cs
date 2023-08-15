@@ -37,9 +37,7 @@
             this.grpbxNewTicket = new System.Windows.Forms.GroupBox();
             this.btnClear = new System.Windows.Forms.Button();
             this.btnSubmit = new System.Windows.Forms.Button();
-            this.txtbxAssignedTo = new System.Windows.Forms.TextBox();
             this.txtbxPriority = new System.Windows.Forms.TextBox();
-            this.lblAssignedTo = new System.Windows.Forms.Label();
             this.lblPriority = new System.Windows.Forms.Label();
             this.txtbxDescription = new System.Windows.Forms.TextBox();
             this.txtbxTypeOfError = new System.Windows.Forms.TextBox();
@@ -122,9 +120,7 @@
             // 
             this.grpbxNewTicket.Controls.Add(this.btnClear);
             this.grpbxNewTicket.Controls.Add(this.btnSubmit);
-            this.grpbxNewTicket.Controls.Add(this.txtbxAssignedTo);
             this.grpbxNewTicket.Controls.Add(this.txtbxPriority);
-            this.grpbxNewTicket.Controls.Add(this.lblAssignedTo);
             this.grpbxNewTicket.Controls.Add(this.lblPriority);
             this.grpbxNewTicket.Controls.Add(this.txtbxDescription);
             this.grpbxNewTicket.Controls.Add(this.txtbxTypeOfError);
@@ -163,28 +159,12 @@
             this.btnSubmit.UseVisualStyleBackColor = true;
             this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
             // 
-            // txtbxAssignedTo
-            // 
-            this.txtbxAssignedTo.Location = new System.Drawing.Point(129, 285);
-            this.txtbxAssignedTo.Name = "txtbxAssignedTo";
-            this.txtbxAssignedTo.Size = new System.Drawing.Size(336, 23);
-            this.txtbxAssignedTo.TabIndex = 19;
-            // 
             // txtbxPriority
             // 
             this.txtbxPriority.Location = new System.Drawing.Point(129, 243);
             this.txtbxPriority.Name = "txtbxPriority";
             this.txtbxPriority.Size = new System.Drawing.Size(336, 23);
             this.txtbxPriority.TabIndex = 17;
-            // 
-            // lblAssignedTo
-            // 
-            this.lblAssignedTo.AutoSize = true;
-            this.lblAssignedTo.Location = new System.Drawing.Point(33, 288);
-            this.lblAssignedTo.Name = "lblAssignedTo";
-            this.lblAssignedTo.Size = new System.Drawing.Size(72, 15);
-            this.lblAssignedTo.TabIndex = 18;
-            this.lblAssignedTo.Text = "Assigned to:";
             // 
             // lblPriority
             // 
@@ -358,9 +338,7 @@
         private GroupBox grpbxNewTicket;
         private Button btnClear;
         private Button btnSubmit;
-        private TextBox txtbxAssignedTo;
         private TextBox txtbxPriority;
-        private Label lblAssignedTo;
         private Label lblPriority;
         private TextBox txtbxDescription;
         private TextBox txtbxTypeOfError;
