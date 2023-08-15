@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Data;
 using System.Data.SqlClient;
 using System.Windows.Forms;
 
@@ -68,6 +69,16 @@ namespace Premier_Service_Solutions
                     }
                 }
             }
+        }
+
+        public DataTable SearchOld(string cellno)
+        {
+            conn = new SqlConnection(connect);
+            string q = @"Select * From IndividualClient Where CellNo = ('" + cellno + "')";
+            SqlDataAdapter da = new SqlDataAdapter(q, conn);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            return dt;
         }
 
         public void LogTicket(string TypeOfErr, string Description, DateTime Dateopened, string Priority, string Status, int ClientID)

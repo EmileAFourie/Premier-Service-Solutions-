@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.dgvPreviousTickets = new System.Windows.Forms.DataGridView();
+            this.dgvPreviousCalls = new System.Windows.Forms.DataGridView();
             this.lblClient = new System.Windows.Forms.Label();
             this.txtbxClient = new System.Windows.Forms.TextBox();
             this.txtbxContract = new System.Windows.Forms.TextBox();
@@ -53,32 +53,32 @@
             this.lblCallDuration = new System.Windows.Forms.Label();
             this.lblPreviousTickets = new System.Windows.Forms.Label();
             this.lblPreviousCalls = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPreviousTickets)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPreviousCalls)).BeginInit();
             this.grpbxNewTicket.SuspendLayout();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // dgvPreviousTickets
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(555, 104);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(323, 177);
-            this.dataGridView1.TabIndex = 0;
+            this.dgvPreviousTickets.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvPreviousTickets.Location = new System.Drawing.Point(555, 104);
+            this.dgvPreviousTickets.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.dgvPreviousTickets.Name = "dgvPreviousTickets";
+            this.dgvPreviousTickets.RowHeadersWidth = 51;
+            this.dgvPreviousTickets.RowTemplate.Height = 25;
+            this.dgvPreviousTickets.Size = new System.Drawing.Size(323, 177);
+            this.dgvPreviousTickets.TabIndex = 0;
             // 
-            // dataGridView2
+            // dgvPreviousCalls
             // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(555, 333);
-            this.dataGridView2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.RowHeadersWidth = 51;
-            this.dataGridView2.RowTemplate.Height = 25;
-            this.dataGridView2.Size = new System.Drawing.Size(323, 180);
-            this.dataGridView2.TabIndex = 1;
+            this.dgvPreviousCalls.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvPreviousCalls.Location = new System.Drawing.Point(555, 333);
+            this.dgvPreviousCalls.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.dgvPreviousCalls.Name = "dgvPreviousCalls";
+            this.dgvPreviousCalls.RowHeadersWidth = 51;
+            this.dgvPreviousCalls.RowTemplate.Height = 25;
+            this.dgvPreviousCalls.Size = new System.Drawing.Size(323, 180);
+            this.dgvPreviousCalls.TabIndex = 1;
             // 
             // lblClient
             // 
@@ -314,12 +314,12 @@
             this.Controls.Add(this.lblContract);
             this.Controls.Add(this.txtbxClient);
             this.Controls.Add(this.lblClient);
-            this.Controls.Add(this.dataGridView2);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvPreviousCalls);
+            this.Controls.Add(this.dgvPreviousTickets);
             this.Name = "frmTicketManagement";
             this.Text = "Ticket Management";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPreviousTickets)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPreviousCalls)).EndInit();
             this.grpbxNewTicket.ResumeLayout(false);
             this.grpbxNewTicket.PerformLayout();
             this.ResumeLayout(false);
@@ -329,8 +329,8 @@
 
         #endregion
 
-        private DataGridView dataGridView1;
-        private DataGridView dataGridView2;
+        private DataGridView dgvPreviousTickets;
+        private DataGridView dgvPreviousCalls;
         private Label lblClient;
         private TextBox txtbxClient;
         private TextBox txtbxContract;
