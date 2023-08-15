@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
 
-namespace SEN_EMployee
+namespace Premier_Service_Solutions
 {
     internal class Employee
     {
