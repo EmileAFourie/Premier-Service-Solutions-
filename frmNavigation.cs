@@ -17,29 +17,28 @@ namespace Premier_Service_Solutions
             InitializeComponent();
         }
 
-        private void btnCallCentre_Click_1(object sender, EventArgs e)
+        private void btnCallCentre_Click(object sender, EventArgs e)
         {
             frmCallCentre callCenterForm = new frmCallCentre();
-            this.Close();
+            this.Close();            
             callCenterForm.Show();
         }
 
-        private void btnServiceDepartment_Click_1(object sender, EventArgs e)
+        private void btnServiceDepartment_Click(object sender, EventArgs e)
         {
             frmServiceDepartment serviceDepartmentForm = new frmServiceDepartment();
             this.Close();
             serviceDepartmentForm.Show();
         }
 
-        private void btnEmployees_Click_1(object sender, EventArgs e)
+        private void btnEmployees_Click(object sender, EventArgs e)
         {
             frmEmployeeCenter employeesForm = new frmEmployeeCenter();
-            this.Hide();
-            employeesForm.ShowDialog();
-            this.Show();
+            this.Close();
+            employeesForm.Show();
         }
 
-        private void btnContracts_Click_1(object sender, EventArgs e)
+        private void btnContracts_Click(object sender, EventArgs e)
         {
             frmContracts contractsForm = new frmContracts();
             this.Close();

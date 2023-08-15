@@ -17,6 +17,7 @@ namespace Premier_Service_Solutions
             InitializeComponent();
         }
 
+<<<<<<< HEAD
         private void btnClear_Click(object sender, EventArgs e)
         {
             cmbxClientTypeNewClient.SelectedIndex = -1;
@@ -34,6 +35,11 @@ namespace Premier_Service_Solutions
             frmTicketManagement NewTicket = new frmTicketManagement();
             NewTicket.Show();
             this.Hide();
+=======
+        private void btnRegister_Click(object sender, EventArgs e)
+        {
+
+>>>>>>> parent of 0d3feb7 (Merge branch 'master' into Andre_Johan_2)
         }
     }
 }

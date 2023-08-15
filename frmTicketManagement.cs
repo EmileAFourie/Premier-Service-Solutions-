@@ -21,10 +21,5 @@ namespace Premier_Service_Solutions
         {
 
         }
-
-        private void btnSubmit_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Ticket added", "Ticket Management", MessageBoxButtons.OK, MessageBoxIcon.Information);
-        }
     }
 }

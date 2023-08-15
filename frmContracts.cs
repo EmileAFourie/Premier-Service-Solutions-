@@ -17,24 +17,16 @@ namespace Premier_Service_Solutions
             InitializeComponent();
         }
 
-
-        private void btnEditContracts_Click_1(object sender, EventArgs e)
+        private void btnEditContracts_Click(object sender, EventArgs e)
         {
             frmAvailableContracts AvailableContractsForm = new frmAvailableContracts();
             this.Close();
             AvailableContractsForm.Show();
         }
 
-        private void btnViewContractPerformance_Click_1(object sender, EventArgs e)
+        private void btnViewContractPerformance_Click(object sender, EventArgs e)
         {
 
-        }
-
-        private void btn_Click(object sender, EventArgs e)
-        {
-            frmNavigation home = new frmNavigation();
-            home.Show();
-            this.Hide();
         }
     }
 }

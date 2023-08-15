@@ -38,15 +38,13 @@
             this.lblCallDuration = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.lblCallerNumber = new System.Windows.Forms.Label();
-            this.btnClear = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtbxTimestamp
             // 
-            this.txtbxTimestamp.Location = new System.Drawing.Point(278, 147);
-            this.txtbxTimestamp.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtbxTimestamp.Location = new System.Drawing.Point(253, 167);
             this.txtbxTimestamp.Name = "txtbxTimestamp";
-            this.txtbxTimestamp.Size = new System.Drawing.Size(376, 23);
+            this.txtbxTimestamp.Size = new System.Drawing.Size(401, 23);
             this.txtbxTimestamp.TabIndex = 19;
             // 
             // btnNewCustomer
@@ -57,7 +55,6 @@
             this.btnNewCustomer.TabIndex = 18;
             this.btnNewCustomer.Text = "New Customer";
             this.btnNewCustomer.UseVisualStyleBackColor = true;
-            this.btnNewCustomer.Click += new System.EventHandler(this.btnNewCustomer_Click);
             // 
             // btnOldCustomer
             // 
@@ -67,13 +64,12 @@
             this.btnOldCustomer.TabIndex = 17;
             this.btnOldCustomer.Text = "Old Customer";
             this.btnOldCustomer.UseVisualStyleBackColor = true;
-            this.btnOldCustomer.Click += new System.EventHandler(this.btnOldCustomer_Click);
             // 
             // lblTimestamp
             // 
             this.lblTimestamp.AutoSize = true;
             this.lblTimestamp.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblTimestamp.Location = new System.Drawing.Point(104, 140);
+            this.lblTimestamp.Location = new System.Drawing.Point(101, 162);
             this.lblTimestamp.Name = "lblTimestamp";
             this.lblTimestamp.Size = new System.Drawing.Size(112, 28);
             this.lblTimestamp.TabIndex = 16;
@@ -83,7 +79,7 @@
             // 
             this.lblCallCentre.AutoSize = true;
             this.lblCallCentre.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblCallCentre.Location = new System.Drawing.Point(350, 37);
+            this.lblCallCentre.Location = new System.Drawing.Point(306, 28);
             this.lblCallCentre.Name = "lblCallCentre";
             this.lblCallCentre.Size = new System.Drawing.Size(157, 37);
             this.lblCallCentre.TabIndex = 15;
@@ -91,62 +87,50 @@
             // 
             // btn
             // 
-            this.btn.BackColor = System.Drawing.Color.White;
-            this.btn.FlatAppearance.BorderSize = 0;
-            this.btn.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btn.Location = new System.Drawing.Point(14, 16);
-            this.btn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn.Location = new System.Drawing.Point(12, 12);
             this.btn.Name = "btn";
-            this.btn.Size = new System.Drawing.Size(32, 34);
+            this.btn.Size = new System.Drawing.Size(50, 32);
             this.btn.TabIndex = 20;
             this.btn.Text = "<";
-            this.btn.UseVisualStyleBackColor = false;
+            this.btn.UseVisualStyleBackColor = true;
             // 
             // txtbxCallDuration
             // 
-            this.txtbxCallDuration.Location = new System.Drawing.Point(793, 557);
-            this.txtbxCallDuration.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtbxCallDuration.Location = new System.Drawing.Point(694, 418);
             this.txtbxCallDuration.Name = "txtbxCallDuration";
-            this.txtbxCallDuration.Size = new System.Drawing.Size(107, 23);
+            this.txtbxCallDuration.Size = new System.Drawing.Size(94, 23);
             this.txtbxCallDuration.TabIndex = 22;
+            this.txtbxCallDuration.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // lblCallDuration
             // 
             this.lblCallDuration.AutoSize = true;
             this.lblCallDuration.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblCallDuration.Location = new System.Drawing.Point(619, 551);
+            this.lblCallDuration.Location = new System.Drawing.Point(542, 413);
             this.lblCallDuration.Name = "lblCallDuration";
             this.lblCallDuration.Size = new System.Drawing.Size(126, 28);
             this.lblCallDuration.TabIndex = 21;
             this.lblCallDuration.Text = "Call Duration";
+            this.lblCallDuration.Click += new System.EventHandler(this.label1_Click);
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(278, 201);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.textBox1.Location = new System.Drawing.Point(253, 208);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(376, 23);
+            this.textBox1.Size = new System.Drawing.Size(401, 23);
             this.textBox1.TabIndex = 24;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged_1);
             // 
             // lblCallerNumber
             // 
             this.lblCallerNumber.AutoSize = true;
             this.lblCallerNumber.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblCallerNumber.Location = new System.Drawing.Point(104, 195);
+            this.lblCallerNumber.Location = new System.Drawing.Point(101, 203);
             this.lblCallerNumber.Name = "lblCallerNumber";
             this.lblCallerNumber.Size = new System.Drawing.Size(142, 28);
             this.lblCallerNumber.TabIndex = 23;
             this.lblCallerNumber.Text = "Caller Number:";
-            // 
-            // btnClear
-            // 
-            this.btnClear.Location = new System.Drawing.Point(14, 551);
-            this.btnClear.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(155, 33);
-            this.btnClear.TabIndex = 25;
-            this.btnClear.Text = "Back";
-            this.btnClear.UseVisualStyleBackColor = true;
+            this.lblCallerNumber.Click += new System.EventHandler(this.label1_Click_1);
             // 
             // frmCustomerType
             // 
@@ -164,7 +148,7 @@
             this.Controls.Add(this.lblTimestamp);
             this.Controls.Add(this.lblCallCentre);
             this.Name = "frmCustomerType";
-            this.Text = "Customer Type";
+            this.Text = "frmCustomerType";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -182,6 +166,5 @@
         private Label lblCallDuration;
         private TextBox textBox1;
         private Label lblCallerNumber;
-        private Button btnClear;
     }
 }

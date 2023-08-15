@@ -33,14 +33,12 @@
             this.btnClear = new System.Windows.Forms.Button();
             this.btnSearch = new System.Windows.Forms.Button();
             this.lblExistingEmployee = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.btn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblEmployeeID
             // 
             this.lblEmployeeID.AutoSize = true;
-            this.lblEmployeeID.Location = new System.Drawing.Point(151, 146);
+            this.lblEmployeeID.Location = new System.Drawing.Point(189, 139);
             this.lblEmployeeID.Name = "lblEmployeeID";
             this.lblEmployeeID.Size = new System.Drawing.Size(73, 15);
             this.lblEmployeeID.TabIndex = 3;
@@ -48,28 +46,25 @@
             // 
             // txtbxEmployeeID
             // 
-            this.txtbxEmployeeID.Location = new System.Drawing.Point(261, 142);
-            this.txtbxEmployeeID.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtbxEmployeeID.Location = new System.Drawing.Point(285, 136);
             this.txtbxEmployeeID.Name = "txtbxEmployeeID";
-            this.txtbxEmployeeID.Size = new System.Drawing.Size(338, 23);
+            this.txtbxEmployeeID.Size = new System.Drawing.Size(296, 23);
             this.txtbxEmployeeID.TabIndex = 2;
             // 
             // btnClear
             // 
-            this.btnClear.Location = new System.Drawing.Point(261, 238);
-            this.btnClear.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnClear.Location = new System.Drawing.Point(285, 208);
             this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(101, 47);
+            this.btnClear.Size = new System.Drawing.Size(88, 35);
             this.btnClear.TabIndex = 4;
             this.btnClear.Text = "Clear";
             this.btnClear.UseVisualStyleBackColor = true;
             // 
             // btnSearch
             // 
-            this.btnSearch.Location = new System.Drawing.Point(485, 241);
-            this.btnSearch.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnSearch.Location = new System.Drawing.Point(481, 210);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(114, 44);
+            this.btnSearch.Size = new System.Drawing.Size(100, 33);
             this.btnSearch.TabIndex = 5;
             this.btnSearch.Text = "Search";
             this.btnSearch.UseVisualStyleBackColor = true;
@@ -78,49 +73,24 @@
             // 
             this.lblExistingEmployee.AutoSize = true;
             this.lblExistingEmployee.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblExistingEmployee.Location = new System.Drawing.Point(283, 37);
+            this.lblExistingEmployee.Location = new System.Drawing.Point(296, 23);
             this.lblExistingEmployee.Name = "lblExistingEmployee";
             this.lblExistingEmployee.Size = new System.Drawing.Size(251, 37);
             this.lblExistingEmployee.TabIndex = 6;
             this.lblExistingEmployee.Text = "Existing Employee";
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(12, 540);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(101, 47);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "Back";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // btn
-            // 
-            this.btn.BackColor = System.Drawing.Color.White;
-            this.btn.FlatAppearance.BorderSize = 0;
-            this.btn.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btn.Location = new System.Drawing.Point(12, 13);
-            this.btn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btn.Name = "btn";
-            this.btn.Size = new System.Drawing.Size(32, 34);
-            this.btn.TabIndex = 21;
-            this.btn.Text = "<";
-            this.btn.UseVisualStyleBackColor = false;
             // 
             // frmExistingEmployee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.btn);
             this.Controls.Add(this.lblExistingEmployee);
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.lblEmployeeID);
             this.Controls.Add(this.txtbxEmployeeID);
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "frmExistingEmployee";
-            this.Text = "Existing Employee";
+            this.Text = "frmExistingEmployee";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -133,7 +103,5 @@
         private Button btnClear;
         private Button btnSearch;
         private Label lblExistingEmployee;
-        private Button button1;
-        private Button btn;
     }
 }

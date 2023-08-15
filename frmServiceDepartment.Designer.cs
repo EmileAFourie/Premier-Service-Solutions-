@@ -39,8 +39,6 @@
             this.btnResolveJob = new System.Windows.Forms.Button();
             this.btnSearchTicket = new System.Windows.Forms.Button();
             this.txtbxSearchTicket = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.btn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
@@ -49,7 +47,7 @@
             // 
             this.lblServiceDepartment.AutoSize = true;
             this.lblServiceDepartment.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblServiceDepartment.Location = new System.Drawing.Point(296, 27);
+            this.lblServiceDepartment.Location = new System.Drawing.Point(259, 20);
             this.lblServiceDepartment.Name = "lblServiceDepartment";
             this.lblServiceDepartment.Size = new System.Drawing.Size(274, 37);
             this.lblServiceDepartment.TabIndex = 0;
@@ -58,30 +56,26 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(31, 111);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.dataGridView1.Location = new System.Drawing.Point(27, 83);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(320, 351);
+            this.dataGridView1.Size = new System.Drawing.Size(280, 263);
             this.dataGridView1.TabIndex = 1;
             // 
             // dataGridView2
             // 
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(534, 111);
-            this.dataGridView2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.dataGridView2.Location = new System.Drawing.Point(467, 83);
             this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.RowHeadersWidth = 51;
             this.dataGridView2.RowTemplate.Height = 25;
-            this.dataGridView2.Size = new System.Drawing.Size(320, 351);
+            this.dataGridView2.Size = new System.Drawing.Size(280, 263);
             this.dataGridView2.TabIndex = 2;
             // 
             // lblUnassignedTickets
             // 
             this.lblUnassignedTickets.AutoSize = true;
             this.lblUnassignedTickets.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblUnassignedTickets.Location = new System.Drawing.Point(114, 87);
+            this.lblUnassignedTickets.Location = new System.Drawing.Point(100, 65);
             this.lblUnassignedTickets.Name = "lblUnassignedTickets";
             this.lblUnassignedTickets.Size = new System.Drawing.Size(113, 15);
             this.lblUnassignedTickets.TabIndex = 3;
@@ -91,7 +85,7 @@
             // 
             this.lblAssignedTickets.AutoSize = true;
             this.lblAssignedTickets.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblAssignedTickets.Location = new System.Drawing.Point(646, 87);
+            this.lblAssignedTickets.Location = new System.Drawing.Point(565, 65);
             this.lblAssignedTickets.Name = "lblAssignedTickets";
             this.lblAssignedTickets.Size = new System.Drawing.Size(99, 15);
             this.lblAssignedTickets.TabIndex = 4;
@@ -99,91 +93,61 @@
             // 
             // btnAssignTicket
             // 
-            this.btnAssignTicket.Location = new System.Drawing.Point(393, 195);
-            this.btnAssignTicket.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnAssignTicket.Location = new System.Drawing.Point(344, 146);
             this.btnAssignTicket.Name = "btnAssignTicket";
-            this.btnAssignTicket.Size = new System.Drawing.Size(104, 48);
+            this.btnAssignTicket.Size = new System.Drawing.Size(91, 36);
             this.btnAssignTicket.TabIndex = 5;
             this.btnAssignTicket.Text = "Assign Ticket";
             this.btnAssignTicket.UseVisualStyleBackColor = true;
             // 
             // btnEscalateTicket
             // 
-            this.btnEscalateTicket.Location = new System.Drawing.Point(393, 317);
-            this.btnEscalateTicket.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnEscalateTicket.Location = new System.Drawing.Point(344, 238);
             this.btnEscalateTicket.Name = "btnEscalateTicket";
-            this.btnEscalateTicket.Size = new System.Drawing.Size(104, 45);
+            this.btnEscalateTicket.Size = new System.Drawing.Size(91, 34);
             this.btnEscalateTicket.TabIndex = 6;
             this.btnEscalateTicket.Text = "Escalate Ticket";
             this.btnEscalateTicket.UseVisualStyleBackColor = true;
             // 
             // btnUnassign
             // 
-            this.btnUnassign.Location = new System.Drawing.Point(594, 503);
-            this.btnUnassign.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnUnassign.Location = new System.Drawing.Point(520, 377);
             this.btnUnassign.Name = "btnUnassign";
-            this.btnUnassign.Size = new System.Drawing.Size(86, 31);
+            this.btnUnassign.Size = new System.Drawing.Size(75, 23);
             this.btnUnassign.TabIndex = 7;
             this.btnUnassign.Text = "Unassign";
             this.btnUnassign.UseVisualStyleBackColor = true;
             // 
             // btnResolveJob
             // 
-            this.btnResolveJob.Location = new System.Drawing.Point(704, 503);
-            this.btnResolveJob.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnResolveJob.Location = new System.Drawing.Point(616, 377);
             this.btnResolveJob.Name = "btnResolveJob";
-            this.btnResolveJob.Size = new System.Drawing.Size(89, 32);
+            this.btnResolveJob.Size = new System.Drawing.Size(78, 24);
             this.btnResolveJob.TabIndex = 8;
             this.btnResolveJob.Text = "Resolve Job";
             this.btnResolveJob.UseVisualStyleBackColor = true;
             // 
             // btnSearchTicket
             // 
-            this.btnSearchTicket.Location = new System.Drawing.Point(248, 504);
-            this.btnSearchTicket.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnSearchTicket.Location = new System.Drawing.Point(217, 378);
             this.btnSearchTicket.Name = "btnSearchTicket";
-            this.btnSearchTicket.Size = new System.Drawing.Size(103, 31);
+            this.btnSearchTicket.Size = new System.Drawing.Size(90, 23);
             this.btnSearchTicket.TabIndex = 9;
             this.btnSearchTicket.Text = "Search Ticket";
             this.btnSearchTicket.UseVisualStyleBackColor = true;
             // 
             // txtbxSearchTicket
             // 
-            this.txtbxSearchTicket.Location = new System.Drawing.Point(31, 504);
-            this.txtbxSearchTicket.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtbxSearchTicket.Location = new System.Drawing.Point(27, 378);
             this.txtbxSearchTicket.Name = "txtbxSearchTicket";
-            this.txtbxSearchTicket.Size = new System.Drawing.Size(189, 23);
+            this.txtbxSearchTicket.Size = new System.Drawing.Size(166, 23);
             this.txtbxSearchTicket.TabIndex = 10;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(31, 556);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(103, 31);
-            this.button1.TabIndex = 11;
-            this.button1.Text = "Back";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // btn
-            // 
-            this.btn.BackColor = System.Drawing.Color.White;
-            this.btn.FlatAppearance.BorderSize = 0;
-            this.btn.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btn.Location = new System.Drawing.Point(12, 13);
-            this.btn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btn.Name = "btn";
-            this.btn.Size = new System.Drawing.Size(32, 34);
-            this.btn.TabIndex = 21;
-            this.btn.Text = "<";
-            this.btn.UseVisualStyleBackColor = false;
             // 
             // frmServiceDepartment
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(891, 569);
-            this.Controls.Add(this.btn);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.txtbxSearchTicket);
             this.Controls.Add(this.btnSearchTicket);
             this.Controls.Add(this.btnResolveJob);
@@ -196,7 +160,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.lblServiceDepartment);
             this.Name = "frmServiceDepartment";
-            this.Text = "Service Department";
+            this.Text = "ServiceDepartment";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);
@@ -217,7 +181,5 @@
         private Button btnResolveJob;
         private Button btnSearchTicket;
         private TextBox txtbxSearchTicket;
-        private Button button1;
-        private Button btn;
     }
 }
