@@ -6,7 +6,7 @@ namespace Premier_Service_Solutions
 {
     internal class DataHandler
     {
-        private string connect = @"Data source=(local);Initial Catalog=PremierServiceSolutions;Integrated Security=SSPI";
+        private string connect = @"Data source=.;Initial Catalog=PremierServiceSolutions;Integrated Security=SSPI";
         private SqlConnection conn;
         private SqlCommand cmd;
 
