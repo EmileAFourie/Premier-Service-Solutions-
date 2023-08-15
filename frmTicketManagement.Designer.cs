@@ -44,9 +44,7 @@
             this.lblDescription = new System.Windows.Forms.Label();
             this.lblTypeOfError = new System.Windows.Forms.Label();
             this.txtbxClientID = new System.Windows.Forms.TextBox();
-            this.txtbxTicketID = new System.Windows.Forms.TextBox();
             this.lblClientIDNewTicket = new System.Windows.Forms.Label();
-            this.lblTicketID = new System.Windows.Forms.Label();
             this.lblTicketManagement = new System.Windows.Forms.Label();
             this.btnEndCall = new System.Windows.Forms.Button();
             this.txtbxCallDuration = new System.Windows.Forms.TextBox();
@@ -68,6 +66,7 @@
             this.dgvPreviousTickets.RowTemplate.Height = 25;
             this.dgvPreviousTickets.Size = new System.Drawing.Size(323, 177);
             this.dgvPreviousTickets.TabIndex = 0;
+            this.dgvPreviousTickets.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPreviousTickets_CellContentClick);
             // 
             // dgvPreviousCalls
             // 
@@ -127,9 +126,7 @@
             this.grpbxNewTicket.Controls.Add(this.lblDescription);
             this.grpbxNewTicket.Controls.Add(this.lblTypeOfError);
             this.grpbxNewTicket.Controls.Add(this.txtbxClientID);
-            this.grpbxNewTicket.Controls.Add(this.txtbxTicketID);
             this.grpbxNewTicket.Controls.Add(this.lblClientIDNewTicket);
-            this.grpbxNewTicket.Controls.Add(this.lblTicketID);
             this.grpbxNewTicket.Location = new System.Drawing.Point(14, 205);
             this.grpbxNewTicket.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.grpbxNewTicket.Name = "grpbxNewTicket";
@@ -161,7 +158,7 @@
             // 
             // txtbxPriority
             // 
-            this.txtbxPriority.Location = new System.Drawing.Point(129, 243);
+            this.txtbxPriority.Location = new System.Drawing.Point(129, 230);
             this.txtbxPriority.Name = "txtbxPriority";
             this.txtbxPriority.Size = new System.Drawing.Size(336, 23);
             this.txtbxPriority.TabIndex = 17;
@@ -169,7 +166,7 @@
             // lblPriority
             // 
             this.lblPriority.AutoSize = true;
-            this.lblPriority.Location = new System.Drawing.Point(35, 246);
+            this.lblPriority.Location = new System.Drawing.Point(35, 233);
             this.lblPriority.Name = "lblPriority";
             this.lblPriority.Size = new System.Drawing.Size(48, 15);
             this.lblPriority.TabIndex = 16;
@@ -177,7 +174,7 @@
             // 
             // txtbxDescription
             // 
-            this.txtbxDescription.Location = new System.Drawing.Point(129, 197);
+            this.txtbxDescription.Location = new System.Drawing.Point(129, 184);
             this.txtbxDescription.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtbxDescription.Name = "txtbxDescription";
             this.txtbxDescription.Size = new System.Drawing.Size(336, 23);
@@ -185,7 +182,7 @@
             // 
             // txtbxTypeOfError
             // 
-            this.txtbxTypeOfError.Location = new System.Drawing.Point(129, 150);
+            this.txtbxTypeOfError.Location = new System.Drawing.Point(129, 137);
             this.txtbxTypeOfError.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtbxTypeOfError.Name = "txtbxTypeOfError";
             this.txtbxTypeOfError.Size = new System.Drawing.Size(336, 23);
@@ -194,7 +191,7 @@
             // lblDescription
             // 
             this.lblDescription.AutoSize = true;
-            this.lblDescription.Location = new System.Drawing.Point(33, 197);
+            this.lblDescription.Location = new System.Drawing.Point(33, 184);
             this.lblDescription.Name = "lblDescription";
             this.lblDescription.Size = new System.Drawing.Size(70, 15);
             this.lblDescription.TabIndex = 14;
@@ -203,7 +200,7 @@
             // lblTypeOfError
             // 
             this.lblTypeOfError.AutoSize = true;
-            this.lblTypeOfError.Location = new System.Drawing.Point(33, 153);
+            this.lblTypeOfError.Location = new System.Drawing.Point(33, 140);
             this.lblTypeOfError.Name = "lblTypeOfError";
             this.lblTypeOfError.Size = new System.Drawing.Size(72, 15);
             this.lblTypeOfError.TabIndex = 12;
@@ -211,35 +208,19 @@
             // 
             // txtbxClientID
             // 
-            this.txtbxClientID.Location = new System.Drawing.Point(129, 109);
+            this.txtbxClientID.Location = new System.Drawing.Point(129, 96);
             this.txtbxClientID.Name = "txtbxClientID";
             this.txtbxClientID.Size = new System.Drawing.Size(336, 23);
             this.txtbxClientID.TabIndex = 11;
             // 
-            // txtbxTicketID
-            // 
-            this.txtbxTicketID.Location = new System.Drawing.Point(129, 65);
-            this.txtbxTicketID.Name = "txtbxTicketID";
-            this.txtbxTicketID.Size = new System.Drawing.Size(336, 23);
-            this.txtbxTicketID.TabIndex = 9;
-            // 
             // lblClientIDNewTicket
             // 
             this.lblClientIDNewTicket.AutoSize = true;
-            this.lblClientIDNewTicket.Location = new System.Drawing.Point(52, 112);
+            this.lblClientIDNewTicket.Location = new System.Drawing.Point(52, 99);
             this.lblClientIDNewTicket.Name = "lblClientIDNewTicket";
             this.lblClientIDNewTicket.Size = new System.Drawing.Size(52, 15);
             this.lblClientIDNewTicket.TabIndex = 10;
             this.lblClientIDNewTicket.Text = "ClientID:";
-            // 
-            // lblTicketID
-            // 
-            this.lblTicketID.AutoSize = true;
-            this.lblTicketID.Location = new System.Drawing.Point(52, 68);
-            this.lblTicketID.Name = "lblTicketID";
-            this.lblTicketID.Size = new System.Drawing.Size(52, 15);
-            this.lblTicketID.TabIndex = 8;
-            this.lblTicketID.Text = "TicketID:";
             // 
             // lblTicketManagement
             // 
@@ -318,6 +299,7 @@
             this.Controls.Add(this.dgvPreviousTickets);
             this.Name = "frmTicketManagement";
             this.Text = "Ticket Management";
+            this.Load += new System.EventHandler(this.frmTicketManagement_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvPreviousTickets)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPreviousCalls)).EndInit();
             this.grpbxNewTicket.ResumeLayout(false);
@@ -345,9 +327,7 @@
         private Label lblDescription;
         private Label lblTypeOfError;
         private TextBox txtbxClientID;
-        private TextBox txtbxTicketID;
         private Label lblClientIDNewTicket;
-        private Label lblTicketID;
         private Label lblTicketManagement;
         private Button btnEndCall;
         private TextBox txtbxCallDuration;

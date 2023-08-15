@@ -4,9 +4,11 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Premier_Service_Solutions
 {
@@ -54,6 +56,24 @@ namespace Premier_Service_Solutions
         private void grpbxNewTicket_Enter(object sender, EventArgs e)
         {
 
+        }
+
+        private void dgvPreviousTickets_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void frmTicketManagement_Load(object sender, EventArgs e)
+        {
+            TicketClientID ClientID = new TicketClientID();
+
+            string connect = @"Data source = (local) ; Initial Catalog=PremierServiceSolutions ; Integrated Security= SSPI";
+            SqlConnection con = new SqlConnection(connect);
+            string query = @"Select * from Ticket Where ClientID = ('" + ClientID.ClientID1 + "')";
+            SqlDataAdapter da = new SqlDataAdapter(query, con);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            dgvPreviousTickets.DataSource = dt;
         }
     }
 }

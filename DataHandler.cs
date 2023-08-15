@@ -71,10 +71,10 @@ namespace Premier_Service_Solutions
             }
         }
 
-        public DataTable SearchOld(string cellno)
+        public DataTable SearchOld(int cliID)
         {
             conn = new SqlConnection(connect);
-            string q = @"Select * From IndividualClient Where CellNo = ('" + cellno + "')";
+            string q = @"Select * From Ticket Where ClientId = ('" + cliID + "')";
             SqlDataAdapter da = new SqlDataAdapter(q, conn);
             DataTable dt = new DataTable();
             da.Fill(dt);
