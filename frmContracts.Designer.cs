@@ -91,6 +91,7 @@
             this.btn.TabIndex = 21;
             this.btn.Text = "<";
             this.btn.UseVisualStyleBackColor = false;
+            this.btn.Click += new System.EventHandler(this.btn_Click);
             // 
             // frmContracts
             // 

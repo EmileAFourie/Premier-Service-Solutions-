@@ -54,6 +54,7 @@
             this.btnNewEmployee.TabIndex = 1;
             this.btnNewEmployee.Text = "New Employee";
             this.btnNewEmployee.UseVisualStyleBackColor = true;
+            this.btnNewEmployee.Click += new System.EventHandler(this.btnNewEmployee_Click_1);
             // 
             // btnExistingEmployee
             // 
@@ -64,6 +65,7 @@
             this.btnExistingEmployee.TabIndex = 2;
             this.btnExistingEmployee.Text = "Existing Employee";
             this.btnExistingEmployee.UseVisualStyleBackColor = true;
+            this.btnExistingEmployee.Click += new System.EventHandler(this.btnExistingEmployee_Click_1);
             // 
             // btnClear
             // 

@@ -16,5 +16,12 @@ namespace Premier_Service_Solutions
         {
             InitializeComponent();
         }
+
+        private void btn_Click(object sender, EventArgs e)
+        {
+            frmContracts Contracts = new frmContracts();
+            Contracts.Show();
+            this.Hide();
+        }
     }
 }

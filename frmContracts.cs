@@ -29,5 +29,12 @@ namespace Premier_Service_Solutions
         {
 
         }
+
+        private void btn_Click(object sender, EventArgs e)
+        {
+            frmNavigation home = new frmNavigation();
+            home.Show();
+            this.Hide();
+        }
     }
 }

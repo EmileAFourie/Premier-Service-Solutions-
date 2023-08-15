@@ -17,19 +17,20 @@ namespace Premier_Service_Solutions
             InitializeComponent();
         }
 
-        private void btnNewEmployee_Click(object sender, EventArgs e)
+      
+        private void btnNewEmployee_Click_1(object sender, EventArgs e)
         {
             frmNewEmployee newEmployeeForm = new frmNewEmployee();
-            this.Close();
+            this.Hide();
             newEmployeeForm.ShowDialog();
             DialogResult = DialogResult.OK;
         }
 
-        private void btnExistingEmployee_Click(object sender, EventArgs e)
+        private void btnExistingEmployee_Click_1(object sender, EventArgs e)
         {
             frmExistingEmployee frmExisting = new frmExistingEmployee();
 
-            this.Close();
+            this.Hide();
             frmExisting.ShowDialog();
             DialogResult = DialogResult.OK;
         }
