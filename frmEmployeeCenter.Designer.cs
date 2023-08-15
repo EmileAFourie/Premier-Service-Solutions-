@@ -32,6 +32,7 @@
             this.btnNewEmployee = new System.Windows.Forms.Button();
             this.btnExistingEmployee = new System.Windows.Forms.Button();
             this.btnClear = new System.Windows.Forms.Button();
+            this.btn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblEmployeeCenter
@@ -74,11 +75,25 @@
             this.btnClear.Text = "Back";
             this.btnClear.UseVisualStyleBackColor = true;
             // 
+            // btn
+            // 
+            this.btn.BackColor = System.Drawing.Color.White;
+            this.btn.FlatAppearance.BorderSize = 0;
+            this.btn.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btn.Location = new System.Drawing.Point(12, 13);
+            this.btn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn.Name = "btn";
+            this.btn.Size = new System.Drawing.Size(32, 34);
+            this.btn.TabIndex = 21;
+            this.btn.Text = "<";
+            this.btn.UseVisualStyleBackColor = false;
+            // 
             // frmEmployeeCenter
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btn);
             this.Controls.Add(this.btnExistingEmployee);
             this.Controls.Add(this.btnNewEmployee);
             this.Controls.Add(this.lblEmployeeCenter);
@@ -96,5 +111,6 @@
         private Button btnNewEmployee;
         private Button btnExistingEmployee;
         private Button btnClear;
+        private Button btn;
     }
 }

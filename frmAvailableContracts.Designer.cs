@@ -41,7 +41,7 @@
             this.dgvSaver = new System.Windows.Forms.DataGridView();
             this.dgvBasic = new System.Windows.Forms.DataGridView();
             this.dgvExtra = new System.Windows.Forms.DataGridView();
-            this.btnClear = new System.Windows.Forms.Button();
+            this.btn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxExtra)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBasic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSaver)).BeginInit();
@@ -171,21 +171,25 @@
             this.dgvExtra.Size = new System.Drawing.Size(225, 170);
             this.dgvExtra.TabIndex = 12;
             // 
-            // btnClear
+            // btn
             // 
-            this.btnClear.Location = new System.Drawing.Point(10, 475);
-            this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(75, 23);
-            this.btnClear.TabIndex = 20;
-            this.btnClear.Text = "Back";
-            this.btnClear.UseVisualStyleBackColor = true;
+            this.btn.BackColor = System.Drawing.Color.White;
+            this.btn.FlatAppearance.BorderSize = 0;
+            this.btn.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btn.Location = new System.Drawing.Point(12, 13);
+            this.btn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn.Name = "btn";
+            this.btn.Size = new System.Drawing.Size(32, 34);
+            this.btn.TabIndex = 21;
+            this.btn.Text = "<";
+            this.btn.UseVisualStyleBackColor = false;
             // 
             // frmAvailableContracts
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 508);
-            this.Controls.Add(this.btnClear);
+            this.Controls.Add(this.btn);
             this.Controls.Add(this.dgvExtra);
             this.Controls.Add(this.dgvBasic);
             this.Controls.Add(this.dgvSaver);
@@ -227,6 +231,6 @@
         private DataGridView dgvSaver;
         private DataGridView dgvBasic;
         private DataGridView dgvExtra;
-        private Button btnClear;
+        private Button btn;
     }
 }

@@ -55,6 +55,7 @@
             this.lblClient = new System.Windows.Forms.Label();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.btn = new System.Windows.Forms.Button();
             this.grpbxNewTicket.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -304,11 +305,25 @@
             this.dataGridView1.Size = new System.Drawing.Size(283, 133);
             this.dataGridView1.TabIndex = 28;
             // 
+            // btn
+            // 
+            this.btn.BackColor = System.Drawing.Color.White;
+            this.btn.FlatAppearance.BorderSize = 0;
+            this.btn.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btn.Location = new System.Drawing.Point(12, 13);
+            this.btn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn.Name = "btn";
+            this.btn.Size = new System.Drawing.Size(32, 34);
+            this.btn.TabIndex = 41;
+            this.btn.Text = "<";
+            this.btn.UseVisualStyleBackColor = false;
+            // 
             // frmExistingClientDetails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btn);
             this.Controls.Add(this.lblPreviousCalls);
             this.Controls.Add(this.lblPreviousTickets);
             this.Controls.Add(this.txtbxCallDuration);
@@ -362,5 +377,6 @@
         private Label lblClient;
         private DataGridView dataGridView2;
         private DataGridView dataGridView1;
+        private Button btn;
     }
 }

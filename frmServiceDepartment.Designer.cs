@@ -40,6 +40,7 @@
             this.btnSearchTicket = new System.Windows.Forms.Button();
             this.txtbxSearchTicket = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.btn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
@@ -164,11 +165,25 @@
             this.button1.Text = "Back";
             this.button1.UseVisualStyleBackColor = true;
             // 
+            // btn
+            // 
+            this.btn.BackColor = System.Drawing.Color.White;
+            this.btn.FlatAppearance.BorderSize = 0;
+            this.btn.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btn.Location = new System.Drawing.Point(12, 13);
+            this.btn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn.Name = "btn";
+            this.btn.Size = new System.Drawing.Size(32, 34);
+            this.btn.TabIndex = 21;
+            this.btn.Text = "<";
+            this.btn.UseVisualStyleBackColor = false;
+            // 
             // frmServiceDepartment
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(891, 569);
+            this.Controls.Add(this.btn);
             this.Controls.Add(this.txtbxSearchTicket);
             this.Controls.Add(this.btnSearchTicket);
             this.Controls.Add(this.btnResolveJob);
@@ -203,5 +218,6 @@
         private Button btnSearchTicket;
         private TextBox txtbxSearchTicket;
         private Button button1;
+        private Button btn;
     }
 }

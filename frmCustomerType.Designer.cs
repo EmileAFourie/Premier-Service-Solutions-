@@ -91,13 +91,16 @@
             // 
             // btn
             // 
+            this.btn.BackColor = System.Drawing.Color.White;
+            this.btn.FlatAppearance.BorderSize = 0;
+            this.btn.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btn.Location = new System.Drawing.Point(14, 16);
             this.btn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn.Name = "btn";
-            this.btn.Size = new System.Drawing.Size(57, 43);
+            this.btn.Size = new System.Drawing.Size(32, 34);
             this.btn.TabIndex = 20;
             this.btn.Text = "<";
-            this.btn.UseVisualStyleBackColor = true;
+            this.btn.UseVisualStyleBackColor = false;
             // 
             // txtbxCallDuration
             // 

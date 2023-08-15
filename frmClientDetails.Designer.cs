@@ -47,6 +47,7 @@
             this.btnRegister = new System.Windows.Forms.Button();
             this.txtbxCallDurationNewClient = new System.Windows.Forms.TextBox();
             this.lblCallDurationClientDetails = new System.Windows.Forms.Label();
+            this.btn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnNewClientDetails
@@ -210,11 +211,25 @@
             this.lblCallDurationClientDetails.TabIndex = 21;
             this.lblCallDurationClientDetails.Text = "Call Duration ";
             // 
+            // btn
+            // 
+            this.btn.BackColor = System.Drawing.Color.White;
+            this.btn.FlatAppearance.BorderSize = 0;
+            this.btn.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btn.Location = new System.Drawing.Point(12, 13);
+            this.btn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn.Name = "btn";
+            this.btn.Size = new System.Drawing.Size(32, 34);
+            this.btn.TabIndex = 23;
+            this.btn.Text = "<";
+            this.btn.UseVisualStyleBackColor = false;
+            // 
             // frmClientDetails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btn);
             this.Controls.Add(this.txtbxCallDurationNewClient);
             this.Controls.Add(this.lblCallDurationClientDetails);
             this.Controls.Add(this.btnRegister);
@@ -263,5 +278,6 @@
         private TextBox txtbxCallDurationNewClient;
         private Label lblCallDurationClientDetails;
         private Button button1;
+        private Button btn;
     }
 }
