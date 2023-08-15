@@ -160,6 +160,9 @@
             // cmbxClientTypeNewClient
             // 
             this.cmbxClientTypeNewClient.FormattingEnabled = true;
+            this.cmbxClientTypeNewClient.Items.AddRange(new object[] {
+            "Individual ",
+            "Business"});
             this.cmbxClientTypeNewClient.Location = new System.Drawing.Point(365, 67);
             this.cmbxClientTypeNewClient.Name = "cmbxClientTypeNewClient";
             this.cmbxClientTypeNewClient.Size = new System.Drawing.Size(121, 23);
@@ -168,6 +171,10 @@
             // cmbxContractNewClient
             // 
             this.cmbxContractNewClient.FormattingEnabled = true;
+            this.cmbxContractNewClient.Items.AddRange(new object[] {
+            "Saver ",
+            "Basic ",
+            "Extra"});
             this.cmbxContractNewClient.Location = new System.Drawing.Point(365, 305);
             this.cmbxContractNewClient.Name = "cmbxContractNewClient";
             this.cmbxContractNewClient.Size = new System.Drawing.Size(121, 23);

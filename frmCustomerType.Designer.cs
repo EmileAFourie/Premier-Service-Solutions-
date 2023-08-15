@@ -33,7 +33,6 @@
             this.btnOldCustomer = new System.Windows.Forms.Button();
             this.lblTimestamp = new System.Windows.Forms.Label();
             this.lblCallCentre = new System.Windows.Forms.Label();
-            this.btn = new System.Windows.Forms.Button();
             this.txtbxCallDuration = new System.Windows.Forms.TextBox();
             this.lblCallDuration = new System.Windows.Forms.Label();
             this.txtbxCallerNumber = new System.Windows.Forms.TextBox();
@@ -88,16 +87,6 @@
             this.lblCallCentre.Size = new System.Drawing.Size(157, 37);
             this.lblCallCentre.TabIndex = 15;
             this.lblCallCentre.Text = "Call Center";
-            // 
-            // btn
-            // 
-            this.btn.Location = new System.Drawing.Point(14, 16);
-            this.btn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btn.Name = "btn";
-            this.btn.Size = new System.Drawing.Size(57, 43);
-            this.btn.TabIndex = 20;
-            this.btn.Text = "<";
-            this.btn.UseVisualStyleBackColor = true;
             // 
             // txtbxCallDuration
             // 
@@ -154,7 +143,6 @@
             this.Controls.Add(this.lblCallerNumber);
             this.Controls.Add(this.txtbxCallDuration);
             this.Controls.Add(this.lblCallDuration);
-            this.Controls.Add(this.btn);
             this.Controls.Add(this.txtbxTimestamp);
             this.Controls.Add(this.btnNewCustomer);
             this.Controls.Add(this.btnOldCustomer);
@@ -175,7 +163,6 @@
         private Button btnOldCustomer;
         private Label lblTimestamp;
         private Label lblCallCentre;
-        private Button btn;
         private TextBox txtbxCallDuration;
         private Label lblCallDuration;
         private TextBox txtbxCallerNumber;

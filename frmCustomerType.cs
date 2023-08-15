@@ -66,5 +66,12 @@ namespace Premier_Service_Solutions
         {
 
         }
+
+        private void btn_Click(object sender, EventArgs e)
+        {
+            frmCallCentre back = new frmCallCentre();
+            back.Show();
+            this.Hide();
+        }
     }
 }

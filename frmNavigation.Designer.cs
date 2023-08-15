@@ -64,6 +64,7 @@
             this.btnCallCentre.TabIndex = 2;
             this.btnCallCentre.Text = "Call Centre";
             this.btnCallCentre.UseVisualStyleBackColor = true;
+            this.btnCallCentre.Click += new System.EventHandler(this.btnCallCentre_Click_1);
             // 
             // btnServiceDepartment
             // 
@@ -73,6 +74,7 @@
             this.btnServiceDepartment.TabIndex = 3;
             this.btnServiceDepartment.Text = "Service Department";
             this.btnServiceDepartment.UseVisualStyleBackColor = true;
+            this.btnServiceDepartment.Click += new System.EventHandler(this.btnServiceDepartment_Click_1);
             // 
             // btnEmployees
             // 
@@ -82,6 +84,7 @@
             this.btnEmployees.TabIndex = 4;
             this.btnEmployees.Text = "Employees";
             this.btnEmployees.UseVisualStyleBackColor = true;
+            this.btnEmployees.Click += new System.EventHandler(this.btnEmployees_Click_1);
             // 
             // btnContracts
             // 
@@ -91,6 +94,7 @@
             this.btnContracts.TabIndex = 5;
             this.btnContracts.Text = "Contracts";
             this.btnContracts.UseVisualStyleBackColor = true;
+            this.btnContracts.Click += new System.EventHandler(this.btnContracts_Click_1);
             // 
             // frmNavigation
             // 
