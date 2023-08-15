@@ -48,7 +48,7 @@
             // lblCellNumber
             // 
             this.lblCellNumber.AutoSize = true;
-            this.lblCellNumber.Location = new System.Drawing.Point(248, 124);
+            this.lblCellNumber.Location = new System.Drawing.Point(200, 146);
             this.lblCellNumber.Name = "lblCellNumber";
             this.lblCellNumber.Size = new System.Drawing.Size(71, 15);
             this.lblCellNumber.TabIndex = 1;
@@ -56,14 +56,14 @@
             // 
             // txtbxCellNumber
             // 
-            this.txtbxCellNumber.Location = new System.Drawing.Point(339, 121);
+            this.txtbxCellNumber.Location = new System.Drawing.Point(291, 143);
             this.txtbxCellNumber.Name = "txtbxCellNumber";
             this.txtbxCellNumber.Size = new System.Drawing.Size(251, 23);
             this.txtbxCellNumber.TabIndex = 2;
             // 
             // btnClear
             // 
-            this.btnClear.Location = new System.Drawing.Point(291, 250);
+            this.btnClear.Location = new System.Drawing.Point(247, 222);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(115, 46);
             this.btnClear.TabIndex = 3;
@@ -73,7 +73,7 @@
             // 
             // btnSearch
             // 
-            this.btnSearch.Location = new System.Drawing.Point(455, 250);
+            this.btnSearch.Location = new System.Drawing.Point(411, 222);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(115, 46);
             this.btnSearch.TabIndex = 4;

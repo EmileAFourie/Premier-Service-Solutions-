@@ -26,5 +26,10 @@ namespace Premier_Service_Solutions
         {
             MessageBox.Show("Ticket added", "Ticket Management", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+
+        private void grpbxNewTicket_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }

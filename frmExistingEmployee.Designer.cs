@@ -28,81 +28,73 @@
         /// </summary>
         private void InitializeComponent()
         {
-            lblEmployeeID = new Label();
-            txtbxEmployeeID = new TextBox();
-            btnClear = new Button();
-            btnSearch = new Button();
-            lblExistingEmployee = new Label();
-
-            button1 = new Button();
-
-            SuspendLayout();
+            this.lblEmployeeID = new System.Windows.Forms.Label();
+            this.txtbxEmployeeID = new System.Windows.Forms.TextBox();
+            this.btnClear = new System.Windows.Forms.Button();
+            this.btnSearch = new System.Windows.Forms.Button();
+            this.lblExistingEmployee = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.SuspendLayout();
             // 
             // lblEmployeeID
             // 
-            lblEmployeeID.AutoSize = true;
-            lblEmployeeID.Location = new Point(216, 185);
-            lblEmployeeID.Name = "lblEmployeeID";
-            lblEmployeeID.Size = new Size(93, 20);
-            lblEmployeeID.TabIndex = 3;
-            lblEmployeeID.Text = "EmployeeID:";
+            this.lblEmployeeID.AutoSize = true;
+            this.lblEmployeeID.Location = new System.Drawing.Point(141, 160);
+            this.lblEmployeeID.Name = "lblEmployeeID";
+            this.lblEmployeeID.Size = new System.Drawing.Size(73, 15);
+            this.lblEmployeeID.TabIndex = 3;
+            this.lblEmployeeID.Text = "EmployeeID:";
             // 
             // txtbxEmployeeID
             // 
-            txtbxEmployeeID.Location = new Point(326, 181);
-            txtbxEmployeeID.Margin = new Padding(3, 4, 3, 4);
-            txtbxEmployeeID.Name = "txtbxEmployeeID";
-            txtbxEmployeeID.Size = new Size(338, 27);
-            txtbxEmployeeID.TabIndex = 2;
+            this.txtbxEmployeeID.Location = new System.Drawing.Point(251, 156);
+            this.txtbxEmployeeID.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtbxEmployeeID.Name = "txtbxEmployeeID";
+            this.txtbxEmployeeID.Size = new System.Drawing.Size(338, 23);
+            this.txtbxEmployeeID.TabIndex = 2;
             // 
             // btnClear
             // 
-            btnClear.Location = new Point(326, 277);
-            btnClear.Margin = new Padding(3, 4, 3, 4);
-            btnClear.Name = "btnClear";
-            btnClear.Size = new Size(101, 47);
-            btnClear.TabIndex = 4;
-            btnClear.Text = "Clear";
-            btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Location = new System.Drawing.Point(251, 252);
+            this.btnClear.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(101, 47);
+            this.btnClear.TabIndex = 4;
+            this.btnClear.Text = "Clear";
+            this.btnClear.UseVisualStyleBackColor = true;
             // 
             // btnSearch
             // 
-            btnSearch.Location = new Point(550, 280);
-            btnSearch.Margin = new Padding(3, 4, 3, 4);
-            btnSearch.Name = "btnSearch";
-            btnSearch.Size = new Size(114, 44);
-            btnSearch.TabIndex = 5;
-            btnSearch.Text = "Search";
-            btnSearch.UseVisualStyleBackColor = true;
-
-            btnSearch.Click += btnSearch_Click;
-
+            this.btnSearch.Location = new System.Drawing.Point(475, 255);
+            this.btnSearch.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(114, 44);
+            this.btnSearch.TabIndex = 5;
+            this.btnSearch.Text = "Search";
+            this.btnSearch.UseVisualStyleBackColor = true;
             // 
             // lblExistingEmployee
             // 
-            lblExistingEmployee.AutoSize = true;
-            lblExistingEmployee.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
-            lblExistingEmployee.Location = new Point(338, 31);
-            lblExistingEmployee.Name = "lblExistingEmployee";
-            lblExistingEmployee.Size = new Size(311, 46);
-            lblExistingEmployee.TabIndex = 6;
-            lblExistingEmployee.Text = "Existing Employee";
-
+            this.lblExistingEmployee.AutoSize = true;
+            this.lblExistingEmployee.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblExistingEmployee.Location = new System.Drawing.Point(282, 38);
+            this.lblExistingEmployee.Name = "lblExistingEmployee";
+            this.lblExistingEmployee.Size = new System.Drawing.Size(251, 37);
+            this.lblExistingEmployee.TabIndex = 6;
+            this.lblExistingEmployee.Text = "Existing Employee";
             // 
             // button1
             // 
-            button1.Location = new Point(12, 540);
-            button1.Margin = new Padding(3, 4, 3, 4);
-            button1.Name = "button1";
-            button1.Size = new Size(101, 47);
-            button1.TabIndex = 7;
-            button1.Text = "Back";
-            button1.UseVisualStyleBackColor = true;
-
+            this.button1.Location = new System.Drawing.Point(12, 540);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(101, 47);
+            this.button1.TabIndex = 7;
+            this.button1.Text = "Back";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // frmExistingEmployee
             // 
-
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
@@ -111,22 +103,12 @@
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.lblEmployeeID);
             this.Controls.Add(this.txtbxEmployeeID);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "frmExistingEmployee";
-            this.Text = "Existing Employee";
+            this.Text = "frmExistingEmployee";
             this.ResumeLayout(false);
             this.PerformLayout();
 
-
-            Controls.Add(lblExistingEmployee);
-            Controls.Add(btnSearch);
-            Controls.Add(btnClear);
-            Controls.Add(lblEmployeeID);
-            Controls.Add(txtbxEmployeeID);
-            Margin = new Padding(3, 4, 3, 4);
-            Name = "frmExistingEmployee";
-            Text = "frmExistingEmployee";
-            ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
