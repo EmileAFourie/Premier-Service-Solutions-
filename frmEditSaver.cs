@@ -10,17 +10,21 @@ using System.Windows.Forms;
 
 namespace Premier_Service_Solutions
 {
-    public partial class frmClientDetails : Form
+    public partial class frmEditSaver : Form
     {
-        public frmClientDetails()
+        public frmEditSaver()
         {
             InitializeComponent();
         }
 
-
-        private void btnRegister_Click(object sender, EventArgs e)
+        private void btnEnable_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            
 
         }
     }

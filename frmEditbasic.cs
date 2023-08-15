@@ -10,18 +10,11 @@ using System.Windows.Forms;
 
 namespace Premier_Service_Solutions
 {
-    public partial class frmClientDetails : Form
+    public partial class frmEditbasic : Form
     {
-        public frmClientDetails()
+        public frmEditbasic()
         {
             InitializeComponent();
-        }
-
-
-        private void btnRegister_Click(object sender, EventArgs e)
-        {
-
-
         }
     }
 }
