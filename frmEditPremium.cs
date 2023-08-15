@@ -16,5 +16,20 @@ namespace Premier_Service_Solutions
         {
             InitializeComponent();
         }
+
+        private void btnEnable_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnDisable_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

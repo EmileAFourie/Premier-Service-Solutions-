@@ -34,15 +34,16 @@
             this.btnDelete = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnBack = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnEnable
             // 
-            this.btnEnable.Location = new System.Drawing.Point(167, 341);
+            this.btnEnable.Location = new System.Drawing.Point(201, 323);
             this.btnEnable.Name = "btnEnable";
-            this.btnEnable.Size = new System.Drawing.Size(126, 34);
+            this.btnEnable.Size = new System.Drawing.Size(111, 36);
             this.btnEnable.TabIndex = 0;
             this.btnEnable.Text = "Enable";
             this.btnEnable.UseVisualStyleBackColor = true;
@@ -50,7 +51,7 @@
             // 
             // btnUpdate
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(355, 341);
+            this.btnUpdate.Location = new System.Drawing.Point(354, 323);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(111, 36);
             this.btnUpdate.TabIndex = 1;
@@ -59,9 +60,9 @@
             // 
             // btnDisable
             // 
-            this.btnDisable.Location = new System.Drawing.Point(533, 341);
+            this.btnDisable.Location = new System.Drawing.Point(510, 323);
             this.btnDisable.Name = "btnDisable";
-            this.btnDisable.Size = new System.Drawing.Size(124, 35);
+            this.btnDisable.Size = new System.Drawing.Size(111, 36);
             this.btnDisable.TabIndex = 2;
             this.btnDisable.Text = "Disable";
             this.btnDisable.UseVisualStyleBackColor = true;
@@ -94,11 +95,23 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
+            // btnBack
+            // 
+            this.btnBack.BackColor = System.Drawing.SystemColors.Control;
+            this.btnBack.Location = new System.Drawing.Point(12, 12);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(26, 28);
+            this.btnBack.TabIndex = 6;
+            this.btnBack.Text = "<";
+            this.btnBack.UseVisualStyleBackColor = false;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            // 
             // frmEditSaver
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnBack);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnDelete);
@@ -121,5 +134,6 @@
         private Button btnDelete;
         private DataGridView dataGridView1;
         private PictureBox pictureBox1;
+        private Button btnBack;
     }
 }

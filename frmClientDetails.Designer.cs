@@ -74,21 +74,21 @@
             // txtbxNameNewClient
             // 
 
-            this.txtbxClientID.Location = new System.Drawing.Point(417, 185);
+            /*this.txtbxClientID.Location = new System.Drawing.Point(417, 185);
             this.txtbxClientID.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtbxClientID.Name = "txtbxClientID";
             this.txtbxClientID.Size = new System.Drawing.Size(138, 27);
-            this.txtbxClientID.TabIndex = 2;
+            this.txtbxClientID.TabIndex = 2;*/
 
             // 
             // txtbxAddressNewClient
             // 
 
-            this.textBox1.Location = new System.Drawing.Point(417, 236);
+            /*this.textBox1.Location = new System.Drawing.Point(417, 236);
             this.textBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(138, 27);
-            this.textBox1.TabIndex = 4;
+            this.textBox1.TabIndex = 4;*/
 
             // 
             // lblAddress
@@ -105,11 +105,11 @@
             // txtbxCellNumberNewClient
             // 
 
-            this.textBox2.Location = new System.Drawing.Point(417, 293);
+            /*this.textBox2.Location = new System.Drawing.Point(417, 293);
             this.textBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(138, 27);
-            this.textBox2.TabIndex = 6;
+            this.textBox2.TabIndex = 6;*/
 
             // 
             // lblCellNumber
@@ -126,11 +126,11 @@
             // txtbxEmailNewClient
             // 
 
-            this.textBox3.Location = new System.Drawing.Point(417, 352);
+          /*  this.textBox3.Location = new System.Drawing.Point(417, 352);
             this.textBox3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(138, 27);
-            this.textBox3.TabIndex = 8;
+            this.textBox3.TabIndex = 8;*/
 
             // 
             // lblEmail
@@ -169,11 +169,11 @@
             // txtbxClientIDNewClient
             // 
 
-            this.textBox7.Location = new System.Drawing.Point(417, 135);
+           /* this.textBox7.Location = new System.Drawing.Point(417, 135);
             this.textBox7.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(138, 27);
-            this.textBox7.TabIndex = 16;
+            this.textBox7.TabIndex = 16;*/
 
             // 
             // label7
@@ -190,23 +190,23 @@
             // cmbxClientTypeNewClient
             // 
 
-            this.cmbxClientType.FormattingEnabled = true;
+           /* this.cmbxClientType.FormattingEnabled = true;
             this.cmbxClientType.Location = new System.Drawing.Point(417, 89);
             this.cmbxClientType.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cmbxClientType.Name = "cmbxClientType";
             this.cmbxClientType.Size = new System.Drawing.Size(138, 28);
-            this.cmbxClientType.TabIndex = 17;
+            this.cmbxClientType.TabIndex = 17;*/
 
             // 
             // cmbxContractNewClient
             // 
 
-            this.cmbxContract.FormattingEnabled = true;
+          /*  this.cmbxContract.FormattingEnabled = true;
             this.cmbxContract.Location = new System.Drawing.Point(417, 407);
             this.cmbxContract.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cmbxContract.Name = "cmbxContract";
             this.cmbxContract.Size = new System.Drawing.Size(138, 28);
-            this.cmbxContract.TabIndex = 18;
+            this.cmbxContract.TabIndex = 18;*/
 
             // 
             // btnClear
@@ -218,7 +218,7 @@
             this.btnClear.TabIndex = 19;
             this.btnClear.Text = "Clear";
             this.btnClear.UseVisualStyleBackColor = true;
-            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
+         //   this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // btnRegister
             // 
