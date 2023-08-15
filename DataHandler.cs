@@ -22,7 +22,7 @@ namespace Premier_Service_Solutions
                 {
                     cmd.Parameters.AddWithValue("@ClientID", ClientID);
                     cmd.Parameters.AddWithValue("@Firstname", Firstname);
-                    cmd.Parameters.AddWithValue("@Surname", LastName);
+                    cmd.Parameters.AddWithValue("@Lastname", LastName);
                     cmd.Parameters.AddWithValue("@Address", Address);
                     cmd.Parameters.AddWithValue("@CellNo", CellNo);
                     cmd.Parameters.AddWithValue("@Email", Email);
