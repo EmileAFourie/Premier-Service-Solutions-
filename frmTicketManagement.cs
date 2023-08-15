@@ -31,7 +31,7 @@ namespace Premier_Service_Solutions
             DateTime DateOpened = DateTime.Now;
             string Priority = txtbxPriority.Text;
             string Status = "Unnassigned";
-            int ClientID = int.Parse(txtbxClientID.Text); // Add .Text here
+            int ClientID = int.Parse(txtbxClientID.Text); 
 
             dataHandler.LogTicket(TypeOfError, Description, DateOpened, Priority, Status, ClientID);
 
