@@ -189,7 +189,7 @@
             this.Controls.Add(this.txtbxEmployeeID);
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "frmNewEmployee";
-            this.Text = "NewEmployee";
+            this.Text = "New Employee";
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -28,198 +28,188 @@
         /// </summary>
         private void InitializeComponent()
         {
-            lblSaver = new Label();
-            lblBasic = new Label();
-            lblExtra = new Label();
-            lblAvailableContracts = new Label();
-            btnEditSaver = new Button();
-            btnEditBasic = new Button();
-            btnEditExtra = new Button();
-            pictureBoxExtra = new PictureBox();
-            pictureBoxBasic = new PictureBox();
-            pictureBoxSaver = new PictureBox();
-            dgvSaver = new DataGridView();
-            dgvBasic = new DataGridView();
-            dgvExtra = new DataGridView();
-            btnClear = new Button();
-            ((System.ComponentModel.ISupportInitialize)pictureBoxExtra).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBoxBasic).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBoxSaver).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)dgvSaver).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)dgvBasic).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)dgvExtra).BeginInit();
-            SuspendLayout();
+            this.lblSaver = new System.Windows.Forms.Label();
+            this.lblBasic = new System.Windows.Forms.Label();
+            this.lblExtra = new System.Windows.Forms.Label();
+            this.lblAvailableContracts = new System.Windows.Forms.Label();
+            this.btnEditSaver = new System.Windows.Forms.Button();
+            this.btnEditBasic = new System.Windows.Forms.Button();
+            this.btnEditExtra = new System.Windows.Forms.Button();
+            this.pictureBoxExtra = new System.Windows.Forms.PictureBox();
+            this.pictureBoxBasic = new System.Windows.Forms.PictureBox();
+            this.pictureBoxSaver = new System.Windows.Forms.PictureBox();
+            this.dgvSaver = new System.Windows.Forms.DataGridView();
+            this.dgvBasic = new System.Windows.Forms.DataGridView();
+            this.dgvExtra = new System.Windows.Forms.DataGridView();
+            this.btnClear = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxExtra)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBasic)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSaver)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvSaver)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvBasic)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvExtra)).BeginInit();
+            this.SuspendLayout();
             // 
             // lblSaver
             // 
-            lblSaver.AutoSize = true;
-            lblSaver.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point);
-            lblSaver.Location = new Point(158, 88);
-            lblSaver.Name = "lblSaver";
-            lblSaver.Size = new Size(80, 35);
-            lblSaver.TabIndex = 0;
-            lblSaver.Text = "Saver";
+            this.lblSaver.AutoSize = true;
+            this.lblSaver.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblSaver.Location = new System.Drawing.Point(138, 66);
+            this.lblSaver.Name = "lblSaver";
+            this.lblSaver.Size = new System.Drawing.Size(64, 28);
+            this.lblSaver.TabIndex = 0;
+            this.lblSaver.Text = "Saver";
             // 
             // lblBasic
             // 
-            lblBasic.AutoSize = true;
-            lblBasic.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point);
-            lblBasic.Location = new Point(417, 88);
-            lblBasic.Name = "lblBasic";
-            lblBasic.Size = new Size(74, 35);
-            lblBasic.TabIndex = 1;
-            lblBasic.Text = "Basic";
+            this.lblBasic.AutoSize = true;
+            this.lblBasic.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblBasic.Location = new System.Drawing.Point(365, 66);
+            this.lblBasic.Name = "lblBasic";
+            this.lblBasic.Size = new System.Drawing.Size(61, 28);
+            this.lblBasic.TabIndex = 1;
+            this.lblBasic.Text = "Basic";
             // 
             // lblExtra
             // 
-            lblExtra.AutoSize = true;
-            lblExtra.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point);
-            lblExtra.Location = new Point(690, 88);
-            lblExtra.Name = "lblExtra";
-            lblExtra.Size = new Size(75, 35);
-            lblExtra.TabIndex = 2;
-            lblExtra.Text = "Extra";
+            this.lblExtra.AutoSize = true;
+            this.lblExtra.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblExtra.Location = new System.Drawing.Point(604, 66);
+            this.lblExtra.Name = "lblExtra";
+            this.lblExtra.Size = new System.Drawing.Size(61, 28);
+            this.lblExtra.TabIndex = 2;
+            this.lblExtra.Text = "Extra";
             // 
             // lblAvailableContracts
             // 
-            lblAvailableContracts.AutoSize = true;
-            lblAvailableContracts.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
-            lblAvailableContracts.Location = new Point(305, 25);
-            lblAvailableContracts.Name = "lblAvailableContracts";
-            lblAvailableContracts.Size = new Size(326, 46);
-            lblAvailableContracts.TabIndex = 3;
-            lblAvailableContracts.Text = "Available Contracts";
+            this.lblAvailableContracts.AutoSize = true;
+            this.lblAvailableContracts.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblAvailableContracts.Location = new System.Drawing.Point(267, 19);
+            this.lblAvailableContracts.Name = "lblAvailableContracts";
+            this.lblAvailableContracts.Size = new System.Drawing.Size(266, 37);
+            this.lblAvailableContracts.TabIndex = 3;
+            this.lblAvailableContracts.Text = "Available Contracts";
             // 
             // btnEditSaver
             // 
-            btnEditSaver.Location = new Point(147, 553);
-            btnEditSaver.Margin = new Padding(3, 4, 3, 4);
-            btnEditSaver.Name = "btnEditSaver";
-            btnEditSaver.Size = new Size(86, 31);
-            btnEditSaver.TabIndex = 4;
-            btnEditSaver.Text = "Edit";
-            btnEditSaver.UseVisualStyleBackColor = true;
+            this.btnEditSaver.Location = new System.Drawing.Point(129, 415);
+            this.btnEditSaver.Name = "btnEditSaver";
+            this.btnEditSaver.Size = new System.Drawing.Size(75, 23);
+            this.btnEditSaver.TabIndex = 4;
+            this.btnEditSaver.Text = "Edit";
+            this.btnEditSaver.UseVisualStyleBackColor = true;
             // 
             // btnEditBasic
             // 
-            btnEditBasic.Location = new Point(401, 553);
-            btnEditBasic.Margin = new Padding(3, 4, 3, 4);
-            btnEditBasic.Name = "btnEditBasic";
-            btnEditBasic.Size = new Size(86, 31);
-            btnEditBasic.TabIndex = 5;
-            btnEditBasic.Text = "Edit";
-            btnEditBasic.UseVisualStyleBackColor = true;
+            this.btnEditBasic.Location = new System.Drawing.Point(351, 415);
+            this.btnEditBasic.Name = "btnEditBasic";
+            this.btnEditBasic.Size = new System.Drawing.Size(75, 23);
+            this.btnEditBasic.TabIndex = 5;
+            this.btnEditBasic.Text = "Edit";
+            this.btnEditBasic.UseVisualStyleBackColor = true;
             // 
             // btnEditExtra
             // 
-            btnEditExtra.Location = new Point(690, 553);
-            btnEditExtra.Margin = new Padding(3, 4, 3, 4);
-            btnEditExtra.Name = "btnEditExtra";
-            btnEditExtra.Size = new Size(86, 31);
-            btnEditExtra.TabIndex = 6;
-            btnEditExtra.Text = "Edit";
-            btnEditExtra.UseVisualStyleBackColor = true;
+            this.btnEditExtra.Location = new System.Drawing.Point(604, 415);
+            this.btnEditExtra.Name = "btnEditExtra";
+            this.btnEditExtra.Size = new System.Drawing.Size(75, 23);
+            this.btnEditExtra.TabIndex = 6;
+            this.btnEditExtra.Text = "Edit";
+            this.btnEditExtra.UseVisualStyleBackColor = true;
             // 
             // pictureBoxExtra
             // 
-            pictureBoxExtra.Location = new Point(605, 129);
-            pictureBoxExtra.Margin = new Padding(3, 4, 3, 4);
-            pictureBoxExtra.Name = "pictureBoxExtra";
-            pictureBoxExtra.Size = new Size(257, 151);
-            pictureBoxExtra.TabIndex = 7;
-            pictureBoxExtra.TabStop = false;
+            this.pictureBoxExtra.Location = new System.Drawing.Point(529, 97);
+            this.pictureBoxExtra.Name = "pictureBoxExtra";
+            this.pictureBoxExtra.Size = new System.Drawing.Size(225, 113);
+            this.pictureBoxExtra.TabIndex = 7;
+            this.pictureBoxExtra.TabStop = false;
             // 
             // pictureBoxBasic
             // 
-            pictureBoxBasic.Location = new Point(341, 129);
-            pictureBoxBasic.Margin = new Padding(3, 4, 3, 4);
-            pictureBoxBasic.Name = "pictureBoxBasic";
-            pictureBoxBasic.Size = new Size(257, 151);
-            pictureBoxBasic.TabIndex = 8;
-            pictureBoxBasic.TabStop = false;
+            this.pictureBoxBasic.Location = new System.Drawing.Point(298, 97);
+            this.pictureBoxBasic.Name = "pictureBoxBasic";
+            this.pictureBoxBasic.Size = new System.Drawing.Size(225, 113);
+            this.pictureBoxBasic.TabIndex = 8;
+            this.pictureBoxBasic.TabStop = false;
             // 
             // pictureBoxSaver
             // 
-            pictureBoxSaver.Location = new Point(77, 129);
-            pictureBoxSaver.Margin = new Padding(3, 4, 3, 4);
-            pictureBoxSaver.Name = "pictureBoxSaver";
-            pictureBoxSaver.Size = new Size(257, 151);
-            pictureBoxSaver.TabIndex = 9;
-            pictureBoxSaver.TabStop = false;
+            this.pictureBoxSaver.Location = new System.Drawing.Point(67, 97);
+            this.pictureBoxSaver.Name = "pictureBoxSaver";
+            this.pictureBoxSaver.Size = new System.Drawing.Size(225, 113);
+            this.pictureBoxSaver.TabIndex = 9;
+            this.pictureBoxSaver.TabStop = false;
             // 
             // dgvSaver
             // 
-            dgvSaver.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvSaver.Location = new Point(77, 288);
-            dgvSaver.Margin = new Padding(3, 4, 3, 4);
-            dgvSaver.Name = "dgvSaver";
-            dgvSaver.RowHeadersWidth = 51;
-            dgvSaver.RowTemplate.Height = 25;
-            dgvSaver.Size = new Size(257, 227);
-            dgvSaver.TabIndex = 10;
+            this.dgvSaver.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvSaver.Location = new System.Drawing.Point(67, 216);
+            this.dgvSaver.Name = "dgvSaver";
+            this.dgvSaver.RowHeadersWidth = 51;
+            this.dgvSaver.RowTemplate.Height = 25;
+            this.dgvSaver.Size = new System.Drawing.Size(225, 170);
+            this.dgvSaver.TabIndex = 10;
             // 
             // dgvBasic
             // 
-            dgvBasic.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvBasic.Location = new Point(341, 288);
-            dgvBasic.Margin = new Padding(3, 4, 3, 4);
-            dgvBasic.Name = "dgvBasic";
-            dgvBasic.RowHeadersWidth = 51;
-            dgvBasic.RowTemplate.Height = 25;
-            dgvBasic.Size = new Size(257, 227);
-            dgvBasic.TabIndex = 11;
+            this.dgvBasic.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvBasic.Location = new System.Drawing.Point(298, 216);
+            this.dgvBasic.Name = "dgvBasic";
+            this.dgvBasic.RowHeadersWidth = 51;
+            this.dgvBasic.RowTemplate.Height = 25;
+            this.dgvBasic.Size = new System.Drawing.Size(225, 170);
+            this.dgvBasic.TabIndex = 11;
             // 
             // dgvExtra
             // 
-            dgvExtra.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvExtra.Location = new Point(605, 288);
-            dgvExtra.Margin = new Padding(3, 4, 3, 4);
-            dgvExtra.Name = "dgvExtra";
-            dgvExtra.RowHeadersWidth = 51;
-            dgvExtra.RowTemplate.Height = 25;
-            dgvExtra.Size = new Size(257, 227);
-            dgvExtra.TabIndex = 12;
+            this.dgvExtra.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvExtra.Location = new System.Drawing.Point(529, 216);
+            this.dgvExtra.Name = "dgvExtra";
+            this.dgvExtra.RowHeadersWidth = 51;
+            this.dgvExtra.RowTemplate.Height = 25;
+            this.dgvExtra.Size = new System.Drawing.Size(225, 170);
+            this.dgvExtra.TabIndex = 12;
             // 
             // btnClear
             // 
-            btnClear.Location = new Point(12, 633);
-            btnClear.Margin = new Padding(3, 4, 3, 4);
-            btnClear.Name = "btnClear";
-            btnClear.Size = new Size(86, 31);
-            btnClear.TabIndex = 20;
-            btnClear.Text = "Back";
-            btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Location = new System.Drawing.Point(10, 475);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(75, 23);
+            this.btnClear.TabIndex = 20;
+            this.btnClear.Text = "Back";
+            this.btnClear.UseVisualStyleBackColor = true;
             // 
             // frmAvailableContracts
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(914, 677);
-            Controls.Add(btnClear);
-            Controls.Add(dgvExtra);
-            Controls.Add(dgvBasic);
-            Controls.Add(dgvSaver);
-            Controls.Add(pictureBoxSaver);
-            Controls.Add(pictureBoxBasic);
-            Controls.Add(pictureBoxExtra);
-            Controls.Add(btnEditExtra);
-            Controls.Add(btnEditBasic);
-            Controls.Add(btnEditSaver);
-            Controls.Add(lblAvailableContracts);
-            Controls.Add(lblExtra);
-            Controls.Add(lblBasic);
-            Controls.Add(lblSaver);
-            Margin = new Padding(3, 4, 3, 4);
-            Name = "frmAvailableContracts";
-            Text = "AvailableContracts";
-            ((System.ComponentModel.ISupportInitialize)pictureBoxExtra).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBoxBasic).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBoxSaver).EndInit();
-            ((System.ComponentModel.ISupportInitialize)dgvSaver).EndInit();
-            ((System.ComponentModel.ISupportInitialize)dgvBasic).EndInit();
-            ((System.ComponentModel.ISupportInitialize)dgvExtra).EndInit();
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(800, 508);
+            this.Controls.Add(this.btnClear);
+            this.Controls.Add(this.dgvExtra);
+            this.Controls.Add(this.dgvBasic);
+            this.Controls.Add(this.dgvSaver);
+            this.Controls.Add(this.pictureBoxSaver);
+            this.Controls.Add(this.pictureBoxBasic);
+            this.Controls.Add(this.pictureBoxExtra);
+            this.Controls.Add(this.btnEditExtra);
+            this.Controls.Add(this.btnEditBasic);
+            this.Controls.Add(this.btnEditSaver);
+            this.Controls.Add(this.lblAvailableContracts);
+            this.Controls.Add(this.lblExtra);
+            this.Controls.Add(this.lblBasic);
+            this.Controls.Add(this.lblSaver);
+            this.Name = "frmAvailableContracts";
+            this.Text = "Available Contracts";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxExtra)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBasic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSaver)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvSaver)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvBasic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvExtra)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
