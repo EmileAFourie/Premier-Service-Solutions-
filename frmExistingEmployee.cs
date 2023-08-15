@@ -19,8 +19,11 @@ namespace Premier_Service_Solutions
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
-            bool found = true;
-            string employeeeID = txtbxEmployeeID.Text;
+            Employee employee = new Employee();
+
+            int employeeID = int.Parse(txtbxEmployeeID.Text);
+
+            bool found = employee.FindEmployee(employeeID);
 
             if (!found)
             {
@@ -29,9 +32,15 @@ namespace Premier_Service_Solutions
             else
             {
                 frmExistingEmployeeDetails frmDetails = new frmExistingEmployeeDetails();
+                frmDetails.EmployeeID = employeeID;
                 frmDetails.ShowDialog();
                 DialogResult = DialogResult.OK;
             }
+        }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            txtbxEmployeeID.Clear();
         }
     }
 }
