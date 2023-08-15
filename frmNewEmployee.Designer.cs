@@ -41,19 +41,22 @@
             this.txtbxAge = new System.Windows.Forms.TextBox();
             this.btnClear = new System.Windows.Forms.Button();
             this.btnSubmit = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.btn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtbxEmployeeID
             // 
-            this.txtbxEmployeeID.Location = new System.Drawing.Point(285, 140);
+            this.txtbxEmployeeID.Location = new System.Drawing.Point(326, 187);
+            this.txtbxEmployeeID.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtbxEmployeeID.Name = "txtbxEmployeeID";
-            this.txtbxEmployeeID.Size = new System.Drawing.Size(296, 23);
+            this.txtbxEmployeeID.Size = new System.Drawing.Size(338, 23);
             this.txtbxEmployeeID.TabIndex = 0;
             // 
             // lblEmployeeID
             // 
             this.lblEmployeeID.AutoSize = true;
-            this.lblEmployeeID.Location = new System.Drawing.Point(189, 143);
+            this.lblEmployeeID.Location = new System.Drawing.Point(216, 191);
             this.lblEmployeeID.Name = "lblEmployeeID";
             this.lblEmployeeID.Size = new System.Drawing.Size(73, 15);
             this.lblEmployeeID.TabIndex = 1;
@@ -63,7 +66,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(297, 18);
+            this.label2.Location = new System.Drawing.Point(339, 24);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(235, 37);
             this.label2.TabIndex = 2;
@@ -72,7 +75,7 @@
             // lblName
             // 
             this.lblName.AutoSize = true;
-            this.lblName.Location = new System.Drawing.Point(221, 180);
+            this.lblName.Location = new System.Drawing.Point(253, 240);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(42, 15);
             this.lblName.TabIndex = 4;
@@ -80,15 +83,16 @@
             // 
             // txtbxName
             // 
-            this.txtbxName.Location = new System.Drawing.Point(285, 177);
+            this.txtbxName.Location = new System.Drawing.Point(326, 236);
+            this.txtbxName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtbxName.Name = "txtbxName";
-            this.txtbxName.Size = new System.Drawing.Size(296, 23);
+            this.txtbxName.Size = new System.Drawing.Size(338, 23);
             this.txtbxName.TabIndex = 3;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(221, 221);
+            this.label4.Location = new System.Drawing.Point(253, 295);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(39, 15);
             this.label4.TabIndex = 6;
@@ -96,15 +100,16 @@
             // 
             // txtbxEmail
             // 
-            this.txtbxEmail.Location = new System.Drawing.Point(285, 218);
+            this.txtbxEmail.Location = new System.Drawing.Point(326, 291);
+            this.txtbxEmail.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtbxEmail.Name = "txtbxEmail";
-            this.txtbxEmail.Size = new System.Drawing.Size(296, 23);
+            this.txtbxEmail.Size = new System.Drawing.Size(338, 23);
             this.txtbxEmail.TabIndex = 5;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(206, 266);
+            this.label5.Location = new System.Drawing.Point(235, 355);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(53, 15);
             this.label5.TabIndex = 8;
@@ -112,15 +117,16 @@
             // 
             // txtbxPosition
             // 
-            this.txtbxPosition.Location = new System.Drawing.Point(285, 263);
+            this.txtbxPosition.Location = new System.Drawing.Point(326, 351);
+            this.txtbxPosition.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtbxPosition.Name = "txtbxPosition";
-            this.txtbxPosition.Size = new System.Drawing.Size(296, 23);
+            this.txtbxPosition.Size = new System.Drawing.Size(338, 23);
             this.txtbxPosition.TabIndex = 7;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(221, 311);
+            this.label6.Location = new System.Drawing.Point(253, 415);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(31, 15);
             this.label6.TabIndex = 10;
@@ -128,34 +134,64 @@
             // 
             // txtbxAge
             // 
-            this.txtbxAge.Location = new System.Drawing.Point(285, 303);
+            this.txtbxAge.Location = new System.Drawing.Point(326, 404);
+            this.txtbxAge.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtbxAge.Name = "txtbxAge";
-            this.txtbxAge.Size = new System.Drawing.Size(296, 23);
+            this.txtbxAge.Size = new System.Drawing.Size(338, 23);
             this.txtbxAge.TabIndex = 9;
             // 
             // btnClear
             // 
-            this.btnClear.Location = new System.Drawing.Point(285, 361);
+            this.btnClear.Location = new System.Drawing.Point(448, 481);
+            this.btnClear.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(75, 23);
+            this.btnClear.Size = new System.Drawing.Size(86, 31);
             this.btnClear.TabIndex = 11;
             this.btnClear.Text = "Clear";
             this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // btnSubmit
             // 
-            this.btnSubmit.Location = new System.Drawing.Point(506, 361);
+            this.btnSubmit.Location = new System.Drawing.Point(578, 481);
+            this.btnSubmit.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnSubmit.Name = "btnSubmit";
-            this.btnSubmit.Size = new System.Drawing.Size(75, 23);
+            this.btnSubmit.Size = new System.Drawing.Size(86, 31);
             this.btnSubmit.TabIndex = 12;
             this.btnSubmit.Text = "Submit";
             this.btnSubmit.UseVisualStyleBackColor = true;
+            this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click_1);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(326, 481);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(86, 31);
+            this.button1.TabIndex = 13;
+            this.button1.Text = "Back";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // btn
+            // 
+            this.btn.BackColor = System.Drawing.Color.White;
+            this.btn.FlatAppearance.BorderSize = 0;
+            this.btn.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btn.Location = new System.Drawing.Point(12, 13);
+            this.btn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn.Name = "btn";
+            this.btn.Size = new System.Drawing.Size(32, 34);
+            this.btn.TabIndex = 21;
+            this.btn.Text = "<";
+            this.btn.UseVisualStyleBackColor = false;
+            this.btn.Click += new System.EventHandler(this.btn_Click);
             // 
             // frmNewEmployee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(898, 630);
+            this.Controls.Add(this.btn);
             this.Controls.Add(this.btnSubmit);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.label6);
@@ -169,8 +205,9 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lblEmployeeID);
             this.Controls.Add(this.txtbxEmployeeID);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "frmNewEmployee";
-            this.Text = "frmNewEmployee";
+            this.Text = "New Employee";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -191,5 +228,7 @@
         private TextBox txtbxAge;
         private Button btnClear;
         private Button btnSubmit;
+        private Button button1;
+        private Button btn;
     }
 }

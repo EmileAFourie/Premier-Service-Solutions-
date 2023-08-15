@@ -41,6 +41,7 @@
             this.dgvSaver = new System.Windows.Forms.DataGridView();
             this.dgvBasic = new System.Windows.Forms.DataGridView();
             this.dgvExtra = new System.Windows.Forms.DataGridView();
+            this.btn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxExtra)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBasic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSaver)).BeginInit();
@@ -182,11 +183,27 @@
             this.dgvExtra.Size = new System.Drawing.Size(257, 227);
             this.dgvExtra.TabIndex = 12;
             // 
+            // btn
+            // 
+            this.btn.BackColor = System.Drawing.Color.White;
+            this.btn.FlatAppearance.BorderSize = 0;
+            this.btn.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btn.Location = new System.Drawing.Point(12, 13);
+            this.btn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn.Name = "btn";
+            this.btn.Size = new System.Drawing.Size(32, 34);
+            this.btn.TabIndex = 21;
+            this.btn.Text = "<";
+            this.btn.UseVisualStyleBackColor = false;
+            this.btn.Click += new System.EventHandler(this.btn_Click);
+            // 
             // frmAvailableContracts
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+
             this.ClientSize = new System.Drawing.Size(914, 600);
+
             this.Controls.Add(this.dgvExtra);
             this.Controls.Add(this.dgvBasic);
             this.Controls.Add(this.dgvSaver);
@@ -202,7 +219,7 @@
             this.Controls.Add(this.lblSaver);
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "frmAvailableContracts";
-            this.Text = "AvailableContracts";
+            this.Text = "Available Contracts";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxExtra)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBasic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSaver)).EndInit();
@@ -229,5 +246,6 @@
         private DataGridView dgvSaver;
         private DataGridView dgvBasic;
         private DataGridView dgvExtra;
+        private Button btn;
     }
 }

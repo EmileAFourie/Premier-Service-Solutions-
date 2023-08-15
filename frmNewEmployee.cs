@@ -16,5 +16,29 @@ namespace Premier_Service_Solutions
         {
             InitializeComponent();
         }
+
+      
+
+        private void btnSubmit_Click_1(object sender, EventArgs e)
+        {
+            MessageBox.Show("New Employee created", "Employee Management", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            txtbxEmployeeID.Clear();
+            txtbxName.Clear();
+            txtbxEmail.Clear();
+            txtbxPosition.Clear();
+            txtbxAge.Clear();
+        }
+
+        private void btn_Click(object sender, EventArgs e)
+        {
+            frmEmployeeCenter EmployeeCentre = new frmEmployeeCenter();
+            this.Hide();
+            EmployeeCentre.Show();
+           
+        }
     }
 }
