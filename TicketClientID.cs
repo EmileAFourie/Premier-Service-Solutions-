@@ -10,10 +10,15 @@ namespace Premier_Service_Solutions
     {
         int ClientID;
 
-        //public TicketClientID(int clientID)
-        //{
-        //    ClientID1 = clientID;
-        //}
+        // Default constructor
+        public TicketClientID()
+        {
+        }
+
+        public TicketClientID(int clientID)
+        {
+            ClientID1 = clientID;
+        }
 
         public int ClientID1 { get => ClientID; set => ClientID = value; }
     }

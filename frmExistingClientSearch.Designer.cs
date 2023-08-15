@@ -93,6 +93,7 @@
             this.Controls.Add(this.lblExistingClientDetails);
             this.Name = "frmExistingClientSearch";
             this.Text = "Existing Client Search";
+            this.Load += new System.EventHandler(this.frmExistingClientSearch_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -26,14 +26,15 @@ namespace Premier_Service_Solutions
         {
             int ID = int.Parse(txtbxClientID.Text);
 
-            TicketClientID ClientID = new TicketClientID();
-
-            ClientID.ClientID1 = ID;
-
-            frmTicketManagement Ticket = new frmTicketManagement();
+            frmTicketManagement Ticket = new frmTicketManagement(ID);
             Ticket.Show();
 
             this.Hide();
+        }
+
+        private void frmExistingClientSearch_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
