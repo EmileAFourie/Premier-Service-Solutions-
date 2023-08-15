@@ -18,6 +18,7 @@ namespace Premier_Service_Solutions
 
         public void ClientWriteToDB()
         {
+            string insert = "INsert INTO tblClient ";
 
         }
 
