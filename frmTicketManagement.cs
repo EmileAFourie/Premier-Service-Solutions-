@@ -19,6 +19,18 @@ namespace Premier_Service_Solutions
             dataHandler = new DataHandler();
         }
 
+        public string ClientFirstName
+        {
+            get { return txtbxClient.Text; }
+            set { txtbxClient.Text = value; }
+        }
+
+        public int ClientContractID
+        {
+            get { return int.Parse(txtbxContract.Text); }
+            set { txtbxContract.Text = value.ToString(); }
+        }
+
         private void label1_Click(object sender, EventArgs e)
         {
 
