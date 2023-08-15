@@ -16,10 +16,15 @@ namespace Premier_Service_Solutions
         SqlCommand cmd;
         SqlDataReader reader;
 
-        public void ClientWriteToDB()
+        public void ClientIWriteToDB(int ClientID, string Firstname, string Surname, string Address, string CellNo, string Email, int ContractID, int CompanyID)
         {
-            string insert = "INsert INTO tblClient ";
+            string insert = "Insert INTO [dbo].[IndividualClient] Values  ";
 
+        }
+
+        public void ClientBWriteToDB(int CompanyID, string CompanyName, string CompanyAddress, string CompanyPhone)
+        {
+            string insert = "Insert INTO [dbo].[CompanyClient] Values   ";
         }
 
     }
