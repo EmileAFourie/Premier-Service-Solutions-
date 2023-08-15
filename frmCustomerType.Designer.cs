@@ -46,7 +46,7 @@
             this.txtbxTimestamp.Location = new System.Drawing.Point(278, 147);
             this.txtbxTimestamp.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtbxTimestamp.Name = "txtbxTimestamp";
-            this.txtbxTimestamp.Size = new System.Drawing.Size(458, 23);
+            this.txtbxTimestamp.Size = new System.Drawing.Size(376, 23);
             this.txtbxTimestamp.TabIndex = 19;
             // 
             // btnNewCustomer
@@ -122,7 +122,7 @@
             this.textBox1.Location = new System.Drawing.Point(278, 201);
             this.textBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(458, 23);
+            this.textBox1.Size = new System.Drawing.Size(376, 23);
             this.textBox1.TabIndex = 24;
             // 
             // lblCallerNumber
