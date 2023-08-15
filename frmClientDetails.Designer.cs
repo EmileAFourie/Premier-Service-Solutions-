@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.btnNewClientDetails = new System.Windows.Forms.Label();
-            this.lblName = new System.Windows.Forms.Label();
-            this.txtbxNameNewClient = new System.Windows.Forms.TextBox();
+            this.lblSurname = new System.Windows.Forms.Label();
+            this.txtbxLastname = new System.Windows.Forms.TextBox();
             this.txtbxAddressNewClient = new System.Windows.Forms.TextBox();
             this.lblAddress = new System.Windows.Forms.Label();
             this.txtbxCellNumberNewClient = new System.Windows.Forms.TextBox();
@@ -38,46 +38,48 @@
             this.txtbxEmailNewClient = new System.Windows.Forms.TextBox();
             this.lblEmail = new System.Windows.Forms.Label();
             this.lblContract = new System.Windows.Forms.Label();
-            this.lblClientType = new System.Windows.Forms.Label();
+            this.lblCompanyID = new System.Windows.Forms.Label();
             this.txtbxClientIDNewClient = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.cmbxClientTypeNewClient = new System.Windows.Forms.ComboBox();
             this.cmbxContractNewClient = new System.Windows.Forms.ComboBox();
             this.btnClear = new System.Windows.Forms.Button();
             this.btnRegister = new System.Windows.Forms.Button();
             this.txtbxCallDurationNewClient = new System.Windows.Forms.TextBox();
             this.lblCallDurationClientDetails = new System.Windows.Forms.Label();
+            this.txtbxFirstName = new System.Windows.Forms.TextBox();
+            this.lblFirstName = new System.Windows.Forms.Label();
+            this.txtbxCompanyID = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btnNewClientDetails
             // 
             this.btnNewClientDetails.AutoSize = true;
             this.btnNewClientDetails.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnNewClientDetails.Location = new System.Drawing.Point(293, 12);
+            this.btnNewClientDetails.Location = new System.Drawing.Point(276, 20);
             this.btnNewClientDetails.Name = "btnNewClientDetails";
             this.btnNewClientDetails.Size = new System.Drawing.Size(253, 37);
             this.btnNewClientDetails.TabIndex = 0;
             this.btnNewClientDetails.Text = "New Client Details";
             // 
-            // lblName
+            // lblSurname
             // 
-            this.lblName.AutoSize = true;
-            this.lblName.Location = new System.Drawing.Point(300, 142);
-            this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(39, 15);
-            this.lblName.TabIndex = 1;
-            this.lblName.Text = "Name";
+            this.lblSurname.AutoSize = true;
+            this.lblSurname.Location = new System.Drawing.Point(276, 151);
+            this.lblSurname.Name = "lblSurname";
+            this.lblSurname.Size = new System.Drawing.Size(63, 15);
+            this.lblSurname.TabIndex = 1;
+            this.lblSurname.Text = "Last Name";
             // 
-            // txtbxNameNewClient
+            // txtbxLastname
             // 
-            this.txtbxNameNewClient.Location = new System.Drawing.Point(365, 139);
-            this.txtbxNameNewClient.Name = "txtbxNameNewClient";
-            this.txtbxNameNewClient.Size = new System.Drawing.Size(121, 23);
-            this.txtbxNameNewClient.TabIndex = 2;
+            this.txtbxLastname.Location = new System.Drawing.Point(365, 148);
+            this.txtbxLastname.Name = "txtbxLastname";
+            this.txtbxLastname.Size = new System.Drawing.Size(121, 23);
+            this.txtbxLastname.TabIndex = 2;
             // 
             // txtbxAddressNewClient
             // 
-            this.txtbxAddressNewClient.Location = new System.Drawing.Point(365, 177);
+            this.txtbxAddressNewClient.Location = new System.Drawing.Point(365, 186);
             this.txtbxAddressNewClient.Name = "txtbxAddressNewClient";
             this.txtbxAddressNewClient.Size = new System.Drawing.Size(121, 23);
             this.txtbxAddressNewClient.TabIndex = 4;
@@ -85,7 +87,7 @@
             // lblAddress
             // 
             this.lblAddress.AutoSize = true;
-            this.lblAddress.Location = new System.Drawing.Point(290, 180);
+            this.lblAddress.Location = new System.Drawing.Point(290, 189);
             this.lblAddress.Name = "lblAddress";
             this.lblAddress.Size = new System.Drawing.Size(49, 15);
             this.lblAddress.TabIndex = 3;
@@ -93,7 +95,7 @@
             // 
             // txtbxCellNumberNewClient
             // 
-            this.txtbxCellNumberNewClient.Location = new System.Drawing.Point(365, 220);
+            this.txtbxCellNumberNewClient.Location = new System.Drawing.Point(365, 229);
             this.txtbxCellNumberNewClient.Name = "txtbxCellNumberNewClient";
             this.txtbxCellNumberNewClient.Size = new System.Drawing.Size(121, 23);
             this.txtbxCellNumberNewClient.TabIndex = 6;
@@ -101,7 +103,7 @@
             // lblCellNumber
             // 
             this.lblCellNumber.AutoSize = true;
-            this.lblCellNumber.Location = new System.Drawing.Point(268, 223);
+            this.lblCellNumber.Location = new System.Drawing.Point(268, 232);
             this.lblCellNumber.Name = "lblCellNumber";
             this.lblCellNumber.Size = new System.Drawing.Size(71, 15);
             this.lblCellNumber.TabIndex = 5;
@@ -109,7 +111,7 @@
             // 
             // txtbxEmailNewClient
             // 
-            this.txtbxEmailNewClient.Location = new System.Drawing.Point(365, 264);
+            this.txtbxEmailNewClient.Location = new System.Drawing.Point(365, 273);
             this.txtbxEmailNewClient.Name = "txtbxEmailNewClient";
             this.txtbxEmailNewClient.Size = new System.Drawing.Size(121, 23);
             this.txtbxEmailNewClient.TabIndex = 8;
@@ -117,7 +119,7 @@
             // lblEmail
             // 
             this.lblEmail.AutoSize = true;
-            this.lblEmail.Location = new System.Drawing.Point(303, 267);
+            this.lblEmail.Location = new System.Drawing.Point(303, 276);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(36, 15);
             this.lblEmail.TabIndex = 7;
@@ -126,24 +128,24 @@
             // lblContract
             // 
             this.lblContract.AutoSize = true;
-            this.lblContract.Location = new System.Drawing.Point(286, 308);
+            this.lblContract.Location = new System.Drawing.Point(286, 317);
             this.lblContract.Name = "lblContract";
             this.lblContract.Size = new System.Drawing.Size(53, 15);
             this.lblContract.TabIndex = 9;
             this.lblContract.Text = "Contract";
             // 
-            // lblClientType
+            // lblCompanyID
             // 
-            this.lblClientType.AutoSize = true;
-            this.lblClientType.Location = new System.Drawing.Point(274, 70);
-            this.lblClientType.Name = "lblClientType";
-            this.lblClientType.Size = new System.Drawing.Size(65, 15);
-            this.lblClientType.TabIndex = 11;
-            this.lblClientType.Text = "Client Type";
+            this.lblCompanyID.AutoSize = true;
+            this.lblCompanyID.Location = new System.Drawing.Point(274, 355);
+            this.lblCompanyID.Name = "lblCompanyID";
+            this.lblCompanyID.Size = new System.Drawing.Size(70, 15);
+            this.lblCompanyID.TabIndex = 11;
+            this.lblCompanyID.Text = "CompanyID";
             // 
             // txtbxClientIDNewClient
             // 
-            this.txtbxClientIDNewClient.Location = new System.Drawing.Point(365, 101);
+            this.txtbxClientIDNewClient.Location = new System.Drawing.Point(365, 76);
             this.txtbxClientIDNewClient.Name = "txtbxClientIDNewClient";
             this.txtbxClientIDNewClient.Size = new System.Drawing.Size(121, 23);
             this.txtbxClientIDNewClient.TabIndex = 16;
@@ -151,38 +153,27 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(290, 104);
+            this.label7.Location = new System.Drawing.Point(290, 79);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(49, 15);
             this.label7.TabIndex = 15;
             this.label7.Text = "ClientID";
             // 
-            // cmbxClientTypeNewClient
-            // 
-            this.cmbxClientTypeNewClient.FormattingEnabled = true;
-            this.cmbxClientTypeNewClient.Items.AddRange(new object[] {
-            "Individual ",
-            "Business"});
-            this.cmbxClientTypeNewClient.Location = new System.Drawing.Point(365, 67);
-            this.cmbxClientTypeNewClient.Name = "cmbxClientTypeNewClient";
-            this.cmbxClientTypeNewClient.Size = new System.Drawing.Size(121, 23);
-            this.cmbxClientTypeNewClient.TabIndex = 17;
-            // 
             // cmbxContractNewClient
             // 
             this.cmbxContractNewClient.FormattingEnabled = true;
             this.cmbxContractNewClient.Items.AddRange(new object[] {
-            "Saver ",
-            "Basic ",
-            "Extra"});
-            this.cmbxContractNewClient.Location = new System.Drawing.Point(365, 305);
+            "1",
+            "2",
+            "3"});
+            this.cmbxContractNewClient.Location = new System.Drawing.Point(365, 314);
             this.cmbxContractNewClient.Name = "cmbxContractNewClient";
             this.cmbxContractNewClient.Size = new System.Drawing.Size(121, 23);
             this.cmbxContractNewClient.TabIndex = 18;
             // 
             // btnClear
             // 
-            this.btnClear.Location = new System.Drawing.Point(303, 362);
+            this.btnClear.Location = new System.Drawing.Point(303, 391);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(75, 23);
             this.btnClear.TabIndex = 19;
@@ -192,7 +183,7 @@
             // 
             // btnRegister
             // 
-            this.btnRegister.Location = new System.Drawing.Point(399, 362);
+            this.btnRegister.Location = new System.Drawing.Point(399, 391);
             this.btnRegister.Name = "btnRegister";
             this.btnRegister.Size = new System.Drawing.Size(75, 23);
             this.btnRegister.TabIndex = 20;
@@ -217,20 +208,45 @@
             this.lblCallDurationClientDetails.TabIndex = 21;
             this.lblCallDurationClientDetails.Text = "Call Duration ";
             // 
+            // txtbxFirstName
+            // 
+            this.txtbxFirstName.Location = new System.Drawing.Point(365, 114);
+            this.txtbxFirstName.Name = "txtbxFirstName";
+            this.txtbxFirstName.Size = new System.Drawing.Size(121, 23);
+            this.txtbxFirstName.TabIndex = 24;
+            // 
+            // lblFirstName
+            // 
+            this.lblFirstName.AutoSize = true;
+            this.lblFirstName.Location = new System.Drawing.Point(275, 117);
+            this.lblFirstName.Name = "lblFirstName";
+            this.lblFirstName.Size = new System.Drawing.Size(64, 15);
+            this.lblFirstName.TabIndex = 23;
+            this.lblFirstName.Text = "First Name";
+            // 
+            // txtbxCompanyID
+            // 
+            this.txtbxCompanyID.Location = new System.Drawing.Point(365, 352);
+            this.txtbxCompanyID.Name = "txtbxCompanyID";
+            this.txtbxCompanyID.Size = new System.Drawing.Size(121, 23);
+            this.txtbxCompanyID.TabIndex = 25;
+            // 
             // frmClientDetails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.txtbxCompanyID);
+            this.Controls.Add(this.txtbxFirstName);
+            this.Controls.Add(this.lblFirstName);
             this.Controls.Add(this.txtbxCallDurationNewClient);
             this.Controls.Add(this.lblCallDurationClientDetails);
             this.Controls.Add(this.btnRegister);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.cmbxContractNewClient);
-            this.Controls.Add(this.cmbxClientTypeNewClient);
             this.Controls.Add(this.txtbxClientIDNewClient);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.lblClientType);
+            this.Controls.Add(this.lblCompanyID);
             this.Controls.Add(this.lblContract);
             this.Controls.Add(this.txtbxEmailNewClient);
             this.Controls.Add(this.lblEmail);
@@ -238,8 +254,8 @@
             this.Controls.Add(this.lblCellNumber);
             this.Controls.Add(this.txtbxAddressNewClient);
             this.Controls.Add(this.lblAddress);
-            this.Controls.Add(this.txtbxNameNewClient);
-            this.Controls.Add(this.lblName);
+            this.Controls.Add(this.txtbxLastname);
+            this.Controls.Add(this.lblSurname);
             this.Controls.Add(this.btnNewClientDetails);
             this.Name = "frmClientDetails";
             this.Text = "Client Details";
@@ -251,8 +267,8 @@
         #endregion
 
         private Label btnNewClientDetails;
-        private Label lblName;
-        private TextBox txtbxNameNewClient;
+        private Label lblSurname;
+        private TextBox txtbxLastname;
         private TextBox txtbxAddressNewClient;
         private Label lblAddress;
         private TextBox txtbxCellNumberNewClient;
@@ -260,15 +276,17 @@
         private TextBox txtbxEmailNewClient;
         private Label lblEmail;
         private Label lblContract;
-        private Label lblClientType;
+        private Label lblCompanyID;
         private TextBox txtbxClientIDNewClient;
         private Label label7;
-        private ComboBox cmbxClientTypeNewClient;
         private ComboBox cmbxContractNewClient;
         private Button btnClear;
         private Button btnRegister;
         private TextBox txtbxCallDurationNewClient;
         private Label lblCallDurationClientDetails;
         private Button button1;
+        private TextBox txtbxFirstName;
+        private Label lblFirstName;
+        private TextBox txtbxCompanyID;
     }
 }
