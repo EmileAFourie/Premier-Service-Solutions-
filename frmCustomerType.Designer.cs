@@ -36,7 +36,7 @@
             this.btn = new System.Windows.Forms.Button();
             this.txtbxCallDuration = new System.Windows.Forms.TextBox();
             this.lblCallDuration = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtbxCallerNumber = new System.Windows.Forms.TextBox();
             this.lblCallerNumber = new System.Windows.Forms.Label();
             this.btnClear = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -117,13 +117,13 @@
             this.lblCallDuration.TabIndex = 21;
             this.lblCallDuration.Text = "Call Duration";
             // 
-            // textBox1
+            // txtbxCallerNumber
             // 
-            this.textBox1.Location = new System.Drawing.Point(289, 198);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(458, 23);
-            this.textBox1.TabIndex = 24;
+            this.txtbxCallerNumber.Location = new System.Drawing.Point(289, 198);
+            this.txtbxCallerNumber.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtbxCallerNumber.Name = "txtbxCallerNumber";
+            this.txtbxCallerNumber.Size = new System.Drawing.Size(458, 23);
+            this.txtbxCallerNumber.TabIndex = 24;
             // 
             // lblCallerNumber
             // 
@@ -150,7 +150,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtbxCallerNumber);
             this.Controls.Add(this.lblCallerNumber);
             this.Controls.Add(this.txtbxCallDuration);
             this.Controls.Add(this.lblCallDuration);
@@ -162,6 +162,7 @@
             this.Controls.Add(this.lblCallCentre);
             this.Name = "frmCustomerType";
             this.Text = "Customer Type";
+            this.Load += new System.EventHandler(this.frmCustomerType_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -177,7 +178,7 @@
         private Button btn;
         private TextBox txtbxCallDuration;
         private Label lblCallDuration;
-        private TextBox textBox1;
+        private TextBox txtbxCallerNumber;
         private Label lblCallerNumber;
         private Button btnClear;
     }

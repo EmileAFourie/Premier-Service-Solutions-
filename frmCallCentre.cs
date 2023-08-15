@@ -17,6 +17,7 @@ namespace Premier_Service_Solutions
             InitializeComponent();
         }
 
+
         private void label1_Click(object sender, EventArgs e)
         {
 
@@ -29,9 +30,26 @@ namespace Premier_Service_Solutions
 
         private void btnAnswerCall_Click(object sender, EventArgs e)
         {
-            frmCustomerType CustomerTypeForm = new frmCustomerType();
-            CustomerTypeForm.Show();
+            frmCustomerType customerTypeForm = new frmCustomerType();
 
+            // Get the value from txtbxIncomingCall
+            string callerNumber = txtbxIncomingCall.Text;
+
+            DateTime currentDatetime = DateTime.Now;
+
+            string formattedDatetime = currentDatetime.ToString("yyyy-MM-dd HH:mm:ss");
+
+            // Pass both date/time and caller number to frmCustomerType
+            customerTypeForm.SetValues(formattedDatetime, callerNumber);
+
+            customerTypeForm.Show();
+            this.Hide();
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            frmNavigation back = new frmNavigation();
+            back.Show();
             this.Hide();
         }
     }

@@ -36,6 +36,7 @@
             this.txtbxCallerID = new System.Windows.Forms.TextBox();
             this.lblCallerID = new System.Windows.Forms.Label();
             this.btnClear = new System.Windows.Forms.Button();
+            this.btnBack = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnDecline
@@ -85,6 +86,7 @@
             this.txtbxIncomingCall.Name = "txtbxIncomingCall";
             this.txtbxIncomingCall.Size = new System.Drawing.Size(371, 23);
             this.txtbxIncomingCall.TabIndex = 12;
+            this.txtbxIncomingCall.Text = "+27 76 323 7618";
             // 
             // txtbxCallerID
             // 
@@ -93,6 +95,7 @@
             this.txtbxCallerID.Name = "txtbxCallerID";
             this.txtbxCallerID.Size = new System.Drawing.Size(371, 23);
             this.txtbxCallerID.TabIndex = 14;
+            this.txtbxCallerID.Text = "Emile Ayden Fourie";
             // 
             // lblCallerID
             // 
@@ -114,11 +117,22 @@
             this.btnClear.Text = "Back";
             this.btnClear.UseVisualStyleBackColor = true;
             // 
+            // btnBack
+            // 
+            this.btnBack.Location = new System.Drawing.Point(12, 12);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(40, 22);
+            this.btnBack.TabIndex = 15;
+            this.btnBack.Text = "<<<";
+            this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            // 
             // frmCallCentre
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnBack);
             this.Controls.Add(this.txtbxCallerID);
             this.Controls.Add(this.lblCallerID);
             this.Controls.Add(this.txtbxIncomingCall);
@@ -143,5 +157,6 @@
         private TextBox txtbxCallerID;
         private Label lblCallerID;
         private Button btnClear;
+        private Button btnBack;
     }
 }

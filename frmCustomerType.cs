@@ -17,6 +17,17 @@ namespace Premier_Service_Solutions
             InitializeComponent();
         }
 
+        public void SetDateTime(string dateTime)
+        {
+            txtbxTimestamp.Text = dateTime; 
+        }
+
+        public void SetValues(string dateTime, string callerNumber)
+        {
+            txtbxTimestamp.Text = dateTime;
+            txtbxCallerNumber.Text = callerNumber;
+        }
+
         private void label1_Click(object sender, EventArgs e)
         {
 
@@ -49,6 +60,11 @@ namespace Premier_Service_Solutions
             frmExistingClientSearch Search = new frmExistingClientSearch();
             Search.Show();
             this.Hide();
+        }
+
+        private void frmCustomerType_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
