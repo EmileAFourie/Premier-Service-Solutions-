@@ -32,8 +32,9 @@ namespace Premier_Service_Solutions
             else
             {
                 frmExistingEmployeeDetails frmDetails = new frmExistingEmployeeDetails();
+                frmDetails.EmployeeID = employeeID;
                 frmDetails.ShowDialog();
-                // DialogResult = DialogResult.OK;
+                DialogResult = DialogResult.OK;
             }
         }
 

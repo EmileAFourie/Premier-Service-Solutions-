@@ -66,6 +66,18 @@ namespace Premier_Service_Solutions
             Password = password;
         }
 
+        public Employee(int employeeID, string firstName, string surname, string email, string cellNo, string postion, string department, string field)
+        {
+            EmployeeID = employeeID;
+            FirstName = firstName;
+            Surname = surname;
+            Email = email;
+            CellNo = cellNo;
+            Postion = postion;
+            Department = department;
+            Field = field;
+        }
+
         public Employee() { }
 
 
@@ -118,7 +130,7 @@ namespace Premier_Service_Solutions
             cnn = new SqlConnection(connectionString);
             cnn.Open();
 
-            cmd = new SqlCommand($"DELETE FROM Employee WHERE JobCardNumber = {employeeID}", cnn);
+            cmd = new SqlCommand($"DELETE FROM Employee WHERE EmployeeID = {employeeID}", cnn);
             cmd.ExecuteNonQuery();
 
             cnn.Close();

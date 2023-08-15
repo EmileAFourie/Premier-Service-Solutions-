@@ -52,7 +52,15 @@ namespace Premier_Service_Solutions
 
         private void btnClear_Click(object sender, EventArgs e)
         {
-
+            txtbxName.Clear();
+            txtSurname.Clear();
+            txtbxEmail.Clear();
+            txtCell.Clear();
+            txtbxPosition.Clear();
+            txtbxDepartment.Clear();
+            txtField.Clear();
+            txtUser.Clear();
+            txtPassword.Clear();
         }
     }
 }
