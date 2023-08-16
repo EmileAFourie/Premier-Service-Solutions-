@@ -125,6 +125,7 @@
             this.btnAssignTicket.TabIndex = 5;
             this.btnAssignTicket.Text = "Assign Ticket";
             this.btnAssignTicket.UseVisualStyleBackColor = true;
+            this.btnAssignTicket.Click += new System.EventHandler(this.btnAssignTicket_Click);
             // 
             // btnEscalateTicket
             // 
@@ -169,6 +170,7 @@
             this.btnSearchTicket.TabIndex = 9;
             this.btnSearchTicket.Text = "Search Ticket";
             this.btnSearchTicket.UseVisualStyleBackColor = true;
+            this.btnSearchTicket.Click += new System.EventHandler(this.btnSearchTicket_Click);
             // 
             // txtbxSearchTicket
             // 
@@ -197,6 +199,7 @@
             this.btnBack.TabIndex = 16;
             this.btnBack.Text = "<<<";
             this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // comboBox1
             // 

@@ -58,6 +58,7 @@
             this.btnViewContractPerformance.TabIndex = 1;
             this.btnViewContractPerformance.Text = "View Contract Performance";
             this.btnViewContractPerformance.UseVisualStyleBackColor = true;
+            this.btnViewContractPerformance.Click += new System.EventHandler(this.btnViewContractPerformance_Click);
             // 
             // btnEditContracts
             // 
@@ -69,6 +70,7 @@
             this.btnEditContracts.TabIndex = 2;
             this.btnEditContracts.Text = "Edit Contracts";
             this.btnEditContracts.UseVisualStyleBackColor = true;
+            this.btnEditContracts.Click += new System.EventHandler(this.btnEditContracts_Click);
             // 
             // btnClear
             // 
@@ -88,6 +90,7 @@
             this.btnBack.TabIndex = 17;
             this.btnBack.Text = "<<<";
             this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // frmContracts
             // 

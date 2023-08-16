@@ -132,5 +132,7 @@ namespace Premier_Service_Solutions
             Logout.Show();
             MessageBox.Show("You have been logged out!");
         }
+
+        
     }
 }

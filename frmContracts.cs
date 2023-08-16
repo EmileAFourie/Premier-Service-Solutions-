@@ -26,7 +26,7 @@ namespace Premier_Service_Solutions
 
         private void btnViewContractPerformance_Click(object sender, EventArgs e)
         {
-
+            MessageBox.Show("We didnt get this far :'(");
         }
 
         private void btnBack_Click(object sender, EventArgs e)
@@ -35,5 +35,7 @@ namespace Premier_Service_Solutions
             back.Show();
             this.Hide();
         }
+
+       
     }
 }
