@@ -52,6 +52,11 @@ namespace Premier_Service_Solutions
             this.Hide();
         }
 
-
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            frmCustomerType back = new frmCustomerType();
+            this.Hide();
+            back.Show();
+        }
     }
 }

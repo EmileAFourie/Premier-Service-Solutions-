@@ -197,7 +197,7 @@ namespace Premier_Service_Solutions
                 int ticketID = Convert.ToInt32(dgvPreviousTickets.SelectedRows[0].Cells[0].Value);
 
                 // Create the database connection and command
-               // string connect = @"Data source = (local); Initial Catalog=PremierServiceSolutions; Integrated Security= SSPI";
+                string connect = @"Data source = (local); Initial Catalog=PremierServiceSolutions; Integrated Security= SSPI";
                 using (SqlConnection con = new SqlConnection(connect))
                 {
                     con.Open();
@@ -218,6 +218,14 @@ namespace Premier_Service_Solutions
             {
                 MessageBox.Show("Please select a ticket to delete.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            frmExistingClientSearch Back = new frmExistingClientSearch();
+            this.Hide();
+            Back.Show();
         }
     }
     }

@@ -45,6 +45,7 @@
             this.lblCallDurationClientDetails = new System.Windows.Forms.Label();
             this.txtbxFirstName = new System.Windows.Forms.TextBox();
             this.lblFirstName = new System.Windows.Forms.Label();
+            this.btnBack = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnNewClientDetails
@@ -195,11 +196,22 @@
             this.lblFirstName.TabIndex = 23;
             this.lblFirstName.Text = "First Name";
             // 
+            // btnBack
+            // 
+            this.btnBack.Location = new System.Drawing.Point(12, 12);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(40, 22);
+            this.btnBack.TabIndex = 25;
+            this.btnBack.Text = "<<<";
+            this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            // 
             // frmClientDetails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnBack);
             this.Controls.Add(this.txtbxFirstName);
             this.Controls.Add(this.lblFirstName);
             this.Controls.Add(this.txtbxCallDurationNewClient);
@@ -244,5 +256,6 @@
         private Button button1;
         private TextBox txtbxFirstName;
         private Label lblFirstName;
+        private Button btnBack;
     }
 }

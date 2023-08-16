@@ -51,6 +51,7 @@
             this.txtbxCallDuration = new System.Windows.Forms.TextBox();
             this.lblCallDuration = new System.Windows.Forms.Label();
             this.lblPreviousTickets = new System.Windows.Forms.Label();
+            this.btnBack = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPreviousTickets)).BeginInit();
             this.grpbxNewTicket.SuspendLayout();
             this.SuspendLayout();
@@ -279,11 +280,22 @@
             this.lblPreviousTickets.TabIndex = 26;
             this.lblPreviousTickets.Text = "Tickets:";
             // 
+            // btnBack
+            // 
+            this.btnBack.Location = new System.Drawing.Point(12, 9);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(40, 22);
+            this.btnBack.TabIndex = 27;
+            this.btnBack.Text = "<<<";
+            this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            // 
             // frmTicketManagement
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(925, 643);
+            this.Controls.Add(this.btnBack);
             this.Controls.Add(this.lblPreviousTickets);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.txtbxCallDuration);
@@ -335,5 +347,6 @@
         private Button btnDelete;
         private Button button2;
         private Button btnUpdate;
+        private Button btnBack;
     }
 }
