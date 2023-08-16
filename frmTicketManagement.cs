@@ -53,6 +53,8 @@ namespace Premier_Service_Solutions
             string Status = "Unnassigned";
             int ClientID = int.Parse(txtbxClientID.Text);
 
+            dataHandler = new DataHandler();
+
             dataHandler.LogTicket(TypeOfError, Description, DateOpened, Priority, Status, ClientID);
 
             MessageBox.Show("Ticket added", "Ticket Management", MessageBoxButtons.OK, MessageBoxIcon.Information);
