@@ -88,5 +88,10 @@ namespace Premier_Service_Solutions
                 MessageBox.Show("Employee could not be deleted.");
             }
         }
+
+        private void btnGenerateReport_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

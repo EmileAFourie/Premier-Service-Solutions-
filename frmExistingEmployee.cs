@@ -42,5 +42,15 @@ namespace Premier_Service_Solutions
         {
             txtbxEmployeeID.Clear();
         }
+
+        private void btnClear_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSearch_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -62,7 +62,6 @@ namespace Premier_Service_Solutions
             txtUser.Clear();
             txtPassword.Clear();
         }
-
     }
 }
 
