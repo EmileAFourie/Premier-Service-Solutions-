@@ -28,262 +28,316 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnGenerateReport = new System.Windows.Forms.Button();
-            this.btnDelete = new System.Windows.Forms.Button();
-            this.label6 = new System.Windows.Forms.Label();
-            this.txtbxAge = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.txtbxPosition = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txtbxEmail = new System.Windows.Forms.TextBox();
-            this.lblName = new System.Windows.Forms.Label();
-            this.txtbxName = new System.Windows.Forms.TextBox();
-            this.lblExistingEmployee = new System.Windows.Forms.Label();
-            this.lblEmployeeID = new System.Windows.Forms.Label();
-            this.txtbxEmployeeID = new System.Windows.Forms.TextBox();
-            this.lblPerformance = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.btnUpdate = new System.Windows.Forms.Button();
-            this.lblAssignedTickets = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.SuspendLayout();
+            btnGenerateReport = new Button();
+            btnDelete = new Button();
+            lblExistingEmployee = new Label();
+            lblEmployeeID = new Label();
+            txtbxEmployeeID = new TextBox();
+            btnUpdate = new Button();
+            lblAssignedTickets = new Label();
+            dataGridView1 = new DataGridView();
+            button1 = new Button();
+            label7 = new Label();
+            txtField = new TextBox();
+            label1 = new Label();
+            txtCell = new TextBox();
+            label6 = new Label();
+            txtSurname = new TextBox();
+            label5 = new Label();
+            txtbxPosition = new TextBox();
+            label4 = new Label();
+            txtbxEmail = new TextBox();
+            lblName = new Label();
+            txtbxName = new TextBox();
+            label2 = new Label();
+            txtbxDepartment = new TextBox();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            SuspendLayout();
             // 
             // btnGenerateReport
             // 
-            this.btnGenerateReport.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnGenerateReport.Location = new System.Drawing.Point(659, 553);
-            this.btnGenerateReport.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnGenerateReport.Name = "btnGenerateReport";
-            this.btnGenerateReport.Size = new System.Drawing.Size(127, 31);
-            this.btnGenerateReport.TabIndex = 25;
-            this.btnGenerateReport.Text = "Generate Report";
-            this.btnGenerateReport.UseVisualStyleBackColor = true;
+            btnGenerateReport.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnGenerateReport.Location = new Point(578, 557);
+            btnGenerateReport.Margin = new Padding(3, 4, 3, 4);
+            btnGenerateReport.Name = "btnGenerateReport";
+            btnGenerateReport.Size = new Size(127, 31);
+            btnGenerateReport.TabIndex = 25;
+            btnGenerateReport.Text = "Generate Report";
+            btnGenerateReport.UseVisualStyleBackColor = true;
             // 
             // btnDelete
             // 
-            this.btnDelete.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnDelete.Location = new System.Drawing.Point(120, 556);
-            this.btnDelete.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(86, 31);
-            this.btnDelete.TabIndex = 24;
-            this.btnDelete.Text = "Delete";
-            this.btnDelete.UseVisualStyleBackColor = true;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label6.Location = new System.Drawing.Point(87, 364);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(32, 15);
-            this.label6.TabIndex = 23;
-            this.label6.Text = "Age:";
-            // 
-            // txtbxAge
-            // 
-            this.txtbxAge.Location = new System.Drawing.Point(147, 353);
-            this.txtbxAge.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtbxAge.Name = "txtbxAge";
-            this.txtbxAge.Size = new System.Drawing.Size(404, 23);
-            this.txtbxAge.TabIndex = 22;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(62, 304);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(54, 15);
-            this.label5.TabIndex = 21;
-            this.label5.Text = "Position:";
-            // 
-            // txtbxPosition
-            // 
-            this.txtbxPosition.Location = new System.Drawing.Point(147, 300);
-            this.txtbxPosition.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtbxPosition.Name = "txtbxPosition";
-            this.txtbxPosition.Size = new System.Drawing.Size(404, 23);
-            this.txtbxPosition.TabIndex = 20;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(77, 251);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(39, 15);
-            this.label4.TabIndex = 19;
-            this.label4.Text = "Email:";
-            // 
-            // txtbxEmail
-            // 
-            this.txtbxEmail.Location = new System.Drawing.Point(147, 240);
-            this.txtbxEmail.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtbxEmail.Name = "txtbxEmail";
-            this.txtbxEmail.Size = new System.Drawing.Size(404, 23);
-            this.txtbxEmail.TabIndex = 18;
-            // 
-            // lblName
-            // 
-            this.lblName.AutoSize = true;
-            this.lblName.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblName.Location = new System.Drawing.Point(74, 189);
-            this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(43, 15);
-            this.lblName.TabIndex = 17;
-            this.lblName.Text = "Name:";
-            // 
-            // txtbxName
-            // 
-            this.txtbxName.Location = new System.Drawing.Point(147, 185);
-            this.txtbxName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtbxName.Name = "txtbxName";
-            this.txtbxName.Size = new System.Drawing.Size(404, 23);
-            this.txtbxName.TabIndex = 16;
+            btnDelete.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnDelete.Location = new Point(29, 570);
+            btnDelete.Margin = new Padding(3, 4, 3, 4);
+            btnDelete.Name = "btnDelete";
+            btnDelete.Size = new Size(86, 31);
+            btnDelete.TabIndex = 24;
+            btnDelete.Text = "Delete";
+            btnDelete.UseVisualStyleBackColor = true;
+            btnDelete.Click += btnDelete_Click;
             // 
             // lblExistingEmployee
             // 
-            this.lblExistingEmployee.AutoSize = true;
-            this.lblExistingEmployee.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblExistingEmployee.Location = new System.Drawing.Point(270, 45);
-            this.lblExistingEmployee.Name = "lblExistingEmployee";
-            this.lblExistingEmployee.Size = new System.Drawing.Size(347, 37);
-            this.lblExistingEmployee.TabIndex = 15;
-            this.lblExistingEmployee.Text = "Existing Employee Details";
+            lblExistingEmployee.AutoSize = true;
+            lblExistingEmployee.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
+            lblExistingEmployee.Location = new Point(270, 45);
+            lblExistingEmployee.Name = "lblExistingEmployee";
+            lblExistingEmployee.Size = new Size(347, 37);
+            lblExistingEmployee.TabIndex = 15;
+            lblExistingEmployee.Text = "Existing Employee Details";
             // 
             // lblEmployeeID
             // 
-            this.lblEmployeeID.AutoSize = true;
-            this.lblEmployeeID.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblEmployeeID.Location = new System.Drawing.Point(38, 140);
-            this.lblEmployeeID.Name = "lblEmployeeID";
-            this.lblEmployeeID.Size = new System.Drawing.Size(77, 15);
-            this.lblEmployeeID.TabIndex = 14;
-            this.lblEmployeeID.Text = "EmployeeID:";
+            lblEmployeeID.AutoSize = true;
+            lblEmployeeID.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Regular, GraphicsUnit.Point);
+            lblEmployeeID.Location = new Point(37, 133);
+            lblEmployeeID.Name = "lblEmployeeID";
+            lblEmployeeID.Size = new Size(67, 13);
+            lblEmployeeID.TabIndex = 14;
+            lblEmployeeID.Text = "EmployeeID:";
             // 
             // txtbxEmployeeID
             // 
-            this.txtbxEmployeeID.Location = new System.Drawing.Point(147, 136);
-            this.txtbxEmployeeID.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtbxEmployeeID.Name = "txtbxEmployeeID";
-            this.txtbxEmployeeID.Size = new System.Drawing.Size(404, 23);
-            this.txtbxEmployeeID.TabIndex = 13;
-            // 
-            // lblPerformance
-            // 
-            this.lblPerformance.AutoSize = true;
-            this.lblPerformance.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblPerformance.Location = new System.Drawing.Point(32, 409);
-            this.lblPerformance.Name = "lblPerformance";
-            this.lblPerformance.Size = new System.Drawing.Size(83, 15);
-            this.lblPerformance.TabIndex = 27;
-            this.lblPerformance.Text = "Performance:";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(147, 409);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(404, 23);
-            this.textBox1.TabIndex = 26;
+            txtbxEmployeeID.Enabled = false;
+            txtbxEmployeeID.Location = new Point(146, 129);
+            txtbxEmployeeID.Margin = new Padding(3, 4, 3, 4);
+            txtbxEmployeeID.Name = "txtbxEmployeeID";
+            txtbxEmployeeID.ReadOnly = true;
+            txtbxEmployeeID.Size = new Size(180, 23);
+            txtbxEmployeeID.TabIndex = 13;
             // 
             // btnUpdate
             // 
-            this.btnUpdate.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnUpdate.Location = new System.Drawing.Point(299, 464);
-            this.btnUpdate.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(86, 31);
-            this.btnUpdate.TabIndex = 28;
-            this.btnUpdate.Text = "Update";
-            this.btnUpdate.UseVisualStyleBackColor = true;
+            btnUpdate.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnUpdate.Location = new Point(146, 515);
+            btnUpdate.Margin = new Padding(3, 4, 3, 4);
+            btnUpdate.Name = "btnUpdate";
+            btnUpdate.Size = new Size(86, 31);
+            btnUpdate.TabIndex = 28;
+            btnUpdate.Text = "Update";
+            btnUpdate.UseVisualStyleBackColor = true;
+            btnUpdate.Click += btnUpdate_Click;
             // 
             // lblAssignedTickets
             // 
-            this.lblAssignedTickets.AutoSize = true;
-            this.lblAssignedTickets.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblAssignedTickets.Location = new System.Drawing.Point(673, 116);
-            this.lblAssignedTickets.Name = "lblAssignedTickets";
-            this.lblAssignedTickets.Size = new System.Drawing.Size(99, 15);
-            this.lblAssignedTickets.TabIndex = 29;
-            this.lblAssignedTickets.Text = "Assigned Tickets";
+            lblAssignedTickets.AutoSize = true;
+            lblAssignedTickets.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            lblAssignedTickets.Location = new Point(592, 120);
+            lblAssignedTickets.Name = "lblAssignedTickets";
+            lblAssignedTickets.Size = new Size(99, 15);
+            lblAssignedTickets.TabIndex = 29;
+            lblAssignedTickets.Text = "Assigned Tickets";
             // 
             // dataGridView1
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(593, 140);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(274, 391);
-            this.dataGridView1.TabIndex = 30;
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Location = new Point(512, 144);
+            dataGridView1.Margin = new Padding(3, 4, 3, 4);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.RowHeadersWidth = 51;
+            dataGridView1.RowTemplate.Height = 25;
+            dataGridView1.Size = new Size(274, 391);
+            dataGridView1.TabIndex = 30;
             // 
             // button1
             // 
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button1.Location = new System.Drawing.Point(12, 556);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(86, 31);
-            this.button1.TabIndex = 31;
-            this.button1.Text = "Back";
-            this.button1.UseVisualStyleBackColor = true;
+            button1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            button1.Location = new Point(12, 556);
+            button1.Margin = new Padding(3, 4, 3, 4);
+            button1.Name = "button1";
+            button1.Size = new Size(86, 31);
+            button1.TabIndex = 31;
+            button1.Text = "Back";
+            button1.UseVisualStyleBackColor = true;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Regular, GraphicsUnit.Point);
+            label7.Location = new Point(80, 471);
+            label7.Name = "label7";
+            label7.Size = new Size(32, 13);
+            label7.TabIndex = 44;
+            label7.Text = "Field:";
+            // 
+            // txtField
+            // 
+            txtField.Location = new Point(146, 463);
+            txtField.Margin = new Padding(3, 4, 3, 4);
+            txtField.Multiline = true;
+            txtField.Name = "txtField";
+            txtField.Size = new Size(181, 23);
+            txtField.TabIndex = 43;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.Location = new Point(71, 316);
+            label1.Name = "label1";
+            label1.Size = new Size(41, 13);
+            label1.TabIndex = 42;
+            label1.Text = "Phone:";
+            // 
+            // txtCell
+            // 
+            txtCell.Location = new Point(146, 313);
+            txtCell.Margin = new Padding(3, 4, 3, 4);
+            txtCell.Name = "txtCell";
+            txtCell.Size = new Size(181, 23);
+            txtCell.TabIndex = 41;
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Regular, GraphicsUnit.Point);
+            label6.Location = new Point(55, 221);
+            label6.Name = "label6";
+            label6.Size = new Size(55, 13);
+            label6.TabIndex = 40;
+            label6.Text = "Surname: ";
+            // 
+            // txtSurname
+            // 
+            txtSurname.Location = new Point(146, 218);
+            txtSurname.Margin = new Padding(3, 4, 3, 4);
+            txtSurname.Name = "txtSurname";
+            txtSurname.Size = new Size(181, 23);
+            txtSurname.TabIndex = 39;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Regular, GraphicsUnit.Point);
+            label5.Location = new Point(62, 370);
+            label5.Name = "label5";
+            label5.Size = new Size(47, 13);
+            label5.TabIndex = 38;
+            label5.Text = "Position:";
+            // 
+            // txtbxPosition
+            // 
+            txtbxPosition.Location = new Point(146, 370);
+            txtbxPosition.Margin = new Padding(3, 4, 3, 4);
+            txtbxPosition.Name = "txtbxPosition";
+            txtbxPosition.Size = new Size(181, 23);
+            txtbxPosition.TabIndex = 37;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Regular, GraphicsUnit.Point);
+            label4.Location = new Point(76, 267);
+            label4.Name = "label4";
+            label4.Size = new Size(35, 13);
+            label4.TabIndex = 36;
+            label4.Text = "Email:";
+            // 
+            // txtbxEmail
+            // 
+            txtbxEmail.Location = new Point(146, 264);
+            txtbxEmail.Margin = new Padding(3, 4, 3, 4);
+            txtbxEmail.Name = "txtbxEmail";
+            txtbxEmail.Size = new Size(267, 23);
+            txtbxEmail.TabIndex = 35;
+            // 
+            // lblName
+            // 
+            lblName.AutoSize = true;
+            lblName.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Regular, GraphicsUnit.Point);
+            lblName.Location = new Point(48, 174);
+            lblName.Name = "lblName";
+            lblName.Size = new Size(60, 13);
+            lblName.TabIndex = 34;
+            lblName.Text = "First Name:";
+            // 
+            // txtbxName
+            // 
+            txtbxName.Location = new Point(146, 171);
+            txtbxName.Margin = new Padding(3, 4, 3, 4);
+            txtbxName.Name = "txtbxName";
+            txtbxName.Size = new Size(181, 23);
+            txtbxName.TabIndex = 33;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.Location = new Point(39, 412);
+            label2.Name = "label2";
+            label2.Size = new Size(68, 13);
+            label2.TabIndex = 32;
+            label2.Text = "Department: ";
+            // 
+            // txtbxDepartment
+            // 
+            txtbxDepartment.Location = new Point(146, 409);
+            txtbxDepartment.Margin = new Padding(3, 4, 3, 4);
+            txtbxDepartment.Name = "txtbxDepartment";
+            txtbxDepartment.Size = new Size(181, 23);
+            txtbxDepartment.TabIndex = 31;
             // 
             // frmExistingEmployeeDetails
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(918, 646);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.lblAssignedTickets);
-            this.Controls.Add(this.btnUpdate);
-            this.Controls.Add(this.lblPerformance);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.btnGenerateReport);
-            this.Controls.Add(this.btnDelete);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.txtbxAge);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.txtbxPosition);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.txtbxEmail);
-            this.Controls.Add(this.lblName);
-            this.Controls.Add(this.txtbxName);
-            this.Controls.Add(this.lblExistingEmployee);
-            this.Controls.Add(this.lblEmployeeID);
-            this.Controls.Add(this.txtbxEmployeeID);
-            this.Name = "frmExistingEmployeeDetails";
-            this.Text = "Existing Employee Details";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(893, 646);
+            Controls.Add(label7);
+            Controls.Add(txtField);
+            Controls.Add(label1);
+            Controls.Add(txtCell);
+            Controls.Add(label6);
+            Controls.Add(txtSurname);
+            Controls.Add(label5);
+            Controls.Add(txtbxPosition);
+            Controls.Add(label4);
+            Controls.Add(txtbxEmail);
+            Controls.Add(lblName);
+            Controls.Add(txtbxName);
+            Controls.Add(label2);
+            Controls.Add(txtbxDepartment);
+            Controls.Add(dataGridView1);
+            Controls.Add(lblAssignedTickets);
+            Controls.Add(btnUpdate);
+            Controls.Add(btnGenerateReport);
+            Controls.Add(btnDelete);
+            Controls.Add(lblExistingEmployee);
+            Controls.Add(lblEmployeeID);
+            Controls.Add(txtbxEmployeeID);
+            Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            Name = "frmExistingEmployeeDetails";
+            Text = "Existing Employee Details";
+            Load += frmExistingEmployeeDetails_Load;
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
         private Button btnGenerateReport;
         private Button btnDelete;
+        private Label lblExistingEmployee;
+        private Label lblEmployeeID;
+        private TextBox txtbxEmployeeID;
+        private Button btnUpdate;
+        private Label lblAssignedTickets;
+        private DataGridView dataGridView1;
+        private Button button1;
+        private Label label7;
+        private TextBox txtField;
+        private Label label1;
+        private TextBox txtCell;
         private Label label6;
-        private TextBox txtbxAge;
+        private TextBox txtSurname;
         private Label label5;
         private TextBox txtbxPosition;
         private Label label4;
         private TextBox txtbxEmail;
         private Label lblName;
         private TextBox txtbxName;
-        private Label lblExistingEmployee;
-        private Label lblEmployeeID;
-        private TextBox txtbxEmployeeID;
-        private Label lblPerformance;
-        private TextBox textBox1;
-        private Button btnUpdate;
-        private Label lblAssignedTickets;
-        private DataGridView dataGridView1;
-        private Button button1;
+        private Label label2;
+        private TextBox txtbxDepartment;
     }
 }
