@@ -2,6 +2,7 @@
 using System.Data;
 using System.Data.SqlClient;
 using System.Windows.Forms;
+using System.Linq;
 
 namespace Premier_Service_Solutions
 {
@@ -110,6 +111,20 @@ namespace Premier_Service_Solutions
                     }
                 }
             }
+        }
+
+        public DataTable RetrieveContract(int ContractID)
+        {
+            conn = new SqlConnection(connect);
+            conn.Open();
+
+            SqlDataAdapter data = new SqlDataAdapter($@"SELECT * FROM Contract WHERE ContractID = {ContractID}", conn);
+            DataTable dt = new DataTable();
+            data.Fill(dt);
+
+            conn.Close();
+
+            return dt;
         }
 
     }

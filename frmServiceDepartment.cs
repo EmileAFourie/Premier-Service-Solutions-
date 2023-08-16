@@ -29,25 +29,22 @@ namespace Premier_Service_Solutions
 
         private void btnAssignTicket_Click(object sender, EventArgs e)
         {
-            //wilioService twilioService = new TwilioService();
-            // twilioService.SendTicketNotification("+27763237618", "12345", "Install new HVAC system");
+            int employeeID = 2;
+
+            if (UnassignedTicketID != -1)
+            {
+                Ticket ticket = new Ticket();
+                ticket.AssignTicket(employeeID, UnassignedTicketID);
+                Refresh();
+
+                //wilioService twilioService = new TwilioService();
+                // twilioService.SendTicketNotification("+27763237618", "12345", "Install new HVAC system");
+            }
         }
 
         private void frmServiceDepartment_Load(object sender, EventArgs e)
         {
-            Ticket ticket = new Ticket();
-
-            DataTable dt = ticket.GetUnassignedTickets();
-            DataTable dt2 = ticket.GetAssignedTickets();
-
-            dataGridView2.DataSource = dt2;
-            dataGridView1.DataSource = dt;
-
-            UnassignedTicketID = DataGridViewGetTicketID(dataGridView1.Rows[0]);
-            AssignedTicketID = DataGridViewGetTicketID(dataGridView2.Rows[0]);
-
-            lblAssigned.Text = "Selected Assigned Ticket ID: " + AssignedTicketID.ToString();
-            lblUnassigned.Text = "Selected Unassigned Ticket ID: " + UnassignedTicketID.ToString();
+            RefreshGrid();
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -101,6 +98,22 @@ namespace Premier_Service_Solutions
             {
                 return -1;
             }
+        }
+        private void RefreshGrid()
+        {
+            Ticket ticket = new Ticket();
+
+            DataTable dt = ticket.GetUnassignedTickets();
+            DataTable dt2 = ticket.GetAssignedTickets();
+
+            dataGridView2.DataSource = dt2;
+            dataGridView1.DataSource = dt;
+
+            UnassignedTicketID = DataGridViewGetTicketID(dataGridView1.Rows[0]);
+            AssignedTicketID = DataGridViewGetTicketID(dataGridView2.Rows[0]);
+
+            lblAssigned.Text = "Selected Assigned Ticket ID: " + AssignedTicketID.ToString();
+            lblUnassigned.Text = "Selected Unassigned Ticket ID: " + UnassignedTicketID.ToString();
         }
     }
 }

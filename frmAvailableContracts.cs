@@ -70,7 +70,11 @@ namespace Premier_Service_Solutions
 
         private void frmAvailableContracts_Load(object sender, EventArgs e)
         {
+            DataHandler dh = new DataHandler();
 
+            dgvSaver.DataSource = dh.RetrieveContract(1);
+            dgvBasic.DataSource = dh.RetrieveContract(2);
+            dgvExtra.DataSource = dh.RetrieveContract(3);
         }
     }
 }

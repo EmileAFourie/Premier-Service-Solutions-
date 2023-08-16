@@ -232,10 +232,8 @@ namespace Premier_Service_Solutions
             data.Fill(dt);
 
             cnn.Close();
-            return dt;
+            return dt;      
         }
-
-
 
     }
 }
