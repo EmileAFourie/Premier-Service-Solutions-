@@ -56,8 +56,9 @@ namespace Premier_Service_Solutions
         private void btnServiceDepartment_Click_1(object sender, EventArgs e)
         {
             frmServiceDepartment serviceDepartmentForm = new frmServiceDepartment();
-            this.Close();
-            serviceDepartmentForm.Show();
+            this.Hide();
+            serviceDepartmentForm.ShowDialog();
+            this.Show();
         }
 
         private void btnEmployees_Click_1(object sender, EventArgs e)
