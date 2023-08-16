@@ -195,22 +195,21 @@ namespace Premier_Service_Solutions
                 int ticketID = Convert.ToInt32(dgvPreviousTickets.SelectedRows[0].Cells[0].Value);
 
                 // Create the database connection and command
-               // string connect = @"Data source = (local); Initial Catalog=PremierServiceSolutions; Integrated Security= SSPI";
                 using (SqlConnection con = new SqlConnection(connect))
                 {
                     con.Open();
 
                     // Use parameterized query to avoid SQL injection
-                    string query = "DELETE FROM Ticket WHERE TicketID = @TicketID";
-                    using (SqlCommand cmd = new SqlCommand(query, con))
+                    string deleteQuery = "DELETE FROM Ticket WHERE TicketID = @TicketID";
+                    using (SqlCommand deleteCmd = new SqlCommand(deleteQuery, con))
                     {
-                        cmd.Parameters.AddWithValue("@TicketID", ticketID);
-                        cmd.ExecuteNonQuery();
+                        deleteCmd.Parameters.AddWithValue("@TicketID", ticketID);
+                        deleteCmd.ExecuteNonQuery();
                     }
                 }
 
                 // Refresh the DataGridView to reflect the changes
-                LoadDataToDataGridView();  // Assuming you have a method to load data to the DGV
+                LoadDataToDataGridView();  // Refresh the DGV based on clientID
             }
             else
             {
