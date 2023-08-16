@@ -22,7 +22,7 @@ namespace Premier_Service_Solutions
             frmNewEmployee newEmployeeForm = new frmNewEmployee();
             this.Close();
             newEmployeeForm.ShowDialog();
-           // DialogResult = DialogResult.OK;
+            // DialogResult = DialogResult.OK;
         }
 
         private void btnExistingEmployee_Click(object sender, EventArgs e)
@@ -31,7 +31,7 @@ namespace Premier_Service_Solutions
 
             this.Close();
             frmExisting.ShowDialog();
-          //  DialogResult = DialogResult.OK;
+            //  DialogResult = DialogResult.OK;
         }
 
         private void btnBack_Click(object sender, EventArgs e)
@@ -39,7 +39,7 @@ namespace Premier_Service_Solutions
             frmNavigation back = new frmNavigation();
             this.Hide();
             back.Show();
-            
+
         }
     }
 }

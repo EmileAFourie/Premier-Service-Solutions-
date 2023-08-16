@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
+using System.Data;
 
 namespace Premier_Service_Solutions
 {
@@ -218,6 +219,19 @@ namespace Premier_Service_Solutions
             cmd.ExecuteNonQuery();
 
             cnn.Close();
+        }
+
+        public DataTable GetEmployeeTickets()
+        {
+            cnn = new SqlConnection(connectionString);
+            cnn.Open();
+
+            SqlDataAdapter data = new SqlDataAdapter("SELECT * FROM EmployeeTickets", cnn);
+            DataTable dt = new DataTable();
+            data.Fill(dt);
+
+            cnn.Close();
+            return dt;
         }
 
     }
