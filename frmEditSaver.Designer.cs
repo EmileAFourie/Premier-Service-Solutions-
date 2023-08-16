@@ -28,12 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmEditSaver));
             this.btnBack = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnDisable = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnEnable = new System.Windows.Forms.Button();
-            this.dgvBasic = new System.Windows.Forms.DataGridView();
+            this.dgvSaver = new System.Windows.Forms.DataGridView();
             this.pictureBoxBasic = new System.Windows.Forms.PictureBox();
             this.lblPriority = new System.Windows.Forms.Label();
             this.lblAvailability = new System.Windows.Forms.Label();
@@ -45,7 +46,7 @@
             this.txtbxPrice = new System.Windows.Forms.TextBox();
             this.txtbxDescription = new System.Windows.Forms.TextBox();
             this.txtbxName = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvBasic)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvSaver)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBasic)).BeginInit();
             this.SuspendLayout();
             // 
@@ -95,20 +96,22 @@
             this.btnEnable.Text = "Enable";
             this.btnEnable.UseVisualStyleBackColor = true;
             // 
-            // dgvBasic
+            // dgvSaver
             // 
-            this.dgvBasic.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvBasic.Location = new System.Drawing.Point(146, 117);
-            this.dgvBasic.Name = "dgvBasic";
-            this.dgvBasic.RowTemplate.Height = 25;
-            this.dgvBasic.Size = new System.Drawing.Size(472, 122);
-            this.dgvBasic.TabIndex = 13;
+            this.dgvSaver.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvSaver.Location = new System.Drawing.Point(146, 117);
+            this.dgvSaver.Name = "dgvSaver";
+            this.dgvSaver.RowTemplate.Height = 25;
+            this.dgvSaver.Size = new System.Drawing.Size(472, 122);
+            this.dgvSaver.TabIndex = 13;
             // 
             // pictureBoxBasic
             // 
-            this.pictureBoxBasic.Location = new System.Drawing.Point(146, 26);
+            this.pictureBoxBasic.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxBasic.Image")));
+            this.pictureBoxBasic.Location = new System.Drawing.Point(146, 2);
             this.pictureBoxBasic.Name = "pictureBoxBasic";
-            this.pictureBoxBasic.Size = new System.Drawing.Size(472, 85);
+            this.pictureBoxBasic.Size = new System.Drawing.Size(472, 109);
+            this.pictureBoxBasic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxBasic.TabIndex = 12;
             this.pictureBoxBasic.TabStop = false;
             // 
@@ -212,12 +215,12 @@
             this.Controls.Add(this.btnDisable);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.btnEnable);
-            this.Controls.Add(this.dgvBasic);
+            this.Controls.Add(this.dgvSaver);
             this.Controls.Add(this.pictureBoxBasic);
             this.Name = "frmEditSaver";
             this.Text = "Edit Saver";
             this.Load += new System.EventHandler(this.frmEditSaver_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvBasic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvSaver)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBasic)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -231,7 +234,7 @@
         private Button btnDisable;
         private Button btnUpdate;
         private Button btnEnable;
-        private DataGridView dgvBasic;
+        private DataGridView dgvSaver;
         private PictureBox pictureBoxBasic;
         private Label lblPriority;
         private Label lblAvailability;

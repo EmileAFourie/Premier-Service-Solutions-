@@ -26,7 +26,7 @@ namespace Premier_Service_Solutions
             SqlDataAdapter da = new SqlDataAdapter(query, con);
             DataTable dt = new DataTable();
             da.Fill(dt);
-            dgvBasic.DataSource = dt;
+            dgvSaver.DataSource = dt;
         }
 
         private void btnBack_Click(object sender, EventArgs e)

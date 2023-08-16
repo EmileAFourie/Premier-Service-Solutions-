@@ -28,12 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmEditPremium));
             this.btnBack = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnDisable = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnEnable = new System.Windows.Forms.Button();
-            this.dgvBasic = new System.Windows.Forms.DataGridView();
+            this.dgvPremium = new System.Windows.Forms.DataGridView();
             this.pictureBoxBasic = new System.Windows.Forms.PictureBox();
             this.lblPriority = new System.Windows.Forms.Label();
             this.lblAvailability = new System.Windows.Forms.Label();
@@ -45,7 +46,7 @@
             this.txtbxPrice = new System.Windows.Forms.TextBox();
             this.txtbxDescription = new System.Windows.Forms.TextBox();
             this.txtbxName = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvBasic)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPremium)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBasic)).BeginInit();
             this.SuspendLayout();
             // 
@@ -76,6 +77,7 @@
             this.btnDisable.TabIndex = 16;
             this.btnDisable.Text = "Disable";
             this.btnDisable.UseVisualStyleBackColor = true;
+            this.btnDisable.Click += new System.EventHandler(this.btnDisable_Click);
             // 
             // btnUpdate
             // 
@@ -94,21 +96,24 @@
             this.btnEnable.TabIndex = 14;
             this.btnEnable.Text = "Enable";
             this.btnEnable.UseVisualStyleBackColor = true;
+            this.btnEnable.Click += new System.EventHandler(this.btnEnable_Click);
             // 
-            // dgvBasic
+            // dgvPremium
             // 
-            this.dgvBasic.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvBasic.Location = new System.Drawing.Point(153, 113);
-            this.dgvBasic.Name = "dgvBasic";
-            this.dgvBasic.RowTemplate.Height = 25;
-            this.dgvBasic.Size = new System.Drawing.Size(472, 122);
-            this.dgvBasic.TabIndex = 13;
+            this.dgvPremium.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvPremium.Location = new System.Drawing.Point(153, 113);
+            this.dgvPremium.Name = "dgvPremium";
+            this.dgvPremium.RowTemplate.Height = 25;
+            this.dgvPremium.Size = new System.Drawing.Size(472, 122);
+            this.dgvPremium.TabIndex = 13;
             // 
             // pictureBoxBasic
             // 
-            this.pictureBoxBasic.Location = new System.Drawing.Point(153, 22);
+            this.pictureBoxBasic.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxBasic.Image")));
+            this.pictureBoxBasic.Location = new System.Drawing.Point(153, 1);
             this.pictureBoxBasic.Name = "pictureBoxBasic";
-            this.pictureBoxBasic.Size = new System.Drawing.Size(472, 85);
+            this.pictureBoxBasic.Size = new System.Drawing.Size(472, 106);
+            this.pictureBoxBasic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxBasic.TabIndex = 12;
             this.pictureBoxBasic.TabStop = false;
             // 
@@ -212,12 +217,12 @@
             this.Controls.Add(this.btnDisable);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.btnEnable);
-            this.Controls.Add(this.dgvBasic);
+            this.Controls.Add(this.dgvPremium);
             this.Controls.Add(this.pictureBoxBasic);
             this.Name = "frmEditPremium";
             this.Text = "Edit Premium";
             this.Load += new System.EventHandler(this.frmEditPremium_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvBasic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPremium)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBasic)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -231,7 +236,7 @@
         private Button btnDisable;
         private Button btnUpdate;
         private Button btnEnable;
-        private DataGridView dgvBasic;
+        private DataGridView dgvPremium;
         private PictureBox pictureBoxBasic;
         private Label lblPriority;
         private Label lblAvailability;

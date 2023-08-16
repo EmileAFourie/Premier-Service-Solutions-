@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmEditbasic));
             this.pictureBoxBasic = new System.Windows.Forms.PictureBox();
             this.dgvBasic = new System.Windows.Forms.DataGridView();
             this.btnEnable = new System.Windows.Forms.Button();
@@ -51,9 +52,11 @@
             // 
             // pictureBoxBasic
             // 
-            this.pictureBoxBasic.Location = new System.Drawing.Point(146, 23);
+            this.pictureBoxBasic.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxBasic.Image")));
+            this.pictureBoxBasic.Location = new System.Drawing.Point(146, 2);
             this.pictureBoxBasic.Name = "pictureBoxBasic";
-            this.pictureBoxBasic.Size = new System.Drawing.Size(472, 85);
+            this.pictureBoxBasic.Size = new System.Drawing.Size(472, 106);
+            this.pictureBoxBasic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxBasic.TabIndex = 0;
             this.pictureBoxBasic.TabStop = false;
             // 
@@ -74,6 +77,7 @@
             this.btnEnable.TabIndex = 2;
             this.btnEnable.Text = "Enable";
             this.btnEnable.UseVisualStyleBackColor = true;
+            this.btnEnable.Click += new System.EventHandler(this.btnEnable_Click);
             // 
             // btnUpdate
             // 
@@ -92,6 +96,7 @@
             this.btnDisable.TabIndex = 4;
             this.btnDisable.Text = "Disable";
             this.btnDisable.UseVisualStyleBackColor = true;
+            this.btnDisable.Click += new System.EventHandler(this.btnDisable_Click);
             // 
             // btnDelete
             // 
