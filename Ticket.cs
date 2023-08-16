@@ -5,6 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace Premier_Service_Solutions
 {
@@ -13,6 +15,7 @@ namespace Premier_Service_Solutions
         private string connectionString = Global.connectionString;
         SqlConnection cnn;
         SqlCommand cmd;
+        SqlDataReader reader;
 
 
         private string status;
@@ -110,6 +113,30 @@ namespace Premier_Service_Solutions
             cmd.ExecuteNonQuery();
 
             cnn.Close();
+        }
+        public bool FindTicket(int ticketID)
+        {
+            try
+            {
+                cnn = new SqlConnection(connectionString);
+                cnn.Open();
+
+                cmd = new SqlCommand($@"SELECT * FROM Ticket WHERE TicketID = {ticketID}", cnn);
+                reader = cmd.ExecuteReader();
+
+                reader.Read();
+
+                description = reader.GetString(2);
+
+                cnn.Close();
+
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+
+            }
         }
 
     }

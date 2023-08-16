@@ -37,8 +37,17 @@ namespace Premier_Service_Solutions
                 ticket.AssignTicket(employeeID, UnassignedTicketID);
                 Refresh();
 
-                //wilioService twilioService = new TwilioService();
-                // twilioService.SendTicketNotification("+27763237618", "12345", "Install new HVAC system");
+                TwilioService twilioService = new TwilioService();
+
+                Employee employee = new Employee();
+                
+
+                employee.FindEmployee(employeeID);
+                ticket.FindTicket(UnassignedTicketID);
+
+
+                twilioService.SendTicketNotification("+27763237618", $"{UnassignedTicketID.ToString()}", $"{ticket.Description}");
+                MessageBox.Show("Ticket has been assigned and notification has been sent","Information");
             }
         }
 

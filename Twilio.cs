@@ -10,18 +10,19 @@ namespace Premier_Service_Solutions
 {
     public class TwilioService
     {
-       // private string accountSid = \
+        private string accountSid = "AC23b601fb4dbe7e1c1e5ead51dae7dba7";
+        private string authToken = "5abce6955cddb25f7cba3da711adc07f";
 
         public void SendMessage(string toPhoneNumber, string message)
         {
-            // Initialize the Twilio client
-           // TwilioClient.Init(accountSid, authToken);
+            //Initialize the Twilio client
+            TwilioClient.Init(accountSid, authToken);
 
             // Compose SMS message
             var messageOptions = new CreateMessageOptions(new Twilio.Types.PhoneNumber(toPhoneNumber))
             {
                 Body = message,
-                From = new Twilio.Types.PhoneNumber("+18156459747") // Add your Twilio phone number here
+                From = new Twilio.Types.PhoneNumber("+13344893749") // Add your Twilio phone number here
             };
 
             var sentMessage = MessageResource.Create(messageOptions);
