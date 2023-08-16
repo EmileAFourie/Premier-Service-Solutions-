@@ -18,6 +18,8 @@ namespace Premier_Service_Solutions
 {
     public partial class frmTicketManagement : Form
     {
+        string connect = Global.connectionString;
+
         private DataHandler dataHandler;
         public frmTicketManagement()
         {
@@ -59,7 +61,7 @@ namespace Premier_Service_Solutions
         private void LoadDataToDataGridView()
         {
             // Use the member variable for ClientID
-            string connect = @"Data source = (local); Initial Catalog=PremierServiceSolutions; Integrated Security= SSPI";
+            
             using (SqlConnection con = new SqlConnection(connect))
             {
                 // Use parameters to avoid SQL injection
@@ -135,7 +137,7 @@ namespace Premier_Service_Solutions
             txtbxClientID.Text = clientID.ToString();
 
             // Use the member variable here
-            string connect = @"Data source = (local); Initial Catalog=PremierServiceSolutions; Integrated Security= SSPI";
+            //string connect = @"Data source = (local); Initial Catalog=PremierServiceSolutions; Integrated Security= SSPI";
             SqlConnection con = new SqlConnection(connect);
 
             // Use parameters to avoid SQL injection
@@ -193,7 +195,7 @@ namespace Premier_Service_Solutions
                 int ticketID = Convert.ToInt32(dgvPreviousTickets.SelectedRows[0].Cells[0].Value);
 
                 // Create the database connection and command
-                string connect = @"Data source = (local); Initial Catalog=PremierServiceSolutions; Integrated Security= SSPI";
+               // string connect = @"Data source = (local); Initial Catalog=PremierServiceSolutions; Integrated Security= SSPI";
                 using (SqlConnection con = new SqlConnection(connect))
                 {
                     con.Open();

@@ -10,7 +10,8 @@ namespace Premier_Service_Solutions
 {
     internal class Employee
     {
-        const string connectionString = @"Data Source=.\SQLEXPRESS; Initial Catalog=PremierServiceSolutions; Integrated Security=true;";
+        // const string connectionString = @"Data Source=.\SQLEXPRESS; Initial Catalog=PremierServiceSolutions; Integrated Security=true;";
+        string connectionString = Global.connectionString;
 
         SqlConnection cnn;
         SqlDataReader reader;
