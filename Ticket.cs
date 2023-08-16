@@ -37,8 +37,36 @@ namespace Premier_Service_Solutions
             cnn = new SqlConnection(connectionString);
             cnn.Open();
 
-            SqlDataAdapter data = new SqlDataAdapter($@"SELECT TicketID, Desc", cnn);
+            SqlDataAdapter data = new SqlDataAdapter($@"SELECT Ticket.TicketID, Ticket.Description, Ticket.Priority FROM Ticket LEFT JOIN EmployeeTickets ON Ticket.TicketID = EmployeeTickets.TicketID WHERE EmployeeTickets.TicketID IS NULL", cnn);
             DataTable dt = new DataTable();
+            data.Fill(dt);
+
+            cnn.Close();
+            return dt;
+        }
+
+        public DataTable GetSpecficUnassignedTicket(int TicketID)
+        {
+            cnn = new SqlConnection(connectionString);
+            cnn.Open();
+
+            SqlDataAdapter data = new SqlDataAdapter($@"SELECT Ticket.TicketID, Ticket.Description, Ticket.Priority FROM Ticket LEFT JOIN EmployeeTickets ON Ticket.TicketID = EmployeeTickets.TicketID WHERE EmployeeTickets.TicketID IS NULL AND Ticket.TicketID = {TicketID}", cnn);
+            DataTable dt = new DataTable();
+
+            data.Fill(dt);
+
+            cnn.Close();
+            return dt;
+        }
+
+        public DataTable GetSpecficAssignedTicket(int TicketID)
+        {
+            cnn = new SqlConnection(connectionString);
+            cnn.Open();
+
+            SqlDataAdapter data = new SqlDataAdapter($@"SELECT EmployeeTickets.EmployeeID, Ticket.TicketID, Ticket.Description, Ticket.Priority FROM Ticket LEFT JOIN EmployeeTickets ON Ticket.TicketID = EmployeeTickets.TicketID WHERE EmployeeTickets.TicketID IS NOT NULL AND Ticket.TicketID = {TicketID} AND EmployeeTickets.CurrentlyWorkingOn = 1", cnn);
+            DataTable dt = new DataTable();
+
             data.Fill(dt);
 
             cnn.Close();
