@@ -163,7 +163,7 @@
             btnSearchTicket.TabIndex = 9;
             btnSearchTicket.Text = "Search Ticket";
             btnSearchTicket.UseVisualStyleBackColor = true;
-            btnSearchTicket.Click += btnSearchTicket_Click_1;
+            btnSearchTicket.Click += btnSearchTicket_Click;
             // 
             // txtbxSearchTicket
             // 
