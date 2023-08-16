@@ -18,13 +18,18 @@ namespace Premier_Service_Solutions
 {
     public partial class frmTicketManagement : Form
     {
-        string connect = Global.connectionString;
+        private int selectedTicketID = -1;
 
+        string connect = Global.connectionString;
         private DataHandler dataHandler;
-        public frmTicketManagement()
+
+       
+
+        public frmTicketManagement() // No parameter needed
         {
             InitializeComponent();
-            dataHandler = new DataHandler();
+            clientID = Global.ClientID; // Retrieve the ClientID from the Global class
+            LoadDataToDataGridView();
         }
 
         public string ClientFirstName
@@ -46,19 +51,37 @@ namespace Premier_Service_Solutions
 
         private void btnSubmit_Click(object sender, EventArgs e)
         {
-            string TypeOfError = txtbxTypeOfError.Text;
-            string Description = txtbxDescription.Text;
-            DateTime DateOpened = DateTime.Now;
-            string Priority = txtbxPriority.Text;
-            string Status = "Unnassigned";
-            int ClientID = int.Parse(txtbxClientID.Text);
+            try
+            {
+                // Retrieve data from UI controls
+                string typeOfError = txtbxTypeOfError.Text;
+                string description = txtbxDescription.Text;
+                DateTime dateOpened = DateTime.Now;
+                string priority = txtbxPriority.Text;
+                const string status = "Unassigned";
 
-            dataHandler = new DataHandler();
+                // Validate and parse ClientID
+                if (!int.TryParse(txtbxClientID.Text, out int clientID))
+                {
+                    MessageBox.Show("Invalid Client ID", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
 
-            dataHandler.LogTicket(TypeOfError, Description, DateOpened, Priority, Status, ClientID);
+                // Initialize DataHandler and Log Ticket
+                dataHandler = new DataHandler();
+                dataHandler.LogTicket(typeOfError, description, dateOpened, priority, status, clientID);
 
-            MessageBox.Show("Ticket added", "Ticket Management", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                // Refresh the DataGridView
+                LoadDataToDataGridView();
+
+                MessageBox.Show("Ticket added", "Ticket Management", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"An error occurred: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
+
 
         private void LoadDataToDataGridView()
         {
@@ -138,18 +161,8 @@ namespace Premier_Service_Solutions
 
             txtbxClientID.Text = clientID.ToString();
 
-            // Use the member variable here
-            //string connect = @"Data source = (local); Initial Catalog=PremierServiceSolutions; Integrated Security= SSPI";
-            SqlConnection con = new SqlConnection(connect);
+            LoadDataToDataGridView();
 
-            // Use parameters to avoid SQL injection
-            string query = "Select * from Ticket Where ClientID = @ClientID";
-            SqlDataAdapter da = new SqlDataAdapter(query, con);
-            da.SelectCommand.Parameters.AddWithValue("@ClientID", clientID);
-
-            DataTable dt = new DataTable();
-            da.Fill(dt);
-            dgvPreviousTickets.DataSource = dt;
         }
 
         private void btnEndCall_Click(object sender, EventArgs e)
@@ -159,34 +172,82 @@ namespace Premier_Service_Solutions
 
         private void dgvPreviousTickets_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+            try
             {
-
-                if (dgvPreviousTickets.Rows[e.RowIndex].Cells[e.ColumnIndex].Value != null)
-
+                // Check if a valid row is selected
+                if (e.RowIndex >= 0 && e.RowIndex < dgvPreviousTickets.Rows.Count)
                 {
+                    // Retrieve the TicketID and ensure it's not null or empty
+                    object ticketIDValue = dgvPreviousTickets.Rows[e.RowIndex].Cells["TicketID"].Value;
+                    if (ticketIDValue == null || ticketIDValue == DBNull.Value)
+                    {
+                        MessageBox.Show("Invalid or unpopulated record selected. Please select a valid ticket.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return;
+                    }
 
-                    string typeoferror = dgvPreviousTickets.Rows[e.RowIndex].Cells["TypeOfError"].FormattedValue.ToString();
-
-                    string description = dgvPreviousTickets.Rows[e.RowIndex].Cells["Description"].FormattedValue.ToString();
-
-                    string priority = dgvPreviousTickets.Rows[e.RowIndex].Cells["Priority"].FormattedValue.ToString();
-
-
-                    txtbxTypeOfError.Text = typeoferror;
-
-                    txtbxDescription.Text = description;
-
-                    txtbxPriority.Text = priority;
-
+                    selectedTicketID = Convert.ToInt32(ticketIDValue);
+                    txtbxTypeOfError.Text = dgvPreviousTickets.Rows[e.RowIndex].Cells["TypeOfError"].FormattedValue.ToString();
+                    txtbxDescription.Text = dgvPreviousTickets.Rows[e.RowIndex].Cells["Description"].FormattedValue.ToString();
+                    txtbxPriority.Text = dgvPreviousTickets.Rows[e.RowIndex].Cells["Priority"].FormattedValue.ToString();
                 }
-
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"An error occurred: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
+
+      
+
         private void btnUpdate_Click(object sender, EventArgs e)
         {
+            try
+            {
+                // Ensure a record is selected
+                if (selectedTicketID < 0)
+                {
+                    MessageBox.Show("Please select a ticket to update.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
 
+ 
+
+                // Gather new data from text boxes
+                string newTypeOfError = txtbxTypeOfError.Text;
+                string newDescription = txtbxDescription.Text;
+                string newPriority = txtbxPriority.Text;
+
+                // Update the database
+                using (SqlConnection con = new SqlConnection(connect))
+                {
+                    con.Open();
+
+                    // Use parameters to avoid SQL injection
+                    string query = @"UPDATE Ticket 
+                             SET TypeOfError = @TypeOfError, Description = @Description, Priority = @Priority 
+                             WHERE TicketID = @TicketID";
+                    using (SqlCommand cmd = new SqlCommand(query, con))
+                    {
+                        cmd.Parameters.AddWithValue("@TypeOfError", newTypeOfError);
+                        cmd.Parameters.AddWithValue("@Description", newDescription);
+                        cmd.Parameters.AddWithValue("@Priority", newPriority);
+                        cmd.Parameters.AddWithValue("@TicketID", selectedTicketID);
+                        cmd.ExecuteNonQuery();
+                    }
+                }
+
+                // Refresh the DataGridView
+                LoadDataToDataGridView();
+
+                MessageBox.Show("Ticket updated", "Ticket Management", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"An error occurred: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
+
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
@@ -212,7 +273,7 @@ namespace Premier_Service_Solutions
                 }
 
                 // Refresh the DataGridView to reflect the changes
-                LoadDataToDataGridView();  // Assuming you have a method to load data to the DGV
+                LoadDataToDataGridView(); 
             }
             else
             {
