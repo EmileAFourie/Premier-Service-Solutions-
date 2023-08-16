@@ -23,5 +23,10 @@ namespace Premier_Service_Solutions
             back.Show();
             this.Hide();
         }
+
+        private void btnSearchTicket_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
