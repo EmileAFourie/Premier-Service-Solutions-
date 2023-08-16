@@ -53,6 +53,8 @@ namespace Premier_Service_Solutions
             string Status = "Unnassigned";
             int ClientID = int.Parse(txtbxClientID.Text);
 
+            dataHandler = new DataHandler();
+
             dataHandler.LogTicket(TypeOfError, Description, DateOpened, Priority, Status, ClientID);
 
             MessageBox.Show("Ticket added", "Ticket Management", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -195,26 +197,35 @@ namespace Premier_Service_Solutions
                 int ticketID = Convert.ToInt32(dgvPreviousTickets.SelectedRows[0].Cells[0].Value);
 
                 // Create the database connection and command
+                string connect = @"Data source = (local); Initial Catalog=PremierServiceSolutions; Integrated Security= SSPI";
                 using (SqlConnection con = new SqlConnection(connect))
                 {
                     con.Open();
 
                     // Use parameterized query to avoid SQL injection
-                    string deleteQuery = "DELETE FROM Ticket WHERE TicketID = @TicketID";
-                    using (SqlCommand deleteCmd = new SqlCommand(deleteQuery, con))
+                    string query = "DELETE FROM Ticket WHERE TicketID = @TicketID";
+                    using (SqlCommand cmd = new SqlCommand(query, con))
                     {
-                        deleteCmd.Parameters.AddWithValue("@TicketID", ticketID);
-                        deleteCmd.ExecuteNonQuery();
+                        cmd.Parameters.AddWithValue("@TicketID", ticketID);
+                        cmd.ExecuteNonQuery();
                     }
                 }
 
                 // Refresh the DataGridView to reflect the changes
-                LoadDataToDataGridView();  // Refresh the DGV based on clientID
+                LoadDataToDataGridView();  // Assuming you have a method to load data to the DGV
             }
             else
             {
                 MessageBox.Show("Please select a ticket to delete.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            frmExistingClientSearch Back = new frmExistingClientSearch();
+            this.Hide();
+            Back.Show();
         }
     }
     }
