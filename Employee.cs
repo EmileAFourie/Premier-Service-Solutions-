@@ -211,16 +211,6 @@ namespace Premier_Service_Solutions
                 return "Fail";
             }
         }
-        public void AssignTicket(int ticketID)
-        {
-            cnn = new SqlConnection(connectionString);
-            cnn.Open();
-
-            cmd = new SqlCommand($@"INSERT INTO EmployeeTickets (EmployeeID, TicketID, CurrentlyWorkingOn) VALUES ('{employeeID}', {ticketID}, 1) ", cnn);
-            cmd.ExecuteNonQuery();
-
-            cnn.Close();
-        }
 
         public DataTable GetEmployeeTickets()
         {
