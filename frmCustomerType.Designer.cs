@@ -46,13 +46,13 @@
             this.txtbxTimestamp.Location = new System.Drawing.Point(289, 144);
             this.txtbxTimestamp.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtbxTimestamp.Name = "txtbxTimestamp";
-            this.txtbxTimestamp.Size = new System.Drawing.Size(458, 23);
+            this.txtbxTimestamp.Size = new System.Drawing.Size(316, 23);
             this.txtbxTimestamp.TabIndex = 19;
             // 
             // btnNewCustomer
             // 
             this.btnNewCustomer.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnNewCustomer.Location = new System.Drawing.Point(253, 296);
+            this.btnNewCustomer.Location = new System.Drawing.Point(204, 297);
             this.btnNewCustomer.Name = "btnNewCustomer";
             this.btnNewCustomer.Size = new System.Drawing.Size(189, 33);
             this.btnNewCustomer.TabIndex = 18;
@@ -63,7 +63,7 @@
             // btnOldCustomer
             // 
             this.btnOldCustomer.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnOldCustomer.Location = new System.Drawing.Point(465, 296);
+            this.btnOldCustomer.Location = new System.Drawing.Point(416, 297);
             this.btnOldCustomer.Name = "btnOldCustomer";
             this.btnOldCustomer.Size = new System.Drawing.Size(189, 33);
             this.btnOldCustomer.TabIndex = 17;
@@ -89,7 +89,7 @@
             this.lblCallCentre.BackColor = System.Drawing.Color.Transparent;
             this.lblCallCentre.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblCallCentre.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblCallCentre.Location = new System.Drawing.Point(350, 37);
+            this.lblCallCentre.Location = new System.Drawing.Point(321, 37);
             this.lblCallCentre.Name = "lblCallCentre";
             this.lblCallCentre.Size = new System.Drawing.Size(157, 37);
             this.lblCallCentre.TabIndex = 15;
@@ -118,7 +118,7 @@
             this.txtbxCallerNumber.Location = new System.Drawing.Point(289, 198);
             this.txtbxCallerNumber.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtbxCallerNumber.Name = "txtbxCallerNumber";
-            this.txtbxCallerNumber.Size = new System.Drawing.Size(458, 23);
+            this.txtbxCallerNumber.Size = new System.Drawing.Size(316, 23);
             this.txtbxCallerNumber.TabIndex = 24;
             // 
             // lblCallerNumber

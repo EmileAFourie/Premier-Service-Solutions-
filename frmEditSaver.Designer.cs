@@ -55,9 +55,9 @@
             this.btnBack.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnBack.Location = new System.Drawing.Point(12, 15);
             this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(34, 23);
+            this.btnBack.Size = new System.Drawing.Size(56, 23);
             this.btnBack.TabIndex = 23;
-            this.btnBack.Text = "<";
+            this.btnBack.Text = "<<<";
             this.btnBack.UseVisualStyleBackColor = true;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
