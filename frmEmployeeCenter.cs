@@ -21,28 +21,33 @@ namespace Premier_Service_Solutions
         {
             frmNewEmployee newEmployeeForm = new frmNewEmployee();
             this.Hide();
-            newEmployeeForm.ShowDialog();
+            newEmployeeForm.Show();
             // DialogResult = DialogResult.OK;
-            this.Show();
+            //this.Show();
         }
 
         private void btnExistingEmployee_Click(object sender, EventArgs e)
         {
             frmExistingEmployee frmExisting = new frmExistingEmployee();
             this.Hide();
-            frmExisting.ShowDialog();
+            frmExisting.Show();
             //  DialogResult = DialogResult.OK;
-            this.Show();
+            //this.Show();
         }
 
         private void btnBack_Click(object sender, EventArgs e)
         {
-            DialogResult = DialogResult.OK;
+            frmNavigation Home = new frmNavigation();
+            this.Hide();
+            Home.Show();
+            //DialogResult = DialogResult.OK;
         }
 
         private void frmEmployeeCenter_Load(object sender, EventArgs e)
         {
 
         }
+
+      
     }
 }

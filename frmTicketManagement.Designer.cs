@@ -29,341 +29,345 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmTicketManagement));
-            dgvPreviousTickets = new DataGridView();
-            lblClient = new Label();
-            txtbxClient = new TextBox();
-            txtbxContract = new TextBox();
-            lblContract = new Label();
-            grpbxNewTicket = new GroupBox();
-            btnUpdate = new Button();
-            btnClear = new Button();
-            btnSubmit = new Button();
-            txtbxPriority = new TextBox();
-            lblPriority = new Label();
-            txtbxDescription = new TextBox();
-            txtbxTypeOfError = new TextBox();
-            lblDescription = new Label();
-            lblTypeOfError = new Label();
-            txtbxClientID = new TextBox();
-            lblClientIDNewTicket = new Label();
-            btnDelete = new Button();
-            lblTicketManagement = new Label();
-            btnEndCall = new Button();
-            txtbxCallDuration = new TextBox();
-            lblCallDuration = new Label();
-            lblPreviousTickets = new Label();
-            btnBack = new Button();
-            btnHome = new Button();
-            ((System.ComponentModel.ISupportInitialize)dgvPreviousTickets).BeginInit();
-            grpbxNewTicket.SuspendLayout();
-            SuspendLayout();
+            this.dgvPreviousTickets = new System.Windows.Forms.DataGridView();
+            this.lblClient = new System.Windows.Forms.Label();
+            this.txtbxClient = new System.Windows.Forms.TextBox();
+            this.txtbxContract = new System.Windows.Forms.TextBox();
+            this.lblContract = new System.Windows.Forms.Label();
+            this.grpbxNewTicket = new System.Windows.Forms.GroupBox();
+            this.btnUpdate = new System.Windows.Forms.Button();
+            this.btnClear = new System.Windows.Forms.Button();
+            this.btnSubmit = new System.Windows.Forms.Button();
+            this.txtbxPriority = new System.Windows.Forms.TextBox();
+            this.lblPriority = new System.Windows.Forms.Label();
+            this.txtbxDescription = new System.Windows.Forms.TextBox();
+            this.txtbxTypeOfError = new System.Windows.Forms.TextBox();
+            this.lblDescription = new System.Windows.Forms.Label();
+            this.lblTypeOfError = new System.Windows.Forms.Label();
+            this.txtbxClientID = new System.Windows.Forms.TextBox();
+            this.lblClientIDNewTicket = new System.Windows.Forms.Label();
+            this.btnDelete = new System.Windows.Forms.Button();
+            this.lblTicketManagement = new System.Windows.Forms.Label();
+            this.btnEndCall = new System.Windows.Forms.Button();
+            this.txtbxCallDuration = new System.Windows.Forms.TextBox();
+            this.lblCallDuration = new System.Windows.Forms.Label();
+            this.lblPreviousTickets = new System.Windows.Forms.Label();
+            this.btnBack = new System.Windows.Forms.Button();
+            this.btnHome = new System.Windows.Forms.Button();
+            this.btnLogOut = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPreviousTickets)).BeginInit();
+            this.grpbxNewTicket.SuspendLayout();
+            this.SuspendLayout();
             // 
             // dgvPreviousTickets
             // 
-            dgvPreviousTickets.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvPreviousTickets.Location = new Point(29, 65);
-            dgvPreviousTickets.Margin = new Padding(3, 4, 3, 4);
-            dgvPreviousTickets.Name = "dgvPreviousTickets";
-            dgvPreviousTickets.RowHeadersWidth = 51;
-            dgvPreviousTickets.RowTemplate.Height = 25;
-            dgvPreviousTickets.Size = new Size(862, 225);
-            dgvPreviousTickets.TabIndex = 0;
-            dgvPreviousTickets.CellClick += dgvPreviousTickets_CellClick;
+            this.dgvPreviousTickets.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvPreviousTickets.Location = new System.Drawing.Point(29, 65);
+            this.dgvPreviousTickets.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.dgvPreviousTickets.Name = "dgvPreviousTickets";
+            this.dgvPreviousTickets.RowHeadersWidth = 51;
+            this.dgvPreviousTickets.RowTemplate.Height = 25;
+            this.dgvPreviousTickets.Size = new System.Drawing.Size(862, 225);
+            this.dgvPreviousTickets.TabIndex = 0;
             // 
             // lblClient
             // 
-            lblClient.AutoSize = true;
-            lblClient.BackColor = Color.Transparent;
-            lblClient.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            lblClient.ForeColor = SystemColors.ButtonHighlight;
-            lblClient.Location = new Point(690, 367);
-            lblClient.Name = "lblClient";
-            lblClient.Size = new Size(42, 15);
-            lblClient.TabIndex = 2;
-            lblClient.Text = "Client:";
+            this.lblClient.AutoSize = true;
+            this.lblClient.BackColor = System.Drawing.Color.Transparent;
+            this.lblClient.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblClient.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblClient.Location = new System.Drawing.Point(690, 367);
+            this.lblClient.Name = "lblClient";
+            this.lblClient.Size = new System.Drawing.Size(42, 15);
+            this.lblClient.TabIndex = 2;
+            this.lblClient.Text = "Client:";
             // 
             // txtbxClient
             // 
-            txtbxClient.Location = new Point(749, 364);
-            txtbxClient.Margin = new Padding(3, 4, 3, 4);
-            txtbxClient.Name = "txtbxClient";
-            txtbxClient.Size = new Size(142, 23);
-            txtbxClient.TabIndex = 3;
+            this.txtbxClient.Location = new System.Drawing.Point(749, 364);
+            this.txtbxClient.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtbxClient.Name = "txtbxClient";
+            this.txtbxClient.Size = new System.Drawing.Size(142, 23);
+            this.txtbxClient.TabIndex = 3;
             // 
             // txtbxContract
             // 
-            txtbxContract.Location = new Point(749, 414);
-            txtbxContract.Margin = new Padding(3, 4, 3, 4);
-            txtbxContract.Name = "txtbxContract";
-            txtbxContract.Size = new Size(142, 23);
-            txtbxContract.TabIndex = 5;
+            this.txtbxContract.Location = new System.Drawing.Point(749, 414);
+            this.txtbxContract.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtbxContract.Name = "txtbxContract";
+            this.txtbxContract.Size = new System.Drawing.Size(142, 23);
+            this.txtbxContract.TabIndex = 5;
             // 
             // lblContract
             // 
-            lblContract.AutoSize = true;
-            lblContract.BackColor = Color.Transparent;
-            lblContract.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            lblContract.ForeColor = SystemColors.ButtonHighlight;
-            lblContract.Location = new Point(674, 422);
-            lblContract.Name = "lblContract";
-            lblContract.Size = new Size(58, 15);
-            lblContract.TabIndex = 4;
-            lblContract.Text = "Contract:";
+            this.lblContract.AutoSize = true;
+            this.lblContract.BackColor = System.Drawing.Color.Transparent;
+            this.lblContract.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblContract.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblContract.Location = new System.Drawing.Point(674, 422);
+            this.lblContract.Name = "lblContract";
+            this.lblContract.Size = new System.Drawing.Size(58, 15);
+            this.lblContract.TabIndex = 4;
+            this.lblContract.Text = "Contract:";
             // 
             // grpbxNewTicket
             // 
-            grpbxNewTicket.BackColor = Color.Transparent;
-            grpbxNewTicket.Controls.Add(btnUpdate);
-            grpbxNewTicket.Controls.Add(btnClear);
-            grpbxNewTicket.Controls.Add(btnSubmit);
-            grpbxNewTicket.Controls.Add(txtbxPriority);
-            grpbxNewTicket.Controls.Add(lblPriority);
-            grpbxNewTicket.Controls.Add(txtbxDescription);
-            grpbxNewTicket.Controls.Add(txtbxTypeOfError);
-            grpbxNewTicket.Controls.Add(lblDescription);
-            grpbxNewTicket.Controls.Add(lblTypeOfError);
-            grpbxNewTicket.Controls.Add(txtbxClientID);
-            grpbxNewTicket.Controls.Add(lblClientIDNewTicket);
-            grpbxNewTicket.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            grpbxNewTicket.ForeColor = SystemColors.ButtonHighlight;
-            grpbxNewTicket.Location = new Point(29, 348);
-            grpbxNewTicket.Margin = new Padding(3, 4, 3, 4);
-            grpbxNewTicket.Name = "grpbxNewTicket";
-            grpbxNewTicket.Padding = new Padding(3, 4, 3, 4);
-            grpbxNewTicket.Size = new Size(608, 264);
-            grpbxNewTicket.TabIndex = 6;
-            grpbxNewTicket.TabStop = false;
-            grpbxNewTicket.Text = "Ticket";
-            grpbxNewTicket.Enter += grpbxNewTicket_Enter;
+            this.grpbxNewTicket.BackColor = System.Drawing.Color.Transparent;
+            this.grpbxNewTicket.Controls.Add(this.btnUpdate);
+            this.grpbxNewTicket.Controls.Add(this.btnClear);
+            this.grpbxNewTicket.Controls.Add(this.btnSubmit);
+            this.grpbxNewTicket.Controls.Add(this.txtbxPriority);
+            this.grpbxNewTicket.Controls.Add(this.lblPriority);
+            this.grpbxNewTicket.Controls.Add(this.txtbxDescription);
+            this.grpbxNewTicket.Controls.Add(this.txtbxTypeOfError);
+            this.grpbxNewTicket.Controls.Add(this.lblDescription);
+            this.grpbxNewTicket.Controls.Add(this.lblTypeOfError);
+            this.grpbxNewTicket.Controls.Add(this.txtbxClientID);
+            this.grpbxNewTicket.Controls.Add(this.lblClientIDNewTicket);
+            this.grpbxNewTicket.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.grpbxNewTicket.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.grpbxNewTicket.Location = new System.Drawing.Point(29, 348);
+            this.grpbxNewTicket.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.grpbxNewTicket.Name = "grpbxNewTicket";
+            this.grpbxNewTicket.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.grpbxNewTicket.Size = new System.Drawing.Size(608, 264);
+            this.grpbxNewTicket.TabIndex = 6;
+            this.grpbxNewTicket.TabStop = false;
+            this.grpbxNewTicket.Text = "Ticket";
             // 
             // btnUpdate
             // 
-            btnUpdate.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            btnUpdate.ForeColor = SystemColors.ActiveCaptionText;
-            btnUpdate.Location = new Point(293, 214);
-            btnUpdate.Name = "btnUpdate";
-            btnUpdate.Size = new Size(104, 32);
-            btnUpdate.TabIndex = 24;
-            btnUpdate.Text = "Update";
-            btnUpdate.UseVisualStyleBackColor = true;
-            btnUpdate.Click += btnUpdate_Click;
+            this.btnUpdate.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnUpdate.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnUpdate.Location = new System.Drawing.Point(293, 214);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(104, 32);
+            this.btnUpdate.TabIndex = 24;
+            this.btnUpdate.Text = "Update";
+            this.btnUpdate.UseVisualStyleBackColor = true;
             // 
             // btnClear
             // 
-            btnClear.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            btnClear.ForeColor = SystemColors.ActiveCaptionText;
-            btnClear.Location = new Point(121, 214);
-            btnClear.Name = "btnClear";
-            btnClear.Size = new Size(104, 32);
-            btnClear.TabIndex = 22;
-            btnClear.Text = "Clear";
-            btnClear.UseVisualStyleBackColor = true;
-            btnClear.Click += btnClear_Click;
+            this.btnClear.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnClear.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnClear.Location = new System.Drawing.Point(121, 214);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(104, 32);
+            this.btnClear.TabIndex = 22;
+            this.btnClear.Text = "Clear";
+            this.btnClear.UseVisualStyleBackColor = true;
             // 
             // btnSubmit
             // 
-            btnSubmit.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            btnSubmit.ForeColor = SystemColors.ActiveCaptionText;
-            btnSubmit.Location = new Point(461, 214);
-            btnSubmit.Name = "btnSubmit";
-            btnSubmit.Size = new Size(104, 32);
-            btnSubmit.TabIndex = 21;
-            btnSubmit.Text = "Add";
-            btnSubmit.UseVisualStyleBackColor = true;
-            btnSubmit.Click += btnSubmit_Click;
+            this.btnSubmit.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnSubmit.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnSubmit.Location = new System.Drawing.Point(461, 214);
+            this.btnSubmit.Name = "btnSubmit";
+            this.btnSubmit.Size = new System.Drawing.Size(104, 32);
+            this.btnSubmit.TabIndex = 21;
+            this.btnSubmit.Text = "Add";
+            this.btnSubmit.UseVisualStyleBackColor = true;
             // 
             // txtbxPriority
             // 
-            txtbxPriority.Location = new Point(125, 169);
-            txtbxPriority.Name = "txtbxPriority";
-            txtbxPriority.Size = new Size(440, 23);
-            txtbxPriority.TabIndex = 17;
+            this.txtbxPriority.Location = new System.Drawing.Point(125, 169);
+            this.txtbxPriority.Name = "txtbxPriority";
+            this.txtbxPriority.Size = new System.Drawing.Size(440, 23);
+            this.txtbxPriority.TabIndex = 17;
             // 
             // lblPriority
             // 
-            lblPriority.AutoSize = true;
-            lblPriority.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            lblPriority.ForeColor = SystemColors.ButtonHighlight;
-            lblPriority.Location = new Point(31, 172);
-            lblPriority.Name = "lblPriority";
-            lblPriority.Size = new Size(51, 15);
-            lblPriority.TabIndex = 16;
-            lblPriority.Text = "Priority:";
+            this.lblPriority.AutoSize = true;
+            this.lblPriority.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblPriority.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblPriority.Location = new System.Drawing.Point(31, 172);
+            this.lblPriority.Name = "lblPriority";
+            this.lblPriority.Size = new System.Drawing.Size(51, 15);
+            this.lblPriority.TabIndex = 16;
+            this.lblPriority.Text = "Priority:";
             // 
             // txtbxDescription
             // 
-            txtbxDescription.Location = new Point(125, 123);
-            txtbxDescription.Margin = new Padding(3, 4, 3, 4);
-            txtbxDescription.Name = "txtbxDescription";
-            txtbxDescription.Size = new Size(440, 23);
-            txtbxDescription.TabIndex = 15;
+            this.txtbxDescription.Location = new System.Drawing.Point(125, 123);
+            this.txtbxDescription.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtbxDescription.Name = "txtbxDescription";
+            this.txtbxDescription.Size = new System.Drawing.Size(440, 23);
+            this.txtbxDescription.TabIndex = 15;
             // 
             // txtbxTypeOfError
             // 
-            txtbxTypeOfError.Location = new Point(125, 76);
-            txtbxTypeOfError.Margin = new Padding(3, 4, 3, 4);
-            txtbxTypeOfError.Name = "txtbxTypeOfError";
-            txtbxTypeOfError.Size = new Size(440, 23);
-            txtbxTypeOfError.TabIndex = 13;
+            this.txtbxTypeOfError.Location = new System.Drawing.Point(125, 76);
+            this.txtbxTypeOfError.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtbxTypeOfError.Name = "txtbxTypeOfError";
+            this.txtbxTypeOfError.Size = new System.Drawing.Size(440, 23);
+            this.txtbxTypeOfError.TabIndex = 13;
             // 
             // lblDescription
             // 
-            lblDescription.AutoSize = true;
-            lblDescription.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            lblDescription.ForeColor = SystemColors.ButtonHighlight;
-            lblDescription.Location = new Point(29, 123);
-            lblDescription.Name = "lblDescription";
-            lblDescription.Size = new Size(74, 15);
-            lblDescription.TabIndex = 14;
-            lblDescription.Text = "Description:";
+            this.lblDescription.AutoSize = true;
+            this.lblDescription.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblDescription.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblDescription.Location = new System.Drawing.Point(29, 123);
+            this.lblDescription.Name = "lblDescription";
+            this.lblDescription.Size = new System.Drawing.Size(74, 15);
+            this.lblDescription.TabIndex = 14;
+            this.lblDescription.Text = "Description:";
             // 
             // lblTypeOfError
             // 
-            lblTypeOfError.AutoSize = true;
-            lblTypeOfError.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            lblTypeOfError.ForeColor = SystemColors.ButtonHighlight;
-            lblTypeOfError.Location = new Point(29, 79);
-            lblTypeOfError.Name = "lblTypeOfError";
-            lblTypeOfError.Size = new Size(78, 15);
-            lblTypeOfError.TabIndex = 12;
-            lblTypeOfError.Text = "TypeOfError:";
+            this.lblTypeOfError.AutoSize = true;
+            this.lblTypeOfError.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblTypeOfError.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblTypeOfError.Location = new System.Drawing.Point(29, 79);
+            this.lblTypeOfError.Name = "lblTypeOfError";
+            this.lblTypeOfError.Size = new System.Drawing.Size(78, 15);
+            this.lblTypeOfError.TabIndex = 12;
+            this.lblTypeOfError.Text = "TypeOfError:";
             // 
             // txtbxClientID
             // 
-            txtbxClientID.Location = new Point(125, 35);
-            txtbxClientID.Name = "txtbxClientID";
-            txtbxClientID.Size = new Size(440, 23);
-            txtbxClientID.TabIndex = 11;
+            this.txtbxClientID.Location = new System.Drawing.Point(125, 35);
+            this.txtbxClientID.Name = "txtbxClientID";
+            this.txtbxClientID.Size = new System.Drawing.Size(440, 23);
+            this.txtbxClientID.TabIndex = 11;
             // 
             // lblClientIDNewTicket
             // 
-            lblClientIDNewTicket.AutoSize = true;
-            lblClientIDNewTicket.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            lblClientIDNewTicket.ForeColor = SystemColors.ButtonHighlight;
-            lblClientIDNewTicket.Location = new Point(48, 38);
-            lblClientIDNewTicket.Name = "lblClientIDNewTicket";
-            lblClientIDNewTicket.Size = new Size(55, 15);
-            lblClientIDNewTicket.TabIndex = 10;
-            lblClientIDNewTicket.Text = "ClientID:";
+            this.lblClientIDNewTicket.AutoSize = true;
+            this.lblClientIDNewTicket.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblClientIDNewTicket.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblClientIDNewTicket.Location = new System.Drawing.Point(48, 38);
+            this.lblClientIDNewTicket.Name = "lblClientIDNewTicket";
+            this.lblClientIDNewTicket.Size = new System.Drawing.Size(55, 15);
+            this.lblClientIDNewTicket.TabIndex = 10;
+            this.lblClientIDNewTicket.Text = "ClientID:";
             // 
             // btnDelete
             // 
-            btnDelete.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            btnDelete.Location = new Point(414, 309);
-            btnDelete.Name = "btnDelete";
-            btnDelete.Size = new Size(104, 32);
-            btnDelete.TabIndex = 23;
-            btnDelete.Text = "Delete";
-            btnDelete.UseVisualStyleBackColor = true;
-            btnDelete.Click += btnDelete_Click;
+            this.btnDelete.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnDelete.Location = new System.Drawing.Point(414, 309);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(104, 32);
+            this.btnDelete.TabIndex = 23;
+            this.btnDelete.Text = "Delete";
+            this.btnDelete.UseVisualStyleBackColor = true;
             // 
             // lblTicketManagement
             // 
-            lblTicketManagement.AutoSize = true;
-            lblTicketManagement.BackColor = Color.Transparent;
-            lblTicketManagement.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
-            lblTicketManagement.ForeColor = SystemColors.ButtonHighlight;
-            lblTicketManagement.Location = new Point(347, 24);
-            lblTicketManagement.Name = "lblTicketManagement";
-            lblTicketManagement.Size = new Size(273, 37);
-            lblTicketManagement.TabIndex = 7;
-            lblTicketManagement.Text = "Ticket Management";
+            this.lblTicketManagement.AutoSize = true;
+            this.lblTicketManagement.BackColor = System.Drawing.Color.Transparent;
+            this.lblTicketManagement.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblTicketManagement.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblTicketManagement.Location = new System.Drawing.Point(347, 24);
+            this.lblTicketManagement.Name = "lblTicketManagement";
+            this.lblTicketManagement.Size = new System.Drawing.Size(273, 37);
+            this.lblTicketManagement.TabIndex = 7;
+            this.lblTicketManagement.Text = "Ticket Management";
             // 
             // btnEndCall
             // 
-            btnEndCall.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            btnEndCall.Location = new Point(848, 587);
-            btnEndCall.Margin = new Padding(3, 4, 3, 4);
-            btnEndCall.Name = "btnEndCall";
-            btnEndCall.Size = new Size(65, 43);
-            btnEndCall.TabIndex = 23;
-            btnEndCall.Text = "End Call";
-            btnEndCall.UseVisualStyleBackColor = true;
-            btnEndCall.Click += btnEndCall_Click;
+            this.btnEndCall.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnEndCall.Location = new System.Drawing.Point(848, 587);
+            this.btnEndCall.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnEndCall.Name = "btnEndCall";
+            this.btnEndCall.Size = new System.Drawing.Size(65, 43);
+            this.btnEndCall.TabIndex = 23;
+            this.btnEndCall.Text = "End Call";
+            this.btnEndCall.UseVisualStyleBackColor = true;
             // 
             // txtbxCallDuration
             // 
-            txtbxCallDuration.Location = new Point(733, 598);
-            txtbxCallDuration.Margin = new Padding(3, 4, 3, 4);
-            txtbxCallDuration.Name = "txtbxCallDuration";
-            txtbxCallDuration.Size = new Size(107, 23);
-            txtbxCallDuration.TabIndex = 25;
+            this.txtbxCallDuration.Location = new System.Drawing.Point(733, 598);
+            this.txtbxCallDuration.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtbxCallDuration.Name = "txtbxCallDuration";
+            this.txtbxCallDuration.Size = new System.Drawing.Size(107, 23);
+            this.txtbxCallDuration.TabIndex = 25;
             // 
             // lblCallDuration
             // 
-            lblCallDuration.AutoSize = true;
-            lblCallDuration.BackColor = Color.Transparent;
-            lblCallDuration.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            lblCallDuration.ForeColor = SystemColors.ButtonHighlight;
-            lblCallDuration.Location = new Point(643, 606);
-            lblCallDuration.Name = "lblCallDuration";
-            lblCallDuration.Size = new Size(84, 15);
-            lblCallDuration.TabIndex = 24;
-            lblCallDuration.Text = "Date Opened:";
+            this.lblCallDuration.AutoSize = true;
+            this.lblCallDuration.BackColor = System.Drawing.Color.Transparent;
+            this.lblCallDuration.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblCallDuration.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblCallDuration.Location = new System.Drawing.Point(643, 606);
+            this.lblCallDuration.Name = "lblCallDuration";
+            this.lblCallDuration.Size = new System.Drawing.Size(84, 15);
+            this.lblCallDuration.TabIndex = 24;
+            this.lblCallDuration.Text = "Date Opened:";
             // 
             // lblPreviousTickets
             // 
-            lblPreviousTickets.AutoSize = true;
-            lblPreviousTickets.BackColor = Color.Transparent;
-            lblPreviousTickets.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point);
-            lblPreviousTickets.ForeColor = SystemColors.ButtonHighlight;
-            lblPreviousTickets.Location = new Point(29, 33);
-            lblPreviousTickets.Name = "lblPreviousTickets";
-            lblPreviousTickets.Size = new Size(84, 28);
-            lblPreviousTickets.TabIndex = 26;
-            lblPreviousTickets.Text = "Tickets:";
+            this.lblPreviousTickets.AutoSize = true;
+            this.lblPreviousTickets.BackColor = System.Drawing.Color.Transparent;
+            this.lblPreviousTickets.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblPreviousTickets.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblPreviousTickets.Location = new System.Drawing.Point(29, 33);
+            this.lblPreviousTickets.Name = "lblPreviousTickets";
+            this.lblPreviousTickets.Size = new System.Drawing.Size(84, 28);
+            this.lblPreviousTickets.TabIndex = 26;
+            this.lblPreviousTickets.Text = "Tickets:";
             // 
             // btnBack
             // 
-            btnBack.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            btnBack.Location = new Point(12, 9);
-            btnBack.Name = "btnBack";
-            btnBack.Size = new Size(40, 22);
-            btnBack.TabIndex = 27;
-            btnBack.Text = "<<<";
-            btnBack.UseVisualStyleBackColor = true;
-            btnBack.Click += btnBack_Click;
+            this.btnBack.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnBack.Location = new System.Drawing.Point(12, 9);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(40, 22);
+            this.btnBack.TabIndex = 27;
+            this.btnBack.Text = "<<<";
+            this.btnBack.UseVisualStyleBackColor = true;
             // 
             // btnHome
             // 
-            btnHome.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            btnHome.Location = new Point(58, 8);
-            btnHome.Name = "btnHome";
-            btnHome.Size = new Size(72, 22);
-            btnHome.TabIndex = 28;
-            btnHome.Text = "Home";
-            btnHome.UseVisualStyleBackColor = true;
-            btnHome.Click += btnHome_Click;
+            this.btnHome.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnHome.Location = new System.Drawing.Point(58, 8);
+            this.btnHome.Name = "btnHome";
+            this.btnHome.Size = new System.Drawing.Size(72, 22);
+            this.btnHome.TabIndex = 28;
+            this.btnHome.Text = "Home";
+            this.btnHome.UseVisualStyleBackColor = true;
+            // 
+            // btnLogOut
+            // 
+            this.btnLogOut.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnLogOut.Location = new System.Drawing.Point(841, 12);
+            this.btnLogOut.Name = "btnLogOut";
+            this.btnLogOut.Size = new System.Drawing.Size(72, 29);
+            this.btnLogOut.TabIndex = 29;
+            this.btnLogOut.Text = "Log Out";
+            this.btnLogOut.UseVisualStyleBackColor = true;
+            this.btnLogOut.Click += new System.EventHandler(this.btnLogOut_Click);
             // 
             // frmTicketManagement
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
-            BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(925, 643);
-            Controls.Add(btnHome);
-            Controls.Add(btnBack);
-            Controls.Add(lblPreviousTickets);
-            Controls.Add(btnDelete);
-            Controls.Add(txtbxCallDuration);
-            Controls.Add(lblCallDuration);
-            Controls.Add(btnEndCall);
-            Controls.Add(lblTicketManagement);
-            Controls.Add(grpbxNewTicket);
-            Controls.Add(txtbxContract);
-            Controls.Add(lblContract);
-            Controls.Add(txtbxClient);
-            Controls.Add(lblClient);
-            Controls.Add(dgvPreviousTickets);
-            Name = "frmTicketManagement";
-            Text = "Ticket Management";
-            Load += frmTicketManagement_Load;
-            ((System.ComponentModel.ISupportInitialize)dgvPreviousTickets).EndInit();
-            grpbxNewTicket.ResumeLayout(false);
-            grpbxNewTicket.PerformLayout();
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(925, 643);
+            this.Controls.Add(this.btnLogOut);
+            this.Controls.Add(this.btnHome);
+            this.Controls.Add(this.btnBack);
+            this.Controls.Add(this.lblPreviousTickets);
+            this.Controls.Add(this.btnDelete);
+            this.Controls.Add(this.txtbxCallDuration);
+            this.Controls.Add(this.lblCallDuration);
+            this.Controls.Add(this.btnEndCall);
+            this.Controls.Add(this.lblTicketManagement);
+            this.Controls.Add(this.grpbxNewTicket);
+            this.Controls.Add(this.txtbxContract);
+            this.Controls.Add(this.lblContract);
+            this.Controls.Add(this.txtbxClient);
+            this.Controls.Add(this.lblClient);
+            this.Controls.Add(this.dgvPreviousTickets);
+            this.Name = "frmTicketManagement";
+            this.Text = "Ticket Management";
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPreviousTickets)).EndInit();
+            this.grpbxNewTicket.ResumeLayout(false);
+            this.grpbxNewTicket.PerformLayout();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
@@ -396,5 +400,6 @@
         private Button btnUpdate;
         private Button btnBack;
         private Button btnHome;
+        private Button btnLogOut;
     }
 }

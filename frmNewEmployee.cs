@@ -62,6 +62,15 @@ namespace Premier_Service_Solutions
             txtUser.Clear();
             txtPassword.Clear();
         }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            frmEmployeeCenter back = new frmEmployeeCenter();
+            this.Hide();           
+            back.Show();
+        }
+
+        
     }
 }
 

@@ -35,6 +35,7 @@
             this.btnServiceDepartment = new System.Windows.Forms.Button();
             this.btnEmployees = new System.Windows.Forms.Button();
             this.btnContracts = new System.Windows.Forms.Button();
+            this.btnLogOut = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblNavigationHeader
@@ -105,6 +106,17 @@
             this.btnContracts.UseVisualStyleBackColor = true;
             this.btnContracts.Click += new System.EventHandler(this.btnContracts_Click_1);
             // 
+            // btnLogOut
+            // 
+            this.btnLogOut.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnLogOut.Location = new System.Drawing.Point(716, 12);
+            this.btnLogOut.Name = "btnLogOut";
+            this.btnLogOut.Size = new System.Drawing.Size(72, 29);
+            this.btnLogOut.TabIndex = 30;
+            this.btnLogOut.Text = "Log Out";
+            this.btnLogOut.UseVisualStyleBackColor = true;
+            this.btnLogOut.Click += new System.EventHandler(this.btnLogOut_Click);
+            // 
             // frmNavigation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -112,6 +124,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnLogOut);
             this.Controls.Add(this.btnContracts);
             this.Controls.Add(this.btnEmployees);
             this.Controls.Add(this.btnServiceDepartment);
@@ -133,5 +146,6 @@
         private Button btnServiceDepartment;
         private Button btnEmployees;
         private Button btnContracts;
+        private Button btnLogOut;
     }
 }

@@ -196,6 +196,14 @@ namespace Premier_Service_Solutions
             this.Hide();
             Home.Show();
         }
+
+        private void btnLogOut_Click(object sender, EventArgs e)
+        {
+            frmPremierServiceSolutionsLogin Logout = new frmPremierServiceSolutionsLogin();
+            this.Hide();
+            Logout.Show();
+            MessageBox.Show("You have been logged out!");
+        }
     }
 }
 

@@ -124,5 +124,13 @@ namespace Premier_Service_Solutions
             lblAssigned.Text = "Selected Assigned Ticket ID: " + AssignedTicketID.ToString();
             lblUnassigned.Text = "Selected Unassigned Ticket ID: " + UnassignedTicketID.ToString();
         }
+
+        private void btnLogOut_Click(object sender, EventArgs e)
+        {
+            frmPremierServiceSolutionsLogin Logout = new frmPremierServiceSolutionsLogin();
+            this.Hide();
+            Logout.Show();
+            MessageBox.Show("You have been logged out!");
+        }
     }
 }

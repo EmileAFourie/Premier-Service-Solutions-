@@ -64,8 +64,8 @@ namespace Premier_Service_Solutions
         {
             frmEmployeeCenter employeesForm = new frmEmployeeCenter();
             this.Hide();
-            employeesForm.ShowDialog();
-            this.Show();
+            employeesForm.Show();
+            //this.Show();
         }
 
         private void btnContracts_Click_1(object sender, EventArgs e)
@@ -73,6 +73,14 @@ namespace Premier_Service_Solutions
             frmContracts contractsForm = new frmContracts();
             this.Close();
             contractsForm.Show();
+        }
+
+        private void btnLogOut_Click(object sender, EventArgs e)
+        {
+            frmPremierServiceSolutionsLogin Logout = new frmPremierServiceSolutionsLogin();
+            this.Hide();
+            Logout.Show();
+            MessageBox.Show("You have been logged out!");
         }
     }
 }

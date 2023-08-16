@@ -43,14 +43,15 @@ namespace Premier_Service_Solutions
             txtbxEmployeeID.Clear();
         }
 
-        private void btnClear_Click_1(object sender, EventArgs e)
-        {
+        
 
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            frmEmployeeCenter back = new frmEmployeeCenter();
+            this.Hide();
+            back.Show();
         }
 
-        private void btnSearch_Click_1(object sender, EventArgs e)
-        {
-
-        }
+        
     }
 }
