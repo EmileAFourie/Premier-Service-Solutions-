@@ -129,7 +129,7 @@
             this.grpbxNewTicket.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.grpbxNewTicket.Name = "grpbxNewTicket";
             this.grpbxNewTicket.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.grpbxNewTicket.Size = new System.Drawing.Size(616, 264);
+            this.grpbxNewTicket.Size = new System.Drawing.Size(608, 264);
             this.grpbxNewTicket.TabIndex = 6;
             this.grpbxNewTicket.TabStop = false;
             this.grpbxNewTicket.Text = "Ticket";
@@ -157,6 +157,7 @@
             this.btnClear.TabIndex = 22;
             this.btnClear.Text = "Clear";
             this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // btnSubmit
             // 
@@ -281,10 +282,10 @@
             // 
             // txtbxCallDuration
             // 
-            this.txtbxCallDuration.Location = new System.Drawing.Point(749, 598);
+            this.txtbxCallDuration.Location = new System.Drawing.Point(733, 598);
             this.txtbxCallDuration.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtbxCallDuration.Name = "txtbxCallDuration";
-            this.txtbxCallDuration.Size = new System.Drawing.Size(91, 23);
+            this.txtbxCallDuration.Size = new System.Drawing.Size(107, 23);
             this.txtbxCallDuration.TabIndex = 25;
             // 
             // lblCallDuration
@@ -293,11 +294,11 @@
             this.lblCallDuration.BackColor = System.Drawing.Color.Transparent;
             this.lblCallDuration.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblCallDuration.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblCallDuration.Location = new System.Drawing.Point(651, 601);
+            this.lblCallDuration.Location = new System.Drawing.Point(643, 606);
             this.lblCallDuration.Name = "lblCallDuration";
-            this.lblCallDuration.Size = new System.Drawing.Size(81, 15);
+            this.lblCallDuration.Size = new System.Drawing.Size(84, 15);
             this.lblCallDuration.TabIndex = 24;
-            this.lblCallDuration.Text = "Call Duration:";
+            this.lblCallDuration.Text = "Date Opened:";
             // 
             // lblPreviousTickets
             // 

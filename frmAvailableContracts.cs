@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Twilio.TwiML.Voice;
 
 namespace Premier_Service_Solutions
 {
@@ -21,6 +22,23 @@ namespace Premier_Service_Solutions
         {
 
         }
+
+    /*    private void LoadDataToDataGridView()
+        {
+            // Use the member variable for ClientID
+
+            using (SqlConnection con = new SqlConnection(connect))
+            {
+                // Use parameters to avoid SQL injection
+                string query = "Select * from Ticket Where ClientID = @ClientID";
+                SqlDataAdapter da = new SqlDataAdapter(query, con);
+                da.SelectCommand.Parameters.AddWithValue("@ClientID", clientID);
+
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                dgvPreviousTickets.DataSource = dt;
+            }
+        }*/
 
         private void btnBack_Click(object sender, EventArgs e)
         {
@@ -48,6 +66,11 @@ namespace Premier_Service_Solutions
             frmEditPremium frmEditPremiumfrm = new frmEditPremium();
             this.Hide();
             frmEditPremiumfrm.Show();
+        }
+
+        private void frmAvailableContracts_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

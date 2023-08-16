@@ -134,25 +134,31 @@
             // 
             // pictureBoxExtra
             // 
+            this.pictureBoxExtra.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxExtra.Image")));
             this.pictureBoxExtra.Location = new System.Drawing.Point(530, 107);
             this.pictureBoxExtra.Name = "pictureBoxExtra";
             this.pictureBoxExtra.Size = new System.Drawing.Size(225, 113);
+            this.pictureBoxExtra.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxExtra.TabIndex = 7;
             this.pictureBoxExtra.TabStop = false;
             // 
             // pictureBoxBasic
             // 
+            this.pictureBoxBasic.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxBasic.Image")));
             this.pictureBoxBasic.Location = new System.Drawing.Point(299, 107);
             this.pictureBoxBasic.Name = "pictureBoxBasic";
             this.pictureBoxBasic.Size = new System.Drawing.Size(225, 113);
+            this.pictureBoxBasic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxBasic.TabIndex = 8;
             this.pictureBoxBasic.TabStop = false;
             // 
             // pictureBoxSaver
             // 
+            this.pictureBoxSaver.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxSaver.Image")));
             this.pictureBoxSaver.Location = new System.Drawing.Point(68, 107);
             this.pictureBoxSaver.Name = "pictureBoxSaver";
             this.pictureBoxSaver.Size = new System.Drawing.Size(225, 113);
+            this.pictureBoxSaver.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxSaver.TabIndex = 9;
             this.pictureBoxSaver.TabStop = false;
             // 
@@ -219,6 +225,7 @@
             this.Controls.Add(this.lblSaver);
             this.Name = "frmAvailableContracts";
             this.Text = "AvailableContracts";
+            this.Load += new System.EventHandler(this.frmAvailableContracts_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxExtra)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBasic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSaver)).EndInit();

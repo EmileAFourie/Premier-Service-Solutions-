@@ -29,86 +29,87 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmEmployeeCenter));
-            lblEmployeeCenter = new Label();
-            btnNewEmployee = new Button();
-            btnExistingEmployee = new Button();
-            btnClear = new Button();
-            btnBack = new Button();
-            SuspendLayout();
+            this.lblEmployeeCenter = new System.Windows.Forms.Label();
+            this.btnNewEmployee = new System.Windows.Forms.Button();
+            this.btnExistingEmployee = new System.Windows.Forms.Button();
+            this.btnClear = new System.Windows.Forms.Button();
+            this.btnBack = new System.Windows.Forms.Button();
+            this.SuspendLayout();
             // 
             // lblEmployeeCenter
             // 
-            lblEmployeeCenter.AutoSize = true;
-            lblEmployeeCenter.BackColor = Color.Transparent;
-            lblEmployeeCenter.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
-            lblEmployeeCenter.ForeColor = SystemColors.ButtonHighlight;
-            lblEmployeeCenter.Location = new Point(257, 33);
-            lblEmployeeCenter.Name = "lblEmployeeCenter";
-            lblEmployeeCenter.Size = new Size(235, 37);
-            lblEmployeeCenter.TabIndex = 0;
-            lblEmployeeCenter.Text = "Employee Centre";
+            this.lblEmployeeCenter.AutoSize = true;
+            this.lblEmployeeCenter.BackColor = System.Drawing.Color.Transparent;
+            this.lblEmployeeCenter.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblEmployeeCenter.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblEmployeeCenter.Location = new System.Drawing.Point(257, 33);
+            this.lblEmployeeCenter.Name = "lblEmployeeCenter";
+            this.lblEmployeeCenter.Size = new System.Drawing.Size(235, 37);
+            this.lblEmployeeCenter.TabIndex = 0;
+            this.lblEmployeeCenter.Text = "Employee Centre";
             // 
             // btnNewEmployee
             // 
-            btnNewEmployee.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            btnNewEmployee.Location = new Point(185, 184);
-            btnNewEmployee.Margin = new Padding(3, 4, 3, 4);
-            btnNewEmployee.Name = "btnNewEmployee";
-            btnNewEmployee.Size = new Size(158, 89);
-            btnNewEmployee.TabIndex = 1;
-            btnNewEmployee.Text = "New Employee";
-            btnNewEmployee.UseVisualStyleBackColor = true;
-            btnNewEmployee.Click += btnNewEmployee_Click;
+            this.btnNewEmployee.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnNewEmployee.Location = new System.Drawing.Point(185, 184);
+            this.btnNewEmployee.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnNewEmployee.Name = "btnNewEmployee";
+            this.btnNewEmployee.Size = new System.Drawing.Size(158, 89);
+            this.btnNewEmployee.TabIndex = 1;
+            this.btnNewEmployee.Text = "New Employee";
+            this.btnNewEmployee.UseVisualStyleBackColor = true;
+            this.btnNewEmployee.Click += new System.EventHandler(this.btnNewEmployee_Click);
             // 
             // btnExistingEmployee
             // 
-            btnExistingEmployee.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            btnExistingEmployee.Location = new Point(399, 184);
-            btnExistingEmployee.Margin = new Padding(3, 4, 3, 4);
-            btnExistingEmployee.Name = "btnExistingEmployee";
-            btnExistingEmployee.Size = new Size(158, 89);
-            btnExistingEmployee.TabIndex = 2;
-            btnExistingEmployee.Text = "Existing Employee";
-            btnExistingEmployee.UseVisualStyleBackColor = true;
-            btnExistingEmployee.Click += btnExistingEmployee_Click;
+            this.btnExistingEmployee.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnExistingEmployee.Location = new System.Drawing.Point(399, 184);
+            this.btnExistingEmployee.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnExistingEmployee.Name = "btnExistingEmployee";
+            this.btnExistingEmployee.Size = new System.Drawing.Size(158, 89);
+            this.btnExistingEmployee.TabIndex = 2;
+            this.btnExistingEmployee.Text = "Existing Employee";
+            this.btnExistingEmployee.UseVisualStyleBackColor = true;
+            this.btnExistingEmployee.Click += new System.EventHandler(this.btnExistingEmployee_Click);
             // 
             // btnClear
             // 
-            btnClear.Location = new Point(12, 550);
-            btnClear.Margin = new Padding(3, 4, 3, 4);
-            btnClear.Name = "btnClear";
-            btnClear.Size = new Size(119, 37);
-            btnClear.TabIndex = 5;
-            btnClear.Text = "Back";
-            btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Location = new System.Drawing.Point(12, 550);
+            this.btnClear.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(119, 37);
+            this.btnClear.TabIndex = 5;
+            this.btnClear.Text = "Back";
+            this.btnClear.UseVisualStyleBackColor = true;
             // 
             // btnBack
             // 
-            btnBack.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            btnBack.Location = new Point(12, 12);
-            btnBack.Name = "btnBack";
-            btnBack.Size = new Size(40, 22);
-            btnBack.TabIndex = 17;
-            btnBack.Text = "<<<";
-            btnBack.UseVisualStyleBackColor = true;
-            btnBack.Click += btnBack_Click;
+            this.btnBack.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnBack.Location = new System.Drawing.Point(12, 12);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(40, 22);
+            this.btnBack.TabIndex = 17;
+            this.btnBack.Text = "<<<";
+            this.btnBack.UseVisualStyleBackColor = true;
             // 
             // frmEmployeeCenter
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
-            BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(800, 450);
-            Controls.Add(btnBack);
-            Controls.Add(btnExistingEmployee);
-            Controls.Add(btnNewEmployee);
-            Controls.Add(lblEmployeeCenter);
-            Margin = new Padding(3, 4, 3, 4);
-            Name = "frmEmployeeCenter";
-            Text = "frmEmployeeCenter";
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnBack);
+            this.Controls.Add(this.btnExistingEmployee);
+            this.Controls.Add(this.btnNewEmployee);
+            this.Controls.Add(this.lblEmployeeCenter);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.Name = "frmEmployeeCenter";
+            this.Text = "frmEmployeeCenter";
+            this.Load += new System.EventHandler(this.frmEmployeeCenter_Load);
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion

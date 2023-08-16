@@ -168,6 +168,13 @@ namespace Premier_Service_Solutions
         private void btnEndCall_Click(object sender, EventArgs e)
         {
 
+ 
+            DateTime currentDatetime = DateTime.Now;
+
+            string formattedDatetime = currentDatetime.ToString("yyyy-MM-dd HH:mm:ss");
+
+            txtbxCallDuration.Text = formattedDatetime;
+
         }
 
         private void dgvPreviousTickets_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -287,6 +294,15 @@ namespace Premier_Service_Solutions
             frmExistingClientSearch Back = new frmExistingClientSearch();
             this.Hide();
             Back.Show();
+        }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            txtbxClientID.Clear();
+            txtbxDescription.Clear();
+            txtbxPriority.Clear();  
+            txtbxTypeOfError.Clear();
+
         }
     }
     }
