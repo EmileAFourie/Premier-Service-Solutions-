@@ -50,7 +50,7 @@ namespace Premier_Service_Solutions
         {
             frmNavigation back = new frmNavigation();
             back.Show();
-            this.Hide();
+            this.Hide();           
         }
     }
 }

@@ -62,5 +62,14 @@ namespace Premier_Service_Solutions
                 MessageBox.Show("An error has occured.");
             }
         }
+
+        private void btnLogOut_Click(object sender, EventArgs e)
+        {
+            
+            frmPremierServiceSolutionsLogin Logout = new frmPremierServiceSolutionsLogin();
+            this.Hide();
+            Logout.Show();
+            MessageBox.Show("You have been logged out!");
+        }
     }
 }
