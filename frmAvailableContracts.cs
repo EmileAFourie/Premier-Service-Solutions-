@@ -21,5 +21,12 @@ namespace Premier_Service_Solutions
         {
 
         }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            frmContracts back = new frmContracts();
+            this.Hide();
+            back.Show();
+        }
     }
 }
