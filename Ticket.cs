@@ -12,6 +12,7 @@ namespace Premier_Service_Solutions
     {
         private string connectionString = Global.connectionString;
         SqlConnection cnn;
+        SqlCommand cmd;
 
 
         private string status;
@@ -71,6 +72,44 @@ namespace Premier_Service_Solutions
 
             cnn.Close();
             return dt;
+        }
+        public DataTable GetAssignedTickets()
+        {
+            cnn = new SqlConnection(connectionString);
+            cnn.Open();
+
+            SqlDataAdapter data = new SqlDataAdapter($@"SELECT EmployeeTickets.EmployeeID, Ticket.TicketID, Ticket.Description, Ticket.Priority FROM Ticket LEFT JOIN EmployeeTickets ON Ticket.TicketID = EmployeeTickets.TicketID WHERE EmployeeTickets.TicketID IS NOT NULL", cnn);
+            DataTable dt = new DataTable();
+            data.Fill(dt);
+
+            cnn.Close();
+            return dt;
+        }
+
+        public void EsculateTicket()
+        {
+
+        }
+        public void AssignTicket(int employeeID, int ticketID)
+        {
+            cnn = new SqlConnection(connectionString);
+            cnn.Open();
+
+            cmd = new SqlCommand($@"INSERT INTO EmployeeTickets (EmployeeID, TicketID, CurrentlyWorkingOn) VALUES ('{employeeID}', {ticketID}, 1) ", cnn);
+            cmd.ExecuteNonQuery();
+
+            cnn.Close();
+        }
+
+        public void UnassignTicket(int employeeID, int ticketID)
+        {
+            cnn = new SqlConnection(connectionString);
+            cnn.Open();
+
+            cmd = new SqlCommand($@"DELETE * FROM EmployeeTickets WHERE EmployeeID = {employeeID} AND TicketID = {ticketID} ", cnn);
+            cmd.ExecuteNonQuery();
+
+            cnn.Close();
         }
 
     }

@@ -12,6 +12,9 @@ namespace Premier_Service_Solutions
 {
     public partial class frmServiceDepartment : Form
     {
+        int UnassignedTicketID = -1;
+        int AssignedTicketID = -1;
+
         public frmServiceDepartment()
         {
             InitializeComponent();
@@ -35,7 +38,16 @@ namespace Premier_Service_Solutions
             Ticket ticket = new Ticket();
 
             DataTable dt = ticket.GetUnassignedTickets();
+            DataTable dt2 = ticket.GetAssignedTickets();
+
+            dataGridView2.DataSource = dt2;
             dataGridView1.DataSource = dt;
+
+            UnassignedTicketID = DataGridViewGetTicketID(dataGridView1.Rows[0]);
+            AssignedTicketID = DataGridViewGetTicketID(dataGridView2.Rows[0]);
+
+            lblAssigned.Text = "Selected Assigned Ticket ID: " + AssignedTicketID.ToString();
+            lblUnassigned.Text = "Selected Unassigned Ticket ID: " + UnassignedTicketID.ToString();
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -60,6 +72,34 @@ namespace Premier_Service_Solutions
             catch (Exception)
             {
                 MessageBox.Show("An error has occured.");
+            }
+        }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            DataGridViewRow row = dataGridView1.Rows[e.RowIndex];
+
+            UnassignedTicketID = DataGridViewGetTicketID(row);
+            lblUnassigned.Text = "Selected Unassigned Ticket ID: " + UnassignedTicketID.ToString();
+            //MessageBox.Show(UnassignedTicketID.ToString());
+        }
+
+        private void dataGridView2_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            DataGridViewRow row = dataGridView2.Rows[e.RowIndex];
+
+            AssignedTicketID = DataGridViewGetTicketID(row);
+            lblAssigned.Text = "Selected Assigned Ticket ID: " + AssignedTicketID.ToString();
+        }
+        private int DataGridViewGetTicketID(DataGridViewRow row)
+        {
+            if (row.Cells[0].Value.ToString() != "")
+            {
+                return int.Parse(row.Cells[0].Value.ToString());
+            }
+            else
+            {
+                return -1;
             }
         }
     }

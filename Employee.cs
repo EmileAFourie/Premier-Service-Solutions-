@@ -185,7 +185,7 @@ namespace Premier_Service_Solutions
                 cnn = new SqlConnection(connectionString);
                 cnn.Open();
 
-                cmd = new SqlCommand($@"SELECT * FROM Employee WHERE User = '{employeeID}' AND Password = '{password}'", cnn);
+                cmd = new SqlCommand($@"SELECT * FROM Employee WHERE Username = '{user}' AND Password = '{password}'", cnn);
                 reader = cmd.ExecuteReader();
 
                 reader.Read();
@@ -208,7 +208,7 @@ namespace Premier_Service_Solutions
             }
             catch (Exception)
             {
-                return "Fail";
+                return "fail";
             }
         }
         public void AssignTicket(int ticketID)

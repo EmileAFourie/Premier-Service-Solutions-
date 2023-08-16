@@ -44,6 +44,8 @@
             btnBack = new Button();
             comboBox1 = new ComboBox();
             label1 = new Label();
+            lblUnassigned = new Label();
+            lblAssigned = new Label();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView2).BeginInit();
             SuspendLayout();
@@ -70,6 +72,7 @@
             dataGridView1.RowTemplate.Height = 25;
             dataGridView1.Size = new Size(320, 351);
             dataGridView1.TabIndex = 1;
+            dataGridView1.CellClick += dataGridView1_CellClick;
             // 
             // dataGridView2
             // 
@@ -81,6 +84,7 @@
             dataGridView2.RowTemplate.Height = 25;
             dataGridView2.Size = new Size(320, 351);
             dataGridView2.TabIndex = 2;
+            dataGridView2.CellClick += dataGridView2_CellClick;
             // 
             // lblUnassignedTickets
             // 
@@ -212,6 +216,30 @@
             label1.TabIndex = 18;
             label1.Text = "Avalible Employees";
             // 
+            // lblUnassigned
+            // 
+            lblUnassigned.AutoSize = true;
+            lblUnassigned.BackColor = Color.Transparent;
+            lblUnassigned.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            lblUnassigned.ForeColor = SystemColors.ButtonHighlight;
+            lblUnassigned.Location = new Point(31, 466);
+            lblUnassigned.Name = "lblUnassigned";
+            lblUnassigned.Size = new Size(113, 15);
+            lblUnassigned.TabIndex = 19;
+            lblUnassigned.Text = "Unassigned Tickets";
+            // 
+            // lblAssigned
+            // 
+            lblAssigned.AutoSize = true;
+            lblAssigned.BackColor = Color.Transparent;
+            lblAssigned.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            lblAssigned.ForeColor = SystemColors.ButtonHighlight;
+            lblAssigned.Location = new Point(534, 466);
+            lblAssigned.Name = "lblAssigned";
+            lblAssigned.Size = new Size(113, 15);
+            lblAssigned.TabIndex = 20;
+            lblAssigned.Text = "Unassigned Tickets";
+            // 
             // frmServiceDepartment
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -219,6 +247,8 @@
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(904, 584);
+            Controls.Add(lblAssigned);
+            Controls.Add(lblUnassigned);
             Controls.Add(label1);
             Controls.Add(comboBox1);
             Controls.Add(btnBack);
@@ -259,5 +289,7 @@
         private Button btnBack;
         private ComboBox comboBox1;
         private Label label1;
+        private Label lblUnassigned;
+        private Label lblAssigned;
     }
 }
