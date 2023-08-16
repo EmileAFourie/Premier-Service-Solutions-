@@ -28,101 +28,90 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmNavigation));
-            this.lblNavigationHeader = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.btnCallCentre = new System.Windows.Forms.Button();
-            this.btnServiceDepartment = new System.Windows.Forms.Button();
-            this.btnEmployees = new System.Windows.Forms.Button();
-            this.btnContracts = new System.Windows.Forms.Button();
-            this.SuspendLayout();
+            lblNavigationHeader = new Label();
+            label1 = new Label();
+            btnCallCentre = new Button();
+            btnServiceDepartment = new Button();
+            btnEmployees = new Button();
+            btnContracts = new Button();
+            SuspendLayout();
             // 
             // lblNavigationHeader
             // 
-            this.lblNavigationHeader.AutoSize = true;
-            this.lblNavigationHeader.BackColor = System.Drawing.Color.Transparent;
-            this.lblNavigationHeader.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblNavigationHeader.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblNavigationHeader.Location = new System.Drawing.Point(295, 25);
-            this.lblNavigationHeader.Name = "lblNavigationHeader";
-            this.lblNavigationHeader.Size = new System.Drawing.Size(230, 37);
-            this.lblNavigationHeader.TabIndex = 0;
-            this.lblNavigationHeader.Text = "Navigation Page";
+            lblNavigationHeader.AutoSize = true;
+            lblNavigationHeader.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
+            lblNavigationHeader.Location = new Point(295, 25);
+            lblNavigationHeader.Name = "lblNavigationHeader";
+            lblNavigationHeader.Size = new Size(230, 37);
+            lblNavigationHeader.TabIndex = 0;
+            lblNavigationHeader.Text = "Navigation Page";
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(328, 80);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(136, 28);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Departments";
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.Location = new Point(328, 80);
+            label1.Name = "label1";
+            label1.Size = new Size(136, 28);
+            label1.TabIndex = 1;
+            label1.Text = "Departments";
             // 
             // btnCallCentre
             // 
-            this.btnCallCentre.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnCallCentre.Location = new System.Drawing.Point(297, 145);
-            this.btnCallCentre.Name = "btnCallCentre";
-            this.btnCallCentre.Size = new System.Drawing.Size(189, 33);
-            this.btnCallCentre.TabIndex = 2;
-            this.btnCallCentre.Text = "Call Centre";
-            this.btnCallCentre.UseVisualStyleBackColor = true;
-            this.btnCallCentre.Click += new System.EventHandler(this.btnCallCentre_Click_1);
+            btnCallCentre.Location = new Point(297, 145);
+            btnCallCentre.Name = "btnCallCentre";
+            btnCallCentre.Size = new Size(189, 33);
+            btnCallCentre.TabIndex = 2;
+            btnCallCentre.Text = "Call Centre";
+            btnCallCentre.UseVisualStyleBackColor = true;
+            btnCallCentre.Click += btnCallCentre_Click_1;
             // 
             // btnServiceDepartment
             // 
-            this.btnServiceDepartment.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnServiceDepartment.Location = new System.Drawing.Point(297, 198);
-            this.btnServiceDepartment.Name = "btnServiceDepartment";
-            this.btnServiceDepartment.Size = new System.Drawing.Size(189, 33);
-            this.btnServiceDepartment.TabIndex = 3;
-            this.btnServiceDepartment.Text = "Service Department";
-            this.btnServiceDepartment.UseVisualStyleBackColor = true;
-            this.btnServiceDepartment.Click += new System.EventHandler(this.btnServiceDepartment_Click_1);
+            btnServiceDepartment.Location = new Point(297, 198);
+            btnServiceDepartment.Name = "btnServiceDepartment";
+            btnServiceDepartment.Size = new Size(189, 33);
+            btnServiceDepartment.TabIndex = 3;
+            btnServiceDepartment.Text = "Service Department";
+            btnServiceDepartment.UseVisualStyleBackColor = true;
+            btnServiceDepartment.Click += btnServiceDepartment_Click_1;
             // 
             // btnEmployees
             // 
-            this.btnEmployees.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnEmployees.Location = new System.Drawing.Point(297, 296);
-            this.btnEmployees.Name = "btnEmployees";
-            this.btnEmployees.Size = new System.Drawing.Size(189, 33);
-            this.btnEmployees.TabIndex = 4;
-            this.btnEmployees.Text = "Employees";
-            this.btnEmployees.UseVisualStyleBackColor = true;
-            this.btnEmployees.Click += new System.EventHandler(this.btnEmployees_Click_1);
+            btnEmployees.Location = new Point(297, 296);
+            btnEmployees.Name = "btnEmployees";
+            btnEmployees.Size = new Size(189, 33);
+            btnEmployees.TabIndex = 4;
+            btnEmployees.Text = "Employees";
+            btnEmployees.UseVisualStyleBackColor = true;
+            btnEmployees.Click += btnEmployees_Click_1;
             // 
             // btnContracts
             // 
-            this.btnContracts.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnContracts.Location = new System.Drawing.Point(295, 353);
-            this.btnContracts.Name = "btnContracts";
-            this.btnContracts.Size = new System.Drawing.Size(189, 33);
-            this.btnContracts.TabIndex = 5;
-            this.btnContracts.Text = "Contracts";
-            this.btnContracts.UseVisualStyleBackColor = true;
-            this.btnContracts.Click += new System.EventHandler(this.btnContracts_Click_1);
+            btnContracts.Location = new Point(295, 353);
+            btnContracts.Name = "btnContracts";
+            btnContracts.Size = new Size(189, 33);
+            btnContracts.TabIndex = 5;
+            btnContracts.Text = "Contracts";
+            btnContracts.UseVisualStyleBackColor = true;
+            btnContracts.Click += btnContracts_Click_1;
             // 
             // frmNavigation
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.btnContracts);
-            this.Controls.Add(this.btnEmployees);
-            this.Controls.Add(this.btnServiceDepartment);
-            this.Controls.Add(this.btnCallCentre);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.lblNavigationHeader);
-            this.Name = "frmNavigation";
-            this.Text = "Navigation";
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(btnContracts);
+            Controls.Add(btnEmployees);
+            Controls.Add(btnServiceDepartment);
+            Controls.Add(btnCallCentre);
+            Controls.Add(label1);
+            Controls.Add(lblNavigationHeader);
+            Name = "frmNavigation";
+            StartPosition = FormStartPosition.CenterParent;
+            Text = "Navigation";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

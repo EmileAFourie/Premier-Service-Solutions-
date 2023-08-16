@@ -180,24 +180,24 @@ namespace Premier_Service_Solutions
         }
         public string CheckLogin(string user, string password)
         {
-            try
-            {
+           try
+           {
                 cnn = new SqlConnection(connectionString);
                 cnn.Open();
 
-                cmd = new SqlCommand($@"SELECT * FROM Employee WHERE User = '{employeeID}' AND Password = '{password}'", cnn);
+                cmd = new SqlCommand($@"SELECT * FROM Employee WHERE Username = '{user}' AND Password = '{password}'", cnn);
                 reader = cmd.ExecuteReader();
 
                 reader.Read();
 
-                EmployeeID = reader.GetInt32(0);
-                FirstName = reader.GetString(1);
-                Surname = reader.GetString(2);
-                Email = reader.GetString(3);
-                CellNo = reader.GetString(4);
-                Postion = reader.GetString(5);
+               EmployeeID = reader.GetInt32(0);
+               FirstName = reader.GetString(1);
+               Surname = reader.GetString(2);
+               Email = reader.GetString(3);
+               CellNo = reader.GetString(4);
+               Postion = reader.GetString(5);
                 Department = reader.GetString(6);
-                Field = reader.GetString(7);
+               Field = reader.GetString(7);
                 Username = user;
                 Password = password;
 
@@ -205,11 +205,11 @@ namespace Premier_Service_Solutions
                 cnn.Close();
 
                 return department;
-            }
-            catch (Exception)
-            {
-                return "Fail";
-            }
+           }
+           catch (Exception)
+           {
+              return "fail";
+           }
         }
 
         public DataTable GetEmployeeTickets()
