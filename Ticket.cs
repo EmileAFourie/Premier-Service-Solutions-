@@ -3,11 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data;
 
 namespace Premier_Service_Solutions
 {
    class Ticket
     {
+        private string connectString = Global.connectionString;
+
         private string status;
         private int ticketID;
         private string typeOfError;
@@ -26,7 +29,10 @@ namespace Premier_Service_Solutions
         public string Priority { get { return priority; } }
         public int ClientID { get { return clientID; } }
 
+        public DataTable GetUnassignedTickets()
+        {
 
+        }
 
     }
 }
