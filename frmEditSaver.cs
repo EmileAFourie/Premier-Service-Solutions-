@@ -13,6 +13,7 @@ namespace Premier_Service_Solutions
 {
     public partial class frmEditSaver : Form
     {
+        string connect = Global.connectionString;
         public frmEditSaver()
         {
             InitializeComponent();
@@ -20,7 +21,7 @@ namespace Premier_Service_Solutions
 
         private void frmEditSaver_Load(object sender, EventArgs e)
         {
-            string connect = @"Data source=(local); Initial Catalog=PremierServiceSolutions; Integrated Security=SSPI";
+            //string connect = @"Data source=(local); Initial Catalog=PremierServiceSolutions; Integrated Security=SSPI";
             SqlConnection con = new SqlConnection(connect);
             string query = @"SELECT * FROM Contract WHERE ContractID = 2";
             SqlDataAdapter da = new SqlDataAdapter(query, con);

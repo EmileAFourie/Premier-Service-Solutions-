@@ -13,6 +13,7 @@ namespace Premier_Service_Solutions
 {
     public partial class frmEditPremium : Form
     {
+        string connect = Global.connectionString;
         public frmEditPremium()
         {
             InitializeComponent();
@@ -20,7 +21,7 @@ namespace Premier_Service_Solutions
 
         private void frmEditPremium_Load(object sender, EventArgs e)
         {
-            string connect = @"Data source=(local); Initial Catalog=PremierServiceSolutions; Integrated Security=SSPI";
+           // string connect = @"Data source=(local); Initial Catalog=PremierServiceSolutions; Integrated Security=SSPI";
             SqlConnection con = new SqlConnection(connect);
             string query = @"SELECT * FROM Contract WHERE ContractID = 3";
             SqlDataAdapter da = new SqlDataAdapter(query, con);
@@ -38,7 +39,7 @@ namespace Premier_Service_Solutions
 
         private void btnEnable_Click(object sender, EventArgs e)
         {
-            string connect = @"Data Source=(local); Initial Catalog=PremierServiceSolutions; Integrated Security=SSPI";
+           // string connect = @"Data Source=(local); Initial Catalog=PremierServiceSolutions; Integrated Security=SSPI";
             SqlConnection con = new SqlConnection(connect);
             string query = @"UPDATE Contract SET Avalibilty = 1"; // Assuming 'Availability' is the correct column name
 
@@ -73,7 +74,7 @@ namespace Premier_Service_Solutions
 
         private void btnDisable_Click(object sender, EventArgs e)
         {
-            string connect = @"Data Source=(local); Initial Catalog=PremierServiceSolutions; Integrated Security=SSPI";
+           // string connect = @"Data Source=(local); Initial Catalog=PremierServiceSolutions; Integrated Security=SSPI";
             SqlConnection con = new SqlConnection(connect);
             string query = @"UPDATE Contract SET Avalibilty = 0"; // Assuming 'Availability' is the correct column name
 
