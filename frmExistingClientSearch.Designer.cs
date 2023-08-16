@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmExistingClientSearch));
             this.lblExistingClientDetails = new System.Windows.Forms.Label();
             this.lblClientID = new System.Windows.Forms.Label();
             this.txtbxClientID = new System.Windows.Forms.TextBox();
@@ -39,19 +40,24 @@
             // lblExistingClientDetails
             // 
             this.lblExistingClientDetails.AutoSize = true;
-            this.lblExistingClientDetails.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblExistingClientDetails.Location = new System.Drawing.Point(291, 24);
+            this.lblExistingClientDetails.BackColor = System.Drawing.Color.Transparent;
+            this.lblExistingClientDetails.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblExistingClientDetails.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblExistingClientDetails.Location = new System.Drawing.Point(257, 25);
             this.lblExistingClientDetails.Name = "lblExistingClientDetails";
-            this.lblExistingClientDetails.Size = new System.Drawing.Size(220, 28);
+            this.lblExistingClientDetails.Size = new System.Drawing.Size(296, 37);
             this.lblExistingClientDetails.TabIndex = 0;
             this.lblExistingClientDetails.Text = "Existing Client Details";
             // 
             // lblClientID
             // 
             this.lblClientID.AutoSize = true;
+            this.lblClientID.BackColor = System.Drawing.Color.Transparent;
+            this.lblClientID.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblClientID.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lblClientID.Location = new System.Drawing.Point(200, 146);
             this.lblClientID.Name = "lblClientID";
-            this.lblClientID.Size = new System.Drawing.Size(52, 15);
+            this.lblClientID.Size = new System.Drawing.Size(55, 15);
             this.lblClientID.TabIndex = 1;
             this.lblClientID.Text = "Client ID";
             // 
@@ -96,6 +102,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btnSearch);

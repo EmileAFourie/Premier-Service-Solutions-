@@ -28,309 +28,337 @@
         /// </summary>
         private void InitializeComponent()
         {
-            lblPreviousCalls = new Label();
-            lblPreviousTickets = new Label();
-            txtbxCallDuration = new TextBox();
-            lblCallDuration = new Label();
-            btnEndCall = new Button();
-            lblTicketManagement = new Label();
-            grpbxNewTicket = new GroupBox();
-            btnClear = new Button();
-            btnSubmit = new Button();
-            txtbxAssignedTo = new TextBox();
-            txtbxPriority = new TextBox();
-            lblAssignedTo = new Label();
-            lblPriority = new Label();
-            txtbxDescription = new TextBox();
-            txtbxTypeOfError = new TextBox();
-            lblDescription = new Label();
-            lblTypeOfError = new Label();
-            txtbxClientID = new TextBox();
-            txtbxTicketID = new TextBox();
-            lblClientIDNewTicket = new Label();
-            lblTicketID = new Label();
-            txtbxContract = new TextBox();
-            lblContract = new Label();
-            txtbxClient = new TextBox();
-            lblClient = new Label();
-            dataGridView2 = new DataGridView();
-            dataGridView1 = new DataGridView();
-            grpbxNewTicket.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
-            SuspendLayout();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmExistingClientDetails));
+            this.lblPreviousCalls = new System.Windows.Forms.Label();
+            this.lblPreviousTickets = new System.Windows.Forms.Label();
+            this.txtbxCallDuration = new System.Windows.Forms.TextBox();
+            this.lblCallDuration = new System.Windows.Forms.Label();
+            this.btnEndCall = new System.Windows.Forms.Button();
+            this.lblTicketManagement = new System.Windows.Forms.Label();
+            this.grpbxNewTicket = new System.Windows.Forms.GroupBox();
+            this.btnClear = new System.Windows.Forms.Button();
+            this.btnSubmit = new System.Windows.Forms.Button();
+            this.txtbxAssignedTo = new System.Windows.Forms.TextBox();
+            this.txtbxPriority = new System.Windows.Forms.TextBox();
+            this.lblAssignedTo = new System.Windows.Forms.Label();
+            this.lblPriority = new System.Windows.Forms.Label();
+            this.txtbxDescription = new System.Windows.Forms.TextBox();
+            this.txtbxTypeOfError = new System.Windows.Forms.TextBox();
+            this.lblDescription = new System.Windows.Forms.Label();
+            this.lblTypeOfError = new System.Windows.Forms.Label();
+            this.txtbxClientID = new System.Windows.Forms.TextBox();
+            this.txtbxTicketID = new System.Windows.Forms.TextBox();
+            this.lblClientIDNewTicket = new System.Windows.Forms.Label();
+            this.lblTicketID = new System.Windows.Forms.Label();
+            this.txtbxContract = new System.Windows.Forms.TextBox();
+            this.lblContract = new System.Windows.Forms.Label();
+            this.txtbxClient = new System.Windows.Forms.TextBox();
+            this.lblClient = new System.Windows.Forms.Label();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.grpbxNewTicket.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.SuspendLayout();
             // 
             // lblPreviousCalls
             // 
-            lblPreviousCalls.AutoSize = true;
-            lblPreviousCalls.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            lblPreviousCalls.Location = new Point(591, 234);
-            lblPreviousCalls.Name = "lblPreviousCalls";
-            lblPreviousCalls.Size = new Size(85, 15);
-            lblPreviousCalls.TabIndex = 40;
-            lblPreviousCalls.Text = "Previous Calls:";
+            this.lblPreviousCalls.AutoSize = true;
+            this.lblPreviousCalls.BackColor = System.Drawing.Color.Transparent;
+            this.lblPreviousCalls.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblPreviousCalls.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblPreviousCalls.Location = new System.Drawing.Point(591, 234);
+            this.lblPreviousCalls.Name = "lblPreviousCalls";
+            this.lblPreviousCalls.Size = new System.Drawing.Size(85, 15);
+            this.lblPreviousCalls.TabIndex = 40;
+            this.lblPreviousCalls.Text = "Previous Calls:";
             // 
             // lblPreviousTickets
             // 
-            lblPreviousTickets.AutoSize = true;
-            lblPreviousTickets.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            lblPreviousTickets.Location = new Point(591, 62);
-            lblPreviousTickets.Name = "lblPreviousTickets";
-            lblPreviousTickets.Size = new Size(101, 15);
-            lblPreviousTickets.TabIndex = 39;
-            lblPreviousTickets.Text = "Previous Tickets:";
+            this.lblPreviousTickets.AutoSize = true;
+            this.lblPreviousTickets.BackColor = System.Drawing.Color.Transparent;
+            this.lblPreviousTickets.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblPreviousTickets.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblPreviousTickets.Location = new System.Drawing.Point(591, 62);
+            this.lblPreviousTickets.Name = "lblPreviousTickets";
+            this.lblPreviousTickets.Size = new System.Drawing.Size(101, 15);
+            this.lblPreviousTickets.TabIndex = 39;
+            this.lblPreviousTickets.Text = "Previous Tickets:";
             // 
             // txtbxCallDuration
             // 
-            txtbxCallDuration.Location = new Point(582, 414);
-            txtbxCallDuration.Name = "txtbxCallDuration";
-            txtbxCallDuration.Size = new Size(83, 23);
-            txtbxCallDuration.TabIndex = 38;
+            this.txtbxCallDuration.Location = new System.Drawing.Point(582, 414);
+            this.txtbxCallDuration.Name = "txtbxCallDuration";
+            this.txtbxCallDuration.Size = new System.Drawing.Size(83, 23);
+            this.txtbxCallDuration.TabIndex = 38;
             // 
             // lblCallDuration
             // 
-            lblCallDuration.AutoSize = true;
-            lblCallDuration.Location = new Point(497, 417);
-            lblCallDuration.Name = "lblCallDuration";
-            lblCallDuration.Size = new Size(79, 15);
-            lblCallDuration.TabIndex = 37;
-            lblCallDuration.Text = "Call Duration:";
+            this.lblCallDuration.AutoSize = true;
+            this.lblCallDuration.BackColor = System.Drawing.Color.Transparent;
+            this.lblCallDuration.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblCallDuration.Location = new System.Drawing.Point(497, 417);
+            this.lblCallDuration.Name = "lblCallDuration";
+            this.lblCallDuration.Size = new System.Drawing.Size(79, 15);
+            this.lblCallDuration.TabIndex = 37;
+            this.lblCallDuration.Text = "Call Duration:";
             // 
             // btnEndCall
             // 
-            btnEndCall.Location = new Point(675, 408);
-            btnEndCall.Name = "btnEndCall";
-            btnEndCall.Size = new Size(104, 32);
-            btnEndCall.TabIndex = 36;
-            btnEndCall.Text = "End Call";
-            btnEndCall.UseVisualStyleBackColor = true;
+            this.btnEndCall.Location = new System.Drawing.Point(675, 408);
+            this.btnEndCall.Name = "btnEndCall";
+            this.btnEndCall.Size = new System.Drawing.Size(104, 32);
+            this.btnEndCall.TabIndex = 36;
+            this.btnEndCall.Text = "End Call";
+            this.btnEndCall.UseVisualStyleBackColor = true;
             // 
             // lblTicketManagement
             // 
-            lblTicketManagement.AutoSize = true;
-            lblTicketManagement.Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point);
-            lblTicketManagement.Location = new Point(292, 0);
-            lblTicketManagement.Name = "lblTicketManagement";
-            lblTicketManagement.Size = new Size(251, 37);
-            lblTicketManagement.TabIndex = 35;
-            lblTicketManagement.Text = "Ticket Management";
+            this.lblTicketManagement.AutoSize = true;
+            this.lblTicketManagement.BackColor = System.Drawing.Color.Transparent;
+            this.lblTicketManagement.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblTicketManagement.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblTicketManagement.Location = new System.Drawing.Point(292, 0);
+            this.lblTicketManagement.Name = "lblTicketManagement";
+            this.lblTicketManagement.Size = new System.Drawing.Size(251, 37);
+            this.lblTicketManagement.TabIndex = 35;
+            this.lblTicketManagement.Text = "Ticket Management";
             // 
             // grpbxNewTicket
             // 
-            grpbxNewTicket.Controls.Add(btnClear);
-            grpbxNewTicket.Controls.Add(btnSubmit);
-            grpbxNewTicket.Controls.Add(txtbxAssignedTo);
-            grpbxNewTicket.Controls.Add(txtbxPriority);
-            grpbxNewTicket.Controls.Add(lblAssignedTo);
-            grpbxNewTicket.Controls.Add(lblPriority);
-            grpbxNewTicket.Controls.Add(txtbxDescription);
-            grpbxNewTicket.Controls.Add(txtbxTypeOfError);
-            grpbxNewTicket.Controls.Add(lblDescription);
-            grpbxNewTicket.Controls.Add(lblTypeOfError);
-            grpbxNewTicket.Controls.Add(txtbxClientID);
-            grpbxNewTicket.Controls.Add(txtbxTicketID);
-            grpbxNewTicket.Controls.Add(lblClientIDNewTicket);
-            grpbxNewTicket.Controls.Add(lblTicketID);
-            grpbxNewTicket.Location = new Point(22, 156);
-            grpbxNewTicket.Name = "grpbxNewTicket";
-            grpbxNewTicket.Size = new Size(440, 284);
-            grpbxNewTicket.TabIndex = 34;
-            grpbxNewTicket.TabStop = false;
-            grpbxNewTicket.Text = "New Ticket";
+            this.grpbxNewTicket.BackColor = System.Drawing.Color.Transparent;
+            this.grpbxNewTicket.Controls.Add(this.btnClear);
+            this.grpbxNewTicket.Controls.Add(this.btnSubmit);
+            this.grpbxNewTicket.Controls.Add(this.txtbxAssignedTo);
+            this.grpbxNewTicket.Controls.Add(this.txtbxPriority);
+            this.grpbxNewTicket.Controls.Add(this.lblAssignedTo);
+            this.grpbxNewTicket.Controls.Add(this.lblPriority);
+            this.grpbxNewTicket.Controls.Add(this.txtbxDescription);
+            this.grpbxNewTicket.Controls.Add(this.txtbxTypeOfError);
+            this.grpbxNewTicket.Controls.Add(this.lblDescription);
+            this.grpbxNewTicket.Controls.Add(this.lblTypeOfError);
+            this.grpbxNewTicket.Controls.Add(this.txtbxClientID);
+            this.grpbxNewTicket.Controls.Add(this.txtbxTicketID);
+            this.grpbxNewTicket.Controls.Add(this.lblClientIDNewTicket);
+            this.grpbxNewTicket.Controls.Add(this.lblTicketID);
+            this.grpbxNewTicket.Location = new System.Drawing.Point(22, 156);
+            this.grpbxNewTicket.Name = "grpbxNewTicket";
+            this.grpbxNewTicket.Size = new System.Drawing.Size(440, 284);
+            this.grpbxNewTicket.TabIndex = 34;
+            this.grpbxNewTicket.TabStop = false;
+            this.grpbxNewTicket.Text = "New Ticket";
             // 
             // btnClear
             // 
-            btnClear.Location = new Point(133, 224);
-            btnClear.Name = "btnClear";
-            btnClear.Size = new Size(104, 32);
-            btnClear.TabIndex = 22;
-            btnClear.Text = "Clear";
-            btnClear.UseVisualStyleBackColor = true;
-            btnClear.Click += btnClear_Click;
+            this.btnClear.Location = new System.Drawing.Point(133, 224);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(104, 32);
+            this.btnClear.TabIndex = 22;
+            this.btnClear.Text = "Clear";
+            this.btnClear.UseVisualStyleBackColor = true;
             // 
             // btnSubmit
             // 
-            btnSubmit.Location = new Point(270, 224);
-            btnSubmit.Name = "btnSubmit";
-            btnSubmit.Size = new Size(104, 32);
-            btnSubmit.TabIndex = 21;
-            btnSubmit.Text = "Submit";
-            btnSubmit.UseVisualStyleBackColor = true;
+            this.btnSubmit.Location = new System.Drawing.Point(270, 224);
+            this.btnSubmit.Name = "btnSubmit";
+            this.btnSubmit.Size = new System.Drawing.Size(104, 32);
+            this.btnSubmit.TabIndex = 21;
+            this.btnSubmit.Text = "Submit";
+            this.btnSubmit.UseVisualStyleBackColor = true;
             // 
             // txtbxAssignedTo
             // 
-            txtbxAssignedTo.Location = new Point(88, 182);
-            txtbxAssignedTo.Name = "txtbxAssignedTo";
-            txtbxAssignedTo.Size = new Size(336, 23);
-            txtbxAssignedTo.TabIndex = 19;
+            this.txtbxAssignedTo.Location = new System.Drawing.Point(88, 182);
+            this.txtbxAssignedTo.Name = "txtbxAssignedTo";
+            this.txtbxAssignedTo.Size = new System.Drawing.Size(336, 23);
+            this.txtbxAssignedTo.TabIndex = 19;
             // 
             // txtbxPriority
             // 
-            txtbxPriority.Location = new Point(88, 153);
-            txtbxPriority.Name = "txtbxPriority";
-            txtbxPriority.Size = new Size(336, 23);
-            txtbxPriority.TabIndex = 17;
+            this.txtbxPriority.Location = new System.Drawing.Point(88, 153);
+            this.txtbxPriority.Name = "txtbxPriority";
+            this.txtbxPriority.Size = new System.Drawing.Size(336, 23);
+            this.txtbxPriority.TabIndex = 17;
             // 
             // lblAssignedTo
             // 
-            lblAssignedTo.AutoSize = true;
-            lblAssignedTo.Location = new Point(11, 185);
-            lblAssignedTo.Name = "lblAssignedTo";
-            lblAssignedTo.Size = new Size(72, 15);
-            lblAssignedTo.TabIndex = 18;
-            lblAssignedTo.Text = "Assigned to:";
+            this.lblAssignedTo.AutoSize = true;
+            this.lblAssignedTo.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblAssignedTo.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblAssignedTo.Location = new System.Drawing.Point(4, 185);
+            this.lblAssignedTo.Name = "lblAssignedTo";
+            this.lblAssignedTo.Size = new System.Drawing.Size(74, 15);
+            this.lblAssignedTo.TabIndex = 18;
+            this.lblAssignedTo.Text = "Assigned to:";
             // 
             // lblPriority
             // 
-            lblPriority.AutoSize = true;
-            lblPriority.Location = new Point(11, 156);
-            lblPriority.Name = "lblPriority";
-            lblPriority.Size = new Size(48, 15);
-            lblPriority.TabIndex = 16;
-            lblPriority.Text = "Priority:";
+            this.lblPriority.AutoSize = true;
+            this.lblPriority.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblPriority.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblPriority.Location = new System.Drawing.Point(4, 156);
+            this.lblPriority.Name = "lblPriority";
+            this.lblPriority.Size = new System.Drawing.Size(51, 15);
+            this.lblPriority.TabIndex = 16;
+            this.lblPriority.Text = "Priority:";
             // 
             // txtbxDescription
             // 
-            txtbxDescription.Location = new Point(88, 124);
-            txtbxDescription.Name = "txtbxDescription";
-            txtbxDescription.Size = new Size(336, 23);
-            txtbxDescription.TabIndex = 15;
+            this.txtbxDescription.Location = new System.Drawing.Point(88, 124);
+            this.txtbxDescription.Name = "txtbxDescription";
+            this.txtbxDescription.Size = new System.Drawing.Size(336, 23);
+            this.txtbxDescription.TabIndex = 15;
             // 
             // txtbxTypeOfError
             // 
-            txtbxTypeOfError.Location = new Point(88, 95);
-            txtbxTypeOfError.Name = "txtbxTypeOfError";
-            txtbxTypeOfError.Size = new Size(336, 23);
-            txtbxTypeOfError.TabIndex = 13;
+            this.txtbxTypeOfError.Location = new System.Drawing.Point(88, 95);
+            this.txtbxTypeOfError.Name = "txtbxTypeOfError";
+            this.txtbxTypeOfError.Size = new System.Drawing.Size(336, 23);
+            this.txtbxTypeOfError.TabIndex = 13;
             // 
             // lblDescription
             // 
-            lblDescription.AutoSize = true;
-            lblDescription.Location = new Point(11, 127);
-            lblDescription.Name = "lblDescription";
-            lblDescription.Size = new Size(70, 15);
-            lblDescription.TabIndex = 14;
-            lblDescription.Text = "Description:";
+            this.lblDescription.AutoSize = true;
+            this.lblDescription.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblDescription.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblDescription.Location = new System.Drawing.Point(4, 127);
+            this.lblDescription.Name = "lblDescription";
+            this.lblDescription.Size = new System.Drawing.Size(74, 15);
+            this.lblDescription.TabIndex = 14;
+            this.lblDescription.Text = "Description:";
             // 
             // lblTypeOfError
             // 
-            lblTypeOfError.AutoSize = true;
-            lblTypeOfError.Location = new Point(11, 98);
-            lblTypeOfError.Name = "lblTypeOfError";
-            lblTypeOfError.Size = new Size(72, 15);
-            lblTypeOfError.TabIndex = 12;
-            lblTypeOfError.Text = "TypeOfError:";
+            this.lblTypeOfError.AutoSize = true;
+            this.lblTypeOfError.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblTypeOfError.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblTypeOfError.Location = new System.Drawing.Point(4, 98);
+            this.lblTypeOfError.Name = "lblTypeOfError";
+            this.lblTypeOfError.Size = new System.Drawing.Size(78, 15);
+            this.lblTypeOfError.TabIndex = 12;
+            this.lblTypeOfError.Text = "TypeOfError:";
             // 
             // txtbxClientID
             // 
-            txtbxClientID.Location = new Point(88, 63);
-            txtbxClientID.Name = "txtbxClientID";
-            txtbxClientID.Size = new Size(336, 23);
-            txtbxClientID.TabIndex = 11;
+            this.txtbxClientID.Location = new System.Drawing.Point(88, 63);
+            this.txtbxClientID.Name = "txtbxClientID";
+            this.txtbxClientID.Size = new System.Drawing.Size(336, 23);
+            this.txtbxClientID.TabIndex = 11;
             // 
             // txtbxTicketID
             // 
-            txtbxTicketID.Location = new Point(88, 34);
-            txtbxTicketID.Name = "txtbxTicketID";
-            txtbxTicketID.Size = new Size(336, 23);
-            txtbxTicketID.TabIndex = 9;
+            this.txtbxTicketID.Location = new System.Drawing.Point(88, 34);
+            this.txtbxTicketID.Name = "txtbxTicketID";
+            this.txtbxTicketID.Size = new System.Drawing.Size(336, 23);
+            this.txtbxTicketID.TabIndex = 9;
             // 
             // lblClientIDNewTicket
             // 
-            lblClientIDNewTicket.AutoSize = true;
-            lblClientIDNewTicket.Location = new Point(11, 66);
-            lblClientIDNewTicket.Name = "lblClientIDNewTicket";
-            lblClientIDNewTicket.Size = new Size(52, 15);
-            lblClientIDNewTicket.TabIndex = 10;
-            lblClientIDNewTicket.Text = "ClientID:";
+            this.lblClientIDNewTicket.AutoSize = true;
+            this.lblClientIDNewTicket.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblClientIDNewTicket.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblClientIDNewTicket.Location = new System.Drawing.Point(4, 66);
+            this.lblClientIDNewTicket.Name = "lblClientIDNewTicket";
+            this.lblClientIDNewTicket.Size = new System.Drawing.Size(55, 15);
+            this.lblClientIDNewTicket.TabIndex = 10;
+            this.lblClientIDNewTicket.Text = "ClientID:";
             // 
             // lblTicketID
             // 
-            lblTicketID.AutoSize = true;
-            lblTicketID.Location = new Point(11, 37);
-            lblTicketID.Name = "lblTicketID";
-            lblTicketID.Size = new Size(52, 15);
-            lblTicketID.TabIndex = 8;
-            lblTicketID.Text = "TicketID:";
+            this.lblTicketID.AutoSize = true;
+            this.lblTicketID.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblTicketID.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblTicketID.Location = new System.Drawing.Point(4, 37);
+            this.lblTicketID.Name = "lblTicketID";
+            this.lblTicketID.Size = new System.Drawing.Size(58, 15);
+            this.lblTicketID.TabIndex = 8;
+            this.lblTicketID.Text = "TicketID:";
             // 
             // txtbxContract
             // 
-            txtbxContract.Location = new Point(155, 116);
-            txtbxContract.Name = "txtbxContract";
-            txtbxContract.Size = new Size(291, 23);
-            txtbxContract.TabIndex = 33;
+            this.txtbxContract.Location = new System.Drawing.Point(155, 116);
+            this.txtbxContract.Name = "txtbxContract";
+            this.txtbxContract.Size = new System.Drawing.Size(291, 23);
+            this.txtbxContract.TabIndex = 33;
             // 
             // lblContract
             // 
-            lblContract.AutoSize = true;
-            lblContract.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            lblContract.Location = new Point(94, 119);
-            lblContract.Name = "lblContract";
-            lblContract.Size = new Size(58, 15);
-            lblContract.TabIndex = 32;
-            lblContract.Text = "Contract:";
+            this.lblContract.AutoSize = true;
+            this.lblContract.BackColor = System.Drawing.Color.Transparent;
+            this.lblContract.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblContract.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblContract.Location = new System.Drawing.Point(94, 119);
+            this.lblContract.Name = "lblContract";
+            this.lblContract.Size = new System.Drawing.Size(58, 15);
+            this.lblContract.TabIndex = 32;
+            this.lblContract.Text = "Contract:";
             // 
             // txtbxClient
             // 
-            txtbxClient.Location = new Point(155, 87);
-            txtbxClient.Name = "txtbxClient";
-            txtbxClient.Size = new Size(291, 23);
-            txtbxClient.TabIndex = 31;
+            this.txtbxClient.Location = new System.Drawing.Point(155, 87);
+            this.txtbxClient.Name = "txtbxClient";
+            this.txtbxClient.Size = new System.Drawing.Size(291, 23);
+            this.txtbxClient.TabIndex = 31;
             // 
             // lblClient
             // 
-            lblClient.AutoSize = true;
-            lblClient.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            lblClient.Location = new Point(94, 90);
-            lblClient.Name = "lblClient";
-            lblClient.Size = new Size(42, 15);
-            lblClient.TabIndex = 30;
-            lblClient.Text = "Client:";
+            this.lblClient.AutoSize = true;
+            this.lblClient.BackColor = System.Drawing.Color.Transparent;
+            this.lblClient.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblClient.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblClient.Location = new System.Drawing.Point(94, 90);
+            this.lblClient.Name = "lblClient";
+            this.lblClient.Size = new System.Drawing.Size(42, 15);
+            this.lblClient.TabIndex = 30;
+            this.lblClient.Text = "Client:";
             // 
             // dataGridView2
             // 
-            dataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView2.Location = new Point(496, 252);
-            dataGridView2.Name = "dataGridView2";
-            dataGridView2.RowTemplate.Height = 25;
-            dataGridView2.Size = new Size(283, 135);
-            dataGridView2.TabIndex = 29;
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Location = new System.Drawing.Point(496, 252);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.RowTemplate.Height = 25;
+            this.dataGridView2.Size = new System.Drawing.Size(283, 135);
+            this.dataGridView2.TabIndex = 29;
             // 
             // dataGridView1
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(496, 80);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowTemplate.Height = 25;
-            dataGridView1.Size = new Size(283, 133);
-            dataGridView1.TabIndex = 28;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(496, 80);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowTemplate.Height = 25;
+            this.dataGridView1.Size = new System.Drawing.Size(283, 133);
+            this.dataGridView1.TabIndex = 28;
             // 
             // frmExistingClientDetails
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(lblPreviousCalls);
-            Controls.Add(lblPreviousTickets);
-            Controls.Add(txtbxCallDuration);
-            Controls.Add(lblCallDuration);
-            Controls.Add(btnEndCall);
-            Controls.Add(lblTicketManagement);
-            Controls.Add(grpbxNewTicket);
-            Controls.Add(txtbxContract);
-            Controls.Add(lblContract);
-            Controls.Add(txtbxClient);
-            Controls.Add(lblClient);
-            Controls.Add(dataGridView2);
-            Controls.Add(dataGridView1);
-            Name = "frmExistingClientDetails";
-            Text = "Existing Client Details";
-            grpbxNewTicket.ResumeLayout(false);
-            grpbxNewTicket.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblPreviousCalls);
+            this.Controls.Add(this.lblPreviousTickets);
+            this.Controls.Add(this.txtbxCallDuration);
+            this.Controls.Add(this.lblCallDuration);
+            this.Controls.Add(this.btnEndCall);
+            this.Controls.Add(this.lblTicketManagement);
+            this.Controls.Add(this.grpbxNewTicket);
+            this.Controls.Add(this.txtbxContract);
+            this.Controls.Add(this.lblContract);
+            this.Controls.Add(this.txtbxClient);
+            this.Controls.Add(this.lblClient);
+            this.Controls.Add(this.dataGridView2);
+            this.Controls.Add(this.dataGridView1);
+            this.Name = "frmExistingClientDetails";
+            this.Text = "Existing Client Details";
+            this.grpbxNewTicket.ResumeLayout(false);
+            this.grpbxNewTicket.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion

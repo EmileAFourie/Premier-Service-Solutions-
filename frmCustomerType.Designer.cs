@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCustomerType));
             this.txtbxTimestamp = new System.Windows.Forms.TextBox();
             this.btnNewCustomer = new System.Windows.Forms.Button();
             this.btnOldCustomer = new System.Windows.Forms.Button();
@@ -71,7 +72,9 @@
             // lblTimestamp
             // 
             this.lblTimestamp.AutoSize = true;
+            this.lblTimestamp.BackColor = System.Drawing.Color.Transparent;
             this.lblTimestamp.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblTimestamp.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lblTimestamp.Location = new System.Drawing.Point(115, 137);
             this.lblTimestamp.Name = "lblTimestamp";
             this.lblTimestamp.Size = new System.Drawing.Size(112, 28);
@@ -81,7 +84,9 @@
             // lblCallCentre
             // 
             this.lblCallCentre.AutoSize = true;
+            this.lblCallCentre.BackColor = System.Drawing.Color.Transparent;
             this.lblCallCentre.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblCallCentre.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lblCallCentre.Location = new System.Drawing.Point(350, 37);
             this.lblCallCentre.Name = "lblCallCentre";
             this.lblCallCentre.Size = new System.Drawing.Size(157, 37);
@@ -117,7 +122,9 @@
             // lblCallerNumber
             // 
             this.lblCallerNumber.AutoSize = true;
+            this.lblCallerNumber.BackColor = System.Drawing.Color.Transparent;
             this.lblCallerNumber.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblCallerNumber.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lblCallerNumber.Location = new System.Drawing.Point(115, 192);
             this.lblCallerNumber.Name = "lblCallerNumber";
             this.lblCallerNumber.Size = new System.Drawing.Size(142, 28);
@@ -138,6 +145,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.txtbxCallerNumber);
             this.Controls.Add(this.lblCallerNumber);

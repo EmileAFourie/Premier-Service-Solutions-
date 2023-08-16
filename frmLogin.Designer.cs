@@ -44,6 +44,7 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(95, 26);
             this.pictureBox1.Name = "pictureBox1";
@@ -55,7 +56,9 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label1.Location = new System.Drawing.Point(207, 206);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(409, 25);
@@ -65,18 +68,24 @@
             // lblUsername
             // 
             this.lblUsername.AutoSize = true;
+            this.lblUsername.BackColor = System.Drawing.Color.Transparent;
+            this.lblUsername.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblUsername.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lblUsername.Location = new System.Drawing.Point(150, 264);
             this.lblUsername.Name = "lblUsername";
-            this.lblUsername.Size = new System.Drawing.Size(60, 15);
+            this.lblUsername.Size = new System.Drawing.Size(64, 15);
             this.lblUsername.TabIndex = 2;
             this.lblUsername.Text = "Username";
             // 
             // lblPassword
             // 
             this.lblPassword.AutoSize = true;
+            this.lblPassword.BackColor = System.Drawing.Color.Transparent;
+            this.lblPassword.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblPassword.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lblPassword.Location = new System.Drawing.Point(150, 310);
             this.lblPassword.Name = "lblPassword";
-            this.lblPassword.Size = new System.Drawing.Size(57, 15);
+            this.lblPassword.Size = new System.Drawing.Size(59, 15);
             this.lblPassword.TabIndex = 3;
             this.lblPassword.Text = "Password";
             // 
@@ -96,6 +105,7 @@
             // 
             // btnClear
             // 
+            this.btnClear.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnClear.Location = new System.Drawing.Point(398, 369);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(75, 23);
@@ -106,6 +116,7 @@
             // 
             // btnLogin
             // 
+            this.btnLogin.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnLogin.Location = new System.Drawing.Point(541, 369);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(75, 23);
@@ -117,16 +128,20 @@
             // chkShowPassword
             // 
             this.chkShowPassword.AutoSize = true;
+            this.chkShowPassword.BackColor = System.Drawing.Color.Transparent;
+            this.chkShowPassword.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.chkShowPassword.ForeColor = System.Drawing.SystemColors.ButtonShadow;
             this.chkShowPassword.Location = new System.Drawing.Point(624, 312);
             this.chkShowPassword.Name = "chkShowPassword";
-            this.chkShowPassword.Size = new System.Drawing.Size(108, 19);
+            this.chkShowPassword.Size = new System.Drawing.Size(112, 19);
             this.chkShowPassword.TabIndex = 8;
             this.chkShowPassword.Text = "Show Password";
-            this.chkShowPassword.UseVisualStyleBackColor = true;
+            this.chkShowPassword.UseVisualStyleBackColor = false;
             this.chkShowPassword.CheckedChanged += new System.EventHandler(this.chkShowPassword_CheckedChanged_1);
             // 
             // btnBypass
             // 
+            this.btnBypass.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnBypass.Location = new System.Drawing.Point(689, 415);
             this.btnBypass.Name = "btnBypass";
             this.btnBypass.Size = new System.Drawing.Size(75, 23);
@@ -139,6 +154,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Silver;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnBypass);
             this.Controls.Add(this.chkShowPassword);

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAvailableContracts));
             this.lblSaver = new System.Windows.Forms.Label();
             this.lblBasic = new System.Windows.Forms.Label();
             this.lblExtra = new System.Windows.Forms.Label();
@@ -53,7 +54,9 @@
             // lblSaver
             // 
             this.lblSaver.AutoSize = true;
+            this.lblSaver.BackColor = System.Drawing.Color.Transparent;
             this.lblSaver.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblSaver.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lblSaver.Location = new System.Drawing.Point(138, 66);
             this.lblSaver.Name = "lblSaver";
             this.lblSaver.Size = new System.Drawing.Size(64, 28);
@@ -63,7 +66,9 @@
             // lblBasic
             // 
             this.lblBasic.AutoSize = true;
+            this.lblBasic.BackColor = System.Drawing.Color.Transparent;
             this.lblBasic.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblBasic.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lblBasic.Location = new System.Drawing.Point(365, 66);
             this.lblBasic.Name = "lblBasic";
             this.lblBasic.Size = new System.Drawing.Size(61, 28);
@@ -73,7 +78,9 @@
             // lblExtra
             // 
             this.lblExtra.AutoSize = true;
+            this.lblExtra.BackColor = System.Drawing.Color.Transparent;
             this.lblExtra.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblExtra.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lblExtra.Location = new System.Drawing.Point(604, 66);
             this.lblExtra.Name = "lblExtra";
             this.lblExtra.Size = new System.Drawing.Size(61, 28);
@@ -83,7 +90,9 @@
             // lblAvailableContracts
             // 
             this.lblAvailableContracts.AutoSize = true;
+            this.lblAvailableContracts.BackColor = System.Drawing.Color.Transparent;
             this.lblAvailableContracts.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblAvailableContracts.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lblAvailableContracts.Location = new System.Drawing.Point(267, 19);
             this.lblAvailableContracts.Name = "lblAvailableContracts";
             this.lblAvailableContracts.Size = new System.Drawing.Size(266, 37);
@@ -122,7 +131,7 @@
             // 
             // pictureBoxExtra
             // 
-            this.pictureBoxExtra.Location = new System.Drawing.Point(529, 97);
+            this.pictureBoxExtra.Location = new System.Drawing.Point(530, 107);
             this.pictureBoxExtra.Name = "pictureBoxExtra";
             this.pictureBoxExtra.Size = new System.Drawing.Size(225, 113);
             this.pictureBoxExtra.TabIndex = 7;
@@ -130,7 +139,7 @@
             // 
             // pictureBoxBasic
             // 
-            this.pictureBoxBasic.Location = new System.Drawing.Point(298, 97);
+            this.pictureBoxBasic.Location = new System.Drawing.Point(299, 107);
             this.pictureBoxBasic.Name = "pictureBoxBasic";
             this.pictureBoxBasic.Size = new System.Drawing.Size(225, 113);
             this.pictureBoxBasic.TabIndex = 8;
@@ -138,7 +147,7 @@
             // 
             // pictureBoxSaver
             // 
-            this.pictureBoxSaver.Location = new System.Drawing.Point(67, 97);
+            this.pictureBoxSaver.Location = new System.Drawing.Point(68, 107);
             this.pictureBoxSaver.Name = "pictureBoxSaver";
             this.pictureBoxSaver.Size = new System.Drawing.Size(225, 113);
             this.pictureBoxSaver.TabIndex = 9;
@@ -147,7 +156,7 @@
             // dgvSaver
             // 
             this.dgvSaver.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvSaver.Location = new System.Drawing.Point(67, 216);
+            this.dgvSaver.Location = new System.Drawing.Point(68, 226);
             this.dgvSaver.Name = "dgvSaver";
             this.dgvSaver.RowHeadersWidth = 51;
             this.dgvSaver.RowTemplate.Height = 25;
@@ -157,7 +166,7 @@
             // dgvBasic
             // 
             this.dgvBasic.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvBasic.Location = new System.Drawing.Point(298, 216);
+            this.dgvBasic.Location = new System.Drawing.Point(299, 226);
             this.dgvBasic.Name = "dgvBasic";
             this.dgvBasic.RowHeadersWidth = 51;
             this.dgvBasic.RowTemplate.Height = 25;
@@ -167,7 +176,7 @@
             // dgvExtra
             // 
             this.dgvExtra.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvExtra.Location = new System.Drawing.Point(529, 216);
+            this.dgvExtra.Location = new System.Drawing.Point(530, 226);
             this.dgvExtra.Name = "dgvExtra";
             this.dgvExtra.RowHeadersWidth = 51;
             this.dgvExtra.RowTemplate.Height = 25;
@@ -188,6 +197,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 508);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.dgvExtra);

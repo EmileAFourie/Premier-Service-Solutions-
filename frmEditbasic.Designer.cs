@@ -53,7 +53,7 @@
             // pictureBoxBasic
             // 
             this.pictureBoxBasic.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxBasic.Image")));
-            this.pictureBoxBasic.Location = new System.Drawing.Point(146, 2);
+            this.pictureBoxBasic.Location = new System.Drawing.Point(144, 12);
             this.pictureBoxBasic.Name = "pictureBoxBasic";
             this.pictureBoxBasic.Size = new System.Drawing.Size(472, 106);
             this.pictureBoxBasic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -63,7 +63,7 @@
             // dgvBasic
             // 
             this.dgvBasic.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvBasic.Location = new System.Drawing.Point(146, 114);
+            this.dgvBasic.Location = new System.Drawing.Point(144, 124);
             this.dgvBasic.Name = "dgvBasic";
             this.dgvBasic.RowTemplate.Height = 25;
             this.dgvBasic.Size = new System.Drawing.Size(472, 122);
@@ -155,45 +155,60 @@
             // lblName
             // 
             this.lblName.AutoSize = true;
+            this.lblName.BackColor = System.Drawing.Color.Transparent;
+            this.lblName.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblName.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lblName.Location = new System.Drawing.Point(187, 299);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(39, 15);
+            this.lblName.Size = new System.Drawing.Size(40, 15);
             this.lblName.TabIndex = 12;
             this.lblName.Text = "Name";
             // 
             // lblDescription
             // 
             this.lblDescription.AutoSize = true;
+            this.lblDescription.BackColor = System.Drawing.Color.Transparent;
+            this.lblDescription.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblDescription.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lblDescription.Location = new System.Drawing.Point(187, 328);
             this.lblDescription.Name = "lblDescription";
-            this.lblDescription.Size = new System.Drawing.Size(70, 15);
+            this.lblDescription.Size = new System.Drawing.Size(74, 15);
             this.lblDescription.TabIndex = 13;
             this.lblDescription.Text = "Description ";
             // 
             // lblPrice
             // 
             this.lblPrice.AutoSize = true;
+            this.lblPrice.BackColor = System.Drawing.Color.Transparent;
+            this.lblPrice.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblPrice.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lblPrice.Location = new System.Drawing.Point(187, 357);
             this.lblPrice.Name = "lblPrice";
-            this.lblPrice.Size = new System.Drawing.Size(33, 15);
+            this.lblPrice.Size = new System.Drawing.Size(35, 15);
             this.lblPrice.TabIndex = 14;
             this.lblPrice.Text = "Price";
             // 
             // lblAvailability
             // 
             this.lblAvailability.AutoSize = true;
+            this.lblAvailability.BackColor = System.Drawing.Color.Transparent;
+            this.lblAvailability.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblAvailability.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lblAvailability.Location = new System.Drawing.Point(187, 386);
             this.lblAvailability.Name = "lblAvailability";
-            this.lblAvailability.Size = new System.Drawing.Size(65, 15);
+            this.lblAvailability.Size = new System.Drawing.Size(67, 15);
             this.lblAvailability.TabIndex = 15;
             this.lblAvailability.Text = "Availability";
             // 
             // lblPriority
             // 
             this.lblPriority.AutoSize = true;
+            this.lblPriority.BackColor = System.Drawing.Color.Transparent;
+            this.lblPriority.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblPriority.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lblPriority.Location = new System.Drawing.Point(187, 415);
             this.lblPriority.Name = "lblPriority";
-            this.lblPriority.Size = new System.Drawing.Size(45, 15);
+            this.lblPriority.Size = new System.Drawing.Size(48, 15);
             this.lblPriority.TabIndex = 16;
             this.lblPriority.Text = "Priority";
             // 
@@ -201,6 +216,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.lblPriority);
             this.Controls.Add(this.lblAvailability);

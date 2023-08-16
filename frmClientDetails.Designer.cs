@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmClientDetails));
             this.btnNewClientDetails = new System.Windows.Forms.Label();
             this.lblSurname = new System.Windows.Forms.Label();
             this.txtbxLastname = new System.Windows.Forms.TextBox();
@@ -51,7 +52,9 @@
             // btnNewClientDetails
             // 
             this.btnNewClientDetails.AutoSize = true;
+            this.btnNewClientDetails.BackColor = System.Drawing.Color.Transparent;
             this.btnNewClientDetails.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnNewClientDetails.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnNewClientDetails.Location = new System.Drawing.Point(276, 20);
             this.btnNewClientDetails.Name = "btnNewClientDetails";
             this.btnNewClientDetails.Size = new System.Drawing.Size(253, 37);
@@ -61,9 +64,12 @@
             // lblSurname
             // 
             this.lblSurname.AutoSize = true;
+            this.lblSurname.BackColor = System.Drawing.Color.Transparent;
+            this.lblSurname.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblSurname.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lblSurname.Location = new System.Drawing.Point(276, 151);
             this.lblSurname.Name = "lblSurname";
-            this.lblSurname.Size = new System.Drawing.Size(63, 15);
+            this.lblSurname.Size = new System.Drawing.Size(65, 15);
             this.lblSurname.TabIndex = 1;
             this.lblSurname.Text = "Last Name";
             // 
@@ -84,9 +90,12 @@
             // lblAddress
             // 
             this.lblAddress.AutoSize = true;
+            this.lblAddress.BackColor = System.Drawing.Color.Transparent;
+            this.lblAddress.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblAddress.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lblAddress.Location = new System.Drawing.Point(290, 189);
             this.lblAddress.Name = "lblAddress";
-            this.lblAddress.Size = new System.Drawing.Size(49, 15);
+            this.lblAddress.Size = new System.Drawing.Size(51, 15);
             this.lblAddress.TabIndex = 3;
             this.lblAddress.Text = "Address";
             // 
@@ -100,9 +109,12 @@
             // lblCellNumber
             // 
             this.lblCellNumber.AutoSize = true;
+            this.lblCellNumber.BackColor = System.Drawing.Color.Transparent;
+            this.lblCellNumber.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblCellNumber.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lblCellNumber.Location = new System.Drawing.Point(268, 232);
             this.lblCellNumber.Name = "lblCellNumber";
-            this.lblCellNumber.Size = new System.Drawing.Size(71, 15);
+            this.lblCellNumber.Size = new System.Drawing.Size(73, 15);
             this.lblCellNumber.TabIndex = 5;
             this.lblCellNumber.Text = "CellNumber";
             // 
@@ -116,6 +128,9 @@
             // lblEmail
             // 
             this.lblEmail.AutoSize = true;
+            this.lblEmail.BackColor = System.Drawing.Color.Transparent;
+            this.lblEmail.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblEmail.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lblEmail.Location = new System.Drawing.Point(303, 276);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(36, 15);
@@ -125,9 +140,12 @@
             // lblContract
             // 
             this.lblContract.AutoSize = true;
+            this.lblContract.BackColor = System.Drawing.Color.Transparent;
+            this.lblContract.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblContract.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lblContract.Location = new System.Drawing.Point(286, 317);
             this.lblContract.Name = "lblContract";
-            this.lblContract.Size = new System.Drawing.Size(53, 15);
+            this.lblContract.Size = new System.Drawing.Size(55, 15);
             this.lblContract.TabIndex = 9;
             this.lblContract.Text = "Contract";
             // 
@@ -190,9 +208,12 @@
             // lblFirstName
             // 
             this.lblFirstName.AutoSize = true;
+            this.lblFirstName.BackColor = System.Drawing.Color.Transparent;
+            this.lblFirstName.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblFirstName.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lblFirstName.Location = new System.Drawing.Point(275, 117);
             this.lblFirstName.Name = "lblFirstName";
-            this.lblFirstName.Size = new System.Drawing.Size(64, 15);
+            this.lblFirstName.Size = new System.Drawing.Size(67, 15);
             this.lblFirstName.TabIndex = 23;
             this.lblFirstName.Text = "First Name";
             // 
@@ -210,6 +231,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.txtbxFirstName);

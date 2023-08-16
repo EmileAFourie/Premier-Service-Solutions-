@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmNavigation));
             this.lblNavigationHeader = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.btnCallCentre = new System.Windows.Forms.Button();
@@ -39,7 +40,9 @@
             // lblNavigationHeader
             // 
             this.lblNavigationHeader.AutoSize = true;
+            this.lblNavigationHeader.BackColor = System.Drawing.Color.Transparent;
             this.lblNavigationHeader.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblNavigationHeader.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lblNavigationHeader.Location = new System.Drawing.Point(295, 25);
             this.lblNavigationHeader.Name = "lblNavigationHeader";
             this.lblNavigationHeader.Size = new System.Drawing.Size(230, 37);
@@ -49,7 +52,9 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label1.Location = new System.Drawing.Point(328, 80);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(136, 28);
@@ -58,6 +63,7 @@
             // 
             // btnCallCentre
             // 
+            this.btnCallCentre.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnCallCentre.Location = new System.Drawing.Point(297, 145);
             this.btnCallCentre.Name = "btnCallCentre";
             this.btnCallCentre.Size = new System.Drawing.Size(189, 33);
@@ -68,6 +74,7 @@
             // 
             // btnServiceDepartment
             // 
+            this.btnServiceDepartment.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnServiceDepartment.Location = new System.Drawing.Point(297, 198);
             this.btnServiceDepartment.Name = "btnServiceDepartment";
             this.btnServiceDepartment.Size = new System.Drawing.Size(189, 33);
@@ -78,6 +85,7 @@
             // 
             // btnEmployees
             // 
+            this.btnEmployees.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnEmployees.Location = new System.Drawing.Point(297, 296);
             this.btnEmployees.Name = "btnEmployees";
             this.btnEmployees.Size = new System.Drawing.Size(189, 33);
@@ -88,6 +96,7 @@
             // 
             // btnContracts
             // 
+            this.btnContracts.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnContracts.Location = new System.Drawing.Point(295, 353);
             this.btnContracts.Name = "btnContracts";
             this.btnContracts.Size = new System.Drawing.Size(189, 33);
@@ -100,6 +109,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnContracts);
             this.Controls.Add(this.btnEmployees);

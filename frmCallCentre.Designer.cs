@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCallCentre));
             this.btnDecline = new System.Windows.Forms.Button();
             this.btnAnswerCall = new System.Windows.Forms.Button();
             this.lblIncomingCall = new System.Windows.Forms.Label();
@@ -62,17 +63,21 @@
             // lblIncomingCall
             // 
             this.lblIncomingCall.AutoSize = true;
-            this.lblIncomingCall.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblIncomingCall.BackColor = System.Drawing.Color.Transparent;
+            this.lblIncomingCall.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblIncomingCall.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lblIncomingCall.Location = new System.Drawing.Point(122, 117);
             this.lblIncomingCall.Name = "lblIncomingCall";
-            this.lblIncomingCall.Size = new System.Drawing.Size(131, 28);
+            this.lblIncomingCall.Size = new System.Drawing.Size(141, 28);
             this.lblIncomingCall.TabIndex = 7;
             this.lblIncomingCall.Text = "Incoming Call";
             // 
             // lblCallCentre
             // 
             this.lblCallCentre.AutoSize = true;
+            this.lblCallCentre.BackColor = System.Drawing.Color.Transparent;
             this.lblCallCentre.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblCallCentre.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lblCallCentre.Location = new System.Drawing.Point(365, 27);
             this.lblCallCentre.Name = "lblCallCentre";
             this.lblCallCentre.Size = new System.Drawing.Size(157, 37);
@@ -100,10 +105,12 @@
             // lblCallerID
             // 
             this.lblCallerID.AutoSize = true;
-            this.lblCallerID.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblCallerID.BackColor = System.Drawing.Color.Transparent;
+            this.lblCallerID.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblCallerID.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lblCallerID.Location = new System.Drawing.Point(122, 176);
             this.lblCallerID.Name = "lblCallerID";
-            this.lblCallerID.Size = new System.Drawing.Size(85, 28);
+            this.lblCallerID.Size = new System.Drawing.Size(93, 28);
             this.lblCallerID.TabIndex = 13;
             this.lblCallerID.Text = "Caller ID";
             // 
@@ -131,6 +138,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.txtbxCallerID);
