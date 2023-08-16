@@ -326,6 +326,7 @@
             this.Controls.Add(this.txtbxDepartment);
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "frmNewEmployee";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmNewEmployee";
             this.ResumeLayout(false);
             this.PerformLayout();

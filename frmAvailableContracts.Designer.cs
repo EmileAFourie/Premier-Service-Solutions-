@@ -224,6 +224,7 @@
             this.Controls.Add(this.lblBasic);
             this.Controls.Add(this.lblSaver);
             this.Name = "frmAvailableContracts";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AvailableContracts";
             this.Load += new System.EventHandler(this.frmAvailableContracts_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxExtra)).EndInit();

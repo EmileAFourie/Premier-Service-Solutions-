@@ -361,6 +361,7 @@
             this.Controls.Add(this.lblClient);
             this.Controls.Add(this.dgvPreviousTickets);
             this.Name = "frmTicketManagement";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ticket Management";
             ((System.ComponentModel.ISupportInitialize)(this.dgvPreviousTickets)).EndInit();
             this.grpbxNewTicket.ResumeLayout(false);

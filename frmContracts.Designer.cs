@@ -29,84 +29,83 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmContracts));
-            lblContracts = new Label();
-            btnViewContractPerformance = new Button();
-            btnEditContracts = new Button();
-            btnClear = new Button();
-            btnBack = new Button();
-            SuspendLayout();
+            this.lblContracts = new System.Windows.Forms.Label();
+            this.btnViewContractPerformance = new System.Windows.Forms.Button();
+            this.btnEditContracts = new System.Windows.Forms.Button();
+            this.btnClear = new System.Windows.Forms.Button();
+            this.btnBack = new System.Windows.Forms.Button();
+            this.SuspendLayout();
             // 
             // lblContracts
             // 
-            lblContracts.AutoSize = true;
-            lblContracts.BackColor = Color.Transparent;
-            lblContracts.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
-            lblContracts.ForeColor = Color.Transparent;
-            lblContracts.Location = new Point(323, 32);
-            lblContracts.Name = "lblContracts";
-            lblContracts.Size = new Size(140, 37);
-            lblContracts.TabIndex = 0;
-            lblContracts.Text = "Contracts";
+            this.lblContracts.AutoSize = true;
+            this.lblContracts.BackColor = System.Drawing.Color.Transparent;
+            this.lblContracts.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblContracts.ForeColor = System.Drawing.Color.Transparent;
+            this.lblContracts.Location = new System.Drawing.Point(323, 32);
+            this.lblContracts.Name = "lblContracts";
+            this.lblContracts.Size = new System.Drawing.Size(140, 37);
+            this.lblContracts.TabIndex = 0;
+            this.lblContracts.Text = "Contracts";
             // 
             // btnViewContractPerformance
             // 
-            btnViewContractPerformance.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            btnViewContractPerformance.Location = new Point(293, 225);
-            btnViewContractPerformance.Margin = new Padding(3, 4, 3, 4);
-            btnViewContractPerformance.Name = "btnViewContractPerformance";
-            btnViewContractPerformance.Size = new Size(206, 67);
-            btnViewContractPerformance.TabIndex = 1;
-            btnViewContractPerformance.Text = "View Contract Performance";
-            btnViewContractPerformance.UseVisualStyleBackColor = true;
-            btnViewContractPerformance.Click += btnViewContractPerformance_Click;
+            this.btnViewContractPerformance.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnViewContractPerformance.Location = new System.Drawing.Point(293, 225);
+            this.btnViewContractPerformance.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnViewContractPerformance.Name = "btnViewContractPerformance";
+            this.btnViewContractPerformance.Size = new System.Drawing.Size(206, 67);
+            this.btnViewContractPerformance.TabIndex = 1;
+            this.btnViewContractPerformance.Text = "View Contract Performance";
+            this.btnViewContractPerformance.UseVisualStyleBackColor = true;
             // 
             // btnEditContracts
             // 
-            btnEditContracts.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            btnEditContracts.Location = new Point(293, 125);
-            btnEditContracts.Margin = new Padding(3, 4, 3, 4);
-            btnEditContracts.Name = "btnEditContracts";
-            btnEditContracts.Size = new Size(206, 67);
-            btnEditContracts.TabIndex = 2;
-            btnEditContracts.Text = "Edit Contracts";
-            btnEditContracts.UseVisualStyleBackColor = true;
-            btnEditContracts.Click += btnEditContracts_Click;
+            this.btnEditContracts.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnEditContracts.Location = new System.Drawing.Point(293, 125);
+            this.btnEditContracts.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnEditContracts.Name = "btnEditContracts";
+            this.btnEditContracts.Size = new System.Drawing.Size(206, 67);
+            this.btnEditContracts.TabIndex = 2;
+            this.btnEditContracts.Text = "Edit Contracts";
+            this.btnEditContracts.UseVisualStyleBackColor = true;
             // 
             // btnClear
             // 
-            btnClear.Location = new Point(12, 553);
-            btnClear.Margin = new Padding(3, 4, 3, 4);
-            btnClear.Name = "btnClear";
-            btnClear.Size = new Size(160, 34);
-            btnClear.TabIndex = 5;
-            btnClear.Text = "Back";
-            btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Location = new System.Drawing.Point(12, 553);
+            this.btnClear.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(160, 34);
+            this.btnClear.TabIndex = 5;
+            this.btnClear.Text = "Back";
+            this.btnClear.UseVisualStyleBackColor = true;
             // 
             // btnBack
             // 
-            btnBack.Location = new Point(12, 12);
-            btnBack.Name = "btnBack";
-            btnBack.Size = new Size(40, 22);
-            btnBack.TabIndex = 17;
-            btnBack.Text = "<<<";
-            btnBack.UseVisualStyleBackColor = true;
-            btnBack.Click += btnBack_Click;
+            this.btnBack.Location = new System.Drawing.Point(12, 12);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(40, 22);
+            this.btnBack.TabIndex = 17;
+            this.btnBack.Text = "<<<";
+            this.btnBack.UseVisualStyleBackColor = true;
             // 
             // frmContracts
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
-            BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(800, 450);
-            Controls.Add(btnBack);
-            Controls.Add(btnEditContracts);
-            Controls.Add(btnViewContractPerformance);
-            Controls.Add(lblContracts);
-            Name = "frmContracts";
-            Text = "Contracts";
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnBack);
+            this.Controls.Add(this.btnEditContracts);
+            this.Controls.Add(this.btnViewContractPerformance);
+            this.Controls.Add(this.lblContracts);
+            this.Name = "frmContracts";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Contracts";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion

@@ -331,6 +331,7 @@
             this.Controls.Add(this.txtbxEmployeeID);
             this.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Name = "frmExistingEmployeeDetails";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Existing Employee Details";
             this.Load += new System.EventHandler(this.frmExistingEmployeeDetails_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

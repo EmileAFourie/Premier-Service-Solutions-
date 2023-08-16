@@ -106,6 +106,7 @@
             this.Controls.Add(this.lblEmployeeCenter);
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "frmEmployeeCenter";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmEmployeeCenter";
             this.Load += new System.EventHandler(this.frmEmployeeCenter_Load);
             this.ResumeLayout(false);

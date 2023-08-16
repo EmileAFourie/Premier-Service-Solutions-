@@ -103,6 +103,7 @@
             this.Controls.Add(this.lblClientID);
             this.Controls.Add(this.lblExistingClientDetails);
             this.Name = "frmExistingClientSearch";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Existing Client Search";
             this.Load += new System.EventHandler(this.frmExistingClientSearch_Load);
             this.ResumeLayout(false);

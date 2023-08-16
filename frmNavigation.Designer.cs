@@ -132,6 +132,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblNavigationHeader);
             this.Name = "frmNavigation";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Navigation";
             this.ResumeLayout(false);
             this.PerformLayout();

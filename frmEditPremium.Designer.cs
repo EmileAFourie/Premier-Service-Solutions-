@@ -242,6 +242,7 @@
             this.Controls.Add(this.dgvPremium);
             this.Controls.Add(this.pictureBoxBasic);
             this.Name = "frmEditPremium";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Edit Premium";
             this.Load += new System.EventHandler(this.frmEditPremium_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvPremium)).EndInit();

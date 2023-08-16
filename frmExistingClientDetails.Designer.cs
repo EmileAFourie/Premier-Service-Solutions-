@@ -359,6 +359,7 @@
             this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.dataGridView1);
             this.Name = "frmExistingClientDetails";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Existing Client Details";
             this.grpbxNewTicket.ResumeLayout(false);
             this.grpbxNewTicket.PerformLayout();

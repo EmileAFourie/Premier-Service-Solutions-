@@ -242,6 +242,7 @@
             this.Controls.Add(this.dgvBasic);
             this.Controls.Add(this.pictureBoxBasic);
             this.Name = "frmEditbasic";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Edit basic";
             this.Load += new System.EventHandler(this.frmEditbasic_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBasic)).EndInit();

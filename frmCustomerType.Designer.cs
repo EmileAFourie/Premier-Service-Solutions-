@@ -160,6 +160,7 @@
             this.Controls.Add(this.lblTimestamp);
             this.Controls.Add(this.lblCallCentre);
             this.Name = "frmCustomerType";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Customer Type";
             this.Load += new System.EventHandler(this.frmCustomerType_Load);
             this.ResumeLayout(false);

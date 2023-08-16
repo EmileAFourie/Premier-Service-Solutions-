@@ -255,6 +255,7 @@
             this.Controls.Add(this.lblSurname);
             this.Controls.Add(this.btnNewClientDetails);
             this.Name = "frmClientDetails";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Client Details";
             this.ResumeLayout(false);
             this.PerformLayout();

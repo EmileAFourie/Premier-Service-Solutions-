@@ -152,6 +152,7 @@
             this.Controls.Add(this.lblIncomingCall);
             this.Controls.Add(this.lblCallCentre);
             this.Name = "frmCallCentre";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Call Centre";
             this.ResumeLayout(false);
             this.PerformLayout();

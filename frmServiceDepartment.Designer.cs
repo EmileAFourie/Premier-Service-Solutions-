@@ -278,6 +278,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.lblServiceDepartment);
             this.Name = "frmServiceDepartment";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Service Department";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();

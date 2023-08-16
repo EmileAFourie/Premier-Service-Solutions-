@@ -240,6 +240,7 @@
             this.Controls.Add(this.dgvSaver);
             this.Controls.Add(this.pictureBoxBasic);
             this.Name = "frmEditSaver";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Edit Saver";
             this.Load += new System.EventHandler(this.frmEditSaver_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvSaver)).EndInit();
