@@ -120,5 +120,6 @@
         private Button btnSearch;
         private Label lblExistingEmployee;
         private Button button1;
+        private Button btn;
     }
 }

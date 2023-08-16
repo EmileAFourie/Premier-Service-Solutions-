@@ -141,7 +141,7 @@
             // 
             this.btnClear.Location = new System.Drawing.Point(500, 224);
             this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(104, 32);
+            this.btnClear.Size = new System.Drawing.Size(119, 43);
             this.btnClear.TabIndex = 22;
             this.btnClear.Text = "Clear";
             this.btnClear.UseVisualStyleBackColor = true;
@@ -150,7 +150,7 @@
             // 
             this.btnSubmit.Location = new System.Drawing.Point(500, 184);
             this.btnSubmit.Name = "btnSubmit";
-            this.btnSubmit.Size = new System.Drawing.Size(104, 32);
+            this.btnSubmit.Size = new System.Drawing.Size(119, 43);
             this.btnSubmit.TabIndex = 21;
             this.btnSubmit.Text = "Add";
             this.btnSubmit.UseVisualStyleBackColor = true;
@@ -160,7 +160,7 @@
             // 
             this.txtbxPriority.Location = new System.Drawing.Point(129, 230);
             this.txtbxPriority.Name = "txtbxPriority";
-            this.txtbxPriority.Size = new System.Drawing.Size(336, 23);
+            this.txtbxPriority.Size = new System.Drawing.Size(383, 27);
             this.txtbxPriority.TabIndex = 17;
             // 
             // lblPriority
@@ -168,7 +168,7 @@
             this.lblPriority.AutoSize = true;
             this.lblPriority.Location = new System.Drawing.Point(35, 233);
             this.lblPriority.Name = "lblPriority";
-            this.lblPriority.Size = new System.Drawing.Size(48, 15);
+            this.lblPriority.Size = new System.Drawing.Size(59, 20);
             this.lblPriority.TabIndex = 16;
             this.lblPriority.Text = "Priority:";
             // 
@@ -202,7 +202,7 @@
             this.lblTypeOfError.AutoSize = true;
             this.lblTypeOfError.Location = new System.Drawing.Point(33, 140);
             this.lblTypeOfError.Name = "lblTypeOfError";
-            this.lblTypeOfError.Size = new System.Drawing.Size(72, 15);
+            this.lblTypeOfError.Size = new System.Drawing.Size(91, 20);
             this.lblTypeOfError.TabIndex = 12;
             this.lblTypeOfError.Text = "TypeOfError:";
             // 
@@ -210,7 +210,7 @@
             // 
             this.txtbxClientID.Location = new System.Drawing.Point(129, 96);
             this.txtbxClientID.Name = "txtbxClientID";
-            this.txtbxClientID.Size = new System.Drawing.Size(336, 23);
+            this.txtbxClientID.Size = new System.Drawing.Size(383, 27);
             this.txtbxClientID.TabIndex = 11;
             // 
             // lblClientIDNewTicket
@@ -218,7 +218,7 @@
             this.lblClientIDNewTicket.AutoSize = true;
             this.lblClientIDNewTicket.Location = new System.Drawing.Point(52, 99);
             this.lblClientIDNewTicket.Name = "lblClientIDNewTicket";
-            this.lblClientIDNewTicket.Size = new System.Drawing.Size(52, 15);
+            this.lblClientIDNewTicket.Size = new System.Drawing.Size(65, 20);
             this.lblClientIDNewTicket.TabIndex = 10;
             this.lblClientIDNewTicket.Text = "ClientID:";
             // 
@@ -236,9 +236,9 @@
             // 
             this.lblTicketManagement.AutoSize = true;
             this.lblTicketManagement.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblTicketManagement.Location = new System.Drawing.Point(282, 9);
+            this.lblTicketManagement.Location = new System.Drawing.Point(322, 12);
             this.lblTicketManagement.Name = "lblTicketManagement";
-            this.lblTicketManagement.Size = new System.Drawing.Size(251, 37);
+            this.lblTicketManagement.Size = new System.Drawing.Size(318, 46);
             this.lblTicketManagement.TabIndex = 7;
             this.lblTicketManagement.Text = "Ticket Management";
             // 

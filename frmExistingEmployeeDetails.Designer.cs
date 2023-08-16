@@ -143,14 +143,27 @@
             // 
             // button1
             // 
-            button1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            button1.Location = new Point(12, 556);
-            button1.Margin = new Padding(3, 4, 3, 4);
-            button1.Name = "button1";
-            button1.Size = new Size(86, 31);
-            button1.TabIndex = 31;
-            button1.Text = "Back";
-            button1.UseVisualStyleBackColor = true;
+            this.button1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button1.Location = new System.Drawing.Point(12, 556);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(86, 31);
+            this.button1.TabIndex = 31;
+            this.button1.Text = "Back";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // btn
+            // 
+            this.btn.BackColor = System.Drawing.Color.White;
+            this.btn.FlatAppearance.BorderSize = 0;
+            this.btn.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btn.Location = new System.Drawing.Point(12, 13);
+            this.btn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn.Name = "btn";
+            this.btn.Size = new System.Drawing.Size(32, 34);
+            this.btn.TabIndex = 31;
+            this.btn.Text = "<";
+            this.btn.UseVisualStyleBackColor = false;
             // 
             // label7
             // 

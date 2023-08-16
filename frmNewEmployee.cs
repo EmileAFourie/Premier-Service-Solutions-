@@ -17,7 +17,9 @@ namespace Premier_Service_Solutions
             InitializeComponent();
         }
 
-        private void btnSubmit_Click(object sender, EventArgs e)
+      
+
+        private void btnSubmit_Click_1(object sender, EventArgs e)
         {
             string firstName = txtbxName.Text;
             string surname = txtSurname.Text;

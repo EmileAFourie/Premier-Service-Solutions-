@@ -51,7 +51,7 @@
             // 
             // btnAnswerCall
             // 
-            this.btnAnswerCall.Location = new System.Drawing.Point(478, 288);
+            this.btnAnswerCall.Location = new System.Drawing.Point(413, 274);
             this.btnAnswerCall.Name = "btnAnswerCall";
             this.btnAnswerCall.Size = new System.Drawing.Size(189, 33);
             this.btnAnswerCall.TabIndex = 10;

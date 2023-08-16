@@ -52,5 +52,12 @@ namespace Premier_Service_Solutions
             back.Show();
             this.Hide();
         }
+
+        private void btn_Click(object sender, EventArgs e)
+        {
+            frmNavigation Nav = new frmNavigation();
+            Nav.Show();
+            this.Hide();
+        }
     }
 }

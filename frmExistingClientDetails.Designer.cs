@@ -305,6 +305,19 @@
             dataGridView1.Size = new Size(283, 133);
             dataGridView1.TabIndex = 28;
             // 
+            // btn
+            // 
+            this.btn.BackColor = System.Drawing.Color.White;
+            this.btn.FlatAppearance.BorderSize = 0;
+            this.btn.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btn.Location = new System.Drawing.Point(12, 13);
+            this.btn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn.Name = "btn";
+            this.btn.Size = new System.Drawing.Size(32, 34);
+            this.btn.TabIndex = 41;
+            this.btn.Text = "<";
+            this.btn.UseVisualStyleBackColor = false;
+            // 
             // frmExistingClientDetails
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -362,5 +375,6 @@
         private Label lblClient;
         private DataGridView dataGridView2;
         private DataGridView dataGridView1;
+        private Button btn;
     }
 }

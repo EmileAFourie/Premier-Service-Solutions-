@@ -71,14 +71,14 @@
             // 
             // dataGridView2
             // 
-            dataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView2.Location = new Point(534, 111);
-            dataGridView2.Margin = new Padding(3, 4, 3, 4);
-            dataGridView2.Name = "dataGridView2";
-            dataGridView2.RowHeadersWidth = 51;
-            dataGridView2.RowTemplate.Height = 25;
-            dataGridView2.Size = new Size(320, 351);
-            dataGridView2.TabIndex = 2;
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Location = new System.Drawing.Point(534, 111);
+            this.dataGridView2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.RowHeadersWidth = 51;
+            this.dataGridView2.RowTemplate.Height = 25;
+            this.dataGridView2.Size = new System.Drawing.Size(320, 351);
+            this.dataGridView2.TabIndex = 2;
             // 
             // lblUnassignedTickets
             // 
@@ -113,33 +113,33 @@
             // 
             // btnEscalateTicket
             // 
-            btnEscalateTicket.Location = new Point(393, 317);
-            btnEscalateTicket.Margin = new Padding(3, 4, 3, 4);
-            btnEscalateTicket.Name = "btnEscalateTicket";
-            btnEscalateTicket.Size = new Size(104, 45);
-            btnEscalateTicket.TabIndex = 6;
-            btnEscalateTicket.Text = "Escalate Ticket";
-            btnEscalateTicket.UseVisualStyleBackColor = true;
+            this.btnEscalateTicket.Location = new System.Drawing.Point(393, 317);
+            this.btnEscalateTicket.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnEscalateTicket.Name = "btnEscalateTicket";
+            this.btnEscalateTicket.Size = new System.Drawing.Size(104, 45);
+            this.btnEscalateTicket.TabIndex = 6;
+            this.btnEscalateTicket.Text = "Escalate Ticket";
+            this.btnEscalateTicket.UseVisualStyleBackColor = true;
             // 
             // btnUnassign
             // 
-            btnUnassign.Location = new Point(594, 503);
-            btnUnassign.Margin = new Padding(3, 4, 3, 4);
-            btnUnassign.Name = "btnUnassign";
-            btnUnassign.Size = new Size(86, 31);
-            btnUnassign.TabIndex = 7;
-            btnUnassign.Text = "Unassign";
-            btnUnassign.UseVisualStyleBackColor = true;
+            this.btnUnassign.Location = new System.Drawing.Point(594, 503);
+            this.btnUnassign.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnUnassign.Name = "btnUnassign";
+            this.btnUnassign.Size = new System.Drawing.Size(86, 31);
+            this.btnUnassign.TabIndex = 7;
+            this.btnUnassign.Text = "Unassign";
+            this.btnUnassign.UseVisualStyleBackColor = true;
             // 
             // btnResolveJob
             // 
-            btnResolveJob.Location = new Point(704, 503);
-            btnResolveJob.Margin = new Padding(3, 4, 3, 4);
-            btnResolveJob.Name = "btnResolveJob";
-            btnResolveJob.Size = new Size(89, 32);
-            btnResolveJob.TabIndex = 8;
-            btnResolveJob.Text = "Resolve Job";
-            btnResolveJob.UseVisualStyleBackColor = true;
+            this.btnResolveJob.Location = new System.Drawing.Point(704, 503);
+            this.btnResolveJob.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnResolveJob.Name = "btnResolveJob";
+            this.btnResolveJob.Size = new System.Drawing.Size(89, 32);
+            this.btnResolveJob.TabIndex = 8;
+            this.btnResolveJob.Text = "Resolve Job";
+            this.btnResolveJob.UseVisualStyleBackColor = true;
             // 
             // btnSearchTicket
             // 
@@ -162,13 +162,26 @@
             // 
             // button1
             // 
-            button1.Location = new Point(31, 556);
-            button1.Margin = new Padding(3, 4, 3, 4);
-            button1.Name = "button1";
-            button1.Size = new Size(103, 31);
-            button1.TabIndex = 11;
-            button1.Text = "Back";
-            button1.UseVisualStyleBackColor = true;
+            this.button1.Location = new System.Drawing.Point(31, 556);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(103, 31);
+            this.button1.TabIndex = 11;
+            this.button1.Text = "Back";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // btn
+            // 
+            this.btn.BackColor = System.Drawing.Color.White;
+            this.btn.FlatAppearance.BorderSize = 0;
+            this.btn.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btn.Location = new System.Drawing.Point(12, 13);
+            this.btn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn.Name = "btn";
+            this.btn.Size = new System.Drawing.Size(32, 34);
+            this.btn.TabIndex = 21;
+            this.btn.Text = "<";
+            this.btn.UseVisualStyleBackColor = false;
             // 
             // btnBack
             // 

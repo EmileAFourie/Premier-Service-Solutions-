@@ -147,17 +147,17 @@
             // 
             this.btnClear.Location = new System.Drawing.Point(303, 391);
             this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(75, 23);
+            this.btnClear.Size = new System.Drawing.Size(86, 31);
             this.btnClear.TabIndex = 19;
             this.btnClear.Text = "Clear";
             this.btnClear.UseVisualStyleBackColor = true;
-            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
+         //   this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // btnRegister
             // 
             this.btnRegister.Location = new System.Drawing.Point(399, 391);
             this.btnRegister.Name = "btnRegister";
-            this.btnRegister.Size = new System.Drawing.Size(75, 23);
+            this.btnRegister.Size = new System.Drawing.Size(86, 31);
             this.btnRegister.TabIndex = 20;
             this.btnRegister.Text = "Register";
             this.btnRegister.UseVisualStyleBackColor = true;
@@ -229,6 +229,7 @@
             this.Controls.Add(this.txtbxLastname);
             this.Controls.Add(this.lblSurname);
             this.Controls.Add(this.btnNewClientDetails);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "frmClientDetails";
             this.Text = "Client Details";
             this.ResumeLayout(false);
