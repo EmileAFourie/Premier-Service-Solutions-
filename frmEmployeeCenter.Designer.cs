@@ -50,6 +50,7 @@
             // 
             // btnNewEmployee
             // 
+            this.btnNewEmployee.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnNewEmployee.Location = new System.Drawing.Point(185, 184);
             this.btnNewEmployee.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnNewEmployee.Name = "btnNewEmployee";
@@ -60,6 +61,7 @@
             // 
             // btnExistingEmployee
             // 
+            this.btnExistingEmployee.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnExistingEmployee.Location = new System.Drawing.Point(399, 184);
             this.btnExistingEmployee.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnExistingEmployee.Name = "btnExistingEmployee";
@@ -80,6 +82,7 @@
             // 
             // btnBack
             // 
+            this.btnBack.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnBack.Location = new System.Drawing.Point(12, 12);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(40, 22);

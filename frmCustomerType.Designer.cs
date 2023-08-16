@@ -51,6 +51,7 @@
             // 
             // btnNewCustomer
             // 
+            this.btnNewCustomer.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnNewCustomer.Location = new System.Drawing.Point(253, 296);
             this.btnNewCustomer.Name = "btnNewCustomer";
             this.btnNewCustomer.Size = new System.Drawing.Size(189, 33);
@@ -61,6 +62,7 @@
             // 
             // btnOldCustomer
             // 
+            this.btnOldCustomer.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnOldCustomer.Location = new System.Drawing.Point(465, 296);
             this.btnOldCustomer.Name = "btnOldCustomer";
             this.btnOldCustomer.Size = new System.Drawing.Size(189, 33);

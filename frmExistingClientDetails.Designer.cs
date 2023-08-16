@@ -105,6 +105,8 @@
             // 
             // btnEndCall
             // 
+            this.btnEndCall.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnEndCall.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnEndCall.Location = new System.Drawing.Point(675, 408);
             this.btnEndCall.Name = "btnEndCall";
             this.btnEndCall.Size = new System.Drawing.Size(104, 32);
@@ -118,7 +120,7 @@
             this.lblTicketManagement.BackColor = System.Drawing.Color.Transparent;
             this.lblTicketManagement.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblTicketManagement.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblTicketManagement.Location = new System.Drawing.Point(292, 0);
+            this.lblTicketManagement.Location = new System.Drawing.Point(292, 9);
             this.lblTicketManagement.Name = "lblTicketManagement";
             this.lblTicketManagement.Size = new System.Drawing.Size(251, 37);
             this.lblTicketManagement.TabIndex = 35;
@@ -141,6 +143,8 @@
             this.grpbxNewTicket.Controls.Add(this.txtbxTicketID);
             this.grpbxNewTicket.Controls.Add(this.lblClientIDNewTicket);
             this.grpbxNewTicket.Controls.Add(this.lblTicketID);
+            this.grpbxNewTicket.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.grpbxNewTicket.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.grpbxNewTicket.Location = new System.Drawing.Point(22, 156);
             this.grpbxNewTicket.Name = "grpbxNewTicket";
             this.grpbxNewTicket.Size = new System.Drawing.Size(440, 284);
@@ -150,6 +154,8 @@
             // 
             // btnClear
             // 
+            this.btnClear.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnClear.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnClear.Location = new System.Drawing.Point(133, 224);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(104, 32);
@@ -159,6 +165,8 @@
             // 
             // btnSubmit
             // 
+            this.btnSubmit.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnSubmit.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnSubmit.Location = new System.Drawing.Point(270, 224);
             this.btnSubmit.Name = "btnSubmit";
             this.btnSubmit.Size = new System.Drawing.Size(104, 32);

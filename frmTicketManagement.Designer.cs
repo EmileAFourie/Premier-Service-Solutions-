@@ -123,6 +123,7 @@
             this.grpbxNewTicket.Controls.Add(this.lblTypeOfError);
             this.grpbxNewTicket.Controls.Add(this.txtbxClientID);
             this.grpbxNewTicket.Controls.Add(this.lblClientIDNewTicket);
+            this.grpbxNewTicket.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.grpbxNewTicket.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.grpbxNewTicket.Location = new System.Drawing.Point(29, 348);
             this.grpbxNewTicket.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -136,6 +137,8 @@
             // 
             // btnUpdate
             // 
+            this.btnUpdate.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnUpdate.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnUpdate.Location = new System.Drawing.Point(293, 214);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(104, 32);
@@ -146,6 +149,8 @@
             // 
             // btnClear
             // 
+            this.btnClear.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnClear.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnClear.Location = new System.Drawing.Point(121, 214);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(104, 32);
@@ -155,6 +160,8 @@
             // 
             // btnSubmit
             // 
+            this.btnSubmit.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnSubmit.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnSubmit.Location = new System.Drawing.Point(461, 214);
             this.btnSubmit.Name = "btnSubmit";
             this.btnSubmit.Size = new System.Drawing.Size(104, 32);
@@ -239,6 +246,7 @@
             // 
             // btnDelete
             // 
+            this.btnDelete.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnDelete.Location = new System.Drawing.Point(414, 309);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(104, 32);
@@ -261,6 +269,7 @@
             // 
             // btnEndCall
             // 
+            this.btnEndCall.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnEndCall.Location = new System.Drawing.Point(848, 587);
             this.btnEndCall.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnEndCall.Name = "btnEndCall";
@@ -272,10 +281,10 @@
             // 
             // txtbxCallDuration
             // 
-            this.txtbxCallDuration.Location = new System.Drawing.Point(749, 545);
+            this.txtbxCallDuration.Location = new System.Drawing.Point(749, 598);
             this.txtbxCallDuration.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtbxCallDuration.Name = "txtbxCallDuration";
-            this.txtbxCallDuration.Size = new System.Drawing.Size(142, 23);
+            this.txtbxCallDuration.Size = new System.Drawing.Size(91, 23);
             this.txtbxCallDuration.TabIndex = 25;
             // 
             // lblCallDuration
@@ -284,7 +293,7 @@
             this.lblCallDuration.BackColor = System.Drawing.Color.Transparent;
             this.lblCallDuration.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblCallDuration.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblCallDuration.Location = new System.Drawing.Point(651, 548);
+            this.lblCallDuration.Location = new System.Drawing.Point(651, 601);
             this.lblCallDuration.Name = "lblCallDuration";
             this.lblCallDuration.Size = new System.Drawing.Size(81, 15);
             this.lblCallDuration.TabIndex = 24;

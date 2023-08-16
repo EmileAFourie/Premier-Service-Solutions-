@@ -42,6 +42,7 @@
             // 
             // btnDecline
             // 
+            this.btnDecline.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnDecline.Location = new System.Drawing.Point(266, 288);
             this.btnDecline.Name = "btnDecline";
             this.btnDecline.Size = new System.Drawing.Size(189, 33);
@@ -52,6 +53,7 @@
             // 
             // btnAnswerCall
             // 
+            this.btnAnswerCall.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnAnswerCall.Location = new System.Drawing.Point(478, 288);
             this.btnAnswerCall.Name = "btnAnswerCall";
             this.btnAnswerCall.Size = new System.Drawing.Size(189, 33);

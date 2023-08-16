@@ -101,6 +101,7 @@
             // 
             // btnEditSaver
             // 
+            this.btnEditSaver.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnEditSaver.Location = new System.Drawing.Point(129, 415);
             this.btnEditSaver.Name = "btnEditSaver";
             this.btnEditSaver.Size = new System.Drawing.Size(75, 23);
@@ -111,6 +112,7 @@
             // 
             // btnEditBasic
             // 
+            this.btnEditBasic.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnEditBasic.Location = new System.Drawing.Point(351, 415);
             this.btnEditBasic.Name = "btnEditBasic";
             this.btnEditBasic.Size = new System.Drawing.Size(75, 23);
@@ -121,6 +123,7 @@
             // 
             // btnEditExtra
             // 
+            this.btnEditExtra.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnEditExtra.Location = new System.Drawing.Point(604, 415);
             this.btnEditExtra.Name = "btnEditExtra";
             this.btnEditExtra.Size = new System.Drawing.Size(75, 23);

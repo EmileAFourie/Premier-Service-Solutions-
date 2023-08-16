@@ -86,11 +86,11 @@
             // 
             this.lblUnassignedTickets.AutoSize = true;
             this.lblUnassignedTickets.BackColor = System.Drawing.Color.Transparent;
-            this.lblUnassignedTickets.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblUnassignedTickets.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblUnassignedTickets.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblUnassignedTickets.Location = new System.Drawing.Point(114, 87);
+            this.lblUnassignedTickets.Location = new System.Drawing.Point(87, 82);
             this.lblUnassignedTickets.Name = "lblUnassignedTickets";
-            this.lblUnassignedTickets.Size = new System.Drawing.Size(113, 15);
+            this.lblUnassignedTickets.Size = new System.Drawing.Size(181, 25);
             this.lblUnassignedTickets.TabIndex = 3;
             this.lblUnassignedTickets.Text = "Unassigned Tickets";
             // 
@@ -98,11 +98,11 @@
             // 
             this.lblAssignedTickets.AutoSize = true;
             this.lblAssignedTickets.BackColor = System.Drawing.Color.Transparent;
-            this.lblAssignedTickets.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblAssignedTickets.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblAssignedTickets.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblAssignedTickets.Location = new System.Drawing.Point(646, 87);
+            this.lblAssignedTickets.Location = new System.Drawing.Point(619, 82);
             this.lblAssignedTickets.Name = "lblAssignedTickets";
-            this.lblAssignedTickets.Size = new System.Drawing.Size(99, 15);
+            this.lblAssignedTickets.Size = new System.Drawing.Size(158, 25);
             this.lblAssignedTickets.TabIndex = 4;
             this.lblAssignedTickets.Text = "Assigned Tickets";
             // 
