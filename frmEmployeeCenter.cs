@@ -36,9 +36,10 @@ namespace Premier_Service_Solutions
 
         private void btnBack_Click(object sender, EventArgs e)
         {
-            frmNavigation backtohome = new frmNavigation();           
-            backtohome.Show();
+            frmNavigation backtohome = new frmNavigation();
             this.Hide();
+            backtohome.Show();
+           
 
         }
     }
