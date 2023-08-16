@@ -22,22 +22,21 @@ namespace Premier_Service_Solutions
             string username = txtbxUsername.Text;
             string password = txtbxPassword.Text;
 
-            // Default credentials
-            const string defaultUsername = "default";
-            const string defaultPassword = "123";
+            Employee employee = new Employee();
 
-            if (username == defaultUsername && password == defaultPassword)
+            string login = employee.CheckLogin(username, password);
+
+            if (login != "fail")
             {
-                // If credentials are valid, open the next form
                 frmNavigation nextForm = new frmNavigation();
                 nextForm.Show();
-                this.Hide();  // Hide the login form
+                this.Hide();
             }
             else
             {
-                MessageBox.Show("Invalid credentials. Please try again.");
+                MessageBox.Show("Incorrect credentials entered.");
             }
-        }       
+        }
 
         private void chkShowPassword_CheckedChanged_1(object sender, EventArgs e)
         {
