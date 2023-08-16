@@ -61,6 +61,10 @@ namespace Premier_Service_Solutions
             txtbxDepartment.Text = employee.Department;
             txtField.Text = employee.Field;
 
+            DataTable dt = employee.GetEmployeeTickets();
+
+            dataGridView1.DataSource = dt;
+
         }
 
         private void lblPerformance_Click(object sender, EventArgs e)
@@ -79,7 +83,7 @@ namespace Premier_Service_Solutions
 
                 DialogResult = DialogResult.OK;
             }
-            catch 
+            catch
             {
                 MessageBox.Show("Employee could not be deleted.");
             }

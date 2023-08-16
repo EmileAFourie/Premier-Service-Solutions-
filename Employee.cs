@@ -226,7 +226,7 @@ namespace Premier_Service_Solutions
             cnn = new SqlConnection(connectionString);
             cnn.Open();
 
-            SqlDataAdapter data = new SqlDataAdapter("SELECT * FROM EmployeeTickets", cnn);
+            SqlDataAdapter data = new SqlDataAdapter($@"SELECT Ticket.TicketID, Ticket.Description, EmployeeTickets.CurrentlyWorkingOn, Ticket.Status, Ticket.ClientID FROM Ticket INNER JOIN EmployeeTickets ON Ticket.TicketID=EmployeeTickets.TicketID WHERE  EmployeeTickets.EmployeeID = {EmployeeID}", cnn);
             DataTable dt = new DataTable();
             data.Fill(dt);
 
