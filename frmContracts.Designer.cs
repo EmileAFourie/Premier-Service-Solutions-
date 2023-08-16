@@ -32,6 +32,7 @@
             this.btnViewContractPerformance = new System.Windows.Forms.Button();
             this.btnEditContracts = new System.Windows.Forms.Button();
             this.btnClear = new System.Windows.Forms.Button();
+            this.btnBack = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblContracts
@@ -76,11 +77,22 @@
             this.btnClear.Text = "Back";
             this.btnClear.UseVisualStyleBackColor = true;
             // 
+            // btnBack
+            // 
+            this.btnBack.Location = new System.Drawing.Point(12, 12);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(40, 22);
+            this.btnBack.TabIndex = 17;
+            this.btnBack.Text = "<<<";
+            this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            // 
             // frmContracts
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btnEditContracts);
             this.Controls.Add(this.btnViewContractPerformance);
             this.Controls.Add(this.lblContracts);
@@ -97,5 +109,6 @@
         private Button btnViewContractPerformance;
         private Button btnEditContracts;
         private Button btnClear;
+        private Button btnBack;
     }
 }

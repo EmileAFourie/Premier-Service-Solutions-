@@ -33,5 +33,13 @@ namespace Premier_Service_Solutions
             frmExisting.ShowDialog();
           //  DialogResult = DialogResult.OK;
         }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            frmNavigation back = new frmNavigation();
+            this.Hide();
+            back.Show();
+            
+        }
     }
 }
