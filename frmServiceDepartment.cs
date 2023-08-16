@@ -43,7 +43,7 @@ namespace Premier_Service_Solutions
 
         }
 
-        private void btnSearchTicket_Click_1(object sender, EventArgs e)
+        private void btnSearchTicket_Click(object sender, EventArgs e)
         {
             try
             {

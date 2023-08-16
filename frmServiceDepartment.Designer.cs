@@ -29,214 +29,217 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmServiceDepartment));
-            this.lblServiceDepartment = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.lblUnassignedTickets = new System.Windows.Forms.Label();
-            this.lblAssignedTickets = new System.Windows.Forms.Label();
-            this.btnAssignTicket = new System.Windows.Forms.Button();
-            this.btnEscalateTicket = new System.Windows.Forms.Button();
-            this.btnUnassign = new System.Windows.Forms.Button();
-            this.btnResolveJob = new System.Windows.Forms.Button();
-            this.btnSearchTicket = new System.Windows.Forms.Button();
-            this.txtbxSearchTicket = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.btnBack = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
-            this.SuspendLayout();
+            lblServiceDepartment = new Label();
+            dataGridView1 = new DataGridView();
+            dataGridView2 = new DataGridView();
+            lblUnassignedTickets = new Label();
+            lblAssignedTickets = new Label();
+            btnAssignTicket = new Button();
+            btnEscalateTicket = new Button();
+            btnUnassign = new Button();
+            btnResolveJob = new Button();
+            btnSearchTicket = new Button();
+            txtbxSearchTicket = new TextBox();
+            button1 = new Button();
+            btnBack = new Button();
+            comboBox1 = new ComboBox();
+            label1 = new Label();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridView2).BeginInit();
+            SuspendLayout();
             // 
             // lblServiceDepartment
             // 
-            this.lblServiceDepartment.AutoSize = true;
-            this.lblServiceDepartment.BackColor = System.Drawing.Color.Transparent;
-            this.lblServiceDepartment.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblServiceDepartment.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblServiceDepartment.Location = new System.Drawing.Point(296, 27);
-            this.lblServiceDepartment.Name = "lblServiceDepartment";
-            this.lblServiceDepartment.Size = new System.Drawing.Size(274, 37);
-            this.lblServiceDepartment.TabIndex = 0;
-            this.lblServiceDepartment.Text = "Service Department";
+            lblServiceDepartment.AutoSize = true;
+            lblServiceDepartment.BackColor = Color.Transparent;
+            lblServiceDepartment.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
+            lblServiceDepartment.ForeColor = SystemColors.ButtonHighlight;
+            lblServiceDepartment.Location = new Point(296, 27);
+            lblServiceDepartment.Name = "lblServiceDepartment";
+            lblServiceDepartment.Size = new Size(274, 37);
+            lblServiceDepartment.TabIndex = 0;
+            lblServiceDepartment.Text = "Service Department";
             // 
             // dataGridView1
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(31, 111);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(320, 351);
-            this.dataGridView1.TabIndex = 1;
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Location = new Point(31, 111);
+            dataGridView1.Margin = new Padding(3, 4, 3, 4);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.RowHeadersWidth = 51;
+            dataGridView1.RowTemplate.Height = 25;
+            dataGridView1.Size = new Size(320, 351);
+            dataGridView1.TabIndex = 1;
             // 
             // dataGridView2
             // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(534, 111);
-            this.dataGridView2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.RowHeadersWidth = 51;
-            this.dataGridView2.RowTemplate.Height = 25;
-            this.dataGridView2.Size = new System.Drawing.Size(320, 351);
-            this.dataGridView2.TabIndex = 2;
+            dataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView2.Location = new Point(534, 111);
+            dataGridView2.Margin = new Padding(3, 4, 3, 4);
+            dataGridView2.Name = "dataGridView2";
+            dataGridView2.RowHeadersWidth = 51;
+            dataGridView2.RowTemplate.Height = 25;
+            dataGridView2.Size = new Size(320, 351);
+            dataGridView2.TabIndex = 2;
             // 
             // lblUnassignedTickets
             // 
-            this.lblUnassignedTickets.AutoSize = true;
-            this.lblUnassignedTickets.BackColor = System.Drawing.Color.Transparent;
-            this.lblUnassignedTickets.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblUnassignedTickets.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblUnassignedTickets.Location = new System.Drawing.Point(87, 82);
-            this.lblUnassignedTickets.Name = "lblUnassignedTickets";
-            this.lblUnassignedTickets.Size = new System.Drawing.Size(181, 25);
-            this.lblUnassignedTickets.TabIndex = 3;
-            this.lblUnassignedTickets.Text = "Unassigned Tickets";
+            lblUnassignedTickets.AutoSize = true;
+            lblUnassignedTickets.BackColor = Color.Transparent;
+            lblUnassignedTickets.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            lblUnassignedTickets.ForeColor = SystemColors.ButtonHighlight;
+            lblUnassignedTickets.Location = new Point(87, 82);
+            lblUnassignedTickets.Name = "lblUnassignedTickets";
+            lblUnassignedTickets.Size = new Size(181, 25);
+            lblUnassignedTickets.TabIndex = 3;
+            lblUnassignedTickets.Text = "Unassigned Tickets";
             // 
             // lblAssignedTickets
             // 
-            this.lblAssignedTickets.AutoSize = true;
-            this.lblAssignedTickets.BackColor = System.Drawing.Color.Transparent;
-            this.lblAssignedTickets.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblAssignedTickets.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblAssignedTickets.Location = new System.Drawing.Point(619, 82);
-            this.lblAssignedTickets.Name = "lblAssignedTickets";
-            this.lblAssignedTickets.Size = new System.Drawing.Size(158, 25);
-            this.lblAssignedTickets.TabIndex = 4;
-            this.lblAssignedTickets.Text = "Assigned Tickets";
+            lblAssignedTickets.AutoSize = true;
+            lblAssignedTickets.BackColor = Color.Transparent;
+            lblAssignedTickets.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            lblAssignedTickets.ForeColor = SystemColors.ButtonHighlight;
+            lblAssignedTickets.Location = new Point(619, 82);
+            lblAssignedTickets.Name = "lblAssignedTickets";
+            lblAssignedTickets.Size = new Size(158, 25);
+            lblAssignedTickets.TabIndex = 4;
+            lblAssignedTickets.Text = "Assigned Tickets";
             // 
             // btnAssignTicket
             // 
-            this.btnAssignTicket.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnAssignTicket.Location = new System.Drawing.Point(393, 195);
-            this.btnAssignTicket.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnAssignTicket.Name = "btnAssignTicket";
-            this.btnAssignTicket.Size = new System.Drawing.Size(104, 48);
-            this.btnAssignTicket.TabIndex = 5;
-            this.btnAssignTicket.Text = "Assign Ticket";
-            this.btnAssignTicket.UseVisualStyleBackColor = true;
+            btnAssignTicket.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnAssignTicket.Location = new Point(393, 195);
+            btnAssignTicket.Margin = new Padding(3, 4, 3, 4);
+            btnAssignTicket.Name = "btnAssignTicket";
+            btnAssignTicket.Size = new Size(104, 48);
+            btnAssignTicket.TabIndex = 5;
+            btnAssignTicket.Text = "Assign Ticket";
+            btnAssignTicket.UseVisualStyleBackColor = true;
+            btnAssignTicket.Click += btnAssignTicket_Click;
             // 
             // btnEscalateTicket
             // 
-            this.btnEscalateTicket.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnEscalateTicket.Location = new System.Drawing.Point(393, 317);
-            this.btnEscalateTicket.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnEscalateTicket.Name = "btnEscalateTicket";
-            this.btnEscalateTicket.Size = new System.Drawing.Size(104, 45);
-            this.btnEscalateTicket.TabIndex = 6;
-            this.btnEscalateTicket.Text = "Escalate Ticket";
-            this.btnEscalateTicket.UseVisualStyleBackColor = true;
+            btnEscalateTicket.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnEscalateTicket.Location = new Point(393, 317);
+            btnEscalateTicket.Margin = new Padding(3, 4, 3, 4);
+            btnEscalateTicket.Name = "btnEscalateTicket";
+            btnEscalateTicket.Size = new Size(104, 45);
+            btnEscalateTicket.TabIndex = 6;
+            btnEscalateTicket.Text = "Escalate Ticket";
+            btnEscalateTicket.UseVisualStyleBackColor = true;
             // 
             // btnUnassign
             // 
-            this.btnUnassign.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnUnassign.Location = new System.Drawing.Point(594, 503);
-            this.btnUnassign.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnUnassign.Name = "btnUnassign";
-            this.btnUnassign.Size = new System.Drawing.Size(86, 31);
-            this.btnUnassign.TabIndex = 7;
-            this.btnUnassign.Text = "Unassign";
-            this.btnUnassign.UseVisualStyleBackColor = true;
+            btnUnassign.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnUnassign.Location = new Point(594, 503);
+            btnUnassign.Margin = new Padding(3, 4, 3, 4);
+            btnUnassign.Name = "btnUnassign";
+            btnUnassign.Size = new Size(86, 31);
+            btnUnassign.TabIndex = 7;
+            btnUnassign.Text = "Unassign";
+            btnUnassign.UseVisualStyleBackColor = true;
             // 
             // btnResolveJob
             // 
-            this.btnResolveJob.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnResolveJob.Location = new System.Drawing.Point(704, 503);
-            this.btnResolveJob.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnResolveJob.Name = "btnResolveJob";
-            this.btnResolveJob.Size = new System.Drawing.Size(89, 32);
-            this.btnResolveJob.TabIndex = 8;
-            this.btnResolveJob.Text = "Resolve Job";
-            this.btnResolveJob.UseVisualStyleBackColor = true;
+            btnResolveJob.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnResolveJob.Location = new Point(704, 503);
+            btnResolveJob.Margin = new Padding(3, 4, 3, 4);
+            btnResolveJob.Name = "btnResolveJob";
+            btnResolveJob.Size = new Size(89, 32);
+            btnResolveJob.TabIndex = 8;
+            btnResolveJob.Text = "Resolve Job";
+            btnResolveJob.UseVisualStyleBackColor = true;
             // 
             // btnSearchTicket
             // 
-            this.btnSearchTicket.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnSearchTicket.Location = new System.Drawing.Point(248, 504);
-            this.btnSearchTicket.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnSearchTicket.Name = "btnSearchTicket";
-            this.btnSearchTicket.Size = new System.Drawing.Size(103, 31);
-            this.btnSearchTicket.TabIndex = 9;
-            this.btnSearchTicket.Text = "Search Ticket";
-            this.btnSearchTicket.UseVisualStyleBackColor = true;
+            btnSearchTicket.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnSearchTicket.Location = new Point(248, 504);
+            btnSearchTicket.Margin = new Padding(3, 4, 3, 4);
+            btnSearchTicket.Name = "btnSearchTicket";
+            btnSearchTicket.Size = new Size(103, 31);
+            btnSearchTicket.TabIndex = 9;
+            btnSearchTicket.Text = "Search Ticket";
+            btnSearchTicket.UseVisualStyleBackColor = true;
+            btnSearchTicket.Click += btnSearchTicket_Click;
             // 
             // txtbxSearchTicket
             // 
-            this.txtbxSearchTicket.Location = new System.Drawing.Point(31, 504);
-            this.txtbxSearchTicket.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtbxSearchTicket.Name = "txtbxSearchTicket";
-            this.txtbxSearchTicket.Size = new System.Drawing.Size(189, 23);
-            this.txtbxSearchTicket.TabIndex = 10;
+            txtbxSearchTicket.Location = new Point(31, 504);
+            txtbxSearchTicket.Margin = new Padding(3, 4, 3, 4);
+            txtbxSearchTicket.Name = "txtbxSearchTicket";
+            txtbxSearchTicket.Size = new Size(189, 23);
+            txtbxSearchTicket.TabIndex = 10;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(31, 556);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(103, 31);
-            this.button1.TabIndex = 11;
-            this.button1.Text = "Back";
-            this.button1.UseVisualStyleBackColor = true;
+            button1.Location = new Point(31, 556);
+            button1.Margin = new Padding(3, 4, 3, 4);
+            button1.Name = "button1";
+            button1.Size = new Size(103, 31);
+            button1.TabIndex = 11;
+            button1.Text = "Back";
+            button1.UseVisualStyleBackColor = true;
             // 
             // btnBack
             // 
-            this.btnBack.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnBack.Location = new System.Drawing.Point(12, 12);
-            this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(40, 22);
-            this.btnBack.TabIndex = 16;
-            this.btnBack.Text = "<<<";
-            this.btnBack.UseVisualStyleBackColor = true;
+            btnBack.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnBack.Location = new Point(12, 12);
+            btnBack.Name = "btnBack";
+            btnBack.Size = new Size(40, 22);
+            btnBack.TabIndex = 16;
+            btnBack.Text = "<<<";
+            btnBack.UseVisualStyleBackColor = true;
+            btnBack.Click += btnBack_Click;
             // 
             // comboBox1
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(380, 155);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(137, 23);
-            this.comboBox1.TabIndex = 17;
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Location = new Point(380, 155);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size(137, 23);
+            comboBox1.TabIndex = 17;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(393, 137);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(113, 15);
-            this.label1.TabIndex = 18;
-            this.label1.Text = "Avalible Employees";
+            label1.AutoSize = true;
+            label1.BackColor = Color.Transparent;
+            label1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.ForeColor = SystemColors.ButtonHighlight;
+            label1.Location = new Point(393, 137);
+            label1.Name = "label1";
+            label1.Size = new Size(113, 15);
+            label1.TabIndex = 18;
+            label1.Text = "Avalible Employees";
             // 
             // frmServiceDepartment
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(904, 584);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.btnBack);
-            this.Controls.Add(this.txtbxSearchTicket);
-            this.Controls.Add(this.btnSearchTicket);
-            this.Controls.Add(this.btnResolveJob);
-            this.Controls.Add(this.btnUnassign);
-            this.Controls.Add(this.btnEscalateTicket);
-            this.Controls.Add(this.btnAssignTicket);
-            this.Controls.Add(this.lblAssignedTickets);
-            this.Controls.Add(this.lblUnassignedTickets);
-            this.Controls.Add(this.dataGridView2);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.lblServiceDepartment);
-            this.Name = "frmServiceDepartment";
-            this.Text = "Service Department";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImageLayout = ImageLayout.Stretch;
+            ClientSize = new Size(904, 584);
+            Controls.Add(label1);
+            Controls.Add(comboBox1);
+            Controls.Add(btnBack);
+            Controls.Add(txtbxSearchTicket);
+            Controls.Add(btnSearchTicket);
+            Controls.Add(btnResolveJob);
+            Controls.Add(btnUnassign);
+            Controls.Add(btnEscalateTicket);
+            Controls.Add(btnAssignTicket);
+            Controls.Add(lblAssignedTickets);
+            Controls.Add(lblUnassignedTickets);
+            Controls.Add(dataGridView2);
+            Controls.Add(dataGridView1);
+            Controls.Add(lblServiceDepartment);
+            Name = "frmServiceDepartment";
+            Text = "Service Department";
+            Load += frmServiceDepartment_Load;
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridView2).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
