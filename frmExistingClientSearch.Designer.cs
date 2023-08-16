@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.lblExistingClientDetails = new System.Windows.Forms.Label();
-            this.lblCellNumber = new System.Windows.Forms.Label();
-            this.txtbxCellNumber = new System.Windows.Forms.TextBox();
+            this.lblClientID = new System.Windows.Forms.Label();
+            this.txtbxClientID = new System.Windows.Forms.TextBox();
             this.btnClear = new System.Windows.Forms.Button();
             this.btnSearch = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -45,21 +45,21 @@
             this.lblExistingClientDetails.TabIndex = 0;
             this.lblExistingClientDetails.Text = "Existing Client Details";
             // 
-            // lblCellNumber
+            // lblClientID
             // 
-            this.lblCellNumber.AutoSize = true;
-            this.lblCellNumber.Location = new System.Drawing.Point(200, 146);
-            this.lblCellNumber.Name = "lblCellNumber";
-            this.lblCellNumber.Size = new System.Drawing.Size(71, 15);
-            this.lblCellNumber.TabIndex = 1;
-            this.lblCellNumber.Text = "CellNumber";
+            this.lblClientID.AutoSize = true;
+            this.lblClientID.Location = new System.Drawing.Point(200, 146);
+            this.lblClientID.Name = "lblClientID";
+            this.lblClientID.Size = new System.Drawing.Size(52, 15);
+            this.lblClientID.TabIndex = 1;
+            this.lblClientID.Text = "Client ID";
             // 
-            // txtbxCellNumber
+            // txtbxClientID
             // 
-            this.txtbxCellNumber.Location = new System.Drawing.Point(291, 143);
-            this.txtbxCellNumber.Name = "txtbxCellNumber";
-            this.txtbxCellNumber.Size = new System.Drawing.Size(251, 23);
-            this.txtbxCellNumber.TabIndex = 2;
+            this.txtbxClientID.Location = new System.Drawing.Point(291, 143);
+            this.txtbxClientID.Name = "txtbxClientID";
+            this.txtbxClientID.Size = new System.Drawing.Size(251, 23);
+            this.txtbxClientID.TabIndex = 2;
             // 
             // btnClear
             // 
@@ -88,11 +88,12 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.btnClear);
-            this.Controls.Add(this.txtbxCellNumber);
-            this.Controls.Add(this.lblCellNumber);
+            this.Controls.Add(this.txtbxClientID);
+            this.Controls.Add(this.lblClientID);
             this.Controls.Add(this.lblExistingClientDetails);
             this.Name = "frmExistingClientSearch";
             this.Text = "Existing Client Search";
+            this.Load += new System.EventHandler(this.frmExistingClientSearch_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -101,8 +102,8 @@
         #endregion
 
         private Label lblExistingClientDetails;
-        private Label lblCellNumber;
-        private TextBox txtbxCellNumber;
+        private Label lblClientID;
+        private TextBox txtbxClientID;
         private Button btnClear;
         private Button btnSearch;
     }

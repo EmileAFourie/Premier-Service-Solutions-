@@ -4,12 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
+using System.Data;
 
 namespace Premier_Service_Solutions
 {
     internal class Employee
     {
-        const string connectionString = @"Data Source=.\SQLEXPRESS; Initial Catalog=PremierServiceSolutions; Integrated Security=true;";
+        // const string connectionString = @"Data Source=.\SQLEXPRESS; Initial Catalog=PremierServiceSolutions; Integrated Security=true;";
+        string connectionString = Global.connectionString;
 
         SqlConnection cnn;
         SqlDataReader reader;
@@ -218,6 +220,19 @@ namespace Premier_Service_Solutions
             cmd.ExecuteNonQuery();
 
             cnn.Close();
+        }
+
+        public DataTable GetEmployeeTickets()
+        {
+            cnn = new SqlConnection(connectionString);
+            cnn.Open();
+
+            SqlDataAdapter data = new SqlDataAdapter($@"SELECT Ticket.TicketID, Ticket.Description, EmployeeTickets.CurrentlyWorkingOn, Ticket.Status, Ticket.ClientID FROM Ticket INNER JOIN EmployeeTickets ON Ticket.TicketID=EmployeeTickets.TicketID WHERE  EmployeeTickets.EmployeeID = {EmployeeID}", cnn);
+            DataTable dt = new DataTable();
+            data.Fill(dt);
+
+            cnn.Close();
+            return dt;
         }
 
     }

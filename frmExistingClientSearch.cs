@@ -19,15 +19,22 @@ namespace Premier_Service_Solutions
 
         private void btnClear_Click(object sender, EventArgs e)
         {
-            txtbxCellNumber.Clear();
+            txtbxClientID.Clear();
         }
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
-            frmTicketManagement Ticket = new frmTicketManagement();
+            int ID = int.Parse(txtbxClientID.Text);
+
+            frmTicketManagement Ticket = new frmTicketManagement(ID);
             Ticket.Show();
 
             this.Hide();
+        }
+
+        private void frmExistingClientSearch_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
