@@ -17,7 +17,7 @@ namespace Premier_Service_Solutions
             InitializeComponent();
         }
 
-        private void btnSubmit_Click_1(object sender, EventArgs e)
+        private void btnSubmit_Click(object sender, EventArgs e)
         {
             string firstName = txtbxName.Text;
             string surname = txtSurname.Text;
@@ -29,7 +29,7 @@ namespace Premier_Service_Solutions
             string user = txtUser.Text;
             string password = txtPassword.Text;
 
-            Employee employee = new Employee(firstName,surname, email, cellNo,postition, department, field, user, password);
+            Employee employee = new Employee(firstName, surname, email, cellNo, postition, department, field, user, password);
 
             try
             {
@@ -62,6 +62,7 @@ namespace Premier_Service_Solutions
             txtUser.Clear();
             txtPassword.Clear();
         }
+
     }
 }
 
