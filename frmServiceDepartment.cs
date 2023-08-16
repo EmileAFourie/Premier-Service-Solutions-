@@ -28,5 +28,11 @@ namespace Premier_Service_Solutions
         {
 
         }
+
+        private void btnAssignTicket_Click(object sender, EventArgs e)
+        {
+            TwilioService twilioService = new TwilioService();
+            twilioService.SendTicketNotification("+27763237618", "12345", "Install new HVAC system");
+        }
     }
 }
