@@ -36,7 +36,7 @@ namespace Premier_Service_Solutions
             {
                 MessageBox.Show("Incorrect credentials entered.");
             }
-        }       
+        }
 
         private void chkShowPassword_CheckedChanged_1(object sender, EventArgs e)
         {

@@ -29,151 +29,133 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPremierServiceSolutionsLogin));
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.lblUsername = new System.Windows.Forms.Label();
-            this.lblPassword = new System.Windows.Forms.Label();
-            this.txtbxUsername = new System.Windows.Forms.TextBox();
-            this.txtbxPassword = new System.Windows.Forms.TextBox();
-            this.btnClear = new System.Windows.Forms.Button();
-            this.btnLogin = new System.Windows.Forms.Button();
-            this.chkShowPassword = new System.Windows.Forms.CheckBox();
-            this.btnBypass = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.SuspendLayout();
+            pictureBox1 = new PictureBox();
+            label1 = new Label();
+            lblUsername = new Label();
+            lblPassword = new Label();
+            txtbxUsername = new TextBox();
+            txtbxPassword = new TextBox();
+            btnClear = new Button();
+            btnLogin = new Button();
+            chkShowPassword = new CheckBox();
+            btnBypass = new Button();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            SuspendLayout();
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(95, 26);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(617, 162);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(95, 26);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(617, 162);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 0;
+            pictureBox1.TabStop = false;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(207, 206);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(409, 25);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Please provide your username and password";
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.Location = new Point(207, 206);
+            label1.Name = "label1";
+            label1.Size = new Size(409, 25);
+            label1.TabIndex = 1;
+            label1.Text = "Please provide your username and password";
             // 
             // lblUsername
             // 
-            this.lblUsername.AutoSize = true;
-            this.lblUsername.BackColor = System.Drawing.Color.Transparent;
-            this.lblUsername.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblUsername.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblUsername.Location = new System.Drawing.Point(150, 264);
-            this.lblUsername.Name = "lblUsername";
-            this.lblUsername.Size = new System.Drawing.Size(64, 15);
-            this.lblUsername.TabIndex = 2;
-            this.lblUsername.Text = "Username";
+            lblUsername.AutoSize = true;
+            lblUsername.Location = new Point(150, 264);
+            lblUsername.Name = "lblUsername";
+            lblUsername.Size = new Size(60, 15);
+            lblUsername.TabIndex = 2;
+            lblUsername.Text = "Username";
             // 
             // lblPassword
             // 
-            this.lblPassword.AutoSize = true;
-            this.lblPassword.BackColor = System.Drawing.Color.Transparent;
-            this.lblPassword.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblPassword.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblPassword.Location = new System.Drawing.Point(150, 310);
-            this.lblPassword.Name = "lblPassword";
-            this.lblPassword.Size = new System.Drawing.Size(59, 15);
-            this.lblPassword.TabIndex = 3;
-            this.lblPassword.Text = "Password";
+            lblPassword.AutoSize = true;
+            lblPassword.Location = new Point(150, 310);
+            lblPassword.Name = "lblPassword";
+            lblPassword.Size = new Size(57, 15);
+            lblPassword.TabIndex = 3;
+            lblPassword.Text = "Password";
             // 
             // txtbxUsername
             // 
-            this.txtbxUsername.Location = new System.Drawing.Point(247, 262);
-            this.txtbxUsername.Name = "txtbxUsername";
-            this.txtbxUsername.Size = new System.Drawing.Size(369, 23);
-            this.txtbxUsername.TabIndex = 4;
+            txtbxUsername.Location = new Point(247, 262);
+            txtbxUsername.Name = "txtbxUsername";
+            txtbxUsername.Size = new Size(369, 23);
+            txtbxUsername.TabIndex = 4;
             // 
             // txtbxPassword
             // 
-            this.txtbxPassword.Location = new System.Drawing.Point(247, 307);
-            this.txtbxPassword.Name = "txtbxPassword";
-            this.txtbxPassword.Size = new System.Drawing.Size(369, 23);
-            this.txtbxPassword.TabIndex = 5;
+            txtbxPassword.Location = new Point(247, 307);
+            txtbxPassword.Name = "txtbxPassword";
+            txtbxPassword.Size = new Size(369, 23);
+            txtbxPassword.TabIndex = 5;
             // 
             // btnClear
             // 
-            this.btnClear.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnClear.Location = new System.Drawing.Point(398, 369);
-            this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(75, 23);
-            this.btnClear.TabIndex = 6;
-            this.btnClear.Text = "Clear";
-            this.btnClear.UseVisualStyleBackColor = true;
-            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
+            btnClear.Location = new Point(398, 369);
+            btnClear.Name = "btnClear";
+            btnClear.Size = new Size(75, 23);
+            btnClear.TabIndex = 6;
+            btnClear.Text = "Clear";
+            btnClear.UseVisualStyleBackColor = true;
+            btnClear.Click += btnClear_Click;
             // 
             // btnLogin
             // 
-            this.btnLogin.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnLogin.Location = new System.Drawing.Point(541, 369);
-            this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(75, 23);
-            this.btnLogin.TabIndex = 7;
-            this.btnLogin.Text = "Login";
-            this.btnLogin.UseVisualStyleBackColor = true;
-            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
+            btnLogin.Location = new Point(541, 369);
+            btnLogin.Name = "btnLogin";
+            btnLogin.Size = new Size(75, 23);
+            btnLogin.TabIndex = 7;
+            btnLogin.Text = "Login";
+            btnLogin.UseVisualStyleBackColor = true;
+            btnLogin.Click += btnLogin_Click;
             // 
             // chkShowPassword
             // 
-            this.chkShowPassword.AutoSize = true;
-            this.chkShowPassword.BackColor = System.Drawing.Color.Transparent;
-            this.chkShowPassword.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.chkShowPassword.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.chkShowPassword.Location = new System.Drawing.Point(624, 312);
-            this.chkShowPassword.Name = "chkShowPassword";
-            this.chkShowPassword.Size = new System.Drawing.Size(112, 19);
-            this.chkShowPassword.TabIndex = 8;
-            this.chkShowPassword.Text = "Show Password";
-            this.chkShowPassword.UseVisualStyleBackColor = false;
-            this.chkShowPassword.CheckedChanged += new System.EventHandler(this.chkShowPassword_CheckedChanged_1);
+            chkShowPassword.AutoSize = true;
+            chkShowPassword.Location = new Point(624, 312);
+            chkShowPassword.Name = "chkShowPassword";
+            chkShowPassword.Size = new Size(108, 19);
+            chkShowPassword.TabIndex = 8;
+            chkShowPassword.Text = "Show Password";
+            chkShowPassword.UseVisualStyleBackColor = true;
+            chkShowPassword.CheckedChanged += chkShowPassword_CheckedChanged_1;
             // 
             // btnBypass
             // 
-            this.btnBypass.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnBypass.Location = new System.Drawing.Point(689, 415);
-            this.btnBypass.Name = "btnBypass";
-            this.btnBypass.Size = new System.Drawing.Size(75, 23);
-            this.btnBypass.TabIndex = 9;
-            this.btnBypass.Text = "Bypass";
-            this.btnBypass.UseVisualStyleBackColor = true;
-            this.btnBypass.Click += new System.EventHandler(this.btnBypass_Click);
+            btnBypass.Location = new Point(689, 415);
+            btnBypass.Name = "btnBypass";
+            btnBypass.Size = new Size(75, 23);
+            btnBypass.TabIndex = 9;
+            btnBypass.Text = "Bypass";
+            btnBypass.UseVisualStyleBackColor = true;
+            btnBypass.Click += btnBypass_Click;
             // 
             // frmPremierServiceSolutionsLogin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Silver;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.btnBypass);
-            this.Controls.Add(this.chkShowPassword);
-            this.Controls.Add(this.btnLogin);
-            this.Controls.Add(this.btnClear);
-            this.Controls.Add(this.txtbxPassword);
-            this.Controls.Add(this.txtbxUsername);
-            this.Controls.Add(this.lblPassword);
-            this.Controls.Add(this.lblUsername);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.pictureBox1);
-            this.Name = "frmPremierServiceSolutionsLogin";
-            this.Text = "Premiere Service Solutions Login";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(btnBypass);
+            Controls.Add(chkShowPassword);
+            Controls.Add(btnLogin);
+            Controls.Add(btnClear);
+            Controls.Add(txtbxPassword);
+            Controls.Add(txtbxUsername);
+            Controls.Add(lblPassword);
+            Controls.Add(lblUsername);
+            Controls.Add(label1);
+            Controls.Add(pictureBox1);
+            Name = "frmPremierServiceSolutionsLogin";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Premiere Service Solutions Login";
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
