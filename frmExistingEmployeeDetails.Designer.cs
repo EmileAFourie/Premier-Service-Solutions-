@@ -333,6 +333,7 @@
             Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
             Name = "frmExistingEmployeeDetails";
             Text = "Existing Employee Details";
+            Load += frmExistingEmployeeDetails_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
