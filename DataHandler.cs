@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
@@ -46,6 +47,26 @@ namespace Premier_Service_Solutions
             }
         }
 
+        // search
+
+        public DataTable SearchOld(int cliID)
+        {
+
+            conn = new SqlConnection(connect);
+            string q = @"Select * From Ticket Where ClientId = ('" + cliID + "')";
+            SqlDataAdapter da = new SqlDataAdapter(q,conn);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+
+            return dt;
+
+
+       
+
+        }
+
+
+        //===============
         public void ClientBWriteToDB(int CompanyID, string CompanyName, string CompanyAddress, string CompanyPhone)
         {
             string insertB = @"Insert INTO [dbo].[IndividualClient] Values ('" + CompanyID + "','" + CompanyName + "','" + CompanyAddress + "'," +
@@ -75,20 +96,17 @@ namespace Premier_Service_Solutions
         // Tickects
         //======================================================================================================================================================
         
-        public void LogTickect(int TicketID, string TypeOfErr, string Description, DateTime Dateopened, DateTime DateClosed, string Priority, string Status, int ClientID)
+        public void LogTickect(string TypeOfErr, string Description, DateTime Dateopened, string Priority, string Status, int ClientID)
         {
-            string insert = @"Insert INTO [dbo].[Ticket] Values ('"+ TicketID + "','" + TypeOfErr + "','" + Description + "'," +
-                "'" + Dateopened + "','" + DateClosed + "','" + Priority + "','" + Status + "','" + ClientID + "',) ";
+            string insert = @"Insert INTO [dbo].[Ticket] (TypeOfError,Description,DateOpened,Priority,Status,ClientID) 
+                    Values ('" + TypeOfErr + "','" + Description + "'," +
+                    "'" + Dateopened + "','" + Priority + "','" + Status + "','" + ClientID + "',) ";
 
             conn = new SqlConnection(connect);
             conn.Open();
             
             cmd = new SqlCommand(insert, conn);
             
-            
-            // Put status as unassigned by default
-
-
             try
             {
                 cmd.ExecuteNonQuery();
@@ -113,7 +131,7 @@ namespace Premier_Service_Solutions
         //============================================================================
         //Contracts
         //============================================================================
-
+        
 
     }
 

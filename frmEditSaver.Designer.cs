@@ -32,10 +32,10 @@
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnDisable = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvSaver = new System.Windows.Forms.DataGridView();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnBack = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvSaver)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -57,6 +57,7 @@
             this.btnUpdate.TabIndex = 1;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnDisable
             // 
@@ -77,14 +78,14 @@
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = false;
             // 
-            // dataGridView1
+            // dgvSaver
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(135, 147);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(574, 154);
-            this.dataGridView1.TabIndex = 4;
+            this.dgvSaver.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvSaver.Location = new System.Drawing.Point(135, 147);
+            this.dgvSaver.Name = "dgvSaver";
+            this.dgvSaver.RowHeadersWidth = 51;
+            this.dgvSaver.Size = new System.Drawing.Size(574, 154);
+            this.dgvSaver.TabIndex = 4;
             // 
             // pictureBox1
             // 
@@ -113,14 +114,15 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvSaver);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnDisable);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.btnEnable);
             this.Name = "frmEditSaver";
             this.Text = "frmEditSaver";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.frmEditSaver_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvSaver)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -132,7 +134,7 @@
         private Button btnUpdate;
         private Button btnDisable;
         private Button btnDelete;
-        private DataGridView dataGridView1;
+        private DataGridView dgvSaver;
         private PictureBox pictureBox1;
         private Button btnBack;
     }
