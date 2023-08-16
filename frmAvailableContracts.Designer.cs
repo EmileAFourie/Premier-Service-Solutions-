@@ -98,6 +98,7 @@
             this.btnEditSaver.TabIndex = 4;
             this.btnEditSaver.Text = "Edit";
             this.btnEditSaver.UseVisualStyleBackColor = true;
+            this.btnEditSaver.Click += new System.EventHandler(this.btnEditSaver_Click_1);
             // 
             // btnEditBasic
             // 
@@ -107,6 +108,7 @@
             this.btnEditBasic.TabIndex = 5;
             this.btnEditBasic.Text = "Edit";
             this.btnEditBasic.UseVisualStyleBackColor = true;
+            this.btnEditBasic.Click += new System.EventHandler(this.btnEditBasic_Click);
             // 
             // btnEditExtra
             // 
@@ -116,6 +118,7 @@
             this.btnEditExtra.TabIndex = 6;
             this.btnEditExtra.Text = "Edit";
             this.btnEditExtra.UseVisualStyleBackColor = true;
+            this.btnEditExtra.Click += new System.EventHandler(this.btnEditExtra_Click);
             // 
             // pictureBoxExtra
             // 

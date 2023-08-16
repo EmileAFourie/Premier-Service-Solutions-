@@ -28,5 +28,26 @@ namespace Premier_Service_Solutions
             this.Hide();
             back.Show();
         }
+
+        private void btnEditBasic_Click(object sender, EventArgs e)
+        {
+            frmEditbasic frmEditbasicfrm = new frmEditbasic();
+            this.Hide();
+            frmEditbasicfrm.Show();
+        }
+
+        private void btnEditSaver_Click_1(object sender, EventArgs e)
+        {
+            frmEditSaver frmEditsaverfrm = new frmEditSaver();
+            this.Hide();
+            frmEditsaverfrm.Show();
+        }
+
+        private void btnEditExtra_Click(object sender, EventArgs e)
+        {
+            frmEditPremium frmEditPremiumfrm = new frmEditPremium();
+            this.Hide();
+            frmEditPremiumfrm.Show();
+        }
     }
 }
