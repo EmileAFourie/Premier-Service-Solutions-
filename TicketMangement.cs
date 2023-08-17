@@ -60,7 +60,7 @@ namespace Premier_Service_Solutions
 
 
 
-        public void UpdateTicket(int ticketID, string typeOfError, string description, string priority)
+        public string UpdateTicket(int ticketID, string typeOfError, string description, string priority)
         {
             using (SqlConnection con = new SqlConnection(connectionString))
             {
@@ -76,6 +76,8 @@ namespace Premier_Service_Solutions
                     cmd.Parameters.AddWithValue("@TicketID", ticketID);
                     cmd.ExecuteNonQuery();
                 }
+
+                return "Ticket updated";
             }
         }
 
