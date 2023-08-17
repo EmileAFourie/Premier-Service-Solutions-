@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Data;
+using Microsoft.VisualBasic.ApplicationServices;
 
 namespace Premier_Service_Solutions
 {
@@ -233,6 +234,47 @@ namespace Premier_Service_Solutions
 
             cnn.Close();
             return dt;      
+        }
+        public List<Employee> GetEmployess()
+        {
+            List<Employee> lstEmployee = new List<Employee>();
+
+            try
+            {
+                cnn = new SqlConnection(connectionString);
+                cnn.Open();
+
+                cmd = new SqlCommand($@"SELECT * FROM Employee", cnn);
+                reader = cmd.ExecuteReader();
+
+               // reader.Read();
+
+                while (reader.Read())
+                {
+                    Employee employee = new Employee();
+
+                    employee.EmployeeID = reader.GetInt32(0);
+                    employee.FirstName = reader.GetString(1);
+                    employee.Surname = reader.GetString(2);
+                    employee.Email = reader.GetString(3);
+                    employee.CellNo = reader.GetString(4);
+                    employee.Postion = reader.GetString(5);
+                    employee.Department = reader.GetString(6);
+                    employee.Field = reader.GetString(7);
+
+                    lstEmployee.Add(employee);
+                }
+
+
+                reader.Close();
+                cnn.Close();
+
+                return lstEmployee;
+            }
+            catch (Exception)
+            {
+                return lstEmployee;
+            }
         }
 
     }

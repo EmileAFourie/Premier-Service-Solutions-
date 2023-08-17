@@ -14,6 +14,7 @@ namespace Premier_Service_Solutions
     {
         int UnassignedTicketID = -1;
         int AssignedTicketID = -1;
+        //int ClientID = -1;
 
         public frmServiceDepartment()
         {
@@ -29,10 +30,15 @@ namespace Premier_Service_Solutions
 
         private void btnAssignTicket_Click(object sender, EventArgs e)
         {
-            int employeeID = 2;
-
-            if (UnassignedTicketID != -1)
+        if (UnassignedTicketID > -1 && comboBox1.SelectedIndex >-1)
             {
+                string comb = comboBox1.SelectedItem.ToString();
+                int colon = comb.IndexOf(':');
+                int employeeID = int.Parse(comb.Substring(0, colon));
+
+               // MessageBox.Show(employeeID.ToString());
+
+
                 Ticket ticket = new Ticket();
                 ticket.AssignTicket(employeeID, UnassignedTicketID);
                 Refresh();
@@ -40,20 +46,34 @@ namespace Premier_Service_Solutions
                 TwilioService twilioService = new TwilioService();
 
                 Employee employee = new Employee();
-                
+
 
                 employee.FindEmployee(employeeID);
                 ticket.FindTicket(UnassignedTicketID);
 
 
                 twilioService.SendTicketNotification("+27763237618", $"{UnassignedTicketID.ToString()}", $"{ticket.Description}");
-                MessageBox.Show("Ticket has been assigned and notification has been sent","Information");
+                MessageBox.Show("Ticket has been assigned and notification has been sent", "Information");
             }
+            else
+            {
+                MessageBox.Show("Please select a ticket and employee first","Information");
+            }
+            
         }
 
         private void frmServiceDepartment_Load(object sender, EventArgs e)
         {
             RefreshGrid();
+
+            Employee employee = new Employee();
+            List<Employee> lstEmployee = employee.GetEmployess();
+
+            foreach (Employee current in lstEmployee)
+            {
+                comboBox1.Items.Add(current.EmployeeID +": " + current.FirstName + " " + current.Surname);
+
+            }
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -132,7 +152,5 @@ namespace Premier_Service_Solutions
             Logout.Show();
             MessageBox.Show("You have been logged out!");
         }
-
-        
     }
 }
