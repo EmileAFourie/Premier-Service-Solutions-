@@ -14,7 +14,7 @@ namespace Premier_Service_Solutions
     {
         int UnassignedTicketID = -1;
         int AssignedTicketID = -1;
-        //int ClientID = -1;
+        int AssignedClientID = -1;
 
         public frmServiceDepartment()
         {
@@ -30,13 +30,13 @@ namespace Premier_Service_Solutions
 
         private void btnAssignTicket_Click(object sender, EventArgs e)
         {
-        if (UnassignedTicketID > -1 && comboBox1.SelectedIndex >-1)
+            if (UnassignedTicketID > -1 && comboBox1.SelectedIndex > -1)
             {
                 string comb = comboBox1.SelectedItem.ToString();
                 int colon = comb.IndexOf(':');
                 int employeeID = int.Parse(comb.Substring(0, colon));
 
-               // MessageBox.Show(employeeID.ToString());
+                // MessageBox.Show(employeeID.ToString());
 
 
                 Ticket ticket = new Ticket();
@@ -57,9 +57,9 @@ namespace Premier_Service_Solutions
             }
             else
             {
-                MessageBox.Show("Please select a ticket and employee first","Information");
+                MessageBox.Show("Please select a ticket and employee first", "Information");
             }
-            
+
         }
 
         private void frmServiceDepartment_Load(object sender, EventArgs e)
@@ -71,7 +71,7 @@ namespace Premier_Service_Solutions
 
             foreach (Employee current in lstEmployee)
             {
-                comboBox1.Items.Add(current.EmployeeID +": " + current.FirstName + " " + current.Surname);
+                comboBox1.Items.Add(current.EmployeeID + ": " + current.FirstName + " " + current.Surname);
 
             }
         }
@@ -115,6 +115,8 @@ namespace Premier_Service_Solutions
             DataGridViewRow row = dataGridView2.Rows[e.RowIndex];
 
             AssignedTicketID = DataGridViewGetTicketID(row);
+
+            AssignedClientID = DataGridViewGetEmployeeID(row);
             lblAssigned.Text = "Selected Assigned Ticket ID: " + AssignedTicketID.ToString();
         }
         private int DataGridViewGetTicketID(DataGridViewRow row)
@@ -122,6 +124,17 @@ namespace Premier_Service_Solutions
             if (row.Cells[0].Value.ToString() != "")
             {
                 return int.Parse(row.Cells[0].Value.ToString());
+            }
+            else
+            {
+                return -1;
+            }
+        }
+        private int DataGridViewGetEmployeeID(DataGridViewRow row)
+        {
+            if (row.Cells[0].Value.ToString() != "")
+            {
+                return int.Parse(row.Cells[1].Value.ToString());
             }
             else
             {
@@ -140,6 +153,7 @@ namespace Premier_Service_Solutions
 
             UnassignedTicketID = DataGridViewGetTicketID(dataGridView1.Rows[0]);
             AssignedTicketID = DataGridViewGetTicketID(dataGridView2.Rows[0]);
+            AssignedClientID = DataGridViewGetEmployeeID(dataGridView2.Rows[0]);
 
             lblAssigned.Text = "Selected Assigned Ticket ID: " + AssignedTicketID.ToString();
             lblUnassigned.Text = "Selected Unassigned Ticket ID: " + UnassignedTicketID.ToString();
@@ -151,6 +165,42 @@ namespace Premier_Service_Solutions
             this.Hide();
             Logout.Show();
             MessageBox.Show("You have been logged out!");
+        }
+
+        private void btnEscalateTicket_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void btnUnassign_Click(object sender, EventArgs e)
+        {
+            if (AssignedTicketID > -1 && AssignedClientID > -1)
+            {
+               
+
+                // MessageBox.Show(employeeID.ToString());
+
+
+                Ticket ticket = new Ticket();
+                ticket.UnassignTicket(AssignedClientID, AssignedTicketID);
+                Refresh();
+
+                //TwilioService twilioService = new TwilioService();
+
+                // Employee employee = new Employee();
+
+
+                //  employee.FindEmployee(employeeID);
+                //ticket.FindTicket(UnassignedTicketID);
+
+
+                // twilioService.SendTicketNotification("+27763237618", $"{UnassignedTicketID.ToString()}", $"{ticket.Description}");
+                MessageBox.Show("Ticket has been unassigned.", "Information");
+            }
+            else
+            {
+                MessageBox.Show("Please select a ticket and employee first", "Information");
+            }
         }
     }
 }

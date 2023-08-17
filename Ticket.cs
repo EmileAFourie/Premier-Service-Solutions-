@@ -81,7 +81,7 @@ namespace Premier_Service_Solutions
             cnn = new SqlConnection(connectionString);
             cnn.Open();
 
-            SqlDataAdapter data = new SqlDataAdapter($@"SELECT EmployeeTickets.EmployeeID, Ticket.TicketID, Ticket.Description, Ticket.Priority FROM Ticket LEFT JOIN EmployeeTickets ON Ticket.TicketID = EmployeeTickets.TicketID WHERE EmployeeTickets.TicketID IS NOT NULL", cnn);
+            SqlDataAdapter data = new SqlDataAdapter($@"SELECT Ticket.TicketID, EmployeeTickets.EmployeeID, Ticket.Description, Ticket.Priority FROM Ticket LEFT JOIN EmployeeTickets ON Ticket.TicketID = EmployeeTickets.TicketID WHERE EmployeeTickets.TicketID IS NOT NULL", cnn);
             DataTable dt = new DataTable();
             data.Fill(dt);
 
@@ -109,7 +109,7 @@ namespace Premier_Service_Solutions
             cnn = new SqlConnection(connectionString);
             cnn.Open();
 
-            cmd = new SqlCommand($@"DELETE * FROM EmployeeTickets WHERE EmployeeID = {employeeID} AND TicketID = {ticketID} ", cnn);
+            cmd = new SqlCommand($@"DELETE FROM EmployeeTickets WHERE EmployeeID = {employeeID} AND TicketID = {ticketID} ", cnn);
             cmd.ExecuteNonQuery();
 
             cnn.Close();

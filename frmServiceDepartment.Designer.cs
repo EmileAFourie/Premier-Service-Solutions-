@@ -139,6 +139,7 @@
             btnEscalateTicket.TabIndex = 6;
             btnEscalateTicket.Text = "Escalate Ticket";
             btnEscalateTicket.UseVisualStyleBackColor = true;
+            btnEscalateTicket.Click += btnEscalateTicket_Click;
             // 
             // btnUnassign
             // 
@@ -150,6 +151,7 @@
             btnUnassign.TabIndex = 7;
             btnUnassign.Text = "Unassign";
             btnUnassign.UseVisualStyleBackColor = true;
+            btnUnassign.Click += btnUnassign_Click;
             // 
             // btnResolveJob
             // 
