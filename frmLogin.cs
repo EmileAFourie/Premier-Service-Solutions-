@@ -50,5 +50,21 @@ namespace Premier_Service_Solutions
 
             this.Hide(); // Hide the login form
         }
+
+        public bool TestLogin(string username, string password )
+        {
+            Employee employee = new Employee();
+
+            string login = employee.CheckLogin(username, password);
+
+            if (login != "fail")
+            {
+                return true;
+            }
+            else
+            {
+               return false;
+            }
+        }
     }
 }
