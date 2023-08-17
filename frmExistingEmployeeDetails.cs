@@ -65,6 +65,10 @@ namespace Premier_Service_Solutions
 
             dataGridView1.DataSource = dt;
 
+            Ticket ticket = new Ticket();
+
+            dataGridView1.DataSource = ticket.GetAssignedTicketsForEmployee(EmployeeID);
+
         }
 
         private void lblPerformance_Click(object sender, EventArgs e)
@@ -94,5 +98,9 @@ namespace Premier_Service_Solutions
 
         }
 
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            DialogResult = DialogResult.OK;
+        }
     }
 }

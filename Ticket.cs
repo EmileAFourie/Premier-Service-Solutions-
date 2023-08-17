@@ -138,6 +138,18 @@ namespace Premier_Service_Solutions
 
             }
         }
+        public DataTable GetAssignedTicketsForEmployee(int employeeID)
+        {
+            cnn = new SqlConnection(connectionString);
+            cnn.Open();
+
+            SqlDataAdapter data = new SqlDataAdapter($@"SELECT Ticket.TicketID, EmployeeTickets.EmployeeID, Ticket.Description, Ticket.Priority FROM Ticket LEFT JOIN EmployeeTickets ON Ticket.TicketID = EmployeeTickets.TicketID WHERE EmployeeTickets.TicketID IS NOT NULL AND EmployeeID = {employeeID}", cnn);
+            DataTable dt = new DataTable();
+            data.Fill(dt);
+
+            cnn.Close();
+            return dt;
+        }
 
     }
 }
