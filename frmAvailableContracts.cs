@@ -73,8 +73,8 @@ namespace Premier_Service_Solutions
             DataHandler dh = new DataHandler();
 
             dgvSaver.DataSource = dh.RetrieveContract(1);
-            dgvBasic.DataSource = dh.RetrieveContract(2);
-            dgvExtra.DataSource = dh.RetrieveContract(3);
+            dgvBasic.DataSource = dh.RetrieveContract(10);
+            dgvExtra.DataSource = dh.RetrieveContract(18);
         }
     }
 }
