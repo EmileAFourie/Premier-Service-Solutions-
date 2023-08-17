@@ -52,7 +52,7 @@ namespace Premier_Service_Solutions
                 ticket.FindTicket(UnassignedTicketID);
 
 
-                twilioService.SendTicketNotification("+27763237618", $"{UnassignedTicketID.ToString()}", $"{ticket.Description}");
+                //twilioService.SendTicketNotification("+27763237618", $"{UnassignedTicketID.ToString()}", $"{ticket.Description}");
                 MessageBox.Show("Ticket has been assigned and notification has been sent", "Information");
             }
             else
@@ -147,6 +147,9 @@ namespace Premier_Service_Solutions
 
             DataTable dt = ticket.GetUnassignedTickets();
             DataTable dt2 = ticket.GetAssignedTickets();
+
+            dataGridView1.DataSource = null;
+            dataGridView2.DataSource = null;
 
             dataGridView2.DataSource = dt2;
             dataGridView1.DataSource = dt;
